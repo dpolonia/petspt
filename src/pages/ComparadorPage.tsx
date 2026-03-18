@@ -83,36 +83,30 @@ export default function ComparadorPage() {
 
   const loading = l1 || l2 || l3 || l4 || l5;
 
-  // Extract short name for fuzzy matching
+  // Extract short names for fuzzy matching
   const nameA = ulsA?.nome.replace('ULS ', '').replace(', EPE', '') || '';
   const nameB = ulsB?.nome.replace('ULS ', '').replace(', EPE', '') || '';
 
-  // Extract comparison values
-  const comparisons = useMemo(() => {
-    if (!bothSelected) return [];
-    return [
-      { label: 'Cirurgias Programadas', valorA: extractLatestForInst(cirurgiaData, nameA, 'no_intervencoes_cirurgicas_programadas'), valorB: extractLatestForInst(cirurgiaData, nameB, 'no_intervencoes_cirurgicas_programadas'), unidade: 'cirurgias', inverso: false, eixo: 'E1' },
-      { label: 'Cirurgias Urgentes', valorA: extractLatestForInst(cirurgiaData, nameA, 'no_intervencoes_cirurgicas_urgentes'), valorB: extractLatestForInst(cirurgiaData, nameB, 'no_intervencoes_cirurgicas_urgentes'), unidade: 'cirurgias', inverso: false, eixo: 'E1' },
-      { label: 'Consultas CTH (total)', valorA: extractLatestForInst(consultasData, nameA, 'no_primeiras_ce_realizadas_com_registo_no_cth'), valorB: extractLatestForInst(consultasData, nameB, 'no_primeiras_ce_realizadas_com_registo_no_cth'), unidade: 'consultas', inverso: false, eixo: 'E1' },
-      { label: 'Consultas dentro TMRG', valorA: extractLatestForInst(consultasData, nameA, 'no_primeiras_ce_prestadas_dentro_do_tmrg'), valorB: extractLatestForInst(consultasData, nameB, 'no_primeiras_ce_prestadas_dentro_do_tmrg'), unidade: 'consultas', inverso: false, eixo: 'E1' },
-      { label: 'Partos', valorA: extractLatestForInst(partosData, nameA, 'no_de_partos'), valorB: extractLatestForInst(partosData, nameB, 'no_de_partos'), unidade: 'partos', inverso: false, eixo: 'E2' },
-      { label: 'Cesarianas', valorA: extractLatestForInst(partosData, nameA, 'no_de_cesarianas'), valorB: extractLatestForInst(partosData, nameB, 'no_de_cesarianas'), unidade: 'cesarianas', inverso: true, eixo: 'E2' },
-      { label: 'Total Urgencias', valorA: extractLatestForInst(urgenciasData, nameA, 'total_urgencias'), valorB: extractLatestForInst(urgenciasData, nameB, 'total_urgencias'), unidade: 'atendimentos', inverso: false, eixo: 'E3' },
-      { label: 'Urgencias Pediatricas', valorA: extractLatestForInst(urgenciasData, nameA, 'urgencias_pediatricas'), valorB: extractLatestForInst(urgenciasData, nameB, 'urgencias_pediatricas'), unidade: 'atendimentos', inverso: false, eixo: 'E3' },
-      { label: 'Utentes Inscritos CSP', valorA: extractLatestForInst(utentesData, nameA, 'utentes_inscritos_csp'), valorB: extractLatestForInst(utentesData, nameB, 'utentes_inscritos_csp'), unidade: 'utentes', inverso: false, eixo: 'E4' },
-      { label: '% sem MdF', valorA: extractLatestForInst(utentesData, nameA, 'total_utentes_sem_mdf_atribuido0'), valorB: extractLatestForInst(utentesData, nameB, 'total_utentes_sem_mdf_atribuido0'), unidade: '%', inverso: true, eixo: 'E4' },
-    ];
-  }, [bothSelected, cirurgiaData, consultasData, utentesData, partosData, urgenciasData, nameA, nameB]);
+  // Build comparison data (no useMemo — React Compiler handles this)
+  const comparisons = !bothSelected ? [] : [
+    { label: 'Cirurgias Programadas', valorA: extractLatestForInst(cirurgiaData, nameA, 'no_intervencoes_cirurgicas_programadas'), valorB: extractLatestForInst(cirurgiaData, nameB, 'no_intervencoes_cirurgicas_programadas'), unidade: 'cirurgias', inverso: false, eixo: 'E1' },
+    { label: 'Cirurgias Urgentes', valorA: extractLatestForInst(cirurgiaData, nameA, 'no_intervencoes_cirurgicas_urgentes'), valorB: extractLatestForInst(cirurgiaData, nameB, 'no_intervencoes_cirurgicas_urgentes'), unidade: 'cirurgias', inverso: false, eixo: 'E1' },
+    { label: 'Consultas CTH (total)', valorA: extractLatestForInst(consultasData, nameA, 'no_primeiras_ce_realizadas_com_registo_no_cth'), valorB: extractLatestForInst(consultasData, nameB, 'no_primeiras_ce_realizadas_com_registo_no_cth'), unidade: 'consultas', inverso: false, eixo: 'E1' },
+    { label: 'Consultas dentro TMRG', valorA: extractLatestForInst(consultasData, nameA, 'no_primeiras_ce_prestadas_dentro_do_tmrg'), valorB: extractLatestForInst(consultasData, nameB, 'no_primeiras_ce_prestadas_dentro_do_tmrg'), unidade: 'consultas', inverso: false, eixo: 'E1' },
+    { label: 'Partos', valorA: extractLatestForInst(partosData, nameA, 'no_de_partos'), valorB: extractLatestForInst(partosData, nameB, 'no_de_partos'), unidade: 'partos', inverso: false, eixo: 'E2' },
+    { label: 'Cesarianas', valorA: extractLatestForInst(partosData, nameA, 'no_de_cesarianas'), valorB: extractLatestForInst(partosData, nameB, 'no_de_cesarianas'), unidade: 'cesarianas', inverso: true, eixo: 'E2' },
+    { label: 'Total Urgencias', valorA: extractLatestForInst(urgenciasData, nameA, 'total_urgencias'), valorB: extractLatestForInst(urgenciasData, nameB, 'total_urgencias'), unidade: 'atendimentos', inverso: false, eixo: 'E3' },
+    { label: 'Urgencias Pediatricas', valorA: extractLatestForInst(urgenciasData, nameA, 'urgencias_pediatricas'), valorB: extractLatestForInst(urgenciasData, nameB, 'urgencias_pediatricas'), unidade: 'atendimentos', inverso: false, eixo: 'E3' },
+    { label: 'Utentes Inscritos CSP', valorA: extractLatestForInst(utentesData, nameA, 'utentes_inscritos_csp'), valorB: extractLatestForInst(utentesData, nameB, 'utentes_inscritos_csp'), unidade: 'utentes', inverso: false, eixo: 'E4' },
+    { label: '% sem MdF', valorA: extractLatestForInst(utentesData, nameA, 'total_utentes_sem_mdf_atribuido0'), valorB: extractLatestForInst(utentesData, nameB, 'total_utentes_sem_mdf_atribuido0'), unidade: '%', inverso: true, eixo: 'E4' },
+  ];
 
   // Group by eixo
-  const grouped = useMemo(() => {
-    const groups: Record<string, typeof comparisons> = {};
-    for (const c of comparisons) {
-      if (!groups[c.eixo]) groups[c.eixo] = [];
-      groups[c.eixo].push(c);
-    }
-    return groups;
-  }, [comparisons]);
+  const grouped: Record<string, typeof comparisons> = {};
+  for (const c of comparisons) {
+    if (!grouped[c.eixo]) grouped[c.eixo] = [];
+    grouped[c.eixo].push(c);
+  }
 
   const eixoNames: Record<string, string> = {
     E1: 'Resposta a Tempo e Horas', E2: 'Bebes e Maes', E3: 'Urgencias', E4: 'Cuidados Primarios',

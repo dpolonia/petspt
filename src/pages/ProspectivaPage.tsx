@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { FORECAST_CATALOG, getForecastIndicatorById } from '../config/forecastCatalog';
 import { useSNSData } from '../hooks/useSNSData';
@@ -15,11 +15,6 @@ export default function ProspectivaPage() {
   const [customBenchmark, setCustomBenchmark] = useState('');
 
   const indicator = getForecastIndicatorById(selectedId);
-
-  // Update selected when URL param changes
-  useEffect(() => {
-    if (initialId && initialId !== selectedId) setSelectedId(initialId);
-  }, [initialId]);
 
   // Fetch data
   const query = useMemo(() => {
