@@ -48,6 +48,9 @@ const VALIDATED_URLS: Record<string, string> = {
   ULS_BA: `${ACSS_BASE}/Contrato-Programa-2024-2026-ULS-Baixo-Alentejo-EPE.pdf`,
   ULS_LA: `${ACSS_BASE}/Contrato-Programa-2024-2026-ULS-Litoral-Alentejano-EPE.pdf`,
   ULS_ALG: `${ACSS_BASE}/Contrato-Programa-2024-2026-ULS-do-Algarve-EPE.pdf`,
+  IPO_LX: `${ACSS_BASE}/Contrato-Programa-2024-2026-Acordo-Modificativo-2024-IPO-Lisboa-EPE.pdf`,
+  IPO_CO: `${ACSS_BASE}/Acordo-Modificativo-2024-IPO-Coimbra-Assinado-EPE.pdf`,
+  IPO_PT: `${ACSS_BASE}/Contrato-Programa-2024-2026-Acordo-Modificativo-2024-IPO-Porto-EPE.pdf`,
 };
 
 interface ExtractedData {

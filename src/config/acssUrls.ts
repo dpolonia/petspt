@@ -60,9 +60,9 @@ export const ACSS_CONTRACT_URLS: ACSSContractURL[] = [
   // Algarve — 1 ULS
   { ulsCode: 'ULS_ALG', ulsNome: 'ULS Algarve', cp_2024_2026: `${BASE}/Contrato-Programa-2024-2026-ULS-do-Algarve-EPE.pdf`, validado: true },
   // IPOs — 3
-  { ulsCode: 'IPO_LX', ulsNome: 'IPO Lisboa', validado: false, observacoes: 'IPO — formato de URL diferente, nao encontrado' },
-  { ulsCode: 'IPO_CO', ulsNome: 'IPO Coimbra', validado: false, observacoes: 'IPO — formato de URL diferente, nao encontrado' },
-  { ulsCode: 'IPO_PT', ulsNome: 'IPO Porto', validado: false, observacoes: 'IPO — formato de URL diferente, nao encontrado' },
+  { ulsCode: 'IPO_LX', ulsNome: 'IPO Lisboa', cp_2024_2026: `${BASE}/Contrato-Programa-2024-2026-Acordo-Modificativo-2024-IPO-Lisboa-EPE.pdf`, validado: true },
+  { ulsCode: 'IPO_CO', ulsNome: 'IPO Coimbra', cp_2024_2026: `${BASE}/Acordo-Modificativo-2024-IPO-Coimbra-Assinado-EPE.pdf`, validado: true },
+  { ulsCode: 'IPO_PT', ulsNome: 'IPO Porto', cp_2024_2026: `${BASE}/Contrato-Programa-2024-2026-Acordo-Modificativo-2024-IPO-Porto-EPE.pdf`, validado: true },
 ];
 
 export function getValidatedUrls(): ACSSContractURL[] {
