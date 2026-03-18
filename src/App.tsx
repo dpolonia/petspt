@@ -12,6 +12,7 @@ import TransversaisPage from './pages/TransversaisPage';
 import SobrePage from './pages/SobrePage';
 import ComparadorPage from './pages/ComparadorPage';
 import ProspectivaPage from './pages/ProspectivaPage';
+import BenchmarkingPage from './pages/BenchmarkingPage';
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
               <Route path="/sobre" element={<SobrePage />} />
               <Route path="/comparador" element={<ComparadorPage />} />
               <Route path="/prospectiva" element={<ProspectivaPage />} />
+              <Route path="/benchmarking" element={<BenchmarkingPage />} />
             </Routes>
           </main>
           <Footer />
