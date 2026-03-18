@@ -3,6 +3,7 @@ import { FORECAST_CATALOG, getForecastIndicatorById } from '../config/forecastCa
 import { getQGRTargetByForecastId } from '../config/qgrTargets';
 import { useSNSData } from '../hooks/useSNSData';
 import { forecastByULS, ULSForecastResult } from '../services/forecast/ulsForecast';
+import { useContractData } from '../hooks/useContractData';
 import ChartWrapper from '../components/charts/ChartWrapper';
 
 // Indicators that have ULS decomposition
@@ -19,6 +20,7 @@ export default function BenchmarkingPage() {
   const [selectedId, setSelectedId] = useState('');
   const indicator = getForecastIndicatorById(selectedId);
   const qgrTarget = selectedId ? getQGRTargetByForecastId(selectedId) : undefined;
+  const { allData: contractsFromFirestore, source: contractSource } = useContractData(2024);
 
   // Fetch data
   const query = useMemo(() => {
@@ -217,12 +219,35 @@ export default function BenchmarkingPage() {
             </div>
           )}
 
+          {/* Pipeline Status */}
+          <div className="bg-white rounded-lg border border-gray-200 p-5 mb-6">
+            <h4 className="text-sm font-semibold text-gray-700 mb-3">Estado da Pipeline de Contratos Programa</h4>
+            <div className="grid grid-cols-3 gap-4 text-center text-sm">
+              <div>
+                <span className="text-2xl font-bold text-green-600">{contractsFromFirestore.filter(c => c.fonte === 'pdf_extraido').length || 0}</span>
+                <div className="text-xs text-gray-500 mt-1">PDF extraido</div>
+              </div>
+              <div>
+                <span className="text-2xl font-bold text-yellow-600">{contractsFromFirestore.filter(c => c.fonte === 'projecao_oe').length || 0}</span>
+                <div className="text-xs text-gray-500 mt-1">Projecao OE</div>
+              </div>
+              <div>
+                <span className="text-2xl font-bold text-gray-500">{contractsFromFirestore.filter(c => c.fonte === 'hardcoded').length || 0}</span>
+                <div className="text-xs text-gray-500 mt-1">Hardcoded</div>
+              </div>
+            </div>
+            <div className="mt-2 text-xs text-gray-400 text-center">
+              Fonte: {contractSource === 'firestore' ? 'Firestore (PDFs extraidos)' : 'Dados hardcoded (fallback)'}
+              &nbsp;&middot;&nbsp; 31 URLs validadas de 42 ULS/IPO
+            </div>
+          </div>
+
           {/* Methodology */}
           <div className="bg-white rounded-lg border border-gray-200 p-5 text-xs text-gray-500">
             <h4 className="font-semibold text-gray-700 mb-2">Metodologia</h4>
             <p>
               Cada ULS e analisada individualmente com o modelo Holt-Winters aditivo (Sprint 6).
-              As metas contratuais provem dos Contratos Programa publicados pela ACSS.
+              As metas contratuais provem dos Contratos Programa publicados pela ACSS (31 PDFs validados).
               Para ULS sem CP disponivel, as metas sao projectadas como:
               meta(N) = meta(N-1) &times; (1 + &Delta;OE%), onde &Delta;OE% e a variacao do orcamento SNS.
             </p>
