@@ -8,6 +8,7 @@ import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
 import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo } from '../services/staticData';
+import AISummary from '../components/eixo/AISummary';
 // dataTransform available if needed for future API integrations
 import { ULS_REGISTRY } from '../config/ulsRegistry';
 
@@ -87,6 +88,8 @@ export default function Eixo5Page() {
           Generalizacao de CRI de Saude Mental
         </div>
       </div>
+
+      <AISummary eixo={5} />
 
       {/* Cards medidas */}
       <div className="mb-8">

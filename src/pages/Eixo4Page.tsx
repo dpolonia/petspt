@@ -8,6 +8,7 @@ import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
 import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo } from '../services/staticData';
+import AISummary from '../components/eixo/AISummary';
 import { toMultiSeries } from '../services/dataTransform';
 
 export default function Eixo4Page() {
@@ -94,6 +95,8 @@ export default function Eixo4Page() {
           Reforco de meios tecnicos nos CSP
         </div>
       </div>
+
+      <AISummary eixo={4} />
 
       {/* Cards medidas */}
       <div className="mb-8">

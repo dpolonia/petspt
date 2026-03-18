@@ -8,6 +8,8 @@ import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
 import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo, STATIC_DATA } from '../services/staticData';
+import AISummary from '../components/eixo/AISummary';
+import { exportPageAsPDF } from '../utils/exportPDF';
 
 export default function Eixo1Page() {
   const medidas = getMedidasByEixo(1);
@@ -123,17 +125,25 @@ export default function Eixo1Page() {
   }, [licAPIData]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div id="eixo-content" className="max-w-7xl mx-auto px-4 py-8">
       {/* Header */}
       <div className="mb-8">
-        <div className="flex items-center gap-3 mb-2">
-          <div className="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center">
-            <span className="text-orange-600 font-bold">E1</span>
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center">
+              <span className="text-orange-600 font-bold">E1</span>
+            </div>
+            <div>
+              <h1 className="text-xl font-bold text-gray-900">Resposta a Tempo e Horas</h1>
+              <p className="text-sm text-gray-500">Listas de espera cirurgicas e consultas de especialidade</p>
+            </div>
           </div>
-          <div>
-            <h1 className="text-xl font-bold text-gray-900">Resposta a Tempo e Horas</h1>
-            <p className="text-sm text-gray-500">Listas de espera cirurgicas e consultas de especialidade</p>
-          </div>
+          <button
+            onClick={() => exportPageAsPDF('eixo-content', `PETS_Eixo1_${new Date().toISOString().split('T')[0]}.pdf`)}
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 border border-gray-300 rounded-lg text-xs text-gray-600 hover:bg-gray-50 transition-colors"
+          >
+            PDF
+          </button>
         </div>
         <div className="mt-3 p-4 bg-gray-50 rounded-lg text-sm text-gray-600">
           <strong>Resultados esperados:</strong> Fim das listas de espera de cirurgia oncologica no SNS &middot;
@@ -141,6 +151,8 @@ export default function Eixo1Page() {
           Cumprimento regular dos TMRG em todo o territorio nacional
         </div>
       </div>
+
+      <AISummary eixo={1} />
 
       {/* Cards de estado */}
       <div className="mb-8">

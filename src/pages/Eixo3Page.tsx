@@ -8,6 +8,7 @@ import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
 import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo } from '../services/staticData';
+import AISummary from '../components/eixo/AISummary';
 import { toMultiSeries } from '../services/dataTransform';
 
 export default function Eixo3Page() {
@@ -88,6 +89,8 @@ export default function Eixo3Page() {
           Requalificacao dos Servicos de Urgencia
         </div>
       </div>
+
+      <AISummary eixo={3} />
 
       {/* Cards medidas */}
       <div className="mb-8">

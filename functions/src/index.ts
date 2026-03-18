@@ -133,3 +133,5 @@ export const scheduledRefresh = functions
     console.log(`Cache cleanup: removed ${expired.size} expired entries`);
     return null;
   });
+
+export { aiSummary } from './aiSummary';

@@ -9,6 +9,7 @@ import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
 import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo } from '../services/staticData';
+import AISummary from '../components/eixo/AISummary';
 import { toMultiSeries } from '../services/dataTransform';
 
 export default function Eixo2Page() {
@@ -74,6 +75,8 @@ export default function Eixo2Page() {
           Maior humanizacao nos cuidados perinatais
         </div>
       </div>
+
+      <AISummary eixo={2} />
 
       {/* Cards medidas */}
       <div className="mb-8">

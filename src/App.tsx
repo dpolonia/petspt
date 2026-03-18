@@ -10,6 +10,7 @@ import Eixo4Page from './pages/Eixo4Page';
 import Eixo5Page from './pages/Eixo5Page';
 import TransversaisPage from './pages/TransversaisPage';
 import SobrePage from './pages/SobrePage';
+import ComparadorPage from './pages/ComparadorPage';
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
               <Route path="/eixo/5" element={<Eixo5Page />} />
               <Route path="/transversais" element={<TransversaisPage />} />
               <Route path="/sobre" element={<SobrePage />} />
+              <Route path="/comparador" element={<ComparadorPage />} />
             </Routes>
           </main>
           <Footer />
