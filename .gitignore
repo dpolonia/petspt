@@ -1,0 +1,35 @@
+# Chaves e segredos
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Dependências
+node_modules/
+functions/node_modules/
+
+# Build
+dist/
+build/
+.firebase/
+functions/lib/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Firebase
+.firebaserc
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Logs
+*.log
+npm-debug.log*
