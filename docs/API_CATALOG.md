@@ -89,6 +89,40 @@ Base URL: `https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets`
   - `no_de_partos` (int)
   - `no_de_cesarianas` (int)
 
+### 8. `atendimentos-por-tipo-de-urgencia-hospitalar-link`
+- **Total registos**: 6241
+- **Data range**: 2024-01 até 2025-12
+- **Campo período**: `tempo` (formato: `YYYY-MM`)
+- **Campo instituição**: `instituicao`
+- **Campo região**: `regiao`
+- **Métricas**:
+  - `urgencias_geral` (int)
+  - `urgencias_pediatricas` (int)
+  - `urgencia_obstetricia` (int)
+  - `urgencia_psiquiatrica` (int, nullable)
+  - `total_urgencias` (int)
+
+### 9. `lotacao-praticada-por-tipo-de-cama`
+- **Total registos**: 17979
+- **Data range**: 2015-01 até 2025-12
+- **Campo período**: `tempo` (formato: `YYYY-MM`)
+- **Campo instituição**: `instituicao`
+- **Campo região**: `regiao`
+- **Campo tipo**: `tipo_de_camas` (enum: `Camas Cirúrgicas`, `Camas Médicas`, `Camas Neutras`, `Outras Camas`)
+- **Métricas**:
+  - `lotacao` (int)
+
+### 10. `ocupacao-do-internamento`
+- **Total registos**: 7298
+- **Data range**: 2024-01 até present
+- **Campo período**: `tempo` (formato: `YYYY-MM`)
+- **Campo instituição**: `instituicao`
+- **Campo região**: `regiao`
+- **Métricas**:
+  - `no_de_dias_de_internamento` (int)
+  - `lotacao_praticada` (int)
+  - `taxa_anual_de_ocupacao_em_internamento` (float, %)
+
 ## Datasets NÃO Encontrados (usar dados estáticos)
 - `atividade-cirurgica-programada` — Não existe. Usar `intervencoes-cirurgicas`.
 - `tempos-medios-de-espera-para-cirurgia` — Não existe.
