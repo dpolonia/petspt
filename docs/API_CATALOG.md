@@ -123,9 +123,24 @@ Base URL: `https://transparencia.sns.gov.pt/api/explore/v2.1/catalog/datasets`
   - `lotacao_praticada` (int)
   - `taxa_anual_de_ocupacao_em_internamento` (float, %)
 
+### 11. `rastreios-oncologicos`
+- **Total registos**: 6950
+- **Data range**: 2015-01 até 2026-02
+- **Campo período**: `tempo` (formato: `YYYY-MM`)
+- **Campo região**: `regiao` (ex: `Alentejo`)
+- **Campo instituição**: `area_csp` (ex: `Área dos CSP da ULS Alto Alentejo`)
+- **Métricas**:
+  - `proporcao_mulheres_50_70_a_c_mamogr_2_anos` (float, %) — Mama
+  - `proporcao_mulheres_25_60_a_c_colpoc_atuali` (float, %) — Colo do útero
+  - `proporcao_utentes_50_75_a_c_rastreio_cancro_cr` (float, %) — Colorretal
+  - `contagem_de_mulheres_com_registo_de_mamografia_nos_ultimos_dois_anos` (int)
+  - `contagem_de_mulheres_com_colpocitologia_atualizada` (int)
+  - `contagem_de_utentes_inscritos_com_rastreio_do_cancro_do_colon_e_reto_efetuado` (int)
+
 ## Datasets NÃO Encontrados (usar dados estáticos)
 - `atividade-cirurgica-programada` — Não existe. Usar `intervencoes-cirurgicas`.
 - `tempos-medios-de-espera-para-cirurgia` — Não existe.
 - `atividade-assistencial-sns-24` — Não existe. Usar `atividade-operacional-do-sns-24`.
 - `hospitalizacao-domiciliaria` — Não existe.
 - `primeiras-consultas-hospitalares-realizadas` — Não existe. Usar `consultas-em-tempo-real`.
+- `consultas-externas-hospitalares` — Não existe. Usar dados estáticos para consultas psicologia/psiquiatria.
