@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { FORECAST_CATALOG, getForecastIndicatorById } from '../config/forecastCatalog';
-import { useSNSData } from '../hooks/useSNSData';
+import { useAllSNSData } from '../hooks/useAllSNSData';
 import { toTimeSeries } from '../services/dataTransform';
 import { holtWintersForecast, ForecastResult } from '../services/forecast/holtWinters';
 import ForecastChart from '../components/charts/ForecastChart';
@@ -17,23 +17,27 @@ export default function ProspectivaPage() {
   const indicator = getForecastIndicatorById(selectedId);
 
   // Fetch data
+  // Use aggregation for national totals (1 record per month)
   const query = useMemo(() => {
     if (!indicator) return null;
-    const where = indicator.filtroWhere || undefined;
     return {
       dataset: indicator.dataset,
-      where,
+      select: `${indicator.campoPeriodo}, sum(${indicator.campoValor}) as total`,
+      groupBy: indicator.campoPeriodo,
       orderBy: indicator.campoPeriodo,
+      where: indicator.filtroWhere,
       limit: 100,
     };
   }, [indicator]);
 
-  const { data: apiData, loading, error } = useSNSData(query);
+  const { data: apiData, loading, error } = useAllSNSData(query, 200);
 
-  // Transform to time series
+  // Transform to time series — use 'total' from aggregated query, fallback to raw field
   const timeSeries = useMemo(() => {
     if (!indicator || apiData.length === 0) return [];
-    return toTimeSeries(apiData, indicator.campoValor, indicator.campoPeriodo);
+    // Aggregated queries return 'total', raw queries return the original field name
+    const valueField = apiData[0]?.total !== undefined ? 'total' : indicator.campoValor;
+    return toTimeSeries(apiData, valueField, indicator.campoPeriodo);
   }, [apiData, indicator]);
 
   // Run forecast

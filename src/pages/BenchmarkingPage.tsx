@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { FORECAST_CATALOG, getForecastIndicatorById } from '../config/forecastCatalog';
 import { getQGRTargetByForecastId } from '../config/qgrTargets';
-import { useSNSData } from '../hooks/useSNSData';
+import { useAllSNSData } from '../hooks/useAllSNSData';
 import { forecastByULS, ULSForecastResult } from '../services/forecast/ulsForecast';
 import { useContractData } from '../hooks/useContractData';
 import ChartWrapper from '../components/charts/ChartWrapper';
@@ -33,7 +33,7 @@ export default function BenchmarkingPage() {
     };
   }, [indicator]);
 
-  const { data: apiData, loading, error } = useSNSData(query);
+  const { data: apiData, loading, error } = useAllSNSData(query, 3000);
 
   // Run forecasting per ULS
   const ulsResults: ULSForecastResult[] = useMemo(() => {

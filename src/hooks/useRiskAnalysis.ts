@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import { FORECAST_CATALOG } from '../config/forecastCatalog';
-import { fetchSNSData } from '../services/snsApi';
+import { fetchAllSNSRecords } from '../services/snsApi';
 import { assessRiskForIndicator, computeRiskSummary, RiskAssessment, RiskSummary } from '../services/forecast/riskEngine';
 
 const CACHE_KEY = 'petspt_risk_analysis';
@@ -29,14 +29,14 @@ export function useRiskAnalysis(horizonte: number = 12) {
       setProgress({ completed: idx, total: eligible.length, current: indicator.nome });
 
       try {
-        const response = await fetchSNSData({
+        const records = await fetchAllSNSRecords({
           dataset: indicator.dataset,
           where: indicator.filtroWhere,
           limit: 100,
-        });
+        }, 3000);
 
         const contractMetas = new Map<string, number>();
-        const results = assessRiskForIndicator(response.results, indicator, contractMetas, horizonte);
+        const results = assessRiskForIndicator(records, indicator, contractMetas, horizonte);
         allAssessments.push(...results);
         setAssessments([...allAssessments]);
       } catch (err) {

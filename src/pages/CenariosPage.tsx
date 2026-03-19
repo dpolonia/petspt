@@ -4,7 +4,7 @@ import { SCENARIO_CATALOG } from '../config/scenarioCatalog';
 import { getForecastIndicatorById } from '../config/forecastCatalog';
 import { holtWintersForecast } from '../services/forecast/holtWinters';
 import { applyScenario, computeImpact, ScenarioImpact } from '../services/forecast/scenarioEngine';
-import { useSNSData } from '../hooks/useSNSData';
+import { useAllSNSData } from '../hooks/useAllSNSData';
 import { toTimeSeries } from '../services/dataTransform';
 import ScenarioSlider from '../components/charts/ScenarioSlider';
 import ScenarioComparisonChart from '../components/charts/ScenarioComparisonChart';
@@ -40,18 +40,21 @@ export default function CenariosPage() {
     if (!indicator) return null;
     return {
       dataset: indicator.dataset,
-      where: indicator.filtroWhere,
+      select: `${indicator.campoPeriodo}, sum(${indicator.campoValor}) as total`,
+      groupBy: indicator.campoPeriodo,
       orderBy: indicator.campoPeriodo,
+      where: indicator.filtroWhere,
       limit: 100,
     };
   }, [indicator]);
 
-  const { data: apiData, loading, error } = useSNSData(apiQuery);
+  const { data: apiData, loading, error } = useAllSNSData(apiQuery, 200);
 
   const results = useMemo<{ bau: ForecastResult; cenarioResult: ForecastResult; impacto: ScenarioImpact } | null>(() => {
     if (!apiData.length || !indicator || !scenario) return null;
 
-    const timeSeries = toTimeSeries(apiData, indicator.campoValor, indicator.campoPeriodo);
+    const valueField = apiData[0]?.total !== undefined ? 'total' : indicator.campoValor;
+    const timeSeries = toTimeSeries(apiData, valueField, indicator.campoPeriodo);
     if (timeSeries.length < 4) return null;
 
     const points = timeSeries.map(p => ({ periodo: p.periodo, valor: p.valor as number }));
