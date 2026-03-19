@@ -50,16 +50,22 @@ export async function fetchSNSData(params: SNSQueryParams): Promise<SNSResponse>
   searchParams.set('limit', String(limit));
   searchParams.set('offset', String(offset));
 
-  // Em produção, redirigir para Cloud Function proxy
-  const isProduction = import.meta.env.PROD;
-  const url = isProduction
-    ? `/api/sns/${dataset}/records?${searchParams.toString()}`
-    : `${BASE_URL}/${dataset}/records?${searchParams.toString()}`;
+  // API Transparencia SNS is public with CORS — always call directly
+  const url = `${BASE_URL}/${dataset}/records?${searchParams.toString()}`;
 
   const response = await fetch(url);
 
   if (!response.ok) {
     throw new Error(`SNS API error: ${response.status} ${response.statusText} [dataset: ${dataset}]`);
+  }
+
+  // Validate response is JSON before parsing
+  const contentType = response.headers.get('content-type') || '';
+  if (!contentType.includes('application/json') && !contentType.includes('text/json')) {
+    const preview = await response.text();
+    throw new Error(
+      `SNS API returned non-JSON (${contentType}) for ${dataset}. Preview: ${preview.substring(0, 80)}...`
+    );
   }
 
   return response.json();
