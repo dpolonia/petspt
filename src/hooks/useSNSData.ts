@@ -1,3 +1,4 @@
+/** @deprecated Use useFirestoreData for Firestore-first reads. This hook calls SNS API directly. */
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { fetchSNSData, SNSQueryParams, SNSRecord } from '../services/snsApi';
 

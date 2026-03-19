@@ -1,3 +1,4 @@
+/** @deprecated Use useFirestoreData for Firestore-first reads. This hook calls SNS API with pagination. */
 import { useState, useCallback } from 'react';
 import { fetchAllSNSRecords, SNSQueryParams, SNSRecord } from '../services/snsApi';
 
