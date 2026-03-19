@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import {
   ResponsiveContainer, ComposedChart, Bar, Line,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend,
@@ -10,9 +10,12 @@ import PeriodBackground from '../components/common/PeriodBackground';
 import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo } from '../services/staticData';
 import AISummary from '../components/eixo/AISummary';
+import ChartViewToggle, { ChartView } from '../components/charts/ChartViewToggle';
+import { filterFromBaseline, aggregateToQuarterly, cumulativeYearly } from '../services/dataTransform';
 
 export default function Eixo2Page() {
   const medidas = getMedidasByEixo(2);
+  const [chartView, setChartView] = useState<ChartView>('mensal');
 
   // Aggregated: partos + cesarianas per month (national)
   const { data: partosData, loading, error } = useSNSData(useMemo(() => ({
@@ -25,21 +28,27 @@ export default function Eixo2Page() {
 
   const toYM = (t: unknown) => String(t || '').substring(0, 7);
 
-  const partosChart = useMemo(() => {
+  function applyView<T extends { periodo: string }>(data: T[], fields: string[]): T[] {
+    const filtered = filterFromBaseline(data);
+    if (chartView === 'trimestral') return aggregateToQuarterly(filtered, fields) as unknown as T[];
+    if (chartView === 'cumulativo') return cumulativeYearly(filtered, fields) as unknown as T[];
+    return filtered;
+  }
+
+  const partosChart = (() => {
     if (partosData.length === 0) return [];
-    return partosData.map(r => ({
+    const raw = partosData.map(r => ({
       periodo: toYM(r.tempo),
       partos: Number(r.partos) || 0,
       cesarianas: Number(r.cesarianas) || 0,
-    })).filter(r => r.periodo >= '2024-01').sort((a, b) => a.periodo.localeCompare(b.periodo));
-  }, [partosData]);
+    })).sort((a, b) => a.periodo.localeCompare(b.periodo));
+    return applyView(raw, ['partos', 'cesarianas']);
+  })();
 
-  const taxaChart = useMemo(() => {
-    return partosChart.map(p => ({
-      periodo: p.periodo,
-      taxa: p.partos > 0 ? Math.round((p.cesarianas / p.partos) * 1000) / 10 : 0,
-    }));
-  }, [partosChart]);
+  const taxaChart = partosChart.map(p => ({
+    periodo: p.periodo,
+    taxa: p.partos > 0 ? Math.round((p.cesarianas / p.partos) * 1000) / 10 : 0,
+  }));
 
   const snsGravidaData = [
     { destino: 'Urgencia Hospitalar', valor: 79.5, cor: '#ef4444' },
@@ -75,6 +84,10 @@ export default function Eixo2Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {medidas.map(m => <MedidaCard key={m.id} medida={m} compact />)}
         </div>
+      </div>
+
+      <div className="flex justify-end mb-4">
+        <ChartViewToggle view={chartView} onChange={setChartView} />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">

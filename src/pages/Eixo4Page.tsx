@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import {
   ResponsiveContainer, ComposedChart, Bar, Line,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend, ReferenceLine,
@@ -9,10 +9,13 @@ import PeriodBackground from '../components/common/PeriodBackground';
 import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo } from '../services/staticData';
 import AISummary from '../components/eixo/AISummary';
+import ChartViewToggle, { ChartView } from '../components/charts/ChartViewToggle';
+import { filterFromBaseline, aggregateToQuarterly, cumulativeYearly } from '../services/dataTransform';
 // dataTransform available if needed
 
 export default function Eixo4Page() {
   const medidas = getMedidasByEixo(4);
+  const [chartView, setChartView] = useState<ChartView>('mensal');
 
   // ─── API: Utentes CSP ───
   // Fields: periodo, ars, aces, utentes_inscritos_csp, total_utentes_com_mdf_atribuido,
@@ -37,28 +40,34 @@ export default function Eixo4Page() {
 
   const toYM = (t: unknown) => String(t || '').substring(0, 7);
 
+  function applyView<T extends { periodo: string }>(data: T[], fields: string[]): T[] {
+    const filtered = filterFromBaseline(data);
+    if (chartView === 'trimestral') return aggregateToQuarterly(filtered, fields) as unknown as T[];
+    if (chartView === 'cumulativo') return cumulativeYearly(filtered, fields) as unknown as T[];
+    return filtered;
+  }
+
   // ─── Transform: Utentes sem MdF evolução ───
-  const utentesChartData = useMemo(() => {
+  const utentesChartData = (() => {
     if (utentesData.length === 0) return [];
-    return utentesData.map(r => ({
+    const raw = utentesData.map(r => ({
       periodo: toYM(r.periodo),
       sem_mdf: Number(r.sem_mdf) || 0,
       com_mdf: Number(r.com_mdf) || 0,
-    })).filter(r => r.periodo >= '2024-01').sort((a, b) => a.periodo.localeCompare(b.periodo));
-  }, [utentesData]);
+    })).sort((a, b) => a.periodo.localeCompare(b.periodo));
+    return applyView(raw, ['sem_mdf', 'com_mdf']);
+  })();
 
   // ─── Transform: % sem MdF evolução ───
-  const pctSemMdfData = useMemo(() => {
-    return utentesChartData.map(p => ({
-      periodo: p.periodo,
-      pct_sem_mdf: p.sem_mdf > 0 && p.com_mdf > 0
-        ? Math.round((p.sem_mdf / (p.sem_mdf + p.com_mdf)) * 1000) / 10
-        : 0,
-    }));
-  }, [utentesChartData]);
+  const pctSemMdfData = utentesChartData.map(p => ({
+    periodo: p.periodo,
+    pct_sem_mdf: p.sem_mdf > 0 && p.com_mdf > 0
+      ? Math.round((p.sem_mdf / (p.sem_mdf + p.com_mdf)) * 1000) / 10
+      : 0,
+  }));
 
   // ─── Transform: Rastreios ───
-  const rastreiosChartData = useMemo(() => {
+  const rastreiosChartData = (() => {
     if (rastreiosData.length > 0) {
       return rastreiosData
         .map(r => ({
@@ -74,7 +83,7 @@ export default function Eixo4Page() {
       { periodo: '2023-12', mama: 54.74, colo: 54.96, colorretal: 56.33 },
       { periodo: '2024-12', mama: 65.42, colo: 59.66, colorretal: 58.42 },
     ];
-  }, [rastreiosData]);
+  })();
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -104,6 +113,10 @@ export default function Eixo4Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {medidas.map(m => <MedidaCard key={m.id} medida={m} compact />)}
         </div>
+      </div>
+
+      <div className="flex justify-end mb-4">
+        <ChartViewToggle view={chartView} onChange={setChartView} />
       </div>
 
       {/* G1: Utentes sem MdF */}

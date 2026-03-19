@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import {
   ResponsiveContainer, ComposedChart, Bar, Line, XAxis, YAxis,
   CartesianGrid, Tooltip, Legend,
@@ -6,13 +6,16 @@ import {
 import ChartWrapper from '../components/charts/ChartWrapper';
 import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
+import ChartViewToggle, { ChartView } from '../components/charts/ChartViewToggle';
 import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo, STATIC_DATA } from '../services/staticData';
+import { filterFromBaseline, aggregateToQuarterly, cumulativeYearly } from '../services/dataTransform';
 import AISummary from '../components/eixo/AISummary';
 import { exportPageAsPDF } from '../utils/exportPDF';
 
 export default function Eixo1Page() {
   const medidas = getMedidasByEixo(1);
+  const [chartView, setChartView] = useState<ChartView>('mensal');
   const staticEixo1 = STATIC_DATA.eixo1;
 
   // Aggregated queries: 1 record per month (national totals), <100 records each
@@ -43,42 +46,52 @@ export default function Eixo1Page() {
   // Parse ISO date to YYYY-MM
   const toYM = (t: unknown) => String(t || '').substring(0, 7);
 
-  const cirurgiaChart = useMemo(() => {
+  // Apply view transform to any chart data
+  function applyView<T extends { periodo: string }>(data: T[], fields: string[]): T[] {
+    const filtered = filterFromBaseline(data);
+    if (chartView === 'trimestral') return aggregateToQuarterly(filtered, fields) as unknown as T[];
+    if (chartView === 'cumulativo') return cumulativeYearly(filtered, fields) as unknown as T[];
+    return filtered;
+  }
+
+  const cirurgiaChart = (() => {
     if (cirurgiaData.length > 0) {
-      return cirurgiaData.map(r => ({ periodo: toYM(r.tempo), total: Number(r.total) || 0 }))
-        .filter(r => r.periodo >= '2024-01').sort((a, b) => a.periodo.localeCompare(b.periodo));
+      const raw = cirurgiaData.map(r => ({ periodo: toYM(r.tempo), total: Number(r.total) || 0 }))
+        .sort((a, b) => a.periodo.localeCompare(b.periodo));
+      return applyView(raw, ['total']);
     }
     return [
       { periodo: '2023-Q1', total: staticEixo1.cirurgia_nao_onco.operados_q1_2023 + staticEixo1.oncostop.cirurgias_onco_q1_2023 },
       { periodo: '2024-Q1', total: staticEixo1.cirurgia_nao_onco.operados_q1_2024 + staticEixo1.oncostop.cirurgias_onco_q1_2024 },
       { periodo: '2025-Q1', total: staticEixo1.cirurgia_nao_onco.operados_q1_2025 + staticEixo1.oncostop.cirurgias_onco_q1_2025 },
     ];
-  }, [cirurgiaData, staticEixo1]);
+  })();
 
-  const tmrgChart = useMemo(() => [
+  const tmrgChart = [
     { periodo: '2024-05', oncologica: 2645, nao_oncologica: null as number | null },
     { periodo: '2024-08', oncologica: 0, nao_oncologica: null as number | null },
     { periodo: '2024-11', oncologica: 168, nao_oncologica: null as number | null },
     { periodo: '2025-03', oncologica: 180, nao_oncologica: 17149 },
-  ], []);
+  ];
 
-  const consultasChart = useMemo(() => {
+  const consultasChart = (() => {
     if (consultasData.length > 0) {
-      return consultasData.map(r => ({
+      const raw = consultasData.map(r => ({
         periodo: toYM(r.tempo),
         total_cth: Number(r.total_cth) || 0,
         dentro_tmrg: Number(r.dentro_tmrg) || 0,
-      })).filter(r => r.periodo >= '2024-01').sort((a, b) => a.periodo.localeCompare(b.periodo));
+      })).sort((a, b) => a.periodo.localeCompare(b.periodo));
+      return applyView(raw, ['total_cth', 'dentro_tmrg']);
     }
     return [
       { periodo: '2024-Q1', total_cth: staticEixo1.consultas_especialidade.cth_q1_2024, dentro_tmrg: staticEixo1.consultas_especialidade.cth_q1_2024 },
       { periodo: '2025-Q1', total_cth: staticEixo1.consultas_especialidade.cth_q1_2025, dentro_tmrg: staticEixo1.consultas_especialidade.cth_q1_2025 },
     ];
-  }, [consultasData, staticEixo1]);
+  })();
 
-  const licChart = useMemo(() => {
+  const licChart = (() => {
     if (licData.length > 0) {
-      return licData.map(r => {
+      const raw = licData.map(r => {
         const inscritos = Number(r.inscritos) || 0;
         const dentro = Number(r.dentro_tmrg) || 0;
         return {
@@ -87,10 +100,11 @@ export default function Eixo1Page() {
           dentro_tmrg: dentro,
           pct_dentro: inscritos > 0 ? Math.round((dentro / inscritos) * 1000) / 10 : 0,
         };
-      }).filter(r => r.periodo >= '2024-01').sort((a, b) => a.periodo.localeCompare(b.periodo));
+      }).sort((a, b) => a.periodo.localeCompare(b.periodo));
+      return applyView(raw, ['inscritos_lic', 'dentro_tmrg']);
     }
     return [];
-  }, [licData]);
+  })();
 
   return (
     <div id="eixo-content" className="max-w-7xl mx-auto px-4 py-8">
@@ -124,6 +138,10 @@ export default function Eixo1Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {medidas.map(m => <MedidaCard key={m.id} medida={m} compact />)}
         </div>
+      </div>
+
+      <div className="flex justify-end mb-4">
+        <ChartViewToggle view={chartView} onChange={setChartView} />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">

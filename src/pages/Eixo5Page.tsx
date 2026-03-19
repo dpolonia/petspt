@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import {
   ResponsiveContainer, ComposedChart, Bar,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend,
@@ -9,6 +9,8 @@ import PeriodBackground from '../components/common/PeriodBackground';
 import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo } from '../services/staticData';
 import AISummary from '../components/eixo/AISummary';
+import ChartViewToggle, { ChartView } from '../components/charts/ChartViewToggle';
+import { filterFromBaseline, aggregateToQuarterly, cumulativeYearly } from '../services/dataTransform';
 // dataTransform available if needed for future API integrations
 import { ULS_REGISTRY } from '../config/ulsRegistry';
 
@@ -28,6 +30,7 @@ const ECSM_ULS = [
 
 export default function Eixo5Page() {
   const medidas = getMedidasByEixo(5);
+  const [chartView, setChartView] = useState<ChartView>('mensal');
 
   // ─── API: Camas — lotacao-praticada-por-tipo-de-cama ───
   // Note: this dataset doesn't have a specialty field, only tipo_de_camas (Cirúrgicas, Médicas, Neutras, Outras)
@@ -44,16 +47,23 @@ export default function Eixo5Page() {
 
   const toYM = (t: unknown) => String(t || '').substring(0, 7);
 
+  function applyView<T extends { periodo: string }>(data: T[], fields: string[]): T[] {
+    const filtered = filterFromBaseline(data);
+    if (chartView === 'trimestral') return aggregateToQuarterly(filtered, fields) as unknown as T[];
+    if (chartView === 'cumulativo') return cumulativeYearly(filtered, fields) as unknown as T[];
+    return filtered;
+  }
+
   // ─── Transform: Camas ───
-  const camasChartData = useMemo(() => {
+  const camasChartData = (() => {
     if (camasData.length > 0) {
-      return camasData
+      const raw = camasData
         .map(r => ({ periodo: toYM(r.tempo), camas: Number(r.total_lotacao || 0) }))
-        .filter(r => r.periodo >= '2024-01')
         .sort((a, b) => a.periodo.localeCompare(b.periodo));
+      return applyView(raw, ['camas']);
     }
     return [];
-  }, [camasData]);
+  })();
 
   // ─── Consultas psicologia/psiquiatria — dados estáticos ───
   const consultasData = [
@@ -62,15 +72,13 @@ export default function Eixo5Page() {
   ];
 
   // ─── Mapa CRI/ECSM ───
-  const ulsMapData = useMemo(() => {
-    return ULS_REGISTRY
-      .filter(u => !u.code.startsWith('IPO'))
-      .map(uls => ({
-        ...uls,
-        temCRI: CRI_ULS.includes(uls.code),
-        temECSM: ECSM_ULS.includes(uls.code),
-      }));
-  }, []);
+  const ulsMapData = ULS_REGISTRY
+    .filter(u => !u.code.startsWith('IPO'))
+    .map(uls => ({
+      ...uls,
+      temCRI: CRI_ULS.includes(uls.code),
+      temECSM: ECSM_ULS.includes(uls.code),
+    }));
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -103,6 +111,10 @@ export default function Eixo5Page() {
       </div>
 
       {/* Graficos */}
+      <div className="flex justify-end mb-4">
+        <ChartViewToggle view={chartView} onChange={setChartView} />
+      </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
         {/* G1: Consultas psicologia/psiquiatria */}
         <ChartWrapper

@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import {
   ResponsiveContainer, ComposedChart, Bar, Line,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend,
@@ -9,9 +9,12 @@ import PeriodBackground from '../components/common/PeriodBackground';
 import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo } from '../services/staticData';
 import AISummary from '../components/eixo/AISummary';
+import ChartViewToggle, { ChartView } from '../components/charts/ChartViewToggle';
+import { filterFromBaseline, aggregateToQuarterly, cumulativeYearly } from '../services/dataTransform';
 
 export default function Eixo3Page() {
   const medidas = getMedidasByEixo(3);
+  const [chartView, setChartView] = useState<ChartView>('mensal');
   const toYM = (t: unknown) => String(t || '').substring(0, 7);
 
   // SNS24 — already 1 record per month (no ULS decomposition)
@@ -31,21 +34,30 @@ export default function Eixo3Page() {
     limit: 100,
   }), []));
 
-  const sns24Chart = useMemo(() => {
-    if (sns24Data.length === 0) return [];
-    return sns24Data.map(r => ({ periodo: toYM(r.periodo), chamadas: Number(r.valor) || 0 }))
-      .sort((a, b) => a.periodo.localeCompare(b.periodo));
-  }, [sns24Data]);
+  function applyView<T extends { periodo: string }>(data: T[], fields: string[]): T[] {
+    const filtered = filterFromBaseline(data);
+    if (chartView === 'trimestral') return aggregateToQuarterly(filtered, fields) as unknown as T[];
+    if (chartView === 'cumulativo') return cumulativeYearly(filtered, fields) as unknown as T[];
+    return filtered;
+  }
 
-  const urgenciasChart = useMemo(() => {
+  const sns24Chart = (() => {
+    if (sns24Data.length === 0) return [];
+    const raw = sns24Data.map(r => ({ periodo: toYM(r.periodo), chamadas: Number(r.valor) || 0 }))
+      .sort((a, b) => a.periodo.localeCompare(b.periodo));
+    return applyView(raw, ['chamadas']);
+  })();
+
+  const urgenciasChart = (() => {
     if (urgenciasData.length === 0) return [];
-    return urgenciasData.map(r => ({
+    const raw = urgenciasData.map(r => ({
       periodo: toYM(r.tempo),
       geral: Number(r.geral) || 0,
       pediatrica: Number(r.pediatrica) || 0,
       obstetricia: Number(r.obstetricia) || 0,
-    })).filter(r => r.periodo >= '2024-01').sort((a, b) => a.periodo.localeCompare(b.periodo));
-  }, [urgenciasData]);
+    })).sort((a, b) => a.periodo.localeCompare(b.periodo));
+    return applyView(raw, ['geral', 'pediatrica', 'obstetricia']);
+  })();
 
   const cacData = [
     { periodo: '2024-08', atendimentos: 2000, cac: 2 },
@@ -83,6 +95,10 @@ export default function Eixo3Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {medidas.map(m => <MedidaCard key={m.id} medida={m} compact />)}
         </div>
+      </div>
+
+      <div className="flex justify-end mb-4">
+        <ChartViewToggle view={chartView} onChange={setChartView} />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">

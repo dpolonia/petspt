@@ -134,3 +134,50 @@ export function filterByDateRange(
     return true;
   });
 }
+
+// ─── Chart view transforms ───────────────────────────
+
+export function filterFromBaseline<T extends { periodo: string }>(data: T[], baseline = '2024-01'): T[] {
+  return data.filter(d => d.periodo >= baseline);
+}
+
+type PeriodoRow = { periodo: string } & Record<string, number | string>;
+
+export function aggregateToQuarterly<T extends { periodo: string; [key: string]: unknown }>(
+  data: T[], valueFields: string[]
+): PeriodoRow[] {
+  const byQ = new Map<string, Record<string, number>>();
+  for (const d of data) {
+    const [year, month] = d.periodo.split('-').map(Number);
+    const q = `${year}-Q${Math.ceil(month / 3)}`;
+    if (!byQ.has(q)) byQ.set(q, {});
+    const entry = byQ.get(q)!;
+    for (const f of valueFields) {
+      const v = Number(d[f]);
+      if (!isNaN(v)) entry[f] = (entry[f] || 0) + v;
+    }
+  }
+  return Array.from(byQ.entries()).sort(([a], [b]) => a.localeCompare(b))
+    .map(([periodo, vals]) => ({ periodo, ...vals }));
+}
+
+export function cumulativeYearly<T extends { periodo: string; [key: string]: unknown }>(
+  data: T[], valueFields: string[]
+): PeriodoRow[] {
+  const result: PeriodoRow[] = [];
+  const accum: Record<string, Record<string, number>> = {};
+  for (const d of data) {
+    const year = d.periodo.split('-')[0];
+    if (!accum[year]) accum[year] = {};
+    const entry: Record<string, number> = {};
+    for (const f of valueFields) {
+      const v = Number(d[f]);
+      if (!isNaN(v)) {
+        accum[year][f] = (accum[year][f] || 0) + v;
+        entry[f] = accum[year][f];
+      }
+    }
+    result.push({ periodo: d.periodo, ...entry });
+  }
+  return result;
+}
