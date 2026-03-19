@@ -36,8 +36,8 @@ export interface RiskSummary {
   amarelos: number;
   vermelhos: number;
   cinzentos: number;
-  porULS: Map<string, { uls: ULS; score: number; alertas: RiskAssessment[] }>;
-  porIndicador: Map<string, { indicador: string; eixo: number; verdes: number; amarelos: number; vermelhos: number; cinzentos: number }>;
+  porULS: Record<string, { uls: ULS; score: number; alertas: RiskAssessment[] }>;
+  porIndicador: Record<string, { indicador: string; eixo: number; verdes: number; amarelos: number; vermelhos: number; cinzentos: number }>;
   topRiscos: RiskAssessment[];
   calculadoEm: string;
 }
@@ -139,25 +139,25 @@ export function computeRiskSummary(assessments: RiskAssessment[]): RiskSummary {
     amarelos: assessments.filter(a => a.risco === 'amarelo').length,
     vermelhos: assessments.filter(a => a.risco === 'vermelho').length,
     cinzentos: assessments.filter(a => a.risco === 'cinzento').length,
-    porULS: new Map(),
-    porIndicador: new Map(),
+    porULS: {},
+    porIndicador: {},
     topRiscos: [],
     calculadoEm: new Date().toISOString(),
   };
 
   for (const a of assessments) {
-    if (!summary.porULS.has(a.ulsCode)) {
+    if (!summary.porULS[a.ulsCode]) {
       const uls = ULS_REGISTRY.find(u => u.code === a.ulsCode)!;
-      summary.porULS.set(a.ulsCode, { uls, score: 0, alertas: [] });
+      summary.porULS[a.ulsCode] = { uls, score: 0, alertas: [] };
     }
-    const ulsEntry = summary.porULS.get(a.ulsCode)!;
+    const ulsEntry = summary.porULS[a.ulsCode];
     ulsEntry.alertas.push(a);
     ulsEntry.score += a.risco === 'vermelho' ? 3 : a.risco === 'amarelo' ? 1 : 0;
 
-    if (!summary.porIndicador.has(a.indicatorId)) {
-      summary.porIndicador.set(a.indicatorId, { indicador: a.indicatorNome, eixo: a.eixo, verdes: 0, amarelos: 0, vermelhos: 0, cinzentos: 0 });
+    if (!summary.porIndicador[a.indicatorId]) {
+      summary.porIndicador[a.indicatorId] = { indicador: a.indicatorNome, eixo: a.eixo, verdes: 0, amarelos: 0, vermelhos: 0, cinzentos: 0 };
     }
-    const indEntry = summary.porIndicador.get(a.indicatorId)!;
+    const indEntry = summary.porIndicador[a.indicatorId];
     if (a.risco === 'verde') indEntry.verdes++;
     else if (a.risco === 'amarelo') indEntry.amarelos++;
     else if (a.risco === 'vermelho') indEntry.vermelhos++;

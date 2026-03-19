@@ -14,7 +14,7 @@ export default function AlertasPage() {
 
   const indicatorIds = [...new Set(assessments.map(a => a.indicatorId))];
   const ulsRanking = summary
-    ? Array.from(summary.porULS.entries()).sort(([, a], [, b]) => b.score - a.score)
+    ? Object.entries(summary.porULS).sort(([, a], [, b]) => b.score - a.score)
     : [];
 
   return (
@@ -191,7 +191,7 @@ export default function AlertasPage() {
           <div className="mb-8">
             <h2 className="text-sm font-semibold text-gray-700 mb-3">Resumo por Indicador</h2>
             <div className="space-y-2">
-              {Array.from(summary.porIndicador.entries()).map(([id, ind]) => {
+              {Object.entries(summary.porIndicador).map(([id, ind]) => {
                 const total = ind.verdes + ind.amarelos + ind.vermelhos + ind.cinzentos;
                 return (
                   <div key={id} className="bg-white rounded-lg border border-gray-200 p-3">
