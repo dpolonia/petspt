@@ -6,7 +6,7 @@ import {
 import ChartWrapper from '../components/charts/ChartWrapper';
 import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
-import { useAllSNSData } from '../hooks/useAllSNSData';
+import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo } from '../services/staticData';
 import AISummary from '../components/eixo/AISummary';
 // dataTransform available if needed for future API integrations
@@ -40,13 +40,16 @@ export default function Eixo5Page() {
     groupBy: 'tempo',
     select: 'tempo, sum(lotacao) as total_lotacao',
   }), []);
-  const { data: camasData, loading: camasLoading, error: camasError } = useAllSNSData(camasQuery);
+  const { data: camasData, loading: camasLoading, error: camasError } = useSNSData(camasQuery);
+
+  const toYM = (t: unknown) => String(t || '').substring(0, 7);
 
   // ─── Transform: Camas ───
   const camasChartData = useMemo(() => {
     if (camasData.length > 0) {
       return camasData
-        .map(r => ({ periodo: String(r.tempo), camas: Number(r.total_lotacao || 0) }))
+        .map(r => ({ periodo: toYM(r.tempo), camas: Number(r.total_lotacao || 0) }))
+        .filter(r => r.periodo >= '2024-01')
         .sort((a, b) => a.periodo.localeCompare(b.periodo));
     }
     return [];

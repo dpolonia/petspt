@@ -6,58 +6,47 @@ import {
 import ChartWrapper from '../components/charts/ChartWrapper';
 import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
-import { useAllSNSData } from '../hooks/useAllSNSData';
+import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo } from '../services/staticData';
 import AISummary from '../components/eixo/AISummary';
-import { toMultiSeries } from '../services/dataTransform';
 
 export default function Eixo3Page() {
   const medidas = getMedidasByEixo(3);
+  const toYM = (t: unknown) => String(t || '').substring(0, 7);
 
-  // ─── API: SNS24 ───
-  // Fields: periodo, indicador, valor
-  const sns24Query = useMemo(() => ({
+  // SNS24 — already 1 record per month (no ULS decomposition)
+  const { data: sns24Data, loading: l1, error: e1 } = useSNSData(useMemo(() => ({
     dataset: 'atividade-operacional-do-sns-24',
     where: "periodo >= '2024-01' and indicador = 'Chamadas Atendidas'",
     orderBy: 'periodo',
     limit: 100,
-  }), []);
-  const { data: sns24Data, loading: sns24Loading, error: sns24Error } = useAllSNSData(sns24Query);
+  }), []));
 
-  // ─── API: Urgencias por tipo ───
-  // Fields: tempo, instituicao, urgencias_geral, urgencias_pediatricas, urgencia_obstetricia, total_urgencias
-  const urgenciasQuery = useMemo(() => ({
+  // Urgencias aggregated nationally
+  const { data: urgenciasData, loading: l2, error: e2 } = useSNSData(useMemo(() => ({
     dataset: 'atendimentos-por-tipo-de-urgencia-hospitalar-link',
-    where: "tempo >= '2024-01'",
+    select: 'tempo, sum(urgencias_geral) as geral, sum(urgencias_pediatricas) as pediatrica, sum(urgencia_obstetricia) as obstetricia',
+    groupBy: 'tempo',
     orderBy: 'tempo',
     limit: 100,
-  }), []);
-  const { data: urgenciasData, loading: urgenciasLoading, error: urgenciasError } = useAllSNSData(urgenciasQuery);
+  }), []));
 
-  // ─── Transform: SNS24 chamadas ───
-  const sns24ChartData = useMemo(() => {
+  const sns24Chart = useMemo(() => {
     if (sns24Data.length === 0) return [];
-    const byMonth = new Map<string, number>();
-    for (const r of sns24Data) {
-      const p = String(r.periodo);
-      byMonth.set(p, (byMonth.get(p) || 0) + Number(r.valor || 0));
-    }
-    return Array.from(byMonth.entries())
-      .sort(([a], [b]) => a.localeCompare(b))
-      .map(([periodo, valor]) => ({ periodo, chamadas: valor }));
+    return sns24Data.map(r => ({ periodo: toYM(r.periodo), chamadas: Number(r.valor) || 0 }))
+      .sort((a, b) => a.periodo.localeCompare(b.periodo));
   }, [sns24Data]);
 
-  // ─── Transform: Urgências por tipo ───
-  const urgenciasChartData = useMemo(() => {
+  const urgenciasChart = useMemo(() => {
     if (urgenciasData.length === 0) return [];
-    return toMultiSeries(urgenciasData, {
-      geral: 'urgencias_geral',
-      pediatrica: 'urgencias_pediatricas',
-      obstetricia: 'urgencia_obstetricia',
-    }, 'tempo');
+    return urgenciasData.map(r => ({
+      periodo: toYM(r.tempo),
+      geral: Number(r.geral) || 0,
+      pediatrica: Number(r.pediatrica) || 0,
+      obstetricia: Number(r.obstetricia) || 0,
+    })).filter(r => r.periodo >= '2024-01').sort((a, b) => a.periodo.localeCompare(b.periodo));
   }, [urgenciasData]);
 
-  // ─── CAC — dados estáticos ───
   const cacData = [
     { periodo: '2024-08', atendimentos: 2000, cac: 2 },
     { periodo: '2024-09', atendimentos: 2500, cac: 5 },
@@ -71,7 +60,6 @@ export default function Eixo3Page() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      {/* Header */}
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center">
@@ -84,15 +72,12 @@ export default function Eixo3Page() {
         </div>
         <div className="mt-3 p-4 bg-gray-50 rounded-lg text-sm text-gray-600">
           <strong>Resultados esperados:</strong> Criacao de Centros de Atendimento Clinico &middot;
-          Novos espacos CSP para consultas de urgencia diferidas &middot;
-          Diminuicao de internamentos sociais &middot;
-          Requalificacao dos Servicos de Urgencia
+          Diminuicao de internamentos sociais &middot; Requalificacao dos Servicos de Urgencia
         </div>
       </div>
 
       <AISummary eixo={3} />
 
-      {/* Cards medidas */}
       <div className="mb-8">
         <h2 className="text-sm font-semibold text-gray-700 mb-3">Estado das Medidas ({medidas.length})</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -100,14 +85,8 @@ export default function Eixo3Page() {
         </div>
       </div>
 
-      {/* Graficos row 1 */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-        {/* G1: CAC */}
-        <ChartWrapper
-          titulo="Centros de Atendimento Clinico (CAC)"
-          subtitulo="Atendimentos mensais e n.o de CAC operacionais"
-          fonte="Relatorios GT PETS (Dez 2024, Abr 2025)"
-        >
+        <ChartWrapper titulo="Centros de Atendimento Clinico (CAC)" subtitulo="Atendimentos mensais e n.o de CAC operacionais" fonte="Relatorios GT PETS">
           <ResponsiveContainer width="100%" height="100%">
             <ComposedChart data={cacData}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
@@ -123,21 +102,14 @@ export default function Eixo3Page() {
           </ResponsiveContainer>
         </ChartWrapper>
 
-        {/* G2: Urgências por tipo */}
-        <ChartWrapper
-          titulo="Atendimentos em Urgencia por Tipo"
-          subtitulo="Distribuicao mensal: geral, pediatrica e obstetricia"
-          loading={urgenciasLoading}
-          error={urgenciasError}
-          fonte="Transparencia SNS — atendimentos-por-tipo-de-urgencia-hospitalar-link"
-        >
+        <ChartWrapper titulo="Atendimentos em Urgencia por Tipo" subtitulo="Total nacional mensal" loading={l2} error={e2} fonte="Transparencia SNS">
           <ResponsiveContainer width="100%" height="100%">
-            <ComposedChart data={urgenciasChartData}>
+            <ComposedChart data={urgenciasChart}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
               <PeriodBackground />
               <XAxis dataKey="periodo" tick={{ fontSize: 11 }} />
               <YAxis tick={{ fontSize: 11 }} />
-              <Tooltip />
+              <Tooltip formatter={(value) => Number(value).toLocaleString('pt-PT')} />
               <Legend />
               <Bar dataKey="geral" name="Geral" fill="#ef4444" stackId="a" />
               <Bar dataKey="pediatrica" name="Pediatrica" fill="#3b82f6" stackId="a" />
@@ -147,23 +119,15 @@ export default function Eixo3Page() {
         </ChartWrapper>
       </div>
 
-      {/* G3: SNS24 */}
       <div className="mb-8">
-        <ChartWrapper
-          titulo="Atividade SNS24 — Chamadas Atendidas"
-          subtitulo="Volume mensal de chamadas atendidas pela linha SNS24"
-          loading={sns24Loading}
-          error={sns24Error}
-          fonte="Transparencia SNS — atividade-operacional-do-sns-24"
-          height={350}
-        >
+        <ChartWrapper titulo="Atividade SNS24 — Chamadas Atendidas" subtitulo="Volume mensal" loading={l1} error={e1} fonte="Transparencia SNS" height={350}>
           <ResponsiveContainer width="100%" height="100%">
-            <ComposedChart data={sns24ChartData}>
+            <ComposedChart data={sns24Chart}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
               <PeriodBackground />
               <XAxis dataKey="periodo" tick={{ fontSize: 11 }} />
               <YAxis tick={{ fontSize: 11 }} />
-              <Tooltip />
+              <Tooltip formatter={(value) => Number(value).toLocaleString('pt-PT')} />
               <Legend />
               <Bar dataKey="chamadas" name="Chamadas Atendidas" fill="#6366f1" radius={[3, 3, 0, 0]} />
             </ComposedChart>
@@ -171,7 +135,6 @@ export default function Eixo3Page() {
         </ChartWrapper>
       </div>
 
-      {/* Destaques numericos */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         <div className="bg-white rounded-lg border border-gray-200 p-4 text-center">
           <div className="text-2xl font-bold text-red-600">15</div>
@@ -191,7 +154,6 @@ export default function Eixo3Page() {
         </div>
       </div>
 
-      {/* Detalhe medidas */}
       <div>
         <h2 className="text-sm font-semibold text-gray-700 mb-3">Detalhe das Medidas</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

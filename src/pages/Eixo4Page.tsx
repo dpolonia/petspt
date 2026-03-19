@@ -6,10 +6,10 @@ import {
 import ChartWrapper from '../components/charts/ChartWrapper';
 import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
-import { useAllSNSData } from '../hooks/useAllSNSData';
+import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo } from '../services/staticData';
 import AISummary from '../components/eixo/AISummary';
-import { toMultiSeries } from '../services/dataTransform';
+// dataTransform available if needed
 
 export default function Eixo4Page() {
   const medidas = getMedidasByEixo(4);
@@ -19,40 +19,40 @@ export default function Eixo4Page() {
   //   total_utentes_sem_mdf_atribuido, total_utentes_sem_mdf_atribuido0 (%)
   const utentesQuery = useMemo(() => ({
     dataset: 'utentes-inscritos-em-cuidados-de-saude-primarios',
-    where: "periodo >= '2024-01'",
+    select: 'periodo, sum(total_utentes_sem_mdf_atribuido) as sem_mdf, sum(total_utentes_com_mdf_atribuido) as com_mdf',
+    groupBy: 'periodo',
     orderBy: 'periodo',
     limit: 100,
   }), []);
-  const { data: utentesData, loading: utentesLoading, error: utentesError } = useAllSNSData(utentesQuery);
+  const { data: utentesData, loading: utentesLoading, error: utentesError } = useSNSData(utentesQuery);
 
-  // ─── API: Rastreios oncológicos ───
-  // Fields: tempo, regiao, area_csp, proporcao_mulheres_50_70_a_c_mamogr_2_anos,
-  //   proporcao_mulheres_25_60_a_c_colpoc_atuali, proporcao_utentes_50_75_a_c_rastreio_cancro_cr
   const rastreiosQuery = useMemo(() => ({
     dataset: 'rastreios-oncologicos',
-    where: "tempo >= '2023-01'",
+    select: 'tempo, avg(proporcao_mulheres_50_70_a_c_mamogr_2_anos) as mama, avg(proporcao_mulheres_25_60_a_c_colpoc_atuali) as colo, avg(proporcao_utentes_50_75_a_c_rastreio_cancro_cr) as colorretal',
+    groupBy: 'tempo',
     orderBy: 'tempo',
     limit: 100,
-    groupBy: 'tempo',
-    select: 'tempo, avg(proporcao_mulheres_50_70_a_c_mamogr_2_anos) as mama, avg(proporcao_mulheres_25_60_a_c_colpoc_atuali) as colo, avg(proporcao_utentes_50_75_a_c_rastreio_cancro_cr) as colorretal',
   }), []);
-  const { data: rastreiosData, loading: rastreiosLoading, error: rastreiosError } = useAllSNSData(rastreiosQuery);
+  const { data: rastreiosData, loading: rastreiosLoading, error: rastreiosError } = useSNSData(rastreiosQuery);
+
+  const toYM = (t: unknown) => String(t || '').substring(0, 7);
 
   // ─── Transform: Utentes sem MdF evolução ───
   const utentesChartData = useMemo(() => {
     if (utentesData.length === 0) return [];
-    return toMultiSeries(utentesData, {
-      sem_mdf: 'total_utentes_sem_mdf_atribuido',
-      com_mdf: 'total_utentes_com_mdf_atribuido',
-    }, 'periodo');
+    return utentesData.map(r => ({
+      periodo: toYM(r.periodo),
+      sem_mdf: Number(r.sem_mdf) || 0,
+      com_mdf: Number(r.com_mdf) || 0,
+    })).filter(r => r.periodo >= '2024-01').sort((a, b) => a.periodo.localeCompare(b.periodo));
   }, [utentesData]);
 
   // ─── Transform: % sem MdF evolução ───
   const pctSemMdfData = useMemo(() => {
     return utentesChartData.map(p => ({
       periodo: p.periodo,
-      pct_sem_mdf: (p.sem_mdf as number) > 0 && (p.com_mdf as number) > 0
-        ? Math.round(((p.sem_mdf as number) / ((p.sem_mdf as number) + (p.com_mdf as number))) * 1000) / 10
+      pct_sem_mdf: p.sem_mdf > 0 && p.com_mdf > 0
+        ? Math.round((p.sem_mdf / (p.sem_mdf + p.com_mdf)) * 1000) / 10
         : 0,
     }));
   }, [utentesChartData]);
@@ -62,7 +62,7 @@ export default function Eixo4Page() {
     if (rastreiosData.length > 0) {
       return rastreiosData
         .map(r => ({
-          periodo: String(r.tempo),
+          periodo: toYM(r.tempo),
           mama: Math.round(Number(r.mama || 0) * 10) / 10,
           colo: Math.round(Number(r.colo || 0) * 10) / 10,
           colorretal: Math.round(Number(r.colorretal || 0) * 10) / 10,

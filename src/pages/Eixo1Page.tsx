@@ -1,12 +1,12 @@
 import { useMemo } from 'react';
 import {
   ResponsiveContainer, ComposedChart, Bar, Line, XAxis, YAxis,
-  CartesianGrid, Tooltip, Legend, BarChart,
+  CartesianGrid, Tooltip, Legend,
 } from 'recharts';
 import ChartWrapper from '../components/charts/ChartWrapper';
 import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
-import { useAllSNSData } from '../hooks/useAllSNSData';
+import { useSNSData } from '../hooks/useSNSData';
 import { getMedidasByEixo, STATIC_DATA } from '../services/staticData';
 import AISummary from '../components/eixo/AISummary';
 import { exportPageAsPDF } from '../utils/exportPDF';
@@ -15,118 +15,85 @@ export default function Eixo1Page() {
   const medidas = getMedidasByEixo(1);
   const staticEixo1 = STATIC_DATA.eixo1;
 
-  // ─── API: Cirurgias por instituicao (mensal, desde 2024) ───
-  const cirurgiaQuery = useMemo(() => ({
+  // Aggregated queries: 1 record per month (national totals), <100 records each
+  const { data: cirurgiaData, loading: l1, error: e1 } = useSNSData(useMemo(() => ({
     dataset: 'intervencoes-cirurgicas',
-    where: "tempo >= '2024-01'",
-    select: 'tempo, instituicao, no_intervencoes_cirurgicas_programadas',
+    select: 'tempo, sum(no_intervencoes_cirurgicas_programadas) as total',
+    groupBy: 'tempo',
     orderBy: 'tempo',
     limit: 100,
-    groupBy: 'tempo',
-  }), []);
+  }), []));
 
-  const { data: cirurgiaAPIData, loading: cirurgiaLoading, error: cirurgiaError } = useAllSNSData(cirurgiaQuery);
-
-  // ─── API: Consultas CTH (mensal, desde 2024) ───
-  const consultasQuery = useMemo(() => ({
+  const { data: consultasData, loading: l2, error: e2 } = useSNSData(useMemo(() => ({
     dataset: 'consultas-em-tempo-real',
-    where: "tempo >= '2024-01'",
-    select: 'tempo, no_primeiras_ce_realizadas_com_registo_no_cth, no_primeiras_ce_prestadas_dentro_do_tmrg',
+    select: 'tempo, sum(no_primeiras_ce_realizadas_com_registo_no_cth) as total_cth, sum(no_primeiras_ce_prestadas_dentro_do_tmrg) as dentro_tmrg',
+    groupBy: 'tempo',
     orderBy: 'tempo',
     limit: 100,
-    groupBy: 'tempo',
-  }), []);
+  }), []));
 
-  const { data: consultasAPIData, loading: consultasLoading, error: consultasError } = useAllSNSData(consultasQuery);
-
-  // ─── API: LIC dentro do TMRG ───
-  const licQuery = useMemo(() => ({
+  const { data: licData, loading: l3, error: e3 } = useSNSData(useMemo(() => ({
     dataset: 'inscritos-em-lic-dentro-do-tmrg-180-dias',
-    where: "tempo >= '2024-01'",
-    select: 'tempo, no_de_doentes_inscritos_sigic, no_de_doentes_inscritos_dentro_do_tmrg_sigic, de_inscritos_em_lic_dentro_do_tmrg',
+    select: 'tempo, sum(no_de_doentes_inscritos_sigic) as inscritos, sum(no_de_doentes_inscritos_dentro_do_tmrg_sigic) as dentro_tmrg',
+    groupBy: 'tempo',
     orderBy: 'tempo',
     limit: 100,
-    groupBy: 'tempo',
-  }), []);
+  }), []));
 
-  const { data: licAPIData, loading: licLoading, error: licError } = useAllSNSData(licQuery);
+  // Parse ISO date to YYYY-MM
+  const toYM = (t: unknown) => String(t || '').substring(0, 7);
 
-  // ─── Transform: Cirurgias por trimestre (fallback estático) ───
-  const cirurgiaChartData = useMemo(() => {
-    if (cirurgiaAPIData.length > 0) {
-      // Aggregate by tempo (the API with group_by returns aggregated rows)
-      const byMonth = new Map<string, number>();
-      for (const r of cirurgiaAPIData) {
-        const tempo = String(r.tempo);
-        const val = Number(r.no_intervencoes_cirurgicas_programadas) || 0;
-        byMonth.set(tempo, (byMonth.get(tempo) || 0) + val);
-      }
-      return Array.from(byMonth.entries())
-        .sort(([a], [b]) => a.localeCompare(b))
-        .map(([periodo, total]) => ({ periodo, total }));
+  const cirurgiaChart = useMemo(() => {
+    if (cirurgiaData.length > 0) {
+      return cirurgiaData.map(r => ({ periodo: toYM(r.tempo), total: Number(r.total) || 0 }))
+        .filter(r => r.periodo >= '2024-01').sort((a, b) => a.periodo.localeCompare(b.periodo));
     }
     return [
       { periodo: '2023-Q1', total: staticEixo1.cirurgia_nao_onco.operados_q1_2023 + staticEixo1.oncostop.cirurgias_onco_q1_2023 },
       { periodo: '2024-Q1', total: staticEixo1.cirurgia_nao_onco.operados_q1_2024 + staticEixo1.oncostop.cirurgias_onco_q1_2024 },
       { periodo: '2025-Q1', total: staticEixo1.cirurgia_nao_onco.operados_q1_2025 + staticEixo1.oncostop.cirurgias_onco_q1_2025 },
     ];
-  }, [cirurgiaAPIData, staticEixo1]);
+  }, [cirurgiaData, staticEixo1]);
 
-  // ─── Transform: Doentes fora TMRG (estáticos dos relatórios) ───
-  const tmrgChartData = useMemo(() => [
+  const tmrgChart = useMemo(() => [
     { periodo: '2024-05', oncologica: 2645, nao_oncologica: null as number | null },
     { periodo: '2024-08', oncologica: 0, nao_oncologica: null as number | null },
     { periodo: '2024-11', oncologica: 168, nao_oncologica: null as number | null },
     { periodo: '2025-03', oncologica: 180, nao_oncologica: 17149 },
   ], []);
 
-  // ─── Transform: Consultas CTH ───
-  const consultasChartData = useMemo(() => {
-    if (consultasAPIData.length > 0) {
-      const byMonth = new Map<string, { dentro: number; total: number }>();
-      for (const r of consultasAPIData) {
-        const tempo = String(r.tempo);
-        const dentro = Number(r.no_primeiras_ce_prestadas_dentro_do_tmrg) || 0;
-        const total = Number(r.no_primeiras_ce_realizadas_com_registo_no_cth) || 0;
-        const existing = byMonth.get(tempo) || { dentro: 0, total: 0 };
-        byMonth.set(tempo, { dentro: existing.dentro + dentro, total: existing.total + total });
-      }
-      return Array.from(byMonth.entries())
-        .sort(([a], [b]) => a.localeCompare(b))
-        .map(([periodo, { dentro, total }]) => ({ periodo, dentro_tmrg: dentro, total_cth: total }));
+  const consultasChart = useMemo(() => {
+    if (consultasData.length > 0) {
+      return consultasData.map(r => ({
+        periodo: toYM(r.tempo),
+        total_cth: Number(r.total_cth) || 0,
+        dentro_tmrg: Number(r.dentro_tmrg) || 0,
+      })).filter(r => r.periodo >= '2024-01').sort((a, b) => a.periodo.localeCompare(b.periodo));
     }
     return [
-      { periodo: '2024-Q1', dentro_tmrg: staticEixo1.consultas_especialidade.cth_q1_2024, total_cth: staticEixo1.consultas_especialidade.cth_q1_2024 },
-      { periodo: '2025-Q1', dentro_tmrg: staticEixo1.consultas_especialidade.cth_q1_2025, total_cth: staticEixo1.consultas_especialidade.cth_q1_2025 },
+      { periodo: '2024-Q1', total_cth: staticEixo1.consultas_especialidade.cth_q1_2024, dentro_tmrg: staticEixo1.consultas_especialidade.cth_q1_2024 },
+      { periodo: '2025-Q1', total_cth: staticEixo1.consultas_especialidade.cth_q1_2025, dentro_tmrg: staticEixo1.consultas_especialidade.cth_q1_2025 },
     ];
-  }, [consultasAPIData, staticEixo1]);
+  }, [consultasData, staticEixo1]);
 
-  // ─── Transform: LIC % dentro do TMRG ───
-  const licChartData = useMemo(() => {
-    if (licAPIData.length > 0) {
-      const byMonth = new Map<string, { inscritos: number; dentro: number }>();
-      for (const r of licAPIData) {
-        const tempo = String(r.tempo);
-        const inscritos = Number(r.no_de_doentes_inscritos_sigic) || 0;
-        const dentro = Number(r.no_de_doentes_inscritos_dentro_do_tmrg_sigic) || 0;
-        const existing = byMonth.get(tempo) || { inscritos: 0, dentro: 0 };
-        byMonth.set(tempo, { inscritos: existing.inscritos + inscritos, dentro: existing.dentro + dentro });
-      }
-      return Array.from(byMonth.entries())
-        .sort(([a], [b]) => a.localeCompare(b))
-        .map(([periodo, { inscritos, dentro }]) => ({
-          periodo,
+  const licChart = useMemo(() => {
+    if (licData.length > 0) {
+      return licData.map(r => {
+        const inscritos = Number(r.inscritos) || 0;
+        const dentro = Number(r.dentro_tmrg) || 0;
+        return {
+          periodo: toYM(r.tempo),
           inscritos_lic: inscritos,
           dentro_tmrg: dentro,
           pct_dentro: inscritos > 0 ? Math.round((dentro / inscritos) * 1000) / 10 : 0,
-        }));
+        };
+      }).filter(r => r.periodo >= '2024-01').sort((a, b) => a.periodo.localeCompare(b.periodo));
     }
     return [];
-  }, [licAPIData]);
+  }, [licData]);
 
   return (
     <div id="eixo-content" className="max-w-7xl mx-auto px-4 py-8">
-      {/* Header */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-3">
@@ -138,10 +105,8 @@ export default function Eixo1Page() {
               <p className="text-sm text-gray-500">Listas de espera cirurgicas e consultas de especialidade</p>
             </div>
           </div>
-          <button
-            onClick={() => exportPageAsPDF('eixo-content', `PETS_Eixo1_${new Date().toISOString().split('T')[0]}.pdf`)}
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 border border-gray-300 rounded-lg text-xs text-gray-600 hover:bg-gray-50 transition-colors"
-          >
+          <button onClick={() => exportPageAsPDF('eixo-content', `PETS_Eixo1_${new Date().toISOString().split('T')[0]}.pdf`)}
+            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 border border-gray-300 rounded-lg text-xs text-gray-600 hover:bg-gray-50 transition-colors">
             PDF
           </button>
         </div>
@@ -154,46 +119,31 @@ export default function Eixo1Page() {
 
       <AISummary eixo={1} />
 
-      {/* Cards de estado */}
       <div className="mb-8">
         <h2 className="text-sm font-semibold text-gray-700 mb-3">Estado das Medidas ({medidas.length})</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          {medidas.map(m => (
-            <MedidaCard key={m.id} medida={m} compact />
-          ))}
+          {medidas.map(m => <MedidaCard key={m.id} medida={m} compact />)}
         </div>
       </div>
 
-      {/* Graficos row 1 */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-        {/* Grafico 1: Cirurgias */}
-        <ChartWrapper
-          titulo="Cirurgias Realizadas"
-          subtitulo={cirurgiaAPIData.length > 0 ? 'Intervencoes cirurgicas programadas por mes (dados API)' : 'Comparacao trimestral Q1 (dados dos relatorios GT PETS)'}
-          loading={cirurgiaLoading}
-          error={cirurgiaError ? undefined : undefined}
-          fonte="Transparencia SNS / Relatorios GT PETS"
-        >
+        <ChartWrapper titulo="Cirurgias Realizadas" subtitulo={cirurgiaData.length > 0 ? 'Total nacional mensal (dados API)' : 'Comparacao trimestral Q1'} loading={l1} error={e1} fonte="Transparencia SNS">
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={cirurgiaChartData}>
+            <ComposedChart data={cirurgiaChart}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+              <PeriodBackground />
               <XAxis dataKey="periodo" tick={{ fontSize: 11 }} />
               <YAxis tick={{ fontSize: 11 }} />
               <Tooltip formatter={(value) => Number(value).toLocaleString('pt-PT')} />
               <Legend />
               <Bar dataKey="total" name="Total Cirurgias" fill="#f97316" radius={[4, 4, 0, 0]} />
-            </BarChart>
+            </ComposedChart>
           </ResponsiveContainer>
         </ChartWrapper>
 
-        {/* Grafico 2: Doentes fora TMRG */}
-        <ChartWrapper
-          titulo="Doentes Fora do TMRG"
-          subtitulo="Doentes oncologicos em LIC que ultrapassaram o tempo maximo de resposta garantido"
-          fonte="Relatorios GT PETS (Dez 2024, Abr 2025)"
-        >
+        <ChartWrapper titulo="Doentes Fora do TMRG" subtitulo="Evolucao oncologica e nao-oncologica" fonte="Relatorios GT PETS">
           <ResponsiveContainer width="100%" height="100%">
-            <ComposedChart data={tmrgChartData}>
+            <ComposedChart data={tmrgChart}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
               <PeriodBackground />
               <XAxis dataKey="periodo" tick={{ fontSize: 11 }} />
@@ -207,41 +157,26 @@ export default function Eixo1Page() {
         </ChartWrapper>
       </div>
 
-      {/* Graficos row 2 */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-        {/* Grafico 3: Consultas CTH */}
-        <ChartWrapper
-          titulo="Consultas a Tempo e Horas (CTH)"
-          subtitulo={consultasAPIData.length > 0 ? 'Primeiras consultas realizadas por mes (dados API)' : 'Comparacao trimestral Q1 (dados dos relatorios)'}
-          loading={consultasLoading}
-          error={consultasError ? undefined : undefined}
-          fonte="Transparencia SNS"
-        >
+        <ChartWrapper titulo="Consultas a Tempo e Horas (CTH)" subtitulo={consultasData.length > 0 ? 'Total nacional mensal (dados API)' : 'Comparacao trimestral'} loading={l2} error={e2} fonte="Transparencia SNS">
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={consultasChartData}>
+            <ComposedChart data={consultasChart}>
               <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+              <PeriodBackground />
               <XAxis dataKey="periodo" tick={{ fontSize: 11 }} />
               <YAxis tick={{ fontSize: 11 }} />
               <Tooltip formatter={(value) => Number(value).toLocaleString('pt-PT')} />
               <Legend />
-              <Bar dataKey="total_cth" name="Total Consultas CTH" fill="#3b82f6" radius={[4, 4, 0, 0]} />
-              <Bar dataKey="dentro_tmrg" name="Dentro do TMRG" fill="#22c55e" radius={[4, 4, 0, 0]} />
-            </BarChart>
+              <Bar dataKey="total_cth" name="Total CTH" fill="#3b82f6" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="dentro_tmrg" name="Dentro TMRG" fill="#22c55e" radius={[4, 4, 0, 0]} />
+            </ComposedChart>
           </ResponsiveContainer>
         </ChartWrapper>
 
-        {/* Grafico 4: LIC % dentro TMRG */}
-        <ChartWrapper
-          titulo="Inscritos em LIC dentro do TMRG"
-          subtitulo={licAPIData.length > 0 ? '% de doentes com tempo de espera dentro do limite (dados API)' : 'Sem dados da API disponiveis'}
-          loading={licLoading}
-          error={licError ? undefined : undefined}
-          fonte="Transparencia SNS"
-          height={licChartData.length > 0 ? 400 : 200}
-        >
-          {licChartData.length > 0 ? (
+        <ChartWrapper titulo="Inscritos em LIC dentro do TMRG" subtitulo={licData.length > 0 ? '% dentro do TMRG (dados API)' : ''} loading={l3} error={e3} fonte="Transparencia SNS" height={licChart.length > 0 ? 400 : 200}>
+          {licChart.length > 0 ? (
             <ResponsiveContainer width="100%" height="100%">
-              <ComposedChart data={licChartData}>
+              <ComposedChart data={licChart}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
                 <PeriodBackground />
                 <XAxis dataKey="periodo" tick={{ fontSize: 11 }} />
@@ -254,20 +189,15 @@ export default function Eixo1Page() {
               </ComposedChart>
             </ResponsiveContainer>
           ) : (
-            <div className="flex items-center justify-center h-full text-gray-400 text-sm">
-              Dados da API em carregamento ou indisponiveis
-            </div>
+            <div className="flex items-center justify-center h-full text-gray-400 text-sm">Dados em carregamento</div>
           )}
         </ChartWrapper>
       </div>
 
-      {/* Detalhe das medidas */}
       <div>
         <h2 className="text-sm font-semibold text-gray-700 mb-3">Detalhe das Medidas</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {medidas.map(m => (
-            <MedidaCard key={m.id} medida={m} />
-          ))}
+          {medidas.map(m => <MedidaCard key={m.id} medida={m} />)}
         </div>
       </div>
     </div>
