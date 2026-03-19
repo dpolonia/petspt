@@ -6,7 +6,7 @@ import {
 import ChartWrapper from '../components/charts/ChartWrapper';
 import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
-import { useSNSData } from '../hooks/useSNSData';
+import { useAllSNSData } from '../hooks/useAllSNSData';
 import { getMedidasByEixo } from '../services/staticData';
 import AISummary from '../components/eixo/AISummary';
 import { toMultiSeries } from '../services/dataTransform';
@@ -22,7 +22,7 @@ export default function Eixo3Page() {
     orderBy: 'periodo',
     limit: 100,
   }), []);
-  const { data: sns24Data, loading: sns24Loading, error: sns24Error } = useSNSData(sns24Query);
+  const { data: sns24Data, loading: sns24Loading, error: sns24Error } = useAllSNSData(sns24Query);
 
   // ─── API: Urgencias por tipo ───
   // Fields: tempo, instituicao, urgencias_geral, urgencias_pediatricas, urgencia_obstetricia, total_urgencias
@@ -32,7 +32,7 @@ export default function Eixo3Page() {
     orderBy: 'tempo',
     limit: 100,
   }), []);
-  const { data: urgenciasData, loading: urgenciasLoading, error: urgenciasError } = useSNSData(urgenciasQuery);
+  const { data: urgenciasData, loading: urgenciasLoading, error: urgenciasError } = useAllSNSData(urgenciasQuery);
 
   // ─── Transform: SNS24 chamadas ───
   const sns24ChartData = useMemo(() => {

@@ -6,7 +6,7 @@ import {
 import ChartWrapper from '../components/charts/ChartWrapper';
 import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
-import { useSNSData } from '../hooks/useSNSData';
+import { useAllSNSData } from '../hooks/useAllSNSData';
 import { getMedidasByEixo } from '../services/staticData';
 import AISummary from '../components/eixo/AISummary';
 import { toMultiSeries } from '../services/dataTransform';
@@ -23,7 +23,7 @@ export default function Eixo4Page() {
     orderBy: 'periodo',
     limit: 100,
   }), []);
-  const { data: utentesData, loading: utentesLoading, error: utentesError } = useSNSData(utentesQuery);
+  const { data: utentesData, loading: utentesLoading, error: utentesError } = useAllSNSData(utentesQuery);
 
   // ─── API: Rastreios oncológicos ───
   // Fields: tempo, regiao, area_csp, proporcao_mulheres_50_70_a_c_mamogr_2_anos,
@@ -36,7 +36,7 @@ export default function Eixo4Page() {
     groupBy: 'tempo',
     select: 'tempo, avg(proporcao_mulheres_50_70_a_c_mamogr_2_anos) as mama, avg(proporcao_mulheres_25_60_a_c_colpoc_atuali) as colo, avg(proporcao_utentes_50_75_a_c_rastreio_cancro_cr) as colorretal',
   }), []);
-  const { data: rastreiosData, loading: rastreiosLoading, error: rastreiosError } = useSNSData(rastreiosQuery);
+  const { data: rastreiosData, loading: rastreiosLoading, error: rastreiosError } = useAllSNSData(rastreiosQuery);
 
   // ─── Transform: Utentes sem MdF evolução ───
   const utentesChartData = useMemo(() => {

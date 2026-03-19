@@ -6,7 +6,7 @@ import {
 import ChartWrapper from '../components/charts/ChartWrapper';
 import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
-import { useSNSData } from '../hooks/useSNSData';
+import { useAllSNSData } from '../hooks/useAllSNSData';
 import { getMedidasByEixo, STATIC_DATA } from '../services/staticData';
 import AISummary from '../components/eixo/AISummary';
 import { exportPageAsPDF } from '../utils/exportPDF';
@@ -25,7 +25,7 @@ export default function Eixo1Page() {
     groupBy: 'tempo',
   }), []);
 
-  const { data: cirurgiaAPIData, loading: cirurgiaLoading, error: cirurgiaError } = useSNSData(cirurgiaQuery);
+  const { data: cirurgiaAPIData, loading: cirurgiaLoading, error: cirurgiaError } = useAllSNSData(cirurgiaQuery);
 
   // ─── API: Consultas CTH (mensal, desde 2024) ───
   const consultasQuery = useMemo(() => ({
@@ -37,7 +37,7 @@ export default function Eixo1Page() {
     groupBy: 'tempo',
   }), []);
 
-  const { data: consultasAPIData, loading: consultasLoading, error: consultasError } = useSNSData(consultasQuery);
+  const { data: consultasAPIData, loading: consultasLoading, error: consultasError } = useAllSNSData(consultasQuery);
 
   // ─── API: LIC dentro do TMRG ───
   const licQuery = useMemo(() => ({
@@ -49,7 +49,7 @@ export default function Eixo1Page() {
     groupBy: 'tempo',
   }), []);
 
-  const { data: licAPIData, loading: licLoading, error: licError } = useSNSData(licQuery);
+  const { data: licAPIData, loading: licLoading, error: licError } = useAllSNSData(licQuery);
 
   // ─── Transform: Cirurgias por trimestre (fallback estático) ───
   const cirurgiaChartData = useMemo(() => {

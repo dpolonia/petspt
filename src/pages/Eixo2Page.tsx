@@ -7,7 +7,7 @@ import {
 import ChartWrapper from '../components/charts/ChartWrapper';
 import MedidaCard from '../components/eixo/MedidaCard';
 import PeriodBackground from '../components/common/PeriodBackground';
-import { useSNSData } from '../hooks/useSNSData';
+import { useAllSNSData } from '../hooks/useAllSNSData';
 import { getMedidasByEixo } from '../services/staticData';
 import AISummary from '../components/eixo/AISummary';
 import { toMultiSeries } from '../services/dataTransform';
@@ -24,7 +24,7 @@ export default function Eixo2Page() {
     orderBy: 'tempo',
   }), []);
 
-  const { data: partosData, loading: partosLoading, error: partosError } = useSNSData(partosQuery);
+  const { data: partosData, loading: partosLoading, error: partosError } = useAllSNSData(partosQuery);
 
   // ─── Transform: Partos + Cesarianas por mês ───
   const partosChartData = useMemo(() => {
