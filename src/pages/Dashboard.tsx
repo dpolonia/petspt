@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { MEDIDAS_ESTADO, getScorecard } from '../services/staticData';
-import { DEFAULT_TREND, MeasureTrendResult } from '../services/measureTrend';
+import { calculateMeasureTrend, DEFAULT_TREND, MeasureTrendResult } from '../services/measureTrend';
 import MeasureCard from '../components/dashboard/MeasureCard';
 import MeasureDetailPopup from '../components/dashboard/MeasureDetailPopup';
 import { PERIODS } from '../config/periods';
@@ -29,22 +29,29 @@ export default function Dashboard() {
   const now = new Date().toISOString().split('T')[0];
   const currentPeriod = PERIODS.find(p => { const end = p.end === 'now' ? now : p.end; return now >= p.start && now <= end; });
 
-  // For now, all measures use DEFAULT_TREND (cinzento) — trend calculation
-  // requires API data which loads asynchronously. Future: load data on mount.
-  const trendMap = new Map<string, MeasureTrendResult>();
+  // Build trend for each measure using kpiData if available
+  const trendMap: Record<string, MeasureTrendResult> = {};
   for (const m of MEDIDAS_ESTADO) {
-    // Static measures: use their estado to derive a basic trend color
-    const trend: MeasureTrendResult = {
-      ...DEFAULT_TREND,
-      dataSource: 'dados_fixos',
-      cor: m.estado === 'concluida' ? 'verde' : m.estado === 'em_curso' ? 'amarelo' : m.estado === 'parcial' ? 'laranja' : m.estado === 'nao_implementada' ? 'vermelho' : 'cinzento',
-      label: m.estado === 'concluida' ? 'Concluida' : m.estado === 'em_curso' ? 'Em curso' : m.estado === 'parcial' ? 'Parcial' : m.estado === 'nao_implementada' ? 'Nao implementada' : 'N/A',
-    };
-    trendMap.set(m.id, trend);
+    if (m.kpiData?.dataPoints && m.kpiData.dataPoints.length >= 2) {
+      const trend = calculateMeasureTrend(m.kpiData.dataPoints, m.kpiData.invertido);
+      trend.dataSource = 'dados_fixos';
+      trendMap[m.id] = trend;
+    } else {
+      trendMap[m.id] = {
+        ...DEFAULT_TREND,
+        dataSource: 'dados_fixos',
+        cor: m.estado === 'concluida' ? 'verde' : m.estado === 'em_curso' ? 'amarelo' : m.estado === 'parcial' ? 'laranja' : m.estado === 'nao_implementada' ? 'vermelho' : 'cinzento',
+        label: m.estado === 'concluida' ? 'Concluida' : m.estado === 'em_curso' ? 'Em curso' : m.estado === 'parcial' ? 'Parcial' : m.estado === 'nao_implementada' ? 'Nao implementada' : 'N/A',
+        currentValue: m.kpiData?.current?.valor ?? null,
+        currentPeriodo: m.kpiData?.current?.periodo ?? null,
+        baselineValue: m.kpiData?.baseline?.valor ?? null,
+        referenceValue: m.kpiData?.reference?.valor ?? null,
+      };
+    }
   }
 
   const selected = selectedId ? MEDIDAS_ESTADO.find(m => m.id === selectedId) : null;
-  const selectedTrend = selectedId ? (trendMap.get(selectedId) || DEFAULT_TREND) : DEFAULT_TREND;
+  const selectedTrend = selectedId ? (trendMap[selectedId] || DEFAULT_TREND) : DEFAULT_TREND;
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -96,7 +103,7 @@ export default function Dashboard() {
                   medidaId={m.id}
                   nome={m.nomeCurto}
                   prioridade={m.prioridade}
-                  trend={trendMap.get(m.id) || DEFAULT_TREND}
+                  trend={trendMap[m.id] || DEFAULT_TREND}
                   onClick={() => setSelectedId(m.id)}
                 />
               ))}

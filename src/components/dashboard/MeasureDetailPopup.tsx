@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { MeasureTrendResult } from '../../services/measureTrend';
 import { ResponsiveContainer, ComposedChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, ReferenceArea } from 'recharts';
 
@@ -13,8 +14,22 @@ interface Props {
 }
 
 export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, descricao, trend, fonte }: Props) {
+  const [aiText, setAiText] = useState<string | null>(null);
+  const [aiLoading, setAiLoading] = useState(false);
+
   if (!isOpen) return null;
   const fmt = (v: number) => v >= 1e6 ? `${(v / 1e6).toFixed(1)}M` : v >= 1e3 ? `${(v / 1e3).toFixed(0)}K` : v.toLocaleString('pt-PT');
+
+  const handleAI = async () => {
+    setAiLoading(true);
+    try {
+      const ctx = `Medida: ${medidaId} - ${nome}. Estado: ${trend.cor}. Baseline: ${trend.baselineValue ?? 'N/A'}. Ref Jun 2024: ${trend.referenceValue ?? 'N/A'}. Actual (${trend.currentPeriodo}): ${trend.currentValue ?? 'N/A'}. ${descricao || ''}`;
+      const r = await fetch(`https://europe-west1-petspt-f019f.cloudfunctions.net/aiSummary?eixo=1&context=${encodeURIComponent(ctx)}`);
+      const d = await r.json();
+      setAiText(d.sumario || JSON.stringify(d));
+    } catch { setAiText('Erro ao gerar analise AI.'); }
+    finally { setAiLoading(false); }
+  };
 
   return (
     <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={onClose}>
@@ -71,6 +86,22 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
             </ResponsiveContainer>
           </div>
         )}
+
+        {/* AI Button */}
+        <div className="px-5 py-3 border-t border-gray-100">
+          {!aiText ? (
+            <button onClick={handleAI} disabled={aiLoading}
+              className="flex items-center gap-2 px-4 py-2 bg-violet-600 text-white text-xs font-medium rounded-lg hover:bg-violet-700 disabled:opacity-50 transition-colors">
+              {aiLoading ? 'A analisar...' : '\u2726 Interpretar com AI'}
+            </button>
+          ) : (
+            <div className="bg-violet-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
+              <div className="text-violet-700 font-semibold text-xs mb-2">&starf; Analise AI</div>
+              <p>{aiText}</p>
+              <button onClick={() => { setAiText(null); handleAI(); }} className="mt-2 text-[10px] text-violet-500 hover:underline">Regenerar</button>
+            </div>
+          )}
+        </div>
 
         <div className="p-5 border-t border-gray-100 bg-gray-50 rounded-b-xl">
           <div className="grid grid-cols-2 gap-4 text-xs text-gray-500">
