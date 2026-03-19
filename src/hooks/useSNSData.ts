@@ -40,8 +40,20 @@ export function useSNSData(params: SNSQueryParams | null): UseSNSDataResult {
       cache.set(key, { data: records, timestamp: Date.now() });
       setData(records);
     } catch (err) {
-      const msg = err instanceof Error ? err.message : 'Erro ao carregar dados da API SNS';
-      setError(msg);
+      // Retry without where/orderBy/groupBy/select if query failed (400 Bad Request)
+      const msg = err instanceof Error ? err.message : '';
+      if (msg.includes('400') && (params.where || params.orderBy || params.groupBy || params.select)) {
+        try {
+          const fallback: SNSQueryParams = { dataset: params.dataset, limit: params.limit || 100 };
+          const response = await fetchSNSData(fallback);
+          const records = response.results || [];
+          cache.set(getCacheKey(fallback), { data: records, timestamp: Date.now() });
+          setData(records);
+          setLoading(false);
+          return;
+        } catch { /* fallback also failed */ }
+      }
+      setError(msg || 'Erro ao carregar dados da API SNS');
     } finally {
       setLoading(false);
     }
