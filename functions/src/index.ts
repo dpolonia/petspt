@@ -71,7 +71,7 @@ export const dadosGovProxy = functions
     if (!endpoint) { res.status(400).json({ error: 'Missing endpoint parameter' }); return; }
 
     // Obter API key de forma segura (Firebase Functions config)
-    const apiKey = functions.config().dados?.api_key;
+    const apiKey = process.env.DADOS_GOV_API_KEY;
     if (!apiKey) {
       res.status(500).json({ error: 'DADOS_GOV_API_KEY not configured on server. Run: firebase functions:config:set dados.api_key="YOUR_KEY"' });
       return;

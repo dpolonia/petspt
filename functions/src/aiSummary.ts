@@ -152,7 +152,7 @@ export const aiSummary = functions
       }
     }
 
-    const apiKey = functions.config().ai?.model_key;
+    const apiKey = process.env.AI_MODEL_KEY;
     if (!apiKey) {
       res.status(200).json({
         sumario: 'Resumo AI indisponivel — chave API nao configurada.',
@@ -165,7 +165,7 @@ export const aiSummary = functions
 
     const context = EIXO_CONTEXT[eixo];
     let scopusContext = '';
-    const scopusKey = functions.config().scopus?.api_key;
+    const scopusKey = process.env.SCOPUS_API_KEY;
     if (scopusKey) {
       const abstracts = await fetchScopusAbstracts(eixo, scopusKey);
       if (abstracts.length > 0) {
