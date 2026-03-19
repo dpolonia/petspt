@@ -16,6 +16,7 @@ import BenchmarkingPage from './pages/BenchmarkingPage';
 import CenariosPage from './pages/CenariosPage';
 import AlertasPage from './pages/AlertasPage';
 import EuropaPage from './pages/EuropaPage';
+import RelatoriosPage from './pages/RelatoriosPage';
 
 export default function App() {
   return (
@@ -39,6 +40,7 @@ export default function App() {
               <Route path="/cenarios" element={<CenariosPage />} />
               <Route path="/alertas" element={<AlertasPage />} />
               <Route path="/europa" element={<EuropaPage />} />
+              <Route path="/relatorios" element={<RelatoriosPage />} />
             </Routes>
           </main>
           <Footer />
