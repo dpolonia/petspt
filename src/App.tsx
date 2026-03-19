@@ -13,6 +13,7 @@ import SobrePage from './pages/SobrePage';
 import ComparadorPage from './pages/ComparadorPage';
 import ProspectivaPage from './pages/ProspectivaPage';
 import BenchmarkingPage from './pages/BenchmarkingPage';
+import CenariosPage from './pages/CenariosPage';
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
               <Route path="/comparador" element={<ComparadorPage />} />
               <Route path="/prospectiva" element={<ProspectivaPage />} />
               <Route path="/benchmarking" element={<BenchmarkingPage />} />
+              <Route path="/cenarios" element={<CenariosPage />} />
             </Routes>
           </main>
           <Footer />
