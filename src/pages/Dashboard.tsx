@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MEDIDAS_ESTADO, getScorecard } from '../services/staticData';
+import { MAPPING_STATS } from '../config/measureDataSources';
 import { calculateMeasureTrend, DEFAULT_TREND, MeasureTrendResult } from '../services/measureTrend';
 import MeasureCard from '../components/dashboard/MeasureCard';
 import MeasureDetailPopup from '../components/dashboard/MeasureDetailPopup';
@@ -80,6 +81,16 @@ export default function Dashboard() {
           <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-full bg-yellow-500" /> {scorecard.em_curso} Em Curso</span>
           <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-full bg-orange-500" /> {scorecard.parciais} Parciais</span>
           <span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-full bg-red-500" /> {scorecard.nao_implementadas} Nao Implementadas</span>
+        </div>
+      </div>
+
+      {/* Data coverage */}
+      <div className="bg-white rounded-lg border border-gray-200 p-4 mb-8">
+        <div className="flex flex-wrap gap-6 text-xs text-gray-500">
+          <span>Fontes de dados: <strong className="text-gray-700">{MAPPING_STATS.uniqueDatasets} datasets</strong> de 4 portais</span>
+          <span>Medidas com API: <strong className="text-green-600">{MAPPING_STATS.withAPI}</strong></span>
+          <span>Dados fixos: <strong className="text-yellow-600">{MAPPING_STATS.withStatic}</strong></span>
+          <span>Sem dados: <strong className="text-gray-400">{MAPPING_STATS.withoutData}</strong></span>
         </div>
       </div>
 
