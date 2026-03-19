@@ -14,5 +14,13 @@ service cloud.firestore {
       allow read: if true;
       allow write: if false;
     }
+    match /datasets/{document=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /eurostat/{document=**} {
+      allow read: if true;
+      allow write: if false;
+    }
   }
 }

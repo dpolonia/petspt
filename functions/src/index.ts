@@ -136,3 +136,5 @@ export const scheduledRefresh = functions
 
 export { aiSummary } from './aiSummary';
 export { contractPipeline, contractPipelineScheduled } from './contractPipeline';
+export { etlFullLoad, etlIncrementalRefresh } from './etlPipeline';
+export { etlEurostat } from './etlEurostat';
