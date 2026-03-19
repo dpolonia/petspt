@@ -32,7 +32,7 @@ export function useRiskAnalysis(horizonte: number = 12) {
         const response = await fetchSNSData({
           dataset: indicator.dataset,
           where: indicator.filtroWhere,
-          limit: 500,
+          limit: 100,
         });
 
         const contractMetas = new Map<string, number>();

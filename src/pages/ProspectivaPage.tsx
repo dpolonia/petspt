@@ -24,7 +24,7 @@ export default function ProspectivaPage() {
       dataset: indicator.dataset,
       where,
       orderBy: indicator.campoPeriodo,
-      limit: 500,
+      limit: 100,
     };
   }, [indicator]);
 

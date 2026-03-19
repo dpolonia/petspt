@@ -34,7 +34,7 @@ export interface SNSResponse {
 export async function fetchSNSData(params: SNSQueryParams): Promise<SNSResponse> {
   const {
     dataset,
-    select = '*',
+    select,
     where,
     groupBy,
     orderBy,
@@ -42,18 +42,29 @@ export async function fetchSNSData(params: SNSQueryParams): Promise<SNSResponse>
     offset = 0,
   } = params;
 
+  // API max limit is 100 — cap to prevent 400 errors
+  const safeLimit = Math.min(limit, 100);
+
   const searchParams = new URLSearchParams();
-  searchParams.set('select', select);
+  if (select && select !== '*') searchParams.set('select', select);
   if (where) searchParams.set('where', where);
   if (groupBy) searchParams.set('group_by', groupBy);
   if (orderBy) searchParams.set('order_by', orderBy);
-  searchParams.set('limit', String(limit));
-  searchParams.set('offset', String(offset));
+  searchParams.set('limit', String(safeLimit));
+  if (offset > 0) searchParams.set('offset', String(offset));
 
   // API Transparencia SNS is public with CORS — always call directly
   const url = `${BASE_URL}/${dataset}/records?${searchParams.toString()}`;
 
-  const response = await fetch(url);
+  let response = await fetch(url);
+
+  // Auto-retry with minimal query on 400 (bad field names, unsupported syntax)
+  if (response.status === 400 && (where || orderBy || groupBy || select)) {
+    const minimalParams = new URLSearchParams();
+    minimalParams.set('limit', String(safeLimit));
+    if (offset > 0) minimalParams.set('offset', String(offset));
+    response = await fetch(`${BASE_URL}/${dataset}/records?${minimalParams.toString()}`);
+  }
 
   if (!response.ok) {
     throw new Error(`SNS API error: ${response.status} ${response.statusText} [dataset: ${dataset}]`);

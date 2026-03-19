@@ -42,7 +42,7 @@ export default function CenariosPage() {
       dataset: indicator.dataset,
       where: indicator.filtroWhere,
       orderBy: indicator.campoPeriodo,
-      limit: 500,
+      limit: 100,
     };
   }, [indicator]);
 
