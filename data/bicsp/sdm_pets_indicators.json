@@ -1,0 +1,216 @@
+{
+  "metadata": {
+    "source": "SDM - Sistema de Definicao de Metricas (min-saude.pt)",
+    "url_template": "https://sdm.min-saude.pt/bi.aspx?id={id}&clusters=S",
+    "fetched_date": "2026-03-20",
+    "purpose": "PETS-relevant health indicators from the Portuguese NHS metrics system",
+    "total_indicators_scanned": 34,
+    "valid_indicators_found": 33
+  },
+  "indicators": [
+    {
+      "id": 2,
+      "name": "Taxa de utilização global de consultas médicas",
+      "description": "Proportion of enrolled patients who had at least one medical consultation (in-person or remote) during the analysis period.",
+      "pets_relevance": "Primary health care access - tracks overall consultation utilization rates across health units."
+    },
+    {
+      "id": 5,
+      "name": "Proporção de consultas realizadas pelo Enfermeiro de Família",
+      "description": "Proportion of nursing consultations each family nurse provides to their assigned patients versus total consultations by all nurses.",
+      "pets_relevance": "Family doctors/nurses - measures how effectively family nursing assignments are being used in primary care."
+    },
+    {
+      "id": 6,
+      "name": "Taxa de utilização de consultas médicas - 3 anos",
+      "description": "Proportion of registered patients who had at least one medical consultation (in-person or remote) within the last 3 years.",
+      "pets_relevance": "Primary health care access - long-term utilization metric identifying patients potentially disconnected from the health system."
+    },
+    {
+      "id": 7,
+      "name": "Proporção de utilizadores referenciados para consulta hospitalar",
+      "description": "Proportion of users referred for hospital consultation during the analysis period.",
+      "pets_relevance": "Consultations/waiting lists - tracks referral volume from primary care to hospital consultations."
+    },
+    {
+      "id": 8,
+      "name": "Taxa de utilização de consultas de Planeamento Familiar (méd./enf.)",
+      "description": "Proportion of women of reproductive age who had at least one family planning consultation (medical or nursing) in the last 12 months.",
+      "pets_relevance": "Consultations - reproductive health access in primary care, relevant to births monitoring."
+    },
+    {
+      "id": 9,
+      "name": "Taxa de utilização de consultas de Planeamento Familiar (enf.)",
+      "description": "Proportion of women of childbearing age who had at least one family planning nursing consultation in the previous 12 months.",
+      "pets_relevance": "Consultations - nursing-specific family planning access, relevant to births and reproductive health monitoring."
+    },
+    {
+      "id": 10,
+      "name": "Taxa de utilização de consultas de Planeamento Familiar (méd.)",
+      "description": "Proportion of women of childbearing age who had at least one family planning medical consultation in the previous 12 months.",
+      "pets_relevance": "Consultations - medical family planning access, relevant to births and reproductive health monitoring."
+    },
+    {
+      "id": 11,
+      "name": "Proporção de grávidas com 1ª consulta médica de vigilância da gravidez no 1º trimestre",
+      "description": "Proportion of pregnant women who completed their first medical prenatal consultation during the first trimester.",
+      "pets_relevance": "Births/screenings - early prenatal care access is a key perinatal health quality indicator."
+    },
+    {
+      "id": 12,
+      "name": "Proporção de grávidas com 6+ consultas de enfermagem em saúde materna",
+      "description": "Proportion of postpartum women who completed at least 6 nursing consultations for pregnancy and postpartum surveillance.",
+      "pets_relevance": "Births/consultations - tracks adequacy of maternal nursing surveillance during pregnancy and postpartum."
+    },
+    {
+      "id": 13,
+      "name": "Proporção de puérperas com domicílio de enfermagem",
+      "description": "Percentage of postpartum women who received at least one nursing home visit during the 42-day postpartum period.",
+      "pets_relevance": "Births - postpartum home nursing visit coverage, a key indicator for maternal and neonatal care quality."
+    },
+    {
+      "id": 14,
+      "name": "Proporção de recém-nascidos com consulta médica até aos 28 dias de vida",
+      "description": "Proportion of newborns who complete their first medical check-up within 28 days of birth.",
+      "pets_relevance": "Births/screenings - neonatal health surveillance, critical for early detection of health issues in newborns."
+    },
+    {
+      "id": 15,
+      "name": "Proporção de recém-nascidos com domicílio de enfermagem até 15º dia de vida",
+      "description": "Proportion of newborns who received at least one nursing home visit during their first 15 days of life.",
+      "pets_relevance": "Births - early neonatal nursing home visits, important for monitoring newborn health and supporting families."
+    },
+    {
+      "id": 16,
+      "name": "Proporção de crianças com 6+ consultas médicas de vigilância no 1º ano de vida",
+      "description": "Proportion of children who completed at least 6 medical surveillance consultations during their first year of life.",
+      "pets_relevance": "Consultations/screenings - child health surveillance in primary care, tracks pediatric preventive care coverage."
+    },
+    {
+      "id": 17,
+      "name": "Proporção de crianças com 3+ consultas médicas de vigilância no 2º ano de vida",
+      "description": "Proportion of children who completed at least 3 medical surveillance consultations during their second year of life.",
+      "pets_relevance": "Consultations/screenings - ongoing child health surveillance, monitors pediatric care continuity in primary care."
+    },
+    {
+      "id": 277,
+      "name": "Proporção de fumadores com consulta relacionada com tabaco no último ano",
+      "description": "Proportion of smokers aged 14+ who received tobacco-related medical or nursing consultations within the past year.",
+      "pets_relevance": "Screenings/consultations - tobacco cessation support coverage in primary care, relevant to preventive health monitoring."
+    },
+    {
+      "id": 278,
+      "name": "Proporção de embalagens de medicamentos prescritos de classes terapêuticas com genérico",
+      "description": "Proportion of medicine packages prescribed from therapeutic classes that have generic alternatives available.",
+      "pets_relevance": "Primary health care - prescription efficiency metric, tracks generic medicine adoption in NHS prescribing."
+    },
+    {
+      "id": 279,
+      "name": "Proporção de visitas domiciliárias de enfermagem em fim-de-semana e feriado",
+      "description": "Proportion of home nursing visits to ECCI users occurring on weekends or public holidays.",
+      "pets_relevance": "Primary health care - measures continuity of home care services including non-working days."
+    },
+    {
+      "id": 280,
+      "name": "Proporção de utentes com contacto pela equipa multiprofissional nas primeiras 48h",
+      "description": "Proportion of ECCI users who received contact from the multiprofessional team within the first 48 hours of admission.",
+      "pets_relevance": "Primary health care - measures responsiveness of integrated continuous care teams upon patient admission."
+    },
+    {
+      "id": 281,
+      "name": "Número médio de visitas domiciliárias por utente por mês",
+      "description": "Average number of home visits per user per month of integration in the ECCI.",
+      "pets_relevance": "Primary health care/consultations - intensity of home care delivery, relevant to monitoring community-based care."
+    },
+    {
+      "id": 411,
+      "name": "Taxa anual ajustada de utilizadores muito frequentes do serviço de urgência hospitalar",
+      "description": "Adjusted annual rate of frequent emergency department users per 100 primary care enrollees, standardized by age and gender.",
+      "pets_relevance": "Urgencies - key indicator tracking frequent ED utilization, reflects gaps in primary care accessibility."
+    },
+    {
+      "id": 412,
+      "name": "Proporção de consultas de doença aguda realizadas na unidade funcional de inscrição",
+      "description": "Proportion of acute illness consultations performed at patients' registered functional units versus total same-day consultations plus emergency episodes.",
+      "pets_relevance": "Urgencies/consultations - measures primary care capacity to absorb acute care demand, reducing emergency department pressure."
+    },
+    {
+      "id": 413,
+      "name": "Proporção de diabéticos tipo 2 com HbA1c > 9% com insulina",
+      "description": "Proportion of type 2 diabetes patients with HbA1c above 9% who are receiving insulin therapy.",
+      "pets_relevance": "Screenings/consultations - diabetes management quality indicator, tracks treatment adequacy for poorly controlled patients."
+    },
+    {
+      "id": 414,
+      "name": "Índice de acompanhamento adequado de úlceras de pressão",
+      "description": "Quality of care coordination for pressure ulcer treatment across four dimensions: teamwork, continuity, outcomes, and efficiency.",
+      "pets_relevance": "Primary health care - care quality index for chronic wound management in community nursing."
+    },
+    {
+      "id": 415,
+      "name": "Índice de acompanhamento adequado de úlceras venosas",
+      "description": "Quality of care management for venous ulcer treatment across five dimensions: process adequacy, teamwork, continuity, results, and efficiency.",
+      "pets_relevance": "Primary health care - care quality index for venous ulcer management in community nursing."
+    },
+    {
+      "id": 416,
+      "name": null,
+      "description": "Indicator not found (page returned error: 'Nenhum indicador encontrado').",
+      "pets_relevance": "Not applicable - indicator does not exist in the SDM system."
+    },
+    {
+      "id": 428,
+      "name": "Score dimensão 'segurança de utentes'",
+      "description": "Evaluates implementation of continuous quality improvement processes focused on patient safety across eight assessment areas.",
+      "pets_relevance": "Primary health care - patient safety dimension score, relevant to overall healthcare quality monitoring."
+    },
+    {
+      "id": 429,
+      "name": "Score dimensão 'outras atividades não assistenciais'",
+      "description": "Evaluates team engagement in non-assistential activities unrelated to clinical governance, scored on a 0-2 scale.",
+      "pets_relevance": "Primary health care - non-clinical activity score, measures broader health unit engagement beyond direct patient care."
+    },
+    {
+      "id": 430,
+      "name": "Score dimensão 'participação do cidadão'",
+      "description": "Evaluates how functional units implement processes demonstrating concern for user needs and satisfaction.",
+      "pets_relevance": "Primary health care - citizen participation dimension, tracks patient-centered care and satisfaction processes."
+    },
+    {
+      "id": 431,
+      "name": "Proporção de comunidades educativas com mais conhecimentos em saúde oral",
+      "description": "Proportion of educational communities that demonstrated improved knowledge about oral health following UCC interventions.",
+      "pets_relevance": "Screenings - oral health literacy improvement through community health interventions in schools."
+    },
+    {
+      "id": 435,
+      "name": "Proporção de utentes com vacina da gripe gratuita no SNS",
+      "description": "Proportion of eligible users who received the free NHS flu vaccine during the autumn/winter period.",
+      "pets_relevance": "Screenings/primary health care - flu vaccination coverage, key preventive health indicator for vulnerable populations."
+    },
+    {
+      "id": 470,
+      "name": "Proporção de fumadores com abstinência tabágica 12 meses após dia D (CICT) - ACES",
+      "description": "Proportion of smokers aged 15+ who maintain tobacco abstinence 12 months after quit date in intensive cessation programs (ACES level).",
+      "pets_relevance": "Screenings/consultations - smoking cessation effectiveness at ACES level, tracks long-term health behavior change outcomes."
+    },
+    {
+      "id": 471,
+      "name": "Proporção de fumadores com abstinência tabágica 12 meses após dia D (CICT) - UF",
+      "description": "Proportion of smokers aged 15+ who maintain tobacco abstinence 12 months after quit date in intensive cessation programs (UF level).",
+      "pets_relevance": "Screenings/consultations - smoking cessation effectiveness at functional unit level, measures local intervention impact."
+    },
+    {
+      "id": 472,
+      "name": "Proporção de fumadores com CICT que foram medicados - ACES",
+      "description": "Proportion of smokers aged 15+ with intensive smoking cessation support who received pharmacological therapy in the past year (ACES level).",
+      "pets_relevance": "Screenings/consultations - pharmacological support coverage for smoking cessation at ACES level."
+    },
+    {
+      "id": 473,
+      "name": "Proporção de fumadores com CICT que foram medicados - UF",
+      "description": "Proportion of smokers aged 15+ enrolled in intensive tobacco cessation support who received pharmacological therapy within the past year (UF level).",
+      "pets_relevance": "Screenings/consultations - pharmacological support coverage for smoking cessation at functional unit level."
+    }
+  ]
+}

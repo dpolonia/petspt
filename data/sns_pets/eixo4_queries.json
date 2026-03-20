@@ -1,0 +1,2290 @@
+[
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Médicos aposentados"
+                        },
+                        "Name": "V_LK_MES_T.Médicos aposentados",
+                        "NativeReferenceName": "Médicos aposentados autorizados para 2025"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Médicos aposentados\"},\"Name\":\"V_LK_MES_T.Médicos aposentados\",\"NativeReferenceName\":\"Médicos aposentados autorizados para 2025\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "aa4ca4241b9203094ebf"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Médicos Contratados"
+                        },
+                        "Name": "V_LK_MES_T.Médicos Contratados",
+                        "NativeReferenceName": "Médicos Contratados em 2025"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Médicos Contratados\"},\"Name\":\"V_LK_MES_T.Médicos Contratados\",\"NativeReferenceName\":\"Médicos Contratados em 2025\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "13bee4c0d5974d2e756f"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "b",
+                        "Entity": "BD_ULS",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "b"
+                            }
+                          },
+                          "Property": "Variação das consultas ULS"
+                        },
+                        "Name": "BD_ULS.Variação das consultas ULS",
+                        "NativeReferenceName": "Variação das consultas"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BD_ULS\",\"Type\":0},{\"Name\":\"v\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Variação das consultas ULS\"},\"Name\":\"BD_ULS.Variação das consultas ULS\",\"NativeReferenceName\":\"Variação das consultas\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "00b8893250bb4f8e15b8"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO4_UTENTES_INSC",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Nº Utentes Inscritos Atual"
+                        },
+                        "Name": "V_DESNS_EIXO4_UTENTES_INSC.Nº Utentes Inscritos Atuais",
+                        "NativeReferenceName": "Nº Utentes Inscritos Atual"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO4_UTENTES_INSC\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Nº Utentes Inscritos Atual\"},\"Name\":\"V_DESNS_EIXO4_UTENTES_INSC.Nº Utentes Inscritos Atuais\",\"NativeReferenceName\":\"Nº Utentes Inscritos Atual\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "753dd16390c981cbc8e0"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO4_CONS_MEDICAS_CSP",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Acumulado Até Consultas"
+                        },
+                        "Name": "V_DESNS_EIXO4_CONS_MEDICAS_CSP.Acumulado Até Consultas",
+                        "NativeReferenceName": "Acumulado Até Consultas"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Acumulado Até Consultas\"},\"Name\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP.Acumulado Até Consultas\",\"NativeReferenceName\":\"Acumulado Até Consultas\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "40ab7a110214a1090b60"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_DESNS_EIXO4_UTENTES_INSC",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "l",
+                        "Entity": "LocalDateTable_7b4c6c5a-b3d4-433d-9f01-629890bca877",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "DES_ANO"
+                        },
+                        "Name": "V_LK_MES_T.DES_ANO",
+                        "NativeReferenceName": "Ano"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "DES_DES_MES"
+                        },
+                        "Name": "V_LK_MES_T.DES_DES_MES",
+                        "NativeReferenceName": "Mês"
+                      },
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v1"
+                            }
+                          },
+                          "Property": "Nº Utentes Inscritos"
+                        },
+                        "Name": "V_DESNS_EIXO4_UTENTES_INSC.Nº Utentes Inscritos",
+                        "NativeReferenceName": "Nº Utentes Inscritos"
+                      },
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v1"
+                            }
+                          },
+                          "Property": "Utentes Inscritos com Médico de Família"
+                        },
+                        "Name": "V_DESNS_EIXO4_UTENTES_INSC.Utentes Inscritos com Médico de Família",
+                        "NativeReferenceName": "Utentes Inscritos com Médico de Família"
+                      },
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v1"
+                            }
+                          },
+                          "Property": "Utentes Inscritos sem Médico de Família"
+                        },
+                        "Name": "V_DESNS_EIXO4_UTENTES_INSC.Utentes Inscritos sem Médico de Família",
+                        "NativeReferenceName": "Utentes Inscritos sem Médico de Família"
+                      },
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v1"
+                            }
+                          },
+                          "Property": "Utentes Inscritos sem Médico de Família por Opção"
+                        },
+                        "Name": "V_DESNS_EIXO4_UTENTES_INSC.Utentes Inscritos sem Médico de Família por Opção",
+                        "NativeReferenceName": "Utentes Inscritos sem Médico de Família por Opção"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "l"
+                                    }
+                                  },
+                                  "Property": "Ano"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ],
+                    "OrderBy": [
+                      {
+                        "Direction": 1,
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "v"
+                              }
+                            },
+                            "Property": "DES_ANO"
+                          }
+                        }
+                      },
+                      {
+                        "Direction": 1,
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "v"
+                              }
+                            },
+                            "Property": "DES_DES_MES"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 4,
+                      "Primary": {
+                        "Window": {
+                          "Count": 1000
+                        }
+                      }
+                    },
+                    "SuppressedJoinPredicates": [
+                      2
+                    ],
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_DESNS_EIXO4_UTENTES_INSC\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"LocalDateTable_7b4c6c5a-b3d4-433d-9f01-629890bca877\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_ANO\"},\"Name\":\"V_LK_MES_T.DES_ANO\",\"NativeReferenceName\":\"Ano\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_DES_MES\"},\"Name\":\"V_LK_MES_T.DES_DES_MES\",\"NativeReferenceName\":\"Mês\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Nº Utentes Inscritos\"},\"Name\":\"V_DESNS_EIXO4_UTENTES_INSC.Nº Utentes Inscritos\",\"NativeReferenceName\":\"Nº Utentes Inscritos\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Utentes Inscritos com Médico de Família\"},\"Name\":\"V_DESNS_EIXO4_UTENTES_INSC.Utentes Inscritos com Médico de Família\",\"NativeReferenceName\":\"Utentes Inscritos com Médico de Família\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Utentes Inscritos sem Médico de Família\"},\"Name\":\"V_DESNS_EIXO4_UTENTES_INSC.Utentes Inscritos sem Médico de Família\",\"NativeReferenceName\":\"Utentes Inscritos sem Médico de Família\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Utentes Inscritos sem Médico de Família por Opção\"},\"Name\":\"V_DESNS_EIXO4_UTENTES_INSC.Utentes Inscritos sem Médico de Família por Opção\",\"NativeReferenceName\":\"Utentes Inscritos sem Médico de Família por Opção\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Ano\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_ANO\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_DES_MES\"}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0,1,2,3,4,5]}]},\"DataReduction\":{\"DataVolume\":4,\"Primary\":{\"Window\":{\"Count\":1000}}},\"SuppressedJoinPredicates\":[2],\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "74615ef587501bb4826a"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "b",
+                        "Entity": "BD_SCM",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "b"
+                            }
+                          },
+                          "Property": "Total SCM"
+                        },
+                        "Name": "BD_SCM.Total SCM",
+                        "NativeReferenceName": "Instituições Socias"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BD_SCM\",\"Type\":0},{\"Name\":\"v\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total SCM\"},\"Name\":\"BD_SCM.Total SCM\",\"NativeReferenceName\":\"Instituições Socias\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "bbdafc817e344f8fd269"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO4_CONS_MEDICAS_CSP",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Variação das consultas"
+                        },
+                        "Name": "V_DESNS_EIXO4_CONS_MEDICAS_CSP.Variação das consultas",
+                        "NativeReferenceName": "Variação das consultas"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Variação das consultas\"},\"Name\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP.Variação das consultas\",\"NativeReferenceName\":\"Variação das consultas\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "3ac5e39ad49a4000ca30"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_DESNS_EIXO4_CONS_MEDICAS_CSP",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "DES_ANO"
+                        },
+                        "Name": "V_LK_MES_T.DES_ANO",
+                        "NativeReferenceName": "Ano"
+                      },
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v1"
+                            }
+                          },
+                          "Property": "Nº Total"
+                        },
+                        "Name": "V_DESNS_EIXO4_CONS_MEDICAS_CSP.Nº Total",
+                        "NativeReferenceName": "Nº Total"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ],
+                    "OrderBy": [
+                      {
+                        "Direction": 1,
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "v"
+                              }
+                            },
+                            "Property": "DES_ANO"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0,
+                            1
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 4,
+                      "Primary": {
+                        "Window": {
+                          "Count": 1000
+                        }
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_ANO\"},\"Name\":\"V_LK_MES_T.DES_ANO\",\"NativeReferenceName\":\"Ano\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Nº Total\"},\"Name\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP.Nº Total\",\"NativeReferenceName\":\"Nº Total\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_ANO\"}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0,1]}]},\"DataReduction\":{\"DataVolume\":4,\"Primary\":{\"Window\":{\"Count\":1000}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "f81d51fa7d807e67a8ae"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_DESNS_EIXO4_UTENTES_INSC",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "DES_DES_MES"
+                        },
+                        "Name": "V_LK_MES_T.DES_DES_MES",
+                        "NativeReferenceName": "DES_DES_MES"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "DES_ANO"
+                        },
+                        "Name": "V_LK_MES_T.DES_ANO",
+                        "NativeReferenceName": "DES_ANO"
+                      },
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v1"
+                            }
+                          },
+                          "Property": "% de Utentes com Médico de Familia"
+                        },
+                        "Name": "V_DESNS_EIXO4_UTENTES_INSC.% de Utentes com Médico de Familia",
+                        "NativeReferenceName": "% de Utentes com Médico de Familia"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ],
+                    "OrderBy": [
+                      {
+                        "Direction": 1,
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "v"
+                              }
+                            },
+                            "Property": "DES_DES_MES"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0,
+                            2
+                          ]
+                        }
+                      ]
+                    },
+                    "Secondary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            1
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 4,
+                      "Primary": {
+                        "Window": {
+                          "Count": 200
+                        }
+                      },
+                      "Secondary": {
+                        "Top": {
+                          "Count": 60
+                        }
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_DESNS_EIXO4_UTENTES_INSC\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_DES_MES\"},\"Name\":\"V_LK_MES_T.DES_DES_MES\",\"NativeReferenceName\":\"DES_DES_MES\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_ANO\"},\"Name\":\"V_LK_MES_T.DES_ANO\",\"NativeReferenceName\":\"DES_ANO\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"% de Utentes com Médico de Familia\"},\"Name\":\"V_DESNS_EIXO4_UTENTES_INSC.% de Utentes com Médico de Familia\",\"NativeReferenceName\":\"% de Utentes com Médico de Familia\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_DES_MES\"}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0,2]}]},\"Secondary\":{\"Groupings\":[{\"Projections\":[1]}]},\"DataReduction\":{\"DataVolume\":4,\"Primary\":{\"Window\":{\"Count\":200}},\"Secondary\":{\"Top\":{\"Count\":60}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "23d3b4e1a5e0622857ae"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "b",
+                        "Entity": "BD_ULS",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "b"
+                            }
+                          },
+                          "Property": "Total ULS"
+                        },
+                        "Name": "BD_ULS.Total ULS",
+                        "NativeReferenceName": "ULS -  com Acordos"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BD_ULS\",\"Type\":0},{\"Name\":\"v\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total ULS\"},\"Name\":\"BD_ULS.Total ULS\",\"NativeReferenceName\":\"ULS -  com Acordos\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "af12841281b800e0c756"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO4_UTENTES_INSC",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Utentes Inscritos com Médico de Família Atual"
+                        },
+                        "Name": "V_DESNS_EIXO4_UTENTES_INSC.Utentes Inscritos com Médico de Família Atual",
+                        "NativeReferenceName": "Utentes Inscritos com Médico de Família Atual"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO4_UTENTES_INSC\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Utentes Inscritos com Médico de Família Atual\"},\"Name\":\"V_DESNS_EIXO4_UTENTES_INSC.Utentes Inscritos com Médico de Família Atual\",\"NativeReferenceName\":\"Utentes Inscritos com Médico de Família Atual\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "47511425607c54b1d851"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "b",
+                        "Entity": "BD_ULS",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "b"
+                            }
+                          },
+                          "Property": "Total Consultas ULS 2024"
+                        },
+                        "Name": "BD_ULS.Total Consultas ULS 2024",
+                        "NativeReferenceName": "Nº Total Consultas 2024"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"BD_ULS\",\"Type\":0},{\"Name\":\"v\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Total Consultas ULS 2024\"},\"Name\":\"BD_ULS.Total Consultas ULS 2024\",\"NativeReferenceName\":\"Nº Total Consultas 2024\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "7afc97d7a612ea715a52"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_DESNS_EIXO4_CONS_MEDICAS_CSP",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "DES_ANO"
+                        },
+                        "Name": "V_LK_MES_T.DES_ANO",
+                        "NativeReferenceName": "Ano"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "DES_DES_MES"
+                        },
+                        "Name": "V_LK_MES_T.DES_DES_MES",
+                        "NativeReferenceName": "Mês"
+                      },
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v1"
+                            }
+                          },
+                          "Property": "Presenciais"
+                        },
+                        "Name": "V_DESNS_EIXO4_CONS_MEDICAS_CSP.Presenciais",
+                        "NativeReferenceName": "Presenciais"
+                      },
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v1"
+                            }
+                          },
+                          "Property": "Não Presenciais ou Inespecificas"
+                        },
+                        "Name": "V_DESNS_EIXO4_CONS_MEDICAS_CSP.Não Presenciais ou Inespecificas",
+                        "NativeReferenceName": "Não Presenciais ou Inespecificas"
+                      },
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v1"
+                            }
+                          },
+                          "Property": "Ao Domicílio"
+                        },
+                        "Name": "V_DESNS_EIXO4_CONS_MEDICAS_CSP.Ao Domicilio",
+                        "NativeReferenceName": "Ao Domicílio"
+                      },
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v1"
+                            }
+                          },
+                          "Property": "Nº Total"
+                        },
+                        "Name": "V_DESNS_EIXO4_CONS_MEDICAS_CSP.Nº Total",
+                        "NativeReferenceName": "Nº Total Consultas"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ],
+                    "OrderBy": [
+                      {
+                        "Direction": 1,
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "v"
+                              }
+                            },
+                            "Property": "DES_ANO"
+                          }
+                        }
+                      },
+                      {
+                        "Direction": 1,
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "v"
+                              }
+                            },
+                            "Property": "DES_DES_MES"
+                          }
+                        }
+                      },
+                      {
+                        "Direction": 1,
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "v"
+                              }
+                            },
+                            "Property": "DES_ANO"
+                          }
+                        }
+                      },
+                      {
+                        "Direction": 1,
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "v"
+                              }
+                            },
+                            "Property": "DES_DES_MES"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 4,
+                      "Primary": {
+                        "Window": {
+                          "Count": 1000
+                        }
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_ANO\"},\"Name\":\"V_LK_MES_T.DES_ANO\",\"NativeReferenceName\":\"Ano\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_DES_MES\"},\"Name\":\"V_LK_MES_T.DES_DES_MES\",\"NativeReferenceName\":\"Mês\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Presenciais\"},\"Name\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP.Presenciais\",\"NativeReferenceName\":\"Presenciais\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Não Presenciais ou Inespecificas\"},\"Name\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP.Não Presenciais ou Inespecificas\",\"NativeReferenceName\":\"Não Presenciais ou Inespecificas\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Ao Domicílio\"},\"Name\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP.Ao Domicilio\",\"NativeReferenceName\":\"Ao Domicílio\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Nº Total\"},\"Name\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP.Nº Total\",\"NativeReferenceName\":\"Nº Total Consultas\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_ANO\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_DES_MES\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_ANO\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_DES_MES\"}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0,1,2,3,4,5]}]},\"DataReduction\":{\"DataVolume\":4,\"Primary\":{\"Window\":{\"Count\":1000}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "98526120b91c9a282cb9"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Médicos Medicina Geral e Familiar Contratados"
+                        },
+                        "Name": "V_LK_MES_T.Médicos Medicina Geral e Familiar Contratados",
+                        "NativeReferenceName": "Médicos Contratados em 2025"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Médicos Medicina Geral e Familiar Contratados\"},\"Name\":\"V_LK_MES_T.Médicos Medicina Geral e Familiar Contratados\",\"NativeReferenceName\":\"Médicos Contratados em 2025\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "b6c1c86e62beec34637d"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO4_CONS_MEDICAS_CSP",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Nº Total Consultas 2025"
+                        },
+                        "Name": "V_DESNS_EIXO4_CONS_MEDICAS_CSP.Nº Total Consultas 2025",
+                        "NativeReferenceName": "Nº Total Consultas 2026"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Nº Total Consultas 2025\"},\"Name\":\"V_DESNS_EIXO4_CONS_MEDICAS_CSP.Nº Total Consultas 2025\",\"NativeReferenceName\":\"Nº Total Consultas 2026\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+            "Sources": [
+              {
+                "ReportId": "262ad3ec-129b-4ded-9eb7-f985b4ff5fa6",
+                "VisualId": "fd588503801530cbbc84"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21110939
+    }
+  }
+]

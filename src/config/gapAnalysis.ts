@@ -1,6 +1,11 @@
 /**
  * Gap Analysis: what's needed vs what's available for full PETS monitoring.
  * Based on: IPP-JCS Policy Brief (Oct 2024), SNS Portal, GT PETS Reports, Open Data APIs.
+ *
+ * BI-CSP (bicsp.min-saude.pt) cross-reference: Contains IDE/IDG indicators at
+ * USF/UCSP/ACES/ULS level with tables for utentes inscritos, consultas medicas CSP,
+ * and prescricoes. Requires institutional auth but data EXISTS and could be opened.
+ * SDM public indicator definitions at sdm.min-saude.pt/bi.aspx provide methodology.
  */
 
 export type DataGapStatus = 'disponivel' | 'parcial' | 'portal_sns_only' | 'relatorio_only' | 'inexistente';
@@ -45,7 +50,7 @@ export const GAP_ANALYSIS: MeasureGapAnalysis[] = [
 
   // ═══ EIXO 3 ═══
   { medidaId: 'E3.A1', eixo: 3, grauActual: 2, grauPotencial: 7, gapScore: 5, gapStatus: 'inexistente', indicadorNecessario: 'Execucao financeira requalificacao SU', recomendacao: 'Publicar dados execucao PRR/obras', prioridade: 'alta', entidade: 'ACSS' },
-  { medidaId: 'E3.A2', eixo: 3, grauActual: 3, grauPotencial: 9, gapScore: 6, gapStatus: 'relatorio_only', indicadorNecessario: 'Dataset de CAC: n.o operacionais e atendimentos', recomendacao: 'Publicar dataset CAC mensal por ULS', prioridade: 'critica', entidade: 'ACSS' },
+  { medidaId: 'E3.A2', eixo: 3, grauActual: 3, grauPotencial: 9, gapScore: 6, gapStatus: 'relatorio_only', indicadorNecessario: 'Dataset de CAC: n.o operacionais e atendimentos. SDM #411 rastreia utilizadores frequentes SU (meta: [0; 0.2]/100 inscritos)', recomendacao: 'Publicar dataset CAC mensal por ULS. SDM #411 pode servir como proxy para avaliacao impacto CAC na utilizacao SU', prioridade: 'critica', entidade: 'ACSS' },
   { medidaId: 'E3.A3', eixo: 3, grauActual: 5, grauPotencial: 8, gapScore: 3, gapStatus: 'parcial', indicadorNecessario: 'Consultas dia seguinte identificadas', recomendacao: 'Flag consulta dia seguinte no dataset', prioridade: 'media', entidade: 'SPMS' },
   { medidaId: 'E3.B1', eixo: 3, grauActual: 7, grauPotencial: 9, gapScore: 2, gapStatus: 'disponivel', indicadorNecessario: 'Camas por tipo (proprias vs contratadas)', recomendacao: 'Decompor por regime contratual', prioridade: 'media', entidade: 'ACSS' },
   { medidaId: 'E3.B2', eixo: 3, grauActual: 2, grauPotencial: 4, gapScore: 2, gapStatus: 'relatorio_only', indicadorNecessario: 'Vagas internato medicina urgencia', recomendacao: 'Publicar dados formacao medica', prioridade: 'baixa', entidade: 'ACSS' },
@@ -59,11 +64,11 @@ export const GAP_ANALYSIS: MeasureGapAnalysis[] = [
   { medidaId: 'E3.C2', eixo: 3, grauActual: 1, grauPotencial: 7, gapScore: 6, gapStatus: 'inexistente', indicadorNecessario: 'Consultas medicas em ERPI', recomendacao: 'Publicar dados apoio ERPI por ULS', prioridade: 'alta', entidade: 'ACSS' },
 
   // ═══ EIXO 4 ═══
-  { medidaId: 'E4.A1', eixo: 4, grauActual: 8, grauPotencial: 10, gapScore: 2, gapStatus: 'disponivel', indicadorNecessario: 'Utentes CSP ja muito bom', recomendacao: 'Publicar dados mensais (nao cumulativos)', prioridade: 'baixa', entidade: 'ACSS' },
-  { medidaId: 'E4.A2', eixo: 4, grauActual: 3, grauPotencial: 9, gapScore: 6, gapStatus: 'relatorio_only', indicadorNecessario: 'Dataset Batas Brancas (consultas + ULS)', recomendacao: 'Publicar dataset Batas Brancas mensal', prioridade: 'critica', entidade: 'ACSS' },
+  { medidaId: 'E4.A1', eixo: 4, grauActual: 8, grauPotencial: 10, gapScore: 2, gapStatus: 'disponivel', indicadorNecessario: 'Utentes CSP ja muito bom. BI-CSP tem dados USF-level (SDM #002)', recomendacao: 'Publicar dados mensais (nao cumulativos). BI-CSP tem V_DESNS_EIXO4_UTENTES_INSC por USF — abrir como open data elevaria grau para 10', prioridade: 'baixa', entidade: 'ACSS' },
+  { medidaId: 'E4.A2', eixo: 4, grauActual: 3, grauPotencial: 9, gapScore: 6, gapStatus: 'relatorio_only', indicadorNecessario: 'Dataset Batas Brancas (consultas + ULS). BI-CSP tab "O QUE FAZEMOS" tem consultas por UF', recomendacao: 'Publicar dataset Batas Brancas mensal. BI-CSP IDE/IDG inclui metricas consultas CSP — publicar agregados USF elevaria grau para 7', prioridade: 'critica', entidade: 'ACSS' },
   { medidaId: 'E4.A3', eixo: 4, grauActual: 2, grauPotencial: 6, gapScore: 4, gapStatus: 'inexistente', indicadorNecessario: 'Dados operacionais PPP Cascais', recomendacao: 'Publicar dados PPP', prioridade: 'media', entidade: 'ACSS' },
   { medidaId: 'E4.A4', eixo: 4, grauActual: 6, grauPotencial: 9, gapScore: 3, gapStatus: 'parcial', indicadorNecessario: 'SNS24 com flag Ligue Antes', recomendacao: 'Separar dados Ligue Antes', prioridade: 'media', entidade: 'SPMS' },
-  { medidaId: 'E4.B1', eixo: 4, grauActual: 4, grauPotencial: 8, gapScore: 4, gapStatus: 'parcial', indicadorNecessario: 'Unidades funcionais por tipo A/B/C', recomendacao: 'Decompor USF por tipo', prioridade: 'alta', entidade: 'ACSS' },
+  { medidaId: 'E4.B1', eixo: 4, grauActual: 4, grauPotencial: 8, gapScore: 4, gapStatus: 'parcial', indicadorNecessario: 'Unidades funcionais por tipo A/B/C. BI-CSP ReportUFType distingue USF-A, USF-B, UCSP, UCC', recomendacao: 'Decompor USF por tipo. BI-CSP ja faz esta distincao — abrir elevaria grau para 7', prioridade: 'alta', entidade: 'ACSS' },
   { medidaId: 'E4.B2', eixo: 4, grauActual: 3, grauPotencial: 7, gapScore: 4, gapStatus: 'parcial', indicadorNecessario: 'Trabalhadores: aposentados recontratados', recomendacao: 'Adicionar campo regime contratacao', prioridade: 'media', entidade: 'ACSS' },
   { medidaId: 'E4.B3', eixo: 4, grauActual: 4, grauPotencial: 8, gapScore: 4, gapStatus: 'parcial', indicadorNecessario: 'USF por tipo com transicoes', recomendacao: 'Historico de transicoes A→B', prioridade: 'media', entidade: 'ACSS' },
   { medidaId: 'E4.B4', eixo: 4, grauActual: 1, grauPotencial: 5, gapScore: 4, gapStatus: 'inexistente', indicadorNecessario: 'Dados cooperativas medicas', recomendacao: 'Publicar dados parcerias', prioridade: 'media', entidade: 'ACSS' },
@@ -73,7 +78,7 @@ export const GAP_ANALYSIS: MeasureGapAnalysis[] = [
   { medidaId: 'E4.C3', eixo: 4, grauActual: 1, grauPotencial: 6, gapScore: 5, gapStatus: 'inexistente', indicadorNecessario: 'N.o CAMP operacionais', recomendacao: 'Publicar dados CAMP', prioridade: 'alta', entidade: 'ACSS' },
 
   // ═══ EIXO 5 ═══
-  { medidaId: 'E5.A1', eixo: 5, grauActual: 5, grauPotencial: 8, gapScore: 3, gapStatus: 'parcial', indicadorNecessario: 'Trabalhadores por especialidade (psicologos)', recomendacao: 'Decompor por especialidade', prioridade: 'alta', entidade: 'ACSS' },
+  { medidaId: 'E5.A1', eixo: 5, grauActual: 5, grauPotencial: 8, gapScore: 3, gapStatus: 'parcial', indicadorNecessario: 'Trabalhadores por especialidade (psicologos). BI-CSP "O QUE FAZEMOS" UF-level inclui actividade psicologia', recomendacao: 'Decompor por especialidade. BI-CSP tem dados psicologia por USF — publicar agregados elevaria grau para 7', prioridade: 'alta', entidade: 'ACSS' },
   { medidaId: 'E5.A2', eixo: 5, grauActual: 2, grauPotencial: 5, gapScore: 3, gapStatus: 'relatorio_only', indicadorNecessario: 'Dados programa SM forcas seguranca', recomendacao: 'Publicar dados programa', prioridade: 'media', entidade: 'ACSS' },
   { medidaId: 'E5.A3', eixo: 5, grauActual: 2, grauPotencial: 8, gapScore: 6, gapStatus: 'inexistente', indicadorNecessario: 'Respostas residenciais SM criadas', recomendacao: 'Publicar dados desinstitucionalizacao', prioridade: 'critica', entidade: 'ACSS' },
   { medidaId: 'E5.B1', eixo: 5, grauActual: 3, grauPotencial: 9, gapScore: 6, gapStatus: 'relatorio_only', indicadorNecessario: 'Dataset ECSM: n.o operacionais por ULS', recomendacao: 'Publicar dataset ECSM mensal', prioridade: 'critica', entidade: 'ACSS' },

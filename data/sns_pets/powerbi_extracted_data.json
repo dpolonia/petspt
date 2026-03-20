@@ -1,0 +1,8856 @@
+{
+  "eixo1": {
+    "doentes_operados_oncologicos": [
+      {
+        "periodo": "2023-01",
+        "valor": 6340
+      },
+      {
+        "periodo": "2023-02",
+        "valor": 5505
+      },
+      {
+        "periodo": "2023-03",
+        "valor": 6400
+      },
+      {
+        "periodo": "2023-04",
+        "valor": 5238
+      },
+      {
+        "periodo": "2023-05",
+        "valor": 6340
+      },
+      {
+        "periodo": "2023-06",
+        "valor": 5700
+      },
+      {
+        "periodo": "2023-07",
+        "valor": 5649
+      },
+      {
+        "periodo": "2023-08",
+        "valor": 5045
+      },
+      {
+        "periodo": "2023-09",
+        "valor": 5889
+      },
+      {
+        "periodo": "2023-10",
+        "valor": 5880
+      },
+      {
+        "periodo": "2023-11",
+        "valor": 6051
+      },
+      {
+        "periodo": "2023-12",
+        "valor": 4680
+      },
+      {
+        "periodo": "2024-01",
+        "valor": 6724
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 6105
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 6244
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 6540
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 6554
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 6582
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 7189
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 6086
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 6111
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 7217
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 6698
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 5649
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 6951
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 6694
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 6804
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 6384
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 7184
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 5783
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 6851
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 5108
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 7068
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 7327
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 6919
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 5562
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 6739
+      }
+    ],
+    "doentes_operados_nao_oncologicos": [
+      {
+        "periodo": "2023-01",
+        "valor": 59040
+      },
+      {
+        "periodo": "2023-02",
+        "valor": 52598
+      },
+      {
+        "periodo": "2023-03",
+        "valor": 62113
+      },
+      {
+        "periodo": "2023-04",
+        "valor": 53010
+      },
+      {
+        "periodo": "2023-05",
+        "valor": 61422
+      },
+      {
+        "periodo": "2023-06",
+        "valor": 53617
+      },
+      {
+        "periodo": "2023-07",
+        "valor": 50826
+      },
+      {
+        "periodo": "2023-08",
+        "valor": 42449
+      },
+      {
+        "periodo": "2023-09",
+        "valor": 56189
+      },
+      {
+        "periodo": "2023-10",
+        "valor": 55382
+      },
+      {
+        "periodo": "2023-11",
+        "valor": 57558
+      },
+      {
+        "periodo": "2023-12",
+        "valor": 43104
+      },
+      {
+        "periodo": "2024-01",
+        "valor": 58887
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 58171
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 58205
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 61185
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 59943
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 53292
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 59947
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 45137
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 54067
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 63129
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 60112
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 47847
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 60986
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 62459
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 63670
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 59685
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 65661
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 55230
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 62784
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 45314
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 62498
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 67473
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 63534
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 45335
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 54483
+      }
+    ],
+    "consultas_medicas_hospitalares": [
+      {
+        "periodo": "2024-01",
+        "valor": 1247927
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 1159749
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 1146206
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 1201539
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 1239353
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 1051199
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 1230207
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 949630
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 1122013
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 1327718
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 1236448
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 1105626
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 1306975
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 1206532
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 1198618
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 1165764
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 1296736
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 1065561
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 1297880
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 954732
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 1241441
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 1372752
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 1255013
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 978280
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 1244973
+      }
+    ],
+    "lic_onco_fora_tmrg": [
+      {
+        "periodo": "2023-01",
+        "valor": 1056
+      },
+      {
+        "periodo": "2023-02",
+        "valor": 964
+      },
+      {
+        "periodo": "2023-03",
+        "valor": 911
+      },
+      {
+        "periodo": "2023-04",
+        "valor": 1105
+      },
+      {
+        "periodo": "2023-05",
+        "valor": 1051
+      },
+      {
+        "periodo": "2023-06",
+        "valor": 1097
+      },
+      {
+        "periodo": "2023-07",
+        "valor": 1433
+      },
+      {
+        "periodo": "2023-08",
+        "valor": 1605
+      },
+      {
+        "periodo": "2023-09",
+        "valor": 476
+      },
+      {
+        "periodo": "2023-10",
+        "valor": 615
+      },
+      {
+        "periodo": "2023-11",
+        "valor": 634
+      },
+      {
+        "periodo": "2023-12",
+        "valor": 493
+      },
+      {
+        "periodo": "2024-01",
+        "valor": 725
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 595
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 659
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 748
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 638
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 195
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 118
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 0
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 159
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 135
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 168
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 148
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 217
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 186
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 180
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 264
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 248
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 313
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 306
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 353
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 403
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 391
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 442
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 577
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 535
+      }
+    ],
+    "lic_nao_onco_fora_tmrg": [
+      {
+        "periodo": "2023-01",
+        "valor": 26233
+      },
+      {
+        "periodo": "2023-02",
+        "valor": 24780
+      },
+      {
+        "periodo": "2023-03",
+        "valor": 24460
+      },
+      {
+        "periodo": "2023-04",
+        "valor": 25405
+      },
+      {
+        "periodo": "2023-05",
+        "valor": 25919
+      },
+      {
+        "periodo": "2023-06",
+        "valor": 25324
+      },
+      {
+        "periodo": "2023-07",
+        "valor": 27516
+      },
+      {
+        "periodo": "2023-08",
+        "valor": 30468
+      },
+      {
+        "periodo": "2023-09",
+        "valor": 19741
+      },
+      {
+        "periodo": "2023-10",
+        "valor": 21259
+      },
+      {
+        "periodo": "2023-11",
+        "valor": 21576
+      },
+      {
+        "periodo": "2023-12",
+        "valor": 18481
+      },
+      {
+        "periodo": "2024-01",
+        "valor": 21223
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 19771
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 19567
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 19613
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 20190
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 19077
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 17710
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 16677
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 17594
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 18001
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 18661
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 17889
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 17869
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 17088
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 17149
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 18033
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 18124
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 18614
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 19160
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 20508
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 20851
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 19969
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 21468
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 22984
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 22775
+      }
+    ],
+    "primeiras_consultas": [
+      {
+        "periodo": "2024-01",
+        "valor": 349989
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 332485
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 329133
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 341498
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 346484
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 295774
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 347463
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 275213
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 311674
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 371595
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 344723
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 307372
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 360416
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 340579
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 336002
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 322930
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 356848
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 295401
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 360475
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 273622
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 340725
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 376681
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 333624
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 257340
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 332126
+      }
+    ]
+  },
+  "_meta": {
+    "source": "Power BI Public API (querydata endpoint)",
+    "method": "Decoded report tokens from iframe src, resolved cluster URL via embed page JS, queried modelsAndExploration for schema, then POSTed querydata",
+    "extracted": "2026-03-20",
+    "cluster_url": "https://wabi-north-europe-api.analysis.windows.net",
+    "tenant_id": "22c84608-f01d-46c5-8024-63cc962e5f51",
+    "reports": {
+      "eixo1": {
+        "resourceKey": "b3b41fe0-91b3-4f1d-9c0c-72ab896fbfc0",
+        "datasetId": "343c025d-2b12-4f42-b48e-8879025557ef",
+        "modelId": 21106397,
+        "tables": [
+          "Medidas",
+          "Dim_Calendar",
+          "agg_Eixo1"
+        ]
+      },
+      "eixo2": {
+        "resourceKey": "72e2a05c-174f-401b-b608-84e83a83e60b",
+        "datasetId": "2b83ca7c-2f79-4a5f-9d71-1afaa1fde139",
+        "modelId": 21110989,
+        "tables": [
+          "V_DESNS_EIXO2_Partos",
+          "V_DESNS_EIXO2_SNS24_GRAVIDAS",
+          "V_DESNS_EIXO2_ECO_PRENATAIS",
+          "V_LK_MES_T"
+        ]
+      },
+      "eixo3": {
+        "resourceKey": "fb3ed8f0-9d46-4335-8100-4f7f9e5d7ba1",
+        "datasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+        "modelId": 21111029,
+        "note": "Tables discovered via Playwright network interception",
+        "tables": [
+          "V_DESNS_EIXO3_SNS24_CAC",
+          "V_DESNS_EIXO3_SU_ENCAMINHA_CSP",
+          "V_DESNS_EIXO3_SN24_AGENDA_CSP",
+          "V_DESNS_EIXO3_VACINAS",
+          "V_LK_MES_T"
+        ]
+      },
+      "eixo4": {
+        "resourceKey": "829c941d-f8a0-4096-8930-ff0430465ac7",
+        "datasetId": "ebf93d18-7244-47de-a5e0-a1d180f5868d",
+        "modelId": 21110939,
+        "note": "Tables discovered via Playwright network interception",
+        "tables": [
+          "V_DESNS_EIXO4_UTENTES_INSC",
+          "V_DESNS_EIXO4_CONS_MEDICAS_CSP",
+          "BD_ULS",
+          "BD_SCM",
+          "V_LK_MES_T",
+          "LocalDateTable_7b4c6c5a-b3d4-433d-9f01-629890bca877"
+        ]
+      },
+      "eixo5": {
+        "resourceKey": "9a4525a2-1830-4efe-8851-6b1b4d4a2192",
+        "datasetId": "158f4c52-382c-4c60-ae65-4e983076ea9b",
+        "modelId": 21098771,
+        "tables": [
+          "Métricas",
+          "DimData",
+          "Eixo5_old",
+          "agg_eixo5"
+        ]
+      }
+    },
+    "coverage": {
+      "eixo1": "COMPLETE: 6 series, Jan 2023 - Jan 2026",
+      "eixo2": "COMPLETE: 9 series, Jun 2024 - Jan 2026 (triagens), Jan 2024 - Jan 2026 (partos)",
+      "eixo3": "COMPLETE: 10 series — CAC utentes, teleconsultas, camas, encaminhamentos SU/CSP, vacinas",
+      "eixo4": "COMPLETE: 12 series — utentes inscritos (com/sem MdF), consultas CSP (presenciais/nao), ULS, SCM",
+      "eixo5": "PARTIAL: annual totals + monthly 2025 data for psychology/psychiatry"
+    },
+    "total_data_points": 2164
+  },
+  "eixo2": {
+    "total_partos": [
+      {
+        "periodo": "2024-01",
+        "valor": 5395
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 5022
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 5202
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 5001
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 5509
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 5051
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 5434
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 5747
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 5676
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 5667
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 5450
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 5350
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 5433
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 4488
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 5810
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 5267
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 5570
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 5491
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 5859
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 5704
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 5942
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 5775
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 5593
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 5579
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 5405
+      }
+    ],
+    "partos_sem_cesarianas": [
+      {
+        "periodo": "2024-01",
+        "valor": 3614
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 3442
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 3491
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 3323
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 3622
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 3379
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 3729
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 3907
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 3864
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 3862
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 3666
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 3606
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 3627
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 2955
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 3914
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 3523
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 3703
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 3653
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 3921
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 3804
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 4066
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 3859
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 3743
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 3694
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 3618
+      }
+    ],
+    "total_cesarianas": [
+      {
+        "periodo": "2024-01",
+        "valor": 1781
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 1580
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 1711
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 1678
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 1887
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 1672
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 1705
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 1840
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 1812
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 1805
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 1784
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 1744
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 1806
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 1533
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 1896
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 1744
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 1867
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 1838
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 1938
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 1900
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 1876
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 1916
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 1850
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 1885
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 1787
+      }
+    ],
+    "triagens_gravidas": [
+      {
+        "periodo": "2024-06",
+        "valor": 8786
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 9848
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 10260
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 10002
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 10356
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 10447
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 14149
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 19122
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 19678
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 20893
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 21314
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 21645
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 21013
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 22250
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 20426
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 20421
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 20364
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 17705
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 16279
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 18572
+      }
+    ],
+    "encaminhamentos_csp": [
+      {
+        "periodo": "2024-06",
+        "valor": 1415
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 1510
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 1456
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 1604
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 1804
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 1903
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 2663
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 3979
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 4475
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 4707
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 4776
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 4935
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 4831
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 5170
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 4528
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 4859
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 5117
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 4274
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 3627
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 4592
+      }
+    ],
+    "encaminhamentos_su": [
+      {
+        "periodo": "2024-06",
+        "valor": 6096
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 6936
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 7358
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 6978
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 7075
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 7069
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 9806
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 13538
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 13576
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 14167
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 14898
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 14848
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 14629
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 15486
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 14320
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 13962
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 13627
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 12302
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 11522
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 12772
+      }
+    ],
+    "encaminhamentos_inem": [
+      {
+        "periodo": "2024-06",
+        "valor": 133
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 132
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 192
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 186
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 158
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 189
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 645
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 839
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 624
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 768
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 345
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 330
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 197
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 228
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 305
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 283
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 256
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 226
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 228
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 171
+      }
+    ],
+    "encaminhamentos_autocuidados": [
+      {
+        "periodo": "2024-06",
+        "valor": 1142
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 1270
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 1254
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 1234
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 1319
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 1286
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 1035
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 766
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 843
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 927
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 944
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 959
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 969
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 926
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 794
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 781
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 783
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 646
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 685
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 804
+      }
+    ],
+    "ecografias_prenatais": [
+      {
+        "periodo": "2023-01",
+        "valor": 2192
+      },
+      {
+        "periodo": "2023-02",
+        "valor": 4344
+      },
+      {
+        "periodo": "2023-03",
+        "valor": 2736
+      },
+      {
+        "periodo": "2023-04",
+        "valor": 4869
+      },
+      {
+        "periodo": "2023-05",
+        "valor": 3590
+      },
+      {
+        "periodo": "2023-06",
+        "valor": 3084
+      },
+      {
+        "periodo": "2023-07",
+        "valor": 2347
+      },
+      {
+        "periodo": "2023-08",
+        "valor": 1883
+      },
+      {
+        "periodo": "2023-09",
+        "valor": 2921
+      },
+      {
+        "periodo": "2023-10",
+        "valor": 2828
+      },
+      {
+        "periodo": "2023-11",
+        "valor": 2674
+      },
+      {
+        "periodo": "2023-12",
+        "valor": 2629
+      },
+      {
+        "periodo": "2024-01",
+        "valor": 2271
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 2259
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 2418
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 1604
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 1333
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 2542
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 1765
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 1222
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 1798
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 2613
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 2779
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 3259
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 3301
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 3569
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 4175
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 3663
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 3808
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 3630
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 4023
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 2788
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 3614
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 4419
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 3570
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 3036
+      }
+    ]
+  },
+  "eixo5": {
+    "episodios_psicologia_por_ano": [
+      {
+        "periodo": "2023",
+        "valor": 335587
+      },
+      {
+        "periodo": "2024",
+        "valor": 357285
+      },
+      {
+        "periodo": "2025",
+        "valor": 393270
+      },
+      {
+        "periodo": "2026",
+        "valor": 35243
+      }
+    ],
+    "episodios_psiquiatria_por_ano": [
+      {
+        "periodo": "2023",
+        "valor": 769197
+      },
+      {
+        "periodo": "2024",
+        "valor": 765020
+      },
+      {
+        "periodo": "2025",
+        "valor": 754672
+      },
+      {
+        "periodo": "2026",
+        "valor": 66884
+      }
+    ],
+    "episodios_psicologia_mensal_2025": [
+      {
+        "periodo": "Janeiro",
+        "valor": 34884
+      },
+      {
+        "periodo": "Fevereiro",
+        "valor": 34755
+      },
+      {
+        "periodo": "Março",
+        "valor": 35517
+      },
+      {
+        "periodo": "Abril",
+        "valor": 32987
+      },
+      {
+        "periodo": "Maio",
+        "valor": 36829
+      },
+      {
+        "periodo": "Junho",
+        "valor": 29167
+      },
+      {
+        "periodo": "Julho",
+        "valor": 35273
+      },
+      {
+        "periodo": "Agosto",
+        "valor": 22058
+      },
+      {
+        "periodo": "Setembro",
+        "valor": 33333
+      },
+      {
+        "periodo": "Outubro",
+        "valor": 38524
+      },
+      {
+        "periodo": "Novembro",
+        "valor": 34666
+      },
+      {
+        "periodo": "Dezembro",
+        "valor": 25277
+      }
+    ],
+    "episodios_psiquiatria_mensal_2025": [
+      {
+        "periodo": "Janeiro",
+        "valor": 70565
+      },
+      {
+        "periodo": "Fevereiro",
+        "valor": 65461
+      },
+      {
+        "periodo": "Março",
+        "valor": 63263
+      },
+      {
+        "periodo": "Abril",
+        "valor": 61778
+      },
+      {
+        "periodo": "Maio",
+        "valor": 69789
+      },
+      {
+        "periodo": "Junho",
+        "valor": 54531
+      },
+      {
+        "periodo": "Julho",
+        "valor": 67676
+      },
+      {
+        "periodo": "Agosto",
+        "valor": 47767
+      },
+      {
+        "periodo": "Setembro",
+        "valor": 66591
+      },
+      {
+        "periodo": "Outubro",
+        "valor": 70880
+      },
+      {
+        "periodo": "Novembro",
+        "valor": 65445
+      },
+      {
+        "periodo": "Dezembro",
+        "valor": 50926
+      }
+    ],
+    "psiquiatria_fora_tmrg": [
+      {
+        "periodo": "2023",
+        "valor": 21591
+      },
+      {
+        "periodo": "2026",
+        "valor": 697
+      }
+    ]
+  },
+  "eixo3": {
+    "utentes_atendidos_cac": [
+      {
+        "periodo": "2009-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2009-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2009-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2009-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2009-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2009-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2009-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2009-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2009-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2009-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2009-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2009-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2010-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2010-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2010-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2010-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2010-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2010-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2010-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2010-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2010-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2010-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2010-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2010-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2011-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2011-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2011-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2011-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2011-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2011-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2011-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2011-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2011-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2011-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2011-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2011-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2012-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2012-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2012-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2012-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2012-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2012-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2012-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2012-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2012-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2012-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2012-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2012-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2013-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2013-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2013-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2013-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2013-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2013-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2013-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2013-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2013-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2013-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2013-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2013-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2014-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2014-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2014-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2014-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2014-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2014-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2014-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2014-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2014-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2014-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2014-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2014-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2015-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2015-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2015-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2015-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2015-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2015-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2015-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2015-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2015-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2015-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2015-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2015-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2016-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2016-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2016-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2016-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2016-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2016-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2016-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2016-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2016-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2016-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2016-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2016-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2017-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2017-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2017-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2017-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2017-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2017-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2017-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2017-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2017-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2017-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2017-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2017-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2018-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2018-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2018-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2018-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2018-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2018-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2018-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2018-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2018-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2018-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2018-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2018-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2019-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2019-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2019-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2019-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2019-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2019-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2019-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2019-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2019-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2019-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2019-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2019-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2020-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2020-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2020-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2020-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2020-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2020-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2020-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2020-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2020-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2020-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2020-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2020-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2021-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2021-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2021-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2021-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2021-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2021-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2021-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2021-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2021-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2021-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2021-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2021-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2022-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2022-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2022-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2022-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2022-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2022-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2022-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2022-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2022-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2022-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2022-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2022-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2023-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2023-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2023-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2023-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2023-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2023-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2023-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2023-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2023-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2023-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2023-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2023-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2024-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 89202
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 89202
+      },
+      {
+        "periodo": "2026-02",
+        "valor": 89202
+      },
+      {
+        "periodo": "2026-03",
+        "valor": 89202
+      },
+      {
+        "periodo": "2026-04",
+        "valor": 89202
+      },
+      {
+        "periodo": "2026-05",
+        "valor": 89202
+      },
+      {
+        "periodo": "2026-06",
+        "valor": 89202
+      },
+      {
+        "periodo": "2026-07",
+        "valor": 89202
+      },
+      {
+        "periodo": "2026-08",
+        "valor": 89202
+      },
+      {
+        "periodo": "2026-09",
+        "valor": 89202
+      },
+      {
+        "periodo": "2026-10",
+        "valor": 89202
+      },
+      {
+        "periodo": "2026-11",
+        "valor": 89202
+      },
+      {
+        "periodo": "2026-12",
+        "valor": 89202
+      }
+    ],
+    "cac_count": [
+      {
+        "periodo": "2009-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2009-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2009-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2009-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2009-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2009-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2009-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2009-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2009-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2009-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2009-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2009-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2010-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2010-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2010-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2010-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2010-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2010-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2010-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2010-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2010-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2010-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2010-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2010-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2011-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2011-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2011-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2011-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2011-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2011-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2011-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2011-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2011-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2011-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2011-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2011-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2012-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2012-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2012-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2012-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2012-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2012-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2012-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2012-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2012-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2012-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2012-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2012-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2013-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2013-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2013-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2013-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2013-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2013-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2013-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2013-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2013-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2013-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2013-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2013-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2014-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2014-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2014-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2014-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2014-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2014-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2014-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2014-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2014-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2014-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2014-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2014-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2015-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2015-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2015-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2015-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2015-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2015-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2015-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2015-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2015-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2015-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2015-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2015-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2016-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2016-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2016-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2016-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2016-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2016-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2016-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2016-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2016-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2016-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2016-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2016-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2017-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2017-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2017-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2017-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2017-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2017-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2017-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2017-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2017-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2017-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2017-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2017-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2018-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2018-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2018-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2018-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2018-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2018-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2018-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2018-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2018-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2018-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2018-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2018-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2019-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2019-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2019-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2019-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2019-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2019-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2019-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2019-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2019-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2019-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2019-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2019-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2020-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2020-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2020-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2020-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2020-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2020-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2020-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2020-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2020-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2020-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2020-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2020-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2021-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2021-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2021-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2021-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2021-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2021-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2021-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2021-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2021-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2021-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2021-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2021-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2022-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2022-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2022-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2022-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2022-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2022-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2022-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2022-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2022-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2022-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2022-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2022-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2023-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2023-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2023-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2023-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2023-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2023-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2023-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2023-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2023-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2023-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2023-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2023-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2024-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 23
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 23
+      },
+      {
+        "periodo": "2026-02",
+        "valor": 23
+      },
+      {
+        "periodo": "2026-03",
+        "valor": 23
+      },
+      {
+        "periodo": "2026-04",
+        "valor": 23
+      },
+      {
+        "periodo": "2026-05",
+        "valor": 23
+      },
+      {
+        "periodo": "2026-06",
+        "valor": 23
+      },
+      {
+        "periodo": "2026-07",
+        "valor": 23
+      },
+      {
+        "periodo": "2026-08",
+        "valor": 23
+      },
+      {
+        "periodo": "2026-09",
+        "valor": 23
+      },
+      {
+        "periodo": "2026-10",
+        "valor": 23
+      },
+      {
+        "periodo": "2026-11",
+        "valor": 23
+      },
+      {
+        "periodo": "2026-12",
+        "valor": 23
+      }
+    ],
+    "teleconsultas_sns24": [
+      {
+        "periodo": "2009-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2009-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2009-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2009-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2009-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2009-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2009-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2009-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2009-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2009-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2009-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2009-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2010-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2010-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2010-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2010-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2010-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2010-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2010-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2010-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2010-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2010-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2010-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2010-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2011-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2011-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2011-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2011-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2011-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2011-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2011-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2011-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2011-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2011-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2011-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2011-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2012-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2012-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2012-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2012-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2012-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2012-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2012-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2012-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2012-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2012-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2012-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2012-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2013-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2013-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2013-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2013-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2013-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2013-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2013-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2013-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2013-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2013-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2013-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2013-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2014-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2014-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2014-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2014-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2014-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2014-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2014-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2014-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2014-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2014-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2014-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2014-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2015-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2015-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2015-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2015-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2015-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2015-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2015-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2015-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2015-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2015-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2015-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2015-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2016-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2016-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2016-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2016-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2016-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2016-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2016-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2016-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2016-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2016-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2016-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2016-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2017-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2017-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2017-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2017-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2017-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2017-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2017-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2017-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2017-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2017-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2017-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2017-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2018-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2018-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2018-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2018-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2018-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2018-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2018-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2018-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2018-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2018-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2018-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2018-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2019-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2019-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2019-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2019-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2019-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2019-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2019-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2019-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2019-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2019-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2019-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2019-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2020-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2020-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2020-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2020-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2020-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2020-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2020-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2020-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2020-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2020-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2020-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2020-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2021-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2021-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2021-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2021-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2021-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2021-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2021-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2021-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2021-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2021-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2021-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2021-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2022-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2022-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2022-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2022-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2022-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2022-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2022-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2022-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2022-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2022-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2022-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2022-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2023-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2023-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2023-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2023-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2023-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2023-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2023-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2023-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2023-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2023-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2023-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2023-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2024-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2024-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2024-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2024-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2024-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2024-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2024-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2024-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2024-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2024-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2024-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2024-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2025-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2025-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2025-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2025-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2025-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2025-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2025-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2025-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2025-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2025-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2025-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2025-12",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2026-01",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2026-02",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2026-03",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2026-04",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2026-05",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2026-06",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2026-07",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2026-08",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2026-09",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2026-10",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2026-11",
+        "valor": "+82.300"
+      },
+      {
+        "periodo": "2026-12",
+        "valor": "+82.300"
+      }
+    ],
+    "doentes_referenciados": [
+      {
+        "periodo": "2009-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2009-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2009-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2009-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2009-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2009-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2009-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2009-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2009-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2009-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2009-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2009-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2010-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2010-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2010-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2010-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2010-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2010-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2010-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2010-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2010-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2010-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2010-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2010-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2011-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2011-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2011-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2011-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2011-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2011-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2011-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2011-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2011-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2011-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2011-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2011-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2012-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2012-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2012-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2012-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2012-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2012-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2012-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2012-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2012-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2012-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2012-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2012-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2013-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2013-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2013-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2013-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2013-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2013-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2013-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2013-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2013-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2013-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2013-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2013-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2014-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2014-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2014-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2014-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2014-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2014-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2014-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2014-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2014-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2014-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2014-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2014-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2015-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2015-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2015-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2015-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2015-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2015-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2015-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2015-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2015-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2015-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2015-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2015-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2016-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2016-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2016-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2016-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2016-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2016-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2016-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2016-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2016-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2016-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2016-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2016-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2017-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2017-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2017-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2017-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2017-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2017-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2017-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2017-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2017-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2017-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2017-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2017-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2018-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2018-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2018-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2018-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2018-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2018-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2018-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2018-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2018-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2018-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2018-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2018-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2019-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2019-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2019-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2019-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2019-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2019-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2019-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2019-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2019-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2019-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2019-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2019-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2020-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2020-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2020-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2020-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2020-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2020-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2020-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2020-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2020-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2020-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2020-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2020-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2021-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2021-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2021-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2021-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2021-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2021-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2021-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2021-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2021-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2021-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2021-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2021-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2022-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2022-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2022-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2022-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2022-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2022-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2022-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2022-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2022-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2022-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2022-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2022-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2023-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2023-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2023-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2023-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2023-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2023-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2023-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2023-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2023-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2023-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2023-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2023-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2024-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 61682
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 61682
+      },
+      {
+        "periodo": "2026-02",
+        "valor": 61682
+      },
+      {
+        "periodo": "2026-03",
+        "valor": 61682
+      },
+      {
+        "periodo": "2026-04",
+        "valor": 61682
+      },
+      {
+        "periodo": "2026-05",
+        "valor": 61682
+      },
+      {
+        "periodo": "2026-06",
+        "valor": 61682
+      },
+      {
+        "periodo": "2026-07",
+        "valor": 61682
+      },
+      {
+        "periodo": "2026-08",
+        "valor": 61682
+      },
+      {
+        "periodo": "2026-09",
+        "valor": 61682
+      },
+      {
+        "periodo": "2026-10",
+        "valor": 61682
+      },
+      {
+        "periodo": "2026-11",
+        "valor": 61682
+      },
+      {
+        "periodo": "2026-12",
+        "valor": 61682
+      }
+    ],
+    "camas_hospitalares": [
+      {
+        "periodo": "2009-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2009-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2009-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2009-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2009-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2009-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2009-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2009-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2009-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2009-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2009-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2009-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2010-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2010-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2010-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2010-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2010-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2010-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2010-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2010-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2010-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2010-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2010-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2010-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2011-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2011-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2011-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2011-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2011-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2011-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2011-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2011-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2011-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2011-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2011-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2011-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2012-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2012-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2012-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2012-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2012-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2012-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2012-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2012-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2012-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2012-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2012-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2012-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2013-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2013-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2013-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2013-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2013-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2013-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2013-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2013-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2013-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2013-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2013-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2013-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2014-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2014-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2014-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2014-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2014-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2014-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2014-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2014-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2014-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2014-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2014-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2014-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2015-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2015-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2015-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2015-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2015-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2015-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2015-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2015-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2015-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2015-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2015-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2015-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2016-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2016-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2016-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2016-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2016-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2016-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2016-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2016-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2016-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2016-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2016-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2016-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2017-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2017-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2017-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2017-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2017-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2017-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2017-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2017-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2017-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2017-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2017-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2017-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2018-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2018-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2018-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2018-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2018-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2018-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2018-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2018-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2018-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2018-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2018-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2018-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2019-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2019-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2019-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2019-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2019-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2019-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2019-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2019-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2019-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2019-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2019-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2019-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2020-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2020-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2020-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2020-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2020-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2020-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2020-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2020-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2020-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2020-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2020-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2020-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2021-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2021-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2021-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2021-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2021-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2021-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2021-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2021-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2021-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2021-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2021-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2021-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2022-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2022-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2022-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2022-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2022-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2022-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2022-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2022-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2022-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2022-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2022-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2022-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2023-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2023-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2023-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2023-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2023-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2023-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2023-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2023-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2023-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2023-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2023-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2023-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2024-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2024-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2024-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2024-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2024-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2024-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2024-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2024-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2024-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2024-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2024-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2024-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2025-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2025-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2025-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2025-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2025-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2025-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2025-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2025-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2025-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2025-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2025-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2025-12",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2026-01",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2026-02",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2026-03",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2026-04",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2026-05",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2026-06",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2026-07",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2026-08",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2026-09",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2026-10",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2026-11",
+        "valor": "+832"
+      },
+      {
+        "periodo": "2026-12",
+        "valor": "+832"
+      }
+    ],
+    "agendamentos_csp": [
+      {
+        "periodo": "2023-01",
+        "valor": 69
+      },
+      {
+        "periodo": "2023-02",
+        "valor": 42
+      },
+      {
+        "periodo": "2023-03",
+        "valor": 71
+      },
+      {
+        "periodo": "2023-04",
+        "valor": 100
+      },
+      {
+        "periodo": "2023-05",
+        "valor": 162
+      },
+      {
+        "periodo": "2023-06",
+        "valor": 172
+      },
+      {
+        "periodo": "2023-07",
+        "valor": 159
+      },
+      {
+        "periodo": "2023-08",
+        "valor": 189
+      },
+      {
+        "periodo": "2023-09",
+        "valor": 162
+      },
+      {
+        "periodo": "2023-10",
+        "valor": 120
+      },
+      {
+        "periodo": "2023-11",
+        "valor": 149
+      },
+      {
+        "periodo": "2023-12",
+        "valor": 176
+      },
+      {
+        "periodo": "2024-01",
+        "valor": 161
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 172
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 154
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 191
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 232
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 197
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 237
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 187
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 171
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 427
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 1561
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 3842
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 5797
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 5187
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 5073
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 4336
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 4416
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 3844
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 3520
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 3894
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 4168
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 4597
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 4060
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 4864
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 4366
+      }
+    ],
+    "encaminhamentos_total": [
+      {
+        "periodo": "2023-01",
+        "valor": 69
+      },
+      {
+        "periodo": "2023-02",
+        "valor": 42
+      },
+      {
+        "periodo": "2023-03",
+        "valor": 71
+      },
+      {
+        "periodo": "2023-04",
+        "valor": 100
+      },
+      {
+        "periodo": "2023-05",
+        "valor": 162
+      },
+      {
+        "periodo": "2023-06",
+        "valor": 172
+      },
+      {
+        "periodo": "2023-07",
+        "valor": 159
+      },
+      {
+        "periodo": "2023-08",
+        "valor": 189
+      },
+      {
+        "periodo": "2023-09",
+        "valor": 162
+      },
+      {
+        "periodo": "2023-10",
+        "valor": 120
+      },
+      {
+        "periodo": "2023-11",
+        "valor": 149
+      },
+      {
+        "periodo": "2023-12",
+        "valor": 176
+      },
+      {
+        "periodo": "2024-01",
+        "valor": 161
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 172
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 9266
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 8998
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 10024
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 8759
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 9098
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 7567
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 14777
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 21863
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 40942
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 64879
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 96898
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 96361
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 96865
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 69595
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 90251
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 75587
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 78640
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 61232
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 71582
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 80397
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 79185
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 84159
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 88591
+      }
+    ],
+    "consultas_csp_agendadas": [
+      {
+        "periodo": "2024-03",
+        "valor": 9112
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 8807
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 9792
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 8562
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 8861
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 7380
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 14606
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 21436
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 39381
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 61037
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 91101
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 91174
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 91792
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 65259
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 85835
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 71743
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 75120
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 57338
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 67414
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 75800
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 75125
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 79295
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 84225
+      }
+    ],
+    "vacinados": [
+      {
+        "periodo": "2009-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2009-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2009-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2009-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2009-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2009-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2009-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2009-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2009-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2009-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2009-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2009-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2010-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2010-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2010-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2010-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2010-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2010-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2010-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2010-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2010-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2010-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2010-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2010-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2011-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2011-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2011-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2011-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2011-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2011-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2011-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2011-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2011-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2011-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2011-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2011-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2012-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2012-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2012-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2012-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2012-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2012-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2012-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2012-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2012-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2012-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2012-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2012-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2013-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2013-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2013-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2013-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2013-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2013-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2013-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2013-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2013-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2013-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2013-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2013-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2014-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2014-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2014-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2014-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2014-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2014-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2014-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2014-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2014-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2014-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2014-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2014-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2015-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2015-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2015-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2015-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2015-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2015-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2015-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2015-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2015-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2015-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2015-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2015-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2016-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2016-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2016-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2016-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2016-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2016-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2016-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2016-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2016-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2016-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2016-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2016-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2017-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2017-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2017-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2017-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2017-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2017-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2017-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2017-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2017-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2017-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2017-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2017-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2018-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2018-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2018-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2018-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2018-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2018-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2018-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2018-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2018-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2018-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2018-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2018-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2019-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2019-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2019-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2019-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2019-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2019-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2019-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2019-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2019-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2019-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2019-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2019-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2020-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2020-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2020-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2020-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2020-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2020-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2020-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2020-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2020-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2020-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2020-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2020-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2021-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2021-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2021-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2021-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2021-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2021-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2021-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2021-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2021-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2021-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2021-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2021-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2022-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2022-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2022-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2022-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2022-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2022-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2022-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2022-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2022-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2022-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2022-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2022-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2023-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2023-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2023-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2023-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2023-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2023-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2023-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2023-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2023-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2023-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2023-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2023-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2024-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2026-02",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2026-03",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2026-04",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2026-05",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2026-06",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2026-07",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2026-08",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2026-09",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2026-10",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2026-11",
+        "valor": 7978824
+      },
+      {
+        "periodo": "2026-12",
+        "valor": 7978824
+      }
+    ],
+    "covacinados": [
+      {
+        "periodo": "2009-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2009-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2009-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2009-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2009-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2009-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2009-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2009-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2009-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2009-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2009-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2009-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2010-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2010-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2010-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2010-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2010-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2010-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2010-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2010-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2010-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2010-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2010-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2010-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2011-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2011-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2011-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2011-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2011-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2011-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2011-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2011-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2011-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2011-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2011-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2011-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2012-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2012-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2012-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2012-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2012-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2012-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2012-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2012-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2012-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2012-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2012-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2012-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2013-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2013-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2013-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2013-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2013-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2013-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2013-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2013-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2013-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2013-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2013-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2013-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2014-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2014-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2014-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2014-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2014-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2014-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2014-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2014-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2014-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2014-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2014-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2014-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2015-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2015-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2015-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2015-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2015-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2015-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2015-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2015-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2015-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2015-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2015-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2015-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2016-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2016-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2016-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2016-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2016-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2016-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2016-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2016-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2016-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2016-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2016-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2016-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2017-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2017-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2017-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2017-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2017-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2017-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2017-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2017-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2017-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2017-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2017-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2017-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2018-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2018-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2018-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2018-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2018-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2018-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2018-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2018-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2018-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2018-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2018-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2018-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2019-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2019-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2019-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2019-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2019-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2019-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2019-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2019-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2019-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2019-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2019-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2019-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2020-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2020-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2020-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2020-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2020-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2020-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2020-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2020-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2020-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2020-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2020-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2020-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2021-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2021-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2021-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2021-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2021-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2021-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2021-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2021-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2021-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2021-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2021-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2021-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2022-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2022-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2022-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2022-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2022-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2022-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2022-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2022-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2022-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2022-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2022-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2022-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2023-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2023-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2023-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2023-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2023-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2023-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2023-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2023-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2023-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2023-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2023-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2023-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2024-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2026-02",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2026-03",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2026-04",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2026-05",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2026-06",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2026-07",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2026-08",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2026-09",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2026-10",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2026-11",
+        "valor": 5103344
+      },
+      {
+        "periodo": "2026-12",
+        "valor": 5103344
+      }
+    ]
+  },
+  "eixo4": {
+    "utentes_inscritos": [
+      {
+        "periodo": "2024-01",
+        "valor": 10549845
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 10407778
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 10333077
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 10354884
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 10376678
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 10395034
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 10412283
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 10429810
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 10448223
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 10468898
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 10485334
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 10499616
+      }
+    ],
+    "utentes_com_mdf": [
+      {
+        "periodo": "2024-01",
+        "valor": 8797804
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 8864880
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 8780411
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 8775697
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 8759331
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 8775583
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 8748263
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 8740279
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 8846362
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 8888445
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 8934596
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 8963243
+      }
+    ],
+    "pct_utentes_com_mdf": [
+      {
+        "periodo": "2024-01",
+        "valor": "0.83392732310285123"
+      },
+      {
+        "periodo": "2024-02",
+        "valor": "0.85175529301259112"
+      },
+      {
+        "periodo": "2024-03",
+        "valor": "0.84973827253972845"
+      },
+      {
+        "periodo": "2024-04",
+        "valor": "0.84749351127448647"
+      },
+      {
+        "periodo": "2024-05",
+        "valor": "0.84413634112959846"
+      },
+      {
+        "periodo": "2024-06",
+        "valor": "0.84420916756982223"
+      },
+      {
+        "periodo": "2024-07",
+        "valor": "0.84018682550214974"
+      },
+      {
+        "periodo": "2024-08",
+        "valor": "0.83800941723770617"
+      },
+      {
+        "periodo": "2024-09",
+        "valor": "0.84668579527829757"
+      },
+      {
+        "periodo": "2024-10",
+        "valor": "0.84903348948475765"
+      },
+      {
+        "periodo": "2024-11",
+        "valor": "0.85210409129551812"
+      },
+      {
+        "periodo": "2024-12",
+        "valor": "0.85367341053234713"
+      }
+    ],
+    "consultas_csp_total": [
+      {
+        "periodo": "2024-01",
+        "valor": 3135440
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 2860823
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 2770034
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 2966677
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 2979931
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 2596974
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 2931866
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 2481768
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 2683863
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 3181165
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 2870956
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 2573676
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 3161976
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 2844085
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 2835246
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 2671969
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 2976227
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 2535595
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 2988842
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 2392474
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 2927671
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 3155874
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 2829463
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 2442372
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 2980406
+      }
+    ],
+    "consultas_csp_2025": [
+      {
+        "periodo": "2026-01",
+        "valor": 2980406
+      }
+    ],
+    "consultas_presenciais": [
+      {
+        "periodo": "2024-01",
+        "valor": 1729414
+      },
+      {
+        "periodo": "2024-02",
+        "valor": 1629548
+      },
+      {
+        "periodo": "2024-03",
+        "valor": 1603573
+      },
+      {
+        "periodo": "2024-04",
+        "valor": 1689254
+      },
+      {
+        "periodo": "2024-05",
+        "valor": 1692252
+      },
+      {
+        "periodo": "2024-06",
+        "valor": 1450803
+      },
+      {
+        "periodo": "2024-07",
+        "valor": 1633942
+      },
+      {
+        "periodo": "2024-08",
+        "valor": 1357630
+      },
+      {
+        "periodo": "2024-09",
+        "valor": 1458876
+      },
+      {
+        "periodo": "2024-10",
+        "valor": 1745301
+      },
+      {
+        "periodo": "2024-11",
+        "valor": 1589539
+      },
+      {
+        "periodo": "2024-12",
+        "valor": 1415484
+      },
+      {
+        "periodo": "2025-01",
+        "valor": 1724501
+      },
+      {
+        "periodo": "2025-02",
+        "valor": 1587494
+      },
+      {
+        "periodo": "2025-03",
+        "valor": 1554172
+      },
+      {
+        "periodo": "2025-04",
+        "valor": 1467733
+      },
+      {
+        "periodo": "2025-05",
+        "valor": 1616490
+      },
+      {
+        "periodo": "2025-06",
+        "valor": 1354241
+      },
+      {
+        "periodo": "2025-07",
+        "valor": 1614842
+      },
+      {
+        "periodo": "2025-08",
+        "valor": 1276159
+      },
+      {
+        "periodo": "2025-09",
+        "valor": 1549347
+      },
+      {
+        "periodo": "2025-10",
+        "valor": 1681397
+      },
+      {
+        "periodo": "2025-11",
+        "valor": 1529814
+      },
+      {
+        "periodo": "2025-12",
+        "valor": 1272013
+      },
+      {
+        "periodo": "2026-01",
+        "valor": 1594771
+      }
+    ],
+    "medicos_aposentados": [],
+    "medicos_contratados": [],
+    "medicos_mgf_contratados": [],
+    "total_uls": [],
+    "total_scm": [],
+    "variacao_consultas_uls": [],
+    "utentes_inscritos_mensal": [
+      {
+        "periodo": "2024-01",
+        "total": 10375126,
+        "com_mdf": 8628210,
+        "sem_mdf": 1746916
+      },
+      {
+        "periodo": "2024-02",
+        "total": 10382003,
+        "com_mdf": 8640012
+      },
+      {
+        "periodo": "2024-03",
+        "total": 10394780,
+        "com_mdf": 8688397
+      },
+      {
+        "periodo": "2024-04",
+        "total": 10398524,
+        "com_mdf": 8700291
+      },
+      {
+        "periodo": "2024-05",
+        "total": 10405684,
+        "com_mdf": 8715567
+      },
+      {
+        "periodo": "2024-06",
+        "total": 10413058,
+        "com_mdf": 8720754
+      },
+      {
+        "periodo": "2024-07",
+        "total": 10420823,
+        "com_mdf": 8730076
+      },
+      {
+        "periodo": "2024-08",
+        "total": 10429810,
+        "com_mdf": 8740279
+      },
+      {
+        "periodo": "2024-09",
+        "total": 10448223,
+        "com_mdf": 8846362
+      },
+      {
+        "periodo": "2024-10",
+        "total": 10468898,
+        "com_mdf": 8888445
+      },
+      {
+        "periodo": "2024-11",
+        "total": 10485334,
+        "com_mdf": 8934596
+      },
+      {
+        "periodo": "2024-12",
+        "total": 10499616,
+        "com_mdf": 8963243
+      },
+      {
+        "periodo": "2025-01",
+        "total": 10517099,
+        "com_mdf": 8976805
+      },
+      {
+        "periodo": "2025-02",
+        "total": 10536503,
+        "com_mdf": 9023792
+      },
+      {
+        "periodo": "2025-03",
+        "total": 10548459,
+        "com_mdf": 9015975
+      },
+      {
+        "periodo": "2025-04",
+        "total": 10564889,
+        "com_mdf": 9022978
+      },
+      {
+        "periodo": "2025-05",
+        "total": 10580283,
+        "com_mdf": 9027927
+      },
+      {
+        "periodo": "2025-06",
+        "total": 10597082,
+        "com_mdf": 9038655
+      },
+      {
+        "periodo": "2025-07",
+        "total": 10635263,
+        "com_mdf": 9107553
+      },
+      {
+        "periodo": "2025-08",
+        "total": 10660208,
+        "com_mdf": 9131437,
+        "sem_mdf": 1516527
+      },
+      {
+        "periodo": "2025-09",
+        "total": 10681990,
+        "com_mdf": 9155902,
+        "sem_mdf": 1514236
+      },
+      {
+        "periodo": "2025-10",
+        "total": 10706983,
+        "com_mdf": 9152243,
+        "sem_mdf": 1542989
+      },
+      {
+        "periodo": "2025-11",
+        "total": 10724542,
+        "com_mdf": 9155634,
+        "sem_mdf": 1557148
+      },
+      {
+        "periodo": "2025-12",
+        "total": 10734672,
+        "com_mdf": 9159219,
+        "sem_mdf": 1563710
+      },
+      {
+        "periodo": "2026-01",
+        "total": 10746324,
+        "com_mdf": 9133697,
+        "sem_mdf": 1601018
+      }
+    ]
+  }
+}

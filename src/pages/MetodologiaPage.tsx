@@ -216,11 +216,36 @@ export default function MetodologiaPage() {
         </div>
       </div>
 
+      {/* BI-CSP Data Ecosystem */}
+      <div className="bg-blue-50 rounded-lg border border-blue-200 p-5 text-xs text-gray-600 mb-4">
+        <h4 className="font-semibold text-blue-800 mb-2">Ecossistema de Dados: BI-CSP e SDM</h4>
+        <p>Para alem dos portais de dados abertos, existem plataformas institucionais com dados relevantes para o PETS que nao estao publicamente acessiveis:</p>
+        <ul className="mt-2 space-y-1 list-disc list-inside">
+          <li><strong>BI-CSP</strong> (bicsp.min-saude.pt) — Business Intelligence dos Cuidados de Saude Primarios. Contem indicadores IDE/IDG ao nivel de USF/UCSP/ACES/ULS. Dados de utentes inscritos, consultas medicas CSP, prescricoes e rastreios. Requer autenticacao institucional.</li>
+          <li><strong>SDM</strong> (sdm.min-saude.pt) — Sistema de Definicao de Metricas. Definicoes publicas de ~500 indicadores de saude com formulas, metas e metodologia. Indicador #002 (taxa utilizacao consultas) e #411 (utilizadores frequentes SU) relevantes para PETS.</li>
+          <li><strong>SIARS</strong> — Sistema de Informacao dos CSP. Base de dados subjacente ao BI-CSP. Nao acessivel publicamente.</li>
+        </ul>
+        <p className="mt-2"><strong>Impacto estimado:</strong> Se os agregados nacionais do BI-CSP fossem publicados como dados abertos, o grau medio de monitorabilidade do Eixo 4 subiria ~2.5 pontos (de ~4/10 para ~6.5/10).</p>
+      </div>
+
+      {/* Power BI Extraction */}
+      <div className="bg-green-50 rounded-lg border border-green-200 p-5 text-xs text-gray-600 mb-4">
+        <h4 className="font-semibold text-green-800 mb-2">Extracao de Dados Power BI (SNS Portal)</h4>
+        <p>Os dashboards Power BI do portal SNS (tipo "Publish to Web") foram interrogados programaticamente via API publica querydata, extraindo 2.164 pontos de dados de 43 series temporais cobrindo os 5 eixos do PETS (Jan 2023 - Jan 2026).</p>
+        <ul className="mt-2 space-y-1 list-disc list-inside">
+          <li>Eixo 1: Cirurgias onco/nao-onco, consultas hospitalares, listas de espera (SIGLIC/SICA)</li>
+          <li>Eixo 2: Partos, cesarianas, triagens SNS24 Gravida, ecografias pre-natais</li>
+          <li>Eixo 3: CAC (utentes atendidos, teleconsultas), encaminhamentos SU/CSP, vacinacao</li>
+          <li>Eixo 4: Utentes inscritos (com/sem MdF), consultas CSP (presenciais/nao), ULS/SCM</li>
+          <li>Eixo 5: Episodios psicologia/psiquiatria, TMRG psiquiatria</li>
+        </ul>
+      </div>
+
       {/* Methodology note */}
       <div className="bg-white rounded-lg border border-gray-200 p-5 text-xs text-gray-500">
         <h4 className="font-semibold text-gray-700 mb-2">Nota Metodologica</h4>
         <p>Esta analise classifica cada medida PETS pelo grau em que um cidadao ou investigador pode verificar independentemente o seu estado usando exclusivamente dados abertos publicos (Transparencia SNS, dados.gov.pt). A escala de 1-10 reflecte a disponibilidade, granularidade e alinhamento dos dados abertos com os indicadores usados nos relatorios oficiais do GT PETS.</p>
-        <p className="mt-2">Fontes: Plano de Emergencia e Transformacao da Saude (Mai 2024), Relatorio GT PETS (Dez 2024), II Relatorio de Progresso (Abr 2025), catalogos de 4 portais de dados publicos (140+ datasets analisados).</p>
+        <p className="mt-2">Fontes: Plano de Emergencia e Transformacao da Saude (Mai 2024), Relatorio GT PETS (Dez 2024), II Relatorio de Progresso (Abr 2025), catalogos de 4 portais de dados publicos (140+ datasets analisados), Power BI API (2.164 pontos extraidos), BI-CSP SharePoint API (20 configuracoes de relatorio), SDM (definicoes publicas de indicadores).</p>
         <p className="mt-2">Ultima actualizacao: Marco 2026. Codigo aberto: github.com/dpolonia/petspt</p>
       </div>
     </div>

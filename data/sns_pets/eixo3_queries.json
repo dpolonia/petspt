@@ -1,0 +1,2322 @@
+[
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_SNS24_CAC",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v11",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Acumulado Até TEL_CON"
+                        },
+                        "Name": "V_DESNS_EIXO3_SNS24_CAC.Acumulado Até TEL_CON",
+                        "NativeReferenceName": "Acumulado Até TEL_CON"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v11"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_SNS24_CAC\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v11\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Acumulado Até TEL_CON\"},\"Name\":\"V_DESNS_EIXO3_SNS24_CAC.Acumulado Até TEL_CON\",\"NativeReferenceName\":\"Acumulado Até TEL_CON\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v11\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "0cd4f0e2d03767aa2c60"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_SU_ENCAMINHA_CSP",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v11",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Total de Agendamentos nos CSP"
+                        },
+                        "Name": "V_DESNS_EIXO3_SU_ENCAMINHA_CSP.Total de Agendamentos nos CSP",
+                        "NativeReferenceName": "Agendamentos pelo Serviço de Urgência (SU)"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v11"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_SU_ENCAMINHA_CSP\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v11\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Total de Agendamentos nos CSP\"},\"Name\":\"V_DESNS_EIXO3_SU_ENCAMINHA_CSP.Total de Agendamentos nos CSP\",\"NativeReferenceName\":\"Agendamentos pelo Serviço de Urgência (SU)\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v11\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "fc474a1ab7f200846e9c"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_SNS24_CAC",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v11",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Utentes Atendidos"
+                        },
+                        "Name": "V_DESNS_EIXO3_SNS24_CAC.Utentes Atendidos",
+                        "NativeReferenceName": "Utentes atendidos desde Agosto de 2024"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v11"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_SNS24_CAC\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v11\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Utentes Atendidos\"},\"Name\":\"V_DESNS_EIXO3_SNS24_CAC.Utentes Atendidos\",\"NativeReferenceName\":\"Utentes atendidos desde Agosto de 2024\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v11\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "a8c56285708a8c431902"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "01_Número de Utentes Vacinados"
+                        },
+                        "Name": "V_DESNS_EIXO3_VACINAS.01_Número de Utentes Vacinados",
+                        "NativeReferenceName": "GRIPE"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "DES_TIPO_DOSE"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Gripe'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"01_Número de Utentes Vacinados\"},\"Name\":\"V_DESNS_EIXO3_VACINAS.01_Número de Utentes Vacinados\",\"NativeReferenceName\":\"GRIPE\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_TIPO_DOSE\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Gripe'\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "b74e886da3eb69d764f4"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_SNS24_CAC",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v11",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Camas hospitalares"
+                        },
+                        "Name": "V_DESNS_EIXO3_SNS24_CAC.Camas hospitalares",
+                        "NativeReferenceName": "Camas hospitalares"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v11"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_SNS24_CAC\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v11\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Camas hospitalares\"},\"Name\":\"V_DESNS_EIXO3_SNS24_CAC.Camas hospitalares\",\"NativeReferenceName\":\"Camas hospitalares\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v11\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "0c59e3f4f522b750571e"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_SU_ENCAMINHA_CSP",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v11",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Total Geral"
+                        },
+                        "Name": "V_DESNS_EIXO3_SU_ENCAMINHA_CSP.Total Geral",
+                        "NativeReferenceName": "Total Agendamentos Consultas CSP"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v11"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_SU_ENCAMINHA_CSP\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v11\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Total Geral\"},\"Name\":\"V_DESNS_EIXO3_SU_ENCAMINHA_CSP.Total Geral\",\"NativeReferenceName\":\"Total Agendamentos Consultas CSP\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v11\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "ad8aca8983e2edd07a25"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_SNS24_CAC",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v11",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Teleconsultas realizadas pelo sns24"
+                        },
+                        "Name": "V_DESNS_EIXO3_SNS24_CAC.Teleconsultas realizadas pelo sns24",
+                        "NativeReferenceName": "Teleconsultas realizadas pelo sns24"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v11"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_SNS24_CAC\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v11\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Teleconsultas realizadas pelo sns24\"},\"Name\":\"V_DESNS_EIXO3_SNS24_CAC.Teleconsultas realizadas pelo sns24\",\"NativeReferenceName\":\"Teleconsultas realizadas pelo sns24\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v11\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "1d705e7610e6b76f18c5"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_SN24_AGENDA_CSP",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v11",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Acumulado Até LASV"
+                        },
+                        "Name": "V_DESNS_EIXO3_SN24_AGENDA_CSP.Acumulado Até LASV",
+                        "NativeReferenceName": "Acumulado Até LASV"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v11"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_SN24_AGENDA_CSP\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v11\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Acumulado Até LASV\"},\"Name\":\"V_DESNS_EIXO3_SN24_AGENDA_CSP.Acumulado Até LASV\",\"NativeReferenceName\":\"Acumulado Até LASV\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v11\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "4d68f1d7c35ffc808436"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_SNS24_CAC",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v11",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "01_Doentes Referenciados"
+                        },
+                        "Name": "V_DESNS_EIXO3_SNS24_CAC.01_Doentes Referenciados",
+                        "NativeReferenceName": "Doentes referenciados pela linha SNS 24"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v11"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_SNS24_CAC\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v11\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"01_Doentes Referenciados\"},\"Name\":\"V_DESNS_EIXO3_SNS24_CAC.01_Doentes Referenciados\",\"NativeReferenceName\":\"Doentes referenciados pela linha SNS 24\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v11\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "91af8729c0cf1aca6584"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "02_Número de Utentes Covacinados"
+                        },
+                        "Name": "V_DESNS_EIXO3_VACINAS.02_Número de Utentes Covacinados",
+                        "NativeReferenceName": "CO-ADMINISTRAÇÕES"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "DES_TIPO_DOSE"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Gripe'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"02_Número de Utentes Covacinados\"},\"Name\":\"V_DESNS_EIXO3_VACINAS.02_Número de Utentes Covacinados\",\"NativeReferenceName\":\"CO-ADMINISTRAÇÕES\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_TIPO_DOSE\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Gripe'\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "c8f505e8c3fd916b974f"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_SN24_AGENDA_CSP",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v11",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Consultas CSP Agendadas e Realizadas"
+                        },
+                        "Name": "V_DESNS_EIXO3_SN24_AGENDA_CSP.Consultas CSP Agendadas e Realizadas",
+                        "NativeReferenceName": "Agendamentos pelo SNS24"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v11"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_SN24_AGENDA_CSP\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v11\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Consultas CSP Agendadas e Realizadas\"},\"Name\":\"V_DESNS_EIXO3_SN24_AGENDA_CSP.Consultas CSP Agendadas e Realizadas\",\"NativeReferenceName\":\"Agendamentos pelo SNS24\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v11\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "d252152e110d698a037f"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_SN24_AGENDA_CSP",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v11",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Acumulado Até CAC"
+                        },
+                        "Name": "V_DESNS_EIXO3_SN24_AGENDA_CSP.Acumulado Até CAC",
+                        "NativeReferenceName": "Acumulado Até CAC"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v11"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_SN24_AGENDA_CSP\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v11\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Acumulado Até CAC\"},\"Name\":\"V_DESNS_EIXO3_SN24_AGENDA_CSP.Acumulado Até CAC\",\"NativeReferenceName\":\"Acumulado Até CAC\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v11\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "ea6bafa610b821699e61"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_SNS24_CAC",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v11",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "Centro de Atendimento Clinico"
+                        },
+                        "Name": "V_DESNS_EIXO3_SNS24_CAC.Centro de Atendimento Clinico",
+                        "NativeReferenceName": "Centros de Atendimento Clínico"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v11"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_SNS24_CAC\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0},{\"Name\":\"v11\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Centro de Atendimento Clinico\"},\"Name\":\"V_DESNS_EIXO3_SNS24_CAC.Centro de Atendimento Clinico\",\"NativeReferenceName\":\"Centros de Atendimento Clínico\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v11\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "4ef8c6dcb2055e339143"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  },
+  {
+    "url": "https://wabi-north-europe-api.analysis.windows.net/public/reports/querydata?synchronous=true",
+    "body": {
+      "version": "1.0.0",
+      "queries": [
+        {
+          "Query": {
+            "Commands": [
+              {
+                "SemanticQueryDataShapeCommand": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "v",
+                        "Entity": "V_DESNS_EIXO3_VACINAS",
+                        "Type": 0
+                      },
+                      {
+                        "Name": "v1",
+                        "Entity": "V_LK_MES_T",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "v"
+                            }
+                          },
+                          "Property": "01_Número de Utentes Vacinados"
+                        },
+                        "Name": "V_DESNS_EIXO3_VACINAS.01_Número de Utentes Vacinados",
+                        "NativeReferenceName": "COVID-19"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "DES_TIPO_DOSE"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Covid19'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v1"
+                                    }
+                                  },
+                                  "Property": "COD_ANO"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2023L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2024L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2025L"
+                                  }
+                                }
+                              ],
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "2026L"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "v"
+                                    }
+                                  },
+                                  "Property": "DES_VAC_CAMPANHA"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Campanha reforço sazonal 2025/26'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "Binding": {
+                    "Primary": {
+                      "Groupings": [
+                        {
+                          "Projections": [
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    "DataReduction": {
+                      "DataVolume": 3,
+                      "Primary": {
+                        "Top": {}
+                      }
+                    },
+                    "Version": 1
+                  },
+                  "ExecutionMetricsKind": 1
+                }
+              }
+            ]
+          },
+          "CacheKey": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"V_DESNS_EIXO3_VACINAS\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"V_LK_MES_T\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"01_Número de Utentes Vacinados\"},\"Name\":\"V_DESNS_EIXO3_VACINAS.01_Número de Utentes Vacinados\",\"NativeReferenceName\":\"COVID-19\"}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_TIPO_DOSE\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Covid19'\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"COD_ANO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}],[{\"Literal\":{\"Value\":\"2024L\"}}],[{\"Literal\":{\"Value\":\"2025L\"}}],[{\"Literal\":{\"Value\":\"2026L\"}}]]}}},{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"DES_VAC_CAMPANHA\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Campanha reforço sazonal 2025/26'\"}}]]}}}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0]}]},\"DataReduction\":{\"DataVolume\":3,\"Primary\":{\"Top\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+          "QueryId": "",
+          "ApplicationContext": {
+            "DatasetId": "b538decf-17be-45cc-8216-48ed22c484a3",
+            "Sources": [
+              {
+                "ReportId": "944d4322-add7-4105-a910-56750454e199",
+                "VisualId": "b42da4d54393e44fa6d1"
+              }
+            ]
+          }
+        }
+      ],
+      "cancelQueries": [],
+      "modelId": 21111029
+    }
+  }
+]
