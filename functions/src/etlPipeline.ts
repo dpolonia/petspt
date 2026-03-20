@@ -103,11 +103,11 @@ function aggregate(records: Record<string, unknown>[], config: ETLConfig): Aggre
 
   return Array.from(byPeriod.entries())
     .sort(([a], [b]) => a.localeCompare(b))
-    .map(([periodo, data]) => ({
-      periodo,
-      indicadores: data.nacional,
-      porULS: Object.keys(data.porULS).length > 0 ? data.porULS : undefined,
-    }));
+    .map(([periodo, data]) => {
+      const result: AggregatedRecord = { periodo, indicadores: data.nacional };
+      if (Object.keys(data.porULS).length > 0) result.porULS = data.porULS;
+      return result;
+    });
 }
 
 export const etlFullLoad = functions
