@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { MeasureTrendResult } from '../../services/measureTrend';
-import { ResponsiveContainer, ComposedChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, ReferenceArea } from 'recharts';
+import { ResponsiveContainer, ComposedChart, Line, Area, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, ReferenceArea } from 'recharts';
 
 interface Props {
   isOpen: boolean;
@@ -20,10 +20,49 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
   if (!isOpen) return null;
   const fmt = (v: number) => v >= 1e6 ? `${(v / 1e6).toFixed(1)}M` : v >= 1e3 ? `${(v / 1e3).toFixed(0)}K` : v.toLocaleString('pt-PT');
 
+  // Compute statistics from time series
+  const ts = trend.timeSeries;
+  const values = ts.map(d => d.valor);
+  const n = values.length;
+  const mean = n > 0 ? values.reduce((s, v) => s + v, 0) / n : 0;
+  const sorted = [...values].sort((a, b) => a - b);
+  const median = n > 0 ? (n % 2 === 0 ? (sorted[n / 2 - 1] + sorted[n / 2]) / 2 : sorted[Math.floor(n / 2)]) : 0;
+  const stddev = n > 0 ? Math.sqrt(values.reduce((s, v) => s + (v - mean) ** 2, 0) / n) : 0;
+  const cv = mean > 0 ? (stddev / mean) * 100 : 0;
+  const minVal = n > 0 ? Math.min(...values) : 0;
+  const maxVal = n > 0 ? Math.max(...values) : 0;
+  const minPeriodo = ts.find(d => d.valor === minVal)?.periodo || '';
+  const maxPeriodo = ts.find(d => d.valor === maxVal)?.periodo || '';
+
+  // Chart data with stddev band
+  const chartData = ts.map(d => ({
+    periodo: d.periodo,
+    valor: d.valor,
+    stdUpper: mean + stddev,
+    stdLower: Math.max(0, mean - stddev),
+  }));
+
+  // Period band boundaries — match data format
+  const firstP = ts.length > 0 ? ts[0].periodo : '2024-01';
+  const lastP = ts.length > 0 ? ts[ts.length - 1].periodo : '2025-12';
+
+  // Stats context for AI
+  const statsCtx = `Media: ${fmt(mean)}, Mediana: ${fmt(median)}, DP: ${fmt(stddev)}, CV: ${cv.toFixed(1)}%, Min: ${fmt(minVal)} (${minPeriodo}), Max: ${fmt(maxVal)} (${maxPeriodo}), Amplitude: ${fmt(maxVal - minVal)}, Slope: ${trend.tendenciaSlope?.toFixed(1) || 'N/A'}/mes, N: ${n} meses`;
+
   const handleAI = async () => {
     setAiLoading(true);
     try {
-      const ctx = `Medida: ${medidaId} - ${nome}. Estado: ${trend.cor}. Baseline: ${trend.baselineValue ?? 'N/A'}. Ref Jun 2024: ${trend.referenceValue ?? 'N/A'}. Actual (${trend.currentPeriodo}): ${trend.currentValue ?? 'N/A'}. ${descricao || ''}`;
+      const ctx = [
+        `Medida PETS: ${medidaId} — ${nome}`,
+        `Eixo: ${trend.cor}`,
+        `Baseline (Jan 2024): ${trend.baselineValue != null ? fmt(trend.baselineValue) : 'N/A'}`,
+        `Referencia (Jun 2024): ${trend.referenceValue != null ? fmt(trend.referenceValue) : 'N/A'}`,
+        `Valor actual (${trend.currentPeriodo}): ${trend.currentValue != null ? fmt(trend.currentValue) : 'N/A'}`,
+        `Estatisticas: ${statsCtx}`,
+        `Meses desfavoraveis: ${trend.mesesDesfavoraveis}/12`,
+        `Fonte: ${fonte}`,
+        descricao || '',
+      ].join('\n');
       const r = await fetch(`https://europe-west1-petspt-f019f.cloudfunctions.net/aiSummary?eixo=1&context=${encodeURIComponent(ctx)}`);
       const d = await r.json();
       setAiText(d.sumario || JSON.stringify(d));
@@ -34,6 +73,7 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
   return (
     <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" onClick={onClose}>
       <div className="bg-white rounded-xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
+        {/* Header */}
         <div className="p-5 border-b border-gray-200">
           <div className="flex items-start justify-between">
             <div>
@@ -45,6 +85,7 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
           </div>
         </div>
 
+        {/* Key metrics */}
         <div className="p-5 grid grid-cols-4 gap-4">
           <div className="text-center">
             <div className="text-xs text-gray-500">Baseline (2024-01)</div>
@@ -61,31 +102,60 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
           <div className="text-center">
             <div className="text-xs text-gray-500">Tendencia (6m)</div>
             <div className={`text-lg font-bold ${trend.tendenciaConvergente ? 'text-green-600' : 'text-red-600'}`}>
-              {trend.tendenciaSlope != null ? `${trend.tendenciaSlope > 0 ? '+' : ''}${trend.tendenciaSlope.toFixed(1)}/mes` : '\u2014'}
+              {trend.tendenciaSlope != null ? `${trend.tendenciaSlope > 0 ? '+' : ''}${trend.tendenciaSlope.toFixed(1)}/m` : '\u2014'}
             </div>
           </div>
         </div>
 
-        {trend.timeSeries.length >= 2 && (
-          <div className="px-5 pb-5">
+        {/* Chart with stddev band and reference lines */}
+        {ts.length >= 2 && (
+          <div className="px-5 pb-3">
             <ResponsiveContainer width="100%" height={300}>
-              <ComposedChart data={trend.timeSeries}>
+              <ComposedChart data={chartData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-                <ReferenceArea x1="2024-01" x2="2024-06" fill="#FFE0E6" fillOpacity={0.3} />
+                <ReferenceArea x1={firstP} x2="2024-06" fill="#FFE0E6" fillOpacity={0.3} />
                 <ReferenceArea x1="2024-07" x2="2025-06" fill="#FFE0B2" fillOpacity={0.3} />
-                <ReferenceArea x1="2025-07" x2="2099-12" fill="#FF9800" fillOpacity={0.15} />
-                <XAxis dataKey="periodo" tick={{ fontSize: 10 }} interval="preserveStartEnd" />
-                <YAxis tick={{ fontSize: 11 }} tickFormatter={(v) => fmt(v)} />
+                <ReferenceArea x1="2025-07" x2={lastP} fill="#FF9800" fillOpacity={0.15} />
+                <XAxis dataKey="periodo" tick={{ fontSize: 9 }} interval="preserveStartEnd" />
+                <YAxis tick={{ fontSize: 10 }} tickFormatter={fmt} />
                 <Tooltip formatter={(v) => fmt(Number(v))} />
+                {/* Stddev band */}
+                <Area dataKey="stdUpper" stroke="none" fill="#93c5fd" fillOpacity={0.15} name="Media +/- DP" connectNulls />
+                <Area dataKey="stdLower" stroke="none" fill="#ffffff" fillOpacity={1} connectNulls legendType="none" />
+                {/* Mean line (grey dotted) */}
+                <ReferenceLine y={mean} stroke="#9ca3af" strokeDasharray="2 2" strokeWidth={1} />
+                {/* Reference value (red dashed) */}
                 {trend.referenceValue != null && (
                   <ReferenceLine y={trend.referenceValue} stroke="#ef4444" strokeDasharray="5 5" strokeWidth={1.5}
-                    label={{ value: `Ref. Jun 2024: ${fmt(trend.referenceValue)}`, position: 'right', fontSize: 9, fill: '#ef4444' }} />
+                    label={{ value: `Ref: ${fmt(trend.referenceValue)}`, position: 'right', fontSize: 8, fill: '#ef4444' }} />
                 )}
-                <Line dataKey="valor" name="Valor" stroke="#3b82f6" strokeWidth={2} dot={{ r: 3 }} connectNulls />
+                {/* Data line */}
+                <Line dataKey="valor" name="Valor mensal" stroke="#2563eb" strokeWidth={2} dot={{ r: 2.5, fill: '#2563eb' }} connectNulls />
               </ComposedChart>
             </ResponsiveContainer>
           </div>
         )}
+
+        {/* Statistics panel */}
+        {n >= 2 && (
+          <div className="px-5 pb-4">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-1 text-[11px] text-gray-600 bg-gray-50 rounded-lg p-3">
+              <div className="flex justify-between"><span>Media global:</span> <span className="font-mono font-medium">{fmt(mean)}</span></div>
+              <div className="flex justify-between"><span>Minimo:</span> <span className="font-mono font-medium">{fmt(minVal)} ({minPeriodo})</span></div>
+              <div className="flex justify-between"><span>Mediana global:</span> <span className="font-mono font-medium">{fmt(median)}</span></div>
+              <div className="flex justify-between"><span>Maximo:</span> <span className="font-mono font-medium">{fmt(maxVal)} ({maxPeriodo})</span></div>
+              <div className="flex justify-between"><span>Desvio padrao:</span> <span className="font-mono font-medium">{fmt(stddev)}</span></div>
+              <div className="flex justify-between"><span>Amplitude:</span> <span className="font-mono font-medium">{fmt(maxVal - minVal)}</span></div>
+              <div className="flex justify-between"><span>Coef. variacao:</span> <span className="font-mono font-medium">{cv.toFixed(1)}%</span></div>
+              <div className="flex justify-between"><span>Tendencia (slope):</span> <span className="font-mono font-medium">{trend.tendenciaSlope != null ? `${trend.tendenciaSlope > 0 ? '+' : ''}${trend.tendenciaSlope.toFixed(1)}/mes` : 'N/A'}</span></div>
+            </div>
+          </div>
+        )}
+
+        {/* Variable metadata */}
+        <div className="px-5 pb-3 text-[10px] text-gray-400">
+          Periodo: {firstP} a {lastP} ({n} meses) &middot; {fonte} &middot; {trend.dataSource === 'api_dinamica' ? 'API dinamica' : 'Dados fixos'}
+        </div>
 
         {/* AI Button */}
         <div className="px-5 py-3 border-t border-gray-100">
@@ -95,20 +165,24 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
               {aiLoading ? 'A analisar...' : '\u2726 Interpretar com AI'}
             </button>
           ) : (
-            <div className="bg-violet-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
-              <div className="text-violet-700 font-semibold text-xs mb-2">&starf; Analise AI</div>
-              <p>{aiText}</p>
-              <button onClick={() => { setAiText(null); handleAI(); }} className="mt-2 text-[10px] text-violet-500 hover:underline">Regenerar</button>
+            <div className="space-y-3">
+              <div className="bg-blue-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
+                <div className="text-blue-700 font-semibold text-xs mb-2">Analise Tecnica</div>
+                <p>{aiText}</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <button onClick={() => { setAiText(null); handleAI(); }} className="text-[10px] text-violet-500 hover:underline">Regenerar</button>
+                <span className="text-[9px] text-gray-400">Analise gerada por Claude Sonnet 4 | {new Date().toLocaleString('pt-PT')}</span>
+              </div>
             </div>
           )}
         </div>
 
-        <div className="p-5 border-t border-gray-100 bg-gray-50 rounded-b-xl">
-          <div className="grid grid-cols-2 gap-4 text-xs text-gray-500">
-            <div><span className="font-semibold">Fonte:</span> {fonte}</div>
+        {/* Footer */}
+        <div className="p-4 border-t border-gray-100 bg-gray-50 rounded-b-xl">
+          <div className="grid grid-cols-2 gap-3 text-xs text-gray-500">
             <div><span className="font-semibold">Semaforo:</span> {trend.label}</div>
             <div><span className="font-semibold">Meses desfavoraveis:</span> {trend.mesesDesfavoraveis}/12</div>
-            <div><span className="font-semibold">Tipo:</span> {trend.dataSource === 'api_dinamica' ? 'API dinamica' : 'Dados fixos'}</div>
           </div>
         </div>
       </div>
