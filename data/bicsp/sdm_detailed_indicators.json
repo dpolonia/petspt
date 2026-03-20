@@ -1,0 +1,196 @@
+[
+  {
+    "id": 7,
+    "name": "Proporção de utilizadores referenciados para consulta hospitalar",
+    "siars_code": "2013.007.01",
+    "formula": "AA / BB x 100",
+    "numerator": "Count of users with at least one hospital referral during the analysis period, meeting all denominator conditions",
+    "denominator": "Users with active enrollment in the unit AND at least one in-person or remote medical consultation during the period",
+    "data_source": "SIARS (clinical information systems of health units; does not access Alert P1/CTH database)",
+    "periodicity": "Floating 12-month period or fixed period (January through reference date)",
+    "clinical_area": "Transversal",
+    "targets_2025_2026": {
+      "expected_min": null,
+      "expected_max": null,
+      "acceptable_min": null,
+      "acceptable_max": null,
+      "note": "No targets defined — Intervalo Esperado and Variação Aceitável fields show dashes (---)"
+    },
+    "pets_measure_link": "E3.A1 / E4.A2",
+    "pets_relevance_note": "Tracks referral volume from primary care to hospital consultations, relevant to monitoring waiting lists (Eixo 3) and primary care consultation capacity (Eixo 4)"
+  },
+  {
+    "id": 8,
+    "name": "Taxa de utilização de consultas de planeamento familiar (médicas ou de enfermagem)",
+    "siars_code": "2013.008.01",
+    "formula": "AA / BB x 100",
+    "numerator": "Count of women meeting denominator criteria AND having at least one medical OR nursing family planning consultation within 12 months",
+    "denominator": "Count of women with active registration, female gender, and age between 15-50 years",
+    "data_source": "SIARS",
+    "periodicity": "Floating 12-month analysis period",
+    "clinical_area": "Desempenho | Gestão da Saúde | Saúde da Mulher",
+    "targets_2025_2026": {
+      "expected_min": 60,
+      "expected_max": 100,
+      "acceptable_min": 38,
+      "acceptable_max": 100
+    },
+    "pets_measure_link": "E4.C2",
+    "pets_relevance_note": "Reproductive health consultation utilization among women of childbearing age (15-50); relevant to Eixo 4 screenings and birth-related monitoring under Eixo 2"
+  },
+  {
+    "id": 11,
+    "name": "Proporção de grávidas com 1ª consulta médica de vigilância da gravidez, realizada no 1º trimestre",
+    "siars_code": "2013.011.01",
+    "formula": "AA / BB x 100",
+    "numerator": "Count of pregnant women who had at least one medical consultation for pregnancy surveillance within the first 90 days of gestation",
+    "denominator": "Count of women with: female gender; registered pregnancy; active ICPC-2 diagnosis (W78, W79, or W84) in problem list; active enrollment during at least one day of first trimester (days 1-90); 90th gestational day falls within the analysis period",
+    "data_source": "SIARS",
+    "periodicity": "Floating analysis period — numerator: 90 days coinciding with each user's first trimester; denominator: 12 months ending on indicator reference date",
+    "clinical_area": "Desempenho | Gestão da Saúde | Saúde da Mulher",
+    "targets_2025_2026": {
+      "expected_min": 91,
+      "expected_max": 100,
+      "acceptable_min": 85,
+      "acceptable_max": 100
+    },
+    "pets_measure_link": "E2.A1 / E4.C2",
+    "pets_relevance_note": "Early prenatal care access is a key perinatal health quality indicator; relevant to Eixo 2 births monitoring and Eixo 4 screenings. USF-B median 95.3% vs UCSP median 85.3% shows unit-type variation."
+  },
+  {
+    "id": 12,
+    "name": "Proporção de grávidas com 6 ou mais consultas de enfermagem em saúde materna (gravidez e puerpério)",
+    "siars_code": "2013.012.01",
+    "formula": "AA / BB x 100",
+    "numerator": "Count of puerperal women who completed at least 6 nursing consultations for pregnancy surveillance or postpartum review, occurring between the last menstrual period (LMP) and the 42nd day of puerperium",
+    "denominator": "Count of puerperal women with: female sex; registered pregnancy by physician/intern in maternal health module; pregnancy not classified as abortion; active ICPC-2 diagnosis (W78, W79, W84) in problem list; active registration for minimum 7 months between LMP and end-of-pregnancy date; 42nd puerperium day falls within analysis period",
+    "data_source": "SIARS",
+    "periodicity": "Floating analysis period — 12-month denominator period ending on indicator reference date",
+    "clinical_area": "Saúde Materna",
+    "targets_2025_2026": {
+      "expected_min": null,
+      "expected_max": null,
+      "acceptable_min": null,
+      "acceptable_max": null,
+      "note": "No targets defined — Intervalo Esperado and Variação Aceitável fields show dashes (---). Descriptive benchmarks only: USF-B median 91.1%, UCSP median 64.3%, ACES median 86.3%"
+    },
+    "pets_measure_link": "E2.A1",
+    "pets_relevance_note": "Tracks adequacy of maternal nursing surveillance during pregnancy and postpartum; relevant to Eixo 2 births monitoring. Large gap between USF-B (91.1%) and UCSP (64.3%) highlights unit-type disparities."
+  },
+  {
+    "id": 13,
+    "name": "Proporção de puérperas com consulta domiciliária de enfermagem",
+    "siars_code": "2013.013.01",
+    "formula": "AA / BB x 100",
+    "numerator": "Count of puerperal women who received at least one nursing home visit during the puerperium period (from end of pregnancy through day 42 postpartum)",
+    "denominator": "Count of women with: female sex; registered pregnancy in maternal health module; pregnancy not classified as abortion; active ICPC-2 diagnosis (W78, W79, W84); active registration during days 1-42 of puerperium; day 42 postpartum falls within analysis period",
+    "data_source": "SIARS",
+    "periodicity": "Floating 12-month analysis period ending on indicator reference date",
+    "clinical_area": "Saúde Materna",
+    "targets_2025_2026": {
+      "expected_min": null,
+      "expected_max": null,
+      "acceptable_min": null,
+      "acceptable_max": null,
+      "note": "No targets defined — Intervalo Esperado and Variação Aceitável fields show dashes (---)"
+    },
+    "pets_measure_link": "E2.A1",
+    "pets_relevance_note": "Postpartum home nursing visit coverage is a key indicator for maternal and neonatal care quality; relevant to Eixo 2 births and perinatal health monitoring"
+  },
+  {
+    "id": 14,
+    "name": "Proporção de recém-nascidos com pelo menos uma consulta médica de vigilância realizada até aos 28 dias de vida",
+    "siars_code": "2013.014.01",
+    "formula": "AA / BB x 100",
+    "numerator": "Count of newborns with at least one medical surveillance consultation during first 28 days of life, meeting denominator inclusion criteria",
+    "denominator": "Newborns completing 30 days during analysis period with active registration during days 0-28 of life (from January 2017 onward; pre-2017 also required registration during days 0-60)",
+    "data_source": "SIARS",
+    "periodicity": "Fixed or floating analysis period, 1-12 months, starting January 1 annually",
+    "clinical_area": "Saúde Infantil e Juvenil",
+    "targets_2025_2026": {
+      "expected_min": 96.5,
+      "expected_max": 100,
+      "acceptable_min": 90,
+      "acceptable_max": 100
+    },
+    "pets_measure_link": "E2.A1 / E4.C2",
+    "pets_relevance_note": "Neonatal health surveillance within 28 days of birth; critical for early detection of health issues in newborns. Relevant to Eixo 2 births monitoring and Eixo 4 child health screenings."
+  },
+  {
+    "id": 277,
+    "name": "Proporção de utentes com idade igual ou superior a 14 anos e com hábitos tabágicos, a quem foi realizada consulta relacionada com tabagismo, no último ano",
+    "siars_code": "2013.277.01",
+    "formula": "AA / BB x 100",
+    "numerator": "Count of smokers aged >=14 years who received at least one medical or nursing surveillance consultation related to tobacco use within 12 months",
+    "denominator": "Count of smokers aged >=14 years with: active registration at health unit on reference date; age >=14 years; active tobacco diagnosis (ICPC-2 P17) in problem list on reference date, OR latest valid tobacco habit record in analysis period exceeds zero cigarettes",
+    "data_source": "SIARS",
+    "periodicity": "Floating 12-month period (consultations in numerator: 12 months ending at reference date; denominator variables: at reference date or during 12-month period). Alternative fixed period method available (1-12 months from January 1).",
+    "clinical_area": "Desempenho | Gestão da Doença | Multimorbilidade e Outros Tipos de Doenças",
+    "targets_2025_2026": {
+      "expected_min": 31,
+      "expected_max": 100,
+      "acceptable_min": 14,
+      "acceptable_max": 100
+    },
+    "pets_measure_link": "E4.C2",
+    "pets_relevance_note": "Tobacco cessation support coverage in primary care; relevant to Eixo 4 screenings and preventive health monitoring. USF-B median 52.2% vs UCSP median 27.4% shows significant unit-type variation. Data available since June 2014."
+  },
+  {
+    "id": 412,
+    "name": "Proporção de consultas de doença aguda realizadas na unidade funcional de inscrição no próprio dia",
+    "siars_code": "2018.412.01",
+    "formula": "100 x AA / (BB + CC_C)",
+    "numerator": "Count of in-person medical consultations performed at the patient's registered functional unit on the same day as scheduling (Variable AA), with weekly schedule adjustments",
+    "denominator": "Variable BB (same-day consultations at any functional unit within the patient's enrolled ACES) + Variable CC_C (emergency episodes in hospital urgency network, corrected for data gaps)",
+    "data_source": "SIARS",
+    "periodicity": "Floating 12-month analysis ending on indicator reference date. Data available from February 2018.",
+    "clinical_area": "Desempenho | Acesso | Consulta no Próprio Dia",
+    "targets_2025_2026": {
+      "expected_min": 60,
+      "expected_max": 85,
+      "acceptable_min": 40,
+      "acceptable_max": 95
+    },
+    "pets_measure_link": "E3.A1 / E4.A2",
+    "pets_relevance_note": "Measures primary care capacity to absorb acute care demand vs emergency department utilization; directly relevant to Eixo 3 urgencies reduction targets and Eixo 4 consultation access. Higher values indicate better primary care responsiveness."
+  },
+  {
+    "id": 428,
+    "name": "Score dimensão 'segurança de utentes'",
+    "siars_code": "2019.428.01",
+    "formula": "Continuous score on a 0 to 2 point scale based on self-completion checklist across eight evaluation areas",
+    "numerator": "Assessment of implementation of changes across eight areas: safety culture, communication safety, medication safety, unequivocal patient identification, fall prevention, pressure ulcer prevention, incident prevention, infection prevention and antimicrobial resistance",
+    "denominator": "Not applicable — score-based indicator, not a proportion. Units complete RAUF/PAUF forms (until 2022) and PAUF forms (from 2023 onward)",
+    "data_source": "RAUF/PAUF forms (functional units); PD-ACES for ACES reporting (valid until December 2023); ULS centres of services from validated unit results",
+    "periodicity": "Monthly floating period analysis; submission windows: quarterly (April-June, July-September, October-December for monitoring; January-March following year for final evaluation)",
+    "clinical_area": "Qualidade Organizacional | Segurança | Segurança de Utentes",
+    "targets_2025_2026": {
+      "expected_min": 0,
+      "expected_max": 2,
+      "acceptable_min": 0,
+      "acceptable_max": 2,
+      "note": "No specific targets defined. The indicator is calibrated to produce results in [0; 2] and 'não é necessário definir nem o intervalo esperado nem o intervalo de variação aceitável' (it is not necessary to define expected or acceptable intervals)"
+    },
+    "pets_measure_link": "E4.B1",
+    "pets_relevance_note": "Patient safety dimension score for functional units; relevant to Eixo 4 primary care quality and organizational governance. From 2024, calculated for UCSP, USF, UCC, and ULS CSP (ex-ACES); from 2025, ACES-level results derive from weighted averages based on ETC staffing records."
+  },
+  {
+    "id": 435,
+    "name": "Proporção de utentes com vacina da gripe gratuita no SNS",
+    "siars_code": "2020.435.01",
+    "formula": "AA / BB x 100",
+    "numerator": "Count of eligible users who received at least one flu vaccine inoculation after the last September 1st and never after April 30th of the following year",
+    "denominator": "Users with active registration at health unit on reference date AND meeting at least one criterion: age >=60 years (measured December 31st); active diabetes diagnosis (ICPC-2: T89/T90); active DPOC/chronic bronchitis (ICPC-2: R95/R79); active ischemic cardiopathy or congestive heart failure (ICPC-2: K74/K75/K77); pregnant status",
+    "data_source": "RSE Vacinas (Electronic Health Record Vaccines system). Registrations in SINUS, SClínico, or MedicineOne only are NOT counted.",
+    "periodicity": "Fixed period analysis: numerator spans 1-7 months depending on reference month; denominator coincides with reference date. Data available from September 2020.",
+    "clinical_area": "Respiratório | Saúde do Adulto",
+    "targets_2025_2026": {
+      "expected_min": 66,
+      "expected_max": 100,
+      "acceptable_min": 62,
+      "acceptable_max": 100
+    },
+    "pets_measure_link": "E4.C2",
+    "pets_relevance_note": "Flu vaccination coverage for vulnerable populations (elderly >=60, diabetics, DPOC, cardiac patients, pregnant women); key preventive health indicator relevant to Eixo 4 screenings and vaccination programmes"
+  }
+]
