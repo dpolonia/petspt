@@ -93,33 +93,48 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
   const handleAI = async () => {
     setAiLoading(true);
     try {
-      const ctx = [
-        `Medida PETS: ${medidaId} — ${nome}`,
-        `Estado: ${trend.cor} | Semaforo: ${trend.label}`,
-        `Baseline (Jan 2024): ${trend.baselineValue != null ? fmt(trend.baselineValue) : 'N/A'}`,
-        `Referencia (Jun 2024): ${trend.referenceValue != null ? fmt(trend.referenceValue) : 'N/A'}`,
-        `Valor actual (${trend.currentPeriodo}): ${trend.currentValue != null ? fmt(trend.currentValue) : 'N/A'}`,
-        `Estatisticas: ${statsCtx}`,
-        `Meses desfavoraveis: ${trend.mesesDesfavoraveis}/12`,
-        `Fonte: ${fonte}`,
-        descricao || '',
-        '',
-        'Gera uma analise em DUAS seccoes:',
-        '1. ANALISE TECNICA: interpreta os dados estatisticos, tendencia, sazonalidade, desvios.',
-        '2. ANALISE DE POLITICA: recomendacoes para decisores, comparacao com metas PETS/QGR, contexto SNS.',
-        'Responde em portugues europeu, 4-6 frases por seccao. Formato: TECNICA: ... POLITICA: ...',
-      ].join('\n');
-      const url = `https://europe-west1-petspt-f019f.cloudfunctions.net/aiSummary?eixo=1&context=${encodeURIComponent(ctx)}&nocache=1&t=${Date.now()}`;
-      const r = await fetch(url);
+      const measureEixo = parseInt(medidaId.charAt(1)) || 1;
+      const dataSource = hasPBIData ? `Power BI (${primaryPBISeries?.source || 'SIGLIC/SICA'})` : fonte;
+      const payload = {
+        medidaId,
+        nome,
+        descricao: descricao || '',
+        eixo: measureEixo,
+        stats: {
+          baseline: trend.baselineValue,
+          reference: trend.referenceValue,
+          current: trend.currentValue,
+          currentPeriodo: trend.currentPeriodo,
+          slope: trend.tendenciaSlope,
+          mean, median, stddev, cv, min: minVal, max: maxVal,
+          minPeriodo, maxPeriodo, n,
+        },
+        semaforo: trend.cor,
+        mesesDesfavoraveis: trend.mesesDesfavoraveis,
+        fonte: dataSource,
+      };
+      const url = `https://europe-west1-petspt-f019f.cloudfunctions.net/aiSummary?type=measure`;
+      const r = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
       const d = await r.json();
-      const text = d.sumario || d.text || JSON.stringify(d);
-      // Try to split into two sections
-      const techMatch = text.match(/TECNICA:?\s*([\s\S]*?)(?:POLITICA:|$)/i);
-      const polMatch = text.match(/POLITICA:?\s*([\s\S]*)/i);
-      if (techMatch && polMatch) {
-        setAiText(`__TECH__${techMatch[1].trim()}__POL__${polMatch[1].trim()}`);
+      const genAt = d.generated_at || new Date().toISOString();
+      const model = d.model || 'Claude Sonnet 4';
+      // Handle structured response from type=measure
+      if (d.analise_tecnica && d.analise_politica) {
+        setAiText(`__TECH__${d.analise_tecnica}__POL__${d.analise_politica}__META__${genAt}|${model}`);
       } else {
-        setAiText(text);
+        const text = d.analise_tecnica || d.sumario || d.text || JSON.stringify(d);
+        // Try to split into two sections from plain text
+        const techMatch = text.match(/TECNICA:?\s*([\s\S]*?)(?:POLITICA:|$)/i);
+        const polMatch = text.match(/POLITICA:?\s*([\s\S]*)/i);
+        if (techMatch && polMatch) {
+          setAiText(`__TECH__${techMatch[1].trim()}__POL__${polMatch[1].trim()}__META__${genAt}|${model}`);
+        } else {
+          setAiText(`__TECH__${text}__META__${genAt}|${model}`);
+        }
       }
     } catch { setAiText('Erro ao gerar analise AI.'); }
     finally { setAiLoading(false); }
@@ -222,26 +237,41 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
             </button>
           ) : (
             <div className="space-y-3">
-              {aiText.includes('__TECH__') ? (
-                <>
-                  <div className="bg-blue-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
-                    <div className="text-blue-700 font-semibold text-xs mb-2">Analise Tecnica</div>
-                    <p>{aiText.split('__TECH__')[1]?.split('__POL__')[0]?.trim()}</p>
-                  </div>
-                  <div className="bg-green-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
-                    <div className="text-green-700 font-semibold text-xs mb-2">Analise de Politica</div>
-                    <p>{aiText.split('__POL__')[1]?.trim()}</p>
-                  </div>
-                </>
-              ) : (
-                <div className="bg-blue-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
-                  <div className="text-blue-700 font-semibold text-xs mb-2">Analise AI</div>
-                  <p>{aiText}</p>
-                </div>
-              )}
+              {(() => {
+                const techPart = aiText.split('__TECH__')[1]?.split('__POL__')[0]?.split('__META__')[0]?.trim() || '';
+                const polPart = aiText.includes('__POL__') ? aiText.split('__POL__')[1]?.split('__META__')[0]?.trim() : '';
+                const metaPart = aiText.includes('__META__') ? aiText.split('__META__')[1]?.trim() : '';
+                const [genAt, modelName] = metaPart ? metaPart.split('|') : ['', ''];
+                const genDate = genAt ? new Date(genAt).toLocaleString('pt-PT') : new Date().toLocaleString('pt-PT');
+                return (
+                  <>
+                    {techPart && (
+                      <div className="bg-slate-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed border border-slate-200">
+                        <div className="text-slate-700 font-semibold text-xs mb-2">Analise Tecnica</div>
+                        <p className="whitespace-pre-line">{techPart}</p>
+                      </div>
+                    )}
+                    {polPart && (
+                      <div className="bg-emerald-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed border border-emerald-200">
+                        <div className="text-emerald-700 font-semibold text-xs mb-2">Analise de Politica</div>
+                        <p className="whitespace-pre-line">{polPart}</p>
+                      </div>
+                    )}
+                    {!techPart && !polPart && (
+                      <div className="bg-blue-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
+                        <p>{aiText}</p>
+                      </div>
+                    )}
+                    <div className="flex items-center gap-3 text-[9px] text-gray-400">
+                      <span>Gerado em: {genDate}</span>
+                      {modelName && <span>| Modelo: {modelName}</span>}
+                      <span>| Medida: {medidaId}</span>
+                    </div>
+                  </>
+                );
+              })()}
               <div className="flex items-center gap-3">
                 <button onClick={() => { setAiText(null); handleAI(); }} className="text-[10px] text-violet-500 hover:underline">Regenerar</button>
-                <span className="text-[9px] text-gray-400">Gerado por Claude Sonnet 4 | {new Date().toLocaleString('pt-PT')}</span>
               </div>
             </div>
           )}

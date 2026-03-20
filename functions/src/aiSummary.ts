@@ -92,7 +92,8 @@ async function fetchScopusAbstracts(eixo: number, apiKey: string): Promise<strin
   }
 }
 
-async function callLLM(prompt: string, apiKey: string): Promise<{ text: string; inputTokens: number; outputTokens: number }> {
+async function callLLM(prompt: string, apiKey: string, systemPrompt?: string): Promise<{ text: string; inputTokens: number; outputTokens: number }> {
+  const sysPrompt = systemPrompt || SYSTEM_PROMPT;
   const isAnthropic = apiKey.startsWith('sk-ant-');
 
   if (isAnthropic) {
@@ -105,8 +106,8 @@ async function callLLM(prompt: string, apiKey: string): Promise<{ text: string; 
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
-        max_tokens: 1000,
-        system: SYSTEM_PROMPT,
+        max_tokens: 1500,
+        system: sysPrompt,
         messages: [{ role: 'user', content: prompt }],
       }),
     });
@@ -119,8 +120,8 @@ async function callLLM(prompt: string, apiKey: string): Promise<{ text: string; 
       headers: { 'Authorization': `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
         model: 'gpt-4o-mini',
-        max_tokens: 1000,
-        messages: [{ role: 'system', content: SYSTEM_PROMPT }, { role: 'user', content: prompt }],
+        max_tokens: 1500,
+        messages: [{ role: 'system', content: sysPrompt }, { role: 'user', content: prompt }],
       }),
     });
     if (!response.ok) throw new Error(`OpenAI API error: ${response.status}`);
@@ -129,13 +130,128 @@ async function callLLM(prompt: string, apiKey: string): Promise<{ text: string; 
   }
 }
 
+const MEASURE_SYSTEM_PROMPT = `Es um analista de politicas de saude publica especializado no sistema de saude portugues.
+Escreves em portugues europeu, com rigor tecnico mas acessivel a decisores politicos e jornalistas.
+Baseia-te EXCLUSIVAMENTE nos dados estatisticos fornecidos. NAO inventes numeros.
+
+Responde APENAS com JSON no seguinte formato:
+{
+  "analise_tecnica": "2-3 paragrafos interpretando os dados estatisticos CONCRETOS desta medida",
+  "analise_politica": "2-3 paragrafos sobre implicacoes para objectivos PETS desta medida especifica"
+}
+
+Sem markdown, sem backticks, sem texto adicional.`;
+
 export const aiSummary = functions
   .region('europe-west1')
   .https.onRequest(async (req, res) => {
     res.set('Access-Control-Allow-Origin', '*');
-    res.set('Access-Control-Allow-Methods', 'GET');
+    res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.set('Access-Control-Allow-Headers', 'Content-Type');
     if (req.method === 'OPTIONS') { res.status(204).send(''); return; }
 
+    const type = (req.query.type as string) || 'eixo';
+
+    const apiKey = process.env.AI_MODEL_KEY;
+    if (!apiKey) {
+      res.status(200).json({
+        analise_tecnica: 'Analise AI indisponivel — chave API nao configurada.',
+        analise_politica: '',
+        cached: false, error: 'NO_API_KEY',
+      });
+      return;
+    }
+
+    // ═══ TYPE: MEASURE — Per-measure analysis with specific stats ═══
+    if (type === 'measure') {
+      let body: Record<string, unknown> = {};
+      if (req.method === 'POST' && req.body) {
+        body = req.body;
+      } else {
+        try { body = JSON.parse(req.query.context as string || '{}'); } catch { /* ignore */ }
+      }
+
+      const medidaId = (body.medidaId as string) || 'unknown';
+      const nome = (body.nome as string) || '';
+      const descricao = (body.descricao as string) || '';
+      const eixo = (body.eixo as number) || 0;
+      const stats = (body.stats as Record<string, unknown>) || {};
+      const semaforo = (body.semaforo as string) || '';
+      const mesesDesfavoraveis = (body.mesesDesfavoraveis as number) || 0;
+      const fonte = (body.fonte as string) || '';
+
+      // Cache per measure (NOT per eixo)
+      const cacheRef = db.collection('ai_summaries').doc(`measure_${medidaId}`);
+      const cached = await cacheRef.get();
+      if (cached.exists) {
+        const data = cached.data()!;
+        if (Date.now() - data.timestamp < SUMMARY_CACHE_TTL_MS) {
+          res.json({ ...data.summary, cached: true, generated_at: new Date(data.timestamp).toISOString(), model: 'claude-sonnet-4-20250514' });
+          return;
+        }
+      }
+
+      const fmtNum = (v: unknown) => {
+        if (v == null) return 'N/A';
+        const n = Number(v);
+        if (isNaN(n)) return String(v);
+        return n >= 1e6 ? `${(n / 1e6).toFixed(1)}M` : n >= 1e3 ? `${Math.round(n).toLocaleString('pt-PT')}` : String(Math.round(n * 100) / 100);
+      };
+
+      const prompt = `Analisa a seguinte medida do PETS com base nos dados estatisticos fornecidos.
+
+MEDIDA: ${medidaId} — ${nome}
+EIXO: ${eixo}
+DESCRICAO: ${descricao}
+FONTE DE DADOS: ${fonte}
+
+DADOS ESTATISTICOS:
+- Baseline (Jan 2024): ${fmtNum(stats.baseline)}
+- Referencia (Jun 2024): ${fmtNum(stats.reference)}
+- Valor actual (${stats.currentPeriodo || 'ultimo'}): ${fmtNum(stats.current)}
+- Tendencia (slope): ${stats.slope != null ? `${Number(stats.slope).toFixed(1)}/mes` : 'N/A'}
+- Media: ${fmtNum(stats.mean)}
+- Mediana: ${fmtNum(stats.median)}
+- Desvio padrao: ${fmtNum(stats.stddev)}
+- Coef. variacao: ${stats.cv != null ? `${Number(stats.cv).toFixed(1)}%` : 'N/A'}
+- Minimo: ${fmtNum(stats.min)} (${stats.minPeriodo || ''})
+- Maximo: ${fmtNum(stats.max)} (${stats.maxPeriodo || ''})
+- N pontos: ${stats.n || 'N/A'} meses
+- Meses desfavoraveis: ${mesesDesfavoraveis}/12
+- Semaforo: ${semaforo}
+
+INSTRUCOES:
+1. Na ANALISE TECNICA: interpreta os dados CONCRETOS acima. Comenta tendencia, variabilidade, sazonalidade. Compara valor actual com baseline. NAO uses informacao generica — baseia-te APENAS nos numeros fornecidos.
+2. Na ANALISE DE POLITICA: avalia face aos objectivos do PETS para ESTA medida especifica. Se deteriorou: identifica causas provaveis. Se melhorou: avalia sustentabilidade.`;
+
+      try {
+        const result = await callLLM(prompt, apiKey, MEASURE_SYSTEM_PROMPT);
+        let summary;
+        try {
+          const cleaned = result.text.replace(/```json|```/g, '').trim();
+          summary = JSON.parse(cleaned);
+        } catch {
+          // Try to split by sections
+          const techMatch = result.text.match(/analise.tecnica["\s:]+(.+?)(?:analise.politica|$)/is);
+          const polMatch = result.text.match(/analise.politica["\s:]+(.+)/is);
+          summary = {
+            analise_tecnica: techMatch ? techMatch[1].replace(/[",]/g, '').trim() : result.text.substring(0, 500),
+            analise_politica: polMatch ? polMatch[1].replace(/[",]/g, '').trim() : '',
+          };
+        }
+        await cacheRef.set({ summary, timestamp: Date.now(), medidaId, inputTokens: result.inputTokens, outputTokens: result.outputTokens });
+        res.json({ ...summary, cached: false, generated_at: new Date().toISOString(), model: 'claude-sonnet-4-20250514' });
+      } catch (error) {
+        res.status(200).json({
+          analise_tecnica: `Analise AI temporariamente indisponivel para ${medidaId}. Erro: ${(error as Error).message}`,
+          analise_politica: '',
+          cached: false, error: 'LLM_CALL_FAILED', model: '',
+        });
+      }
+      return;
+    }
+
+    // ═══ TYPE: EIXO — Original eixo-level summary (legacy) ═══
     const eixo = parseInt(req.query.eixo as string);
     if (!eixo || eixo < 1 || eixo > 5) {
       res.status(400).json({ error: 'Parametro eixo invalido (1-5)' });
@@ -150,17 +266,6 @@ export const aiSummary = functions
         res.json({ ...data.summary, cached: true, generated_at: new Date(data.timestamp).toISOString() });
         return;
       }
-    }
-
-    const apiKey = process.env.AI_MODEL_KEY;
-    if (!apiKey) {
-      res.status(200).json({
-        sumario: 'Resumo AI indisponivel — chave API nao configurada.',
-        pontos_fortes: [], desafios: [], recomendacoes: [],
-        contexto_internacional: '', referencias: [],
-        cached: false, error: 'NO_API_KEY',
-      });
-      return;
     }
 
     const context = EIXO_CONTEXT[eixo];
