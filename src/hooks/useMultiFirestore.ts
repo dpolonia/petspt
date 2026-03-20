@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import { db } from '../config/firebase';
 
@@ -11,9 +11,14 @@ interface MultiFirestoreResult {
   data: Record<string, FirestoreDataPoint[]>;
   loading: boolean;
   loaded: boolean;
+  load: () => void;
 }
 
-async function loadDatasets(slugs: string[]): Promise<Record<string, FirestoreDataPoint[]>> {
+// Module-level cache — survives re-renders
+let _cache: Record<string, FirestoreDataPoint[]> | null = null;
+let _loading = false;
+
+async function fetchAll(slugs: string[]): Promise<Record<string, FirestoreDataPoint[]>> {
   const results = await Promise.all(
     slugs.map(async (slug) => {
       try {
@@ -21,8 +26,8 @@ async function loadDatasets(slugs: string[]): Promise<Record<string, FirestoreDa
         if (snap.exists()) {
           const d = snap.data();
           if (d.storage === 'subcollection') {
-            const periodosSnap = await getDocs(collection(db, 'datasets', slug, 'periodos'));
-            return [slug, periodosSnap.docs.map(pd => pd.data() as FirestoreDataPoint).sort((a, b) => a.periodo.localeCompare(b.periodo))] as const;
+            const ps = await getDocs(collection(db, 'datasets', slug, 'periodos'));
+            return [slug, ps.docs.map(p => p.data() as FirestoreDataPoint).sort((a, b) => a.periodo.localeCompare(b.periodo))] as const;
           }
           return [slug, (d.dados || []) as FirestoreDataPoint[]] as const;
         }
@@ -36,21 +41,27 @@ async function loadDatasets(slugs: string[]): Promise<Record<string, FirestoreDa
 }
 
 export function useMultiFirestore(slugs: string[]): MultiFirestoreResult {
-  const [data, setData] = useState<Record<string, FirestoreDataPoint[]>>({});
-  const [loading, setLoading] = useState(false);
-  const [loaded, setLoaded] = useState(false);
-  const [started, setStarted] = useState(false);
+  const [, forceUpdate] = useState(0);
 
-  // Trigger fetch once on first render with slugs
-  if (slugs.length > 0 && !started && !loading && !loaded) {
-    setStarted(true);
-    setLoading(true);
-    loadDatasets(slugs).then(result => {
-      setData(result);
-      setLoaded(true);
-      setLoading(false);
+  const load = useCallback(() => {
+    if (_cache || _loading || slugs.length === 0) return;
+    _loading = true;
+    fetchAll(slugs).then(result => {
+      _cache = result;
+      _loading = false;
+      forceUpdate(n => n + 1); // trigger re-render
     });
+  }, [slugs, forceUpdate]);
+
+  // Auto-load on first call
+  if (!_cache && !_loading && slugs.length > 0) {
+    load();
   }
 
-  return { data, loading, loaded };
+  return {
+    data: _cache || {},
+    loading: _loading,
+    loaded: !!_cache,
+    load,
+  };
 }
