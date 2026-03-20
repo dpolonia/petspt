@@ -17,6 +17,7 @@ import CenariosPage from './pages/CenariosPage';
 import AlertasPage from './pages/AlertasPage';
 import EuropaPage from './pages/EuropaPage';
 import RelatoriosPage from './pages/RelatoriosPage';
+import MetodologiaPage from './pages/MetodologiaPage';
 
 export default function App() {
   return (
@@ -41,6 +42,7 @@ export default function App() {
               <Route path="/alertas" element={<AlertasPage />} />
               <Route path="/europa" element={<EuropaPage />} />
               <Route path="/relatorios" element={<RelatoriosPage />} />
+              <Route path="/metodologia" element={<MetodologiaPage />} />
             </Routes>
           </main>
           <Footer />
