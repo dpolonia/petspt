@@ -1,0 +1,26 @@
+{
+  "matriz_publico": {
+    "status": "loaded",
+    "pbi_frames": 1,
+    "api_captures": 0,
+    "title": "Matriz Indicadores dos CSP"
+  },
+  "ide": {
+    "status": "loaded",
+    "pbi_frames": 1,
+    "api_captures": 0,
+    "title": ""
+  },
+  "idg": {
+    "status": "loaded",
+    "pbi_frames": 9,
+    "api_captures": 0,
+    "title": ""
+  },
+  "idg_aces": {
+    "status": "loaded",
+    "pbi_frames": 4,
+    "api_captures": 0,
+    "title": ""
+  }
+}
