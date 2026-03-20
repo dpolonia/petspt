@@ -92,11 +92,13 @@ async function fetchScopusAbstracts(eixo: number, apiKey: string): Promise<strin
   }
 }
 
-async function callLLM(prompt: string, apiKey: string, systemPrompt?: string): Promise<{ text: string; inputTokens: number; outputTokens: number }> {
+async function callLLM(prompt: string, apiKey: string, systemPrompt?: string, useOpus = false): Promise<{ text: string; inputTokens: number; outputTokens: number; model: string }> {
   const sysPrompt = systemPrompt || SYSTEM_PROMPT;
   const isAnthropic = apiKey.startsWith('sk-ant-');
 
   if (isAnthropic) {
+    const model = useOpus ? 'claude-opus-4-6' : 'claude-sonnet-4-20250514';
+    const maxTokens = useOpus ? 2000 : 1500;
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -105,15 +107,15 @@ async function callLLM(prompt: string, apiKey: string, systemPrompt?: string): P
         'content-type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 1500,
+        model,
+        max_tokens: maxTokens,
         system: sysPrompt,
         messages: [{ role: 'user', content: prompt }],
       }),
     });
     if (!response.ok) throw new Error(`Anthropic API error: ${response.status}`);
     const data = await response.json() as { content: Array<{ text: string }>; usage: { input_tokens: number; output_tokens: number } };
-    return { text: data.content[0]?.text || '', inputTokens: data.usage?.input_tokens || 0, outputTokens: data.usage?.output_tokens || 0 };
+    return { text: data.content[0]?.text || '', inputTokens: data.usage?.input_tokens || 0, outputTokens: data.usage?.output_tokens || 0, model };
   } else {
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
@@ -126,7 +128,7 @@ async function callLLM(prompt: string, apiKey: string, systemPrompt?: string): P
     });
     if (!response.ok) throw new Error(`OpenAI API error: ${response.status}`);
     const data = await response.json() as { choices: Array<{ message: { content: string } }>; usage: { prompt_tokens: number; completion_tokens: number } };
-    return { text: data.choices[0]?.message?.content || '', inputTokens: data.usage?.prompt_tokens || 0, outputTokens: data.usage?.completion_tokens || 0 };
+    return { text: data.choices[0]?.message?.content || '', inputTokens: data.usage?.prompt_tokens || 0, outputTokens: data.usage?.completion_tokens || 0, model: 'gpt-4o-mini' };
   }
 }
 
@@ -186,7 +188,8 @@ export const aiSummary = functions
       if (cached.exists) {
         const data = cached.data()!;
         if (Date.now() - data.timestamp < SUMMARY_CACHE_TTL_MS) {
-          res.json({ ...data.summary, cached: true, generated_at: new Date(data.timestamp).toISOString(), model: 'claude-sonnet-4-20250514' });
+          const cachedModel = data.model === 'claude-opus-4-6' ? 'Claude Opus 4.6' : (data.model || 'Claude Opus 4.6');
+          res.json({ ...data.summary, cached: true, generated_at: new Date(data.timestamp).toISOString(), model: cachedModel });
           return;
         }
       }
@@ -225,13 +228,12 @@ INSTRUCOES:
 2. Na ANALISE DE POLITICA: avalia face aos objectivos do PETS para ESTA medida especifica. Se deteriorou: identifica causas provaveis. Se melhorou: avalia sustentabilidade.`;
 
       try {
-        const result = await callLLM(prompt, apiKey, MEASURE_SYSTEM_PROMPT);
+        const result = await callLLM(prompt, apiKey, MEASURE_SYSTEM_PROMPT, true);
         let summary;
         try {
           const cleaned = result.text.replace(/```json|```/g, '').trim();
           summary = JSON.parse(cleaned);
         } catch {
-          // Try to split by sections
           const techMatch = result.text.match(/analise.tecnica["\s:]+(.+?)(?:analise.politica|$)/is);
           const polMatch = result.text.match(/analise.politica["\s:]+(.+)/is);
           summary = {
@@ -239,8 +241,9 @@ INSTRUCOES:
             analise_politica: polMatch ? polMatch[1].replace(/[",]/g, '').trim() : '',
           };
         }
-        await cacheRef.set({ summary, timestamp: Date.now(), medidaId, inputTokens: result.inputTokens, outputTokens: result.outputTokens });
-        res.json({ ...summary, cached: false, generated_at: new Date().toISOString(), model: 'claude-sonnet-4-20250514' });
+        const modelLabel = result.model === 'claude-opus-4-6' ? 'Claude Opus 4.6' : result.model;
+        await cacheRef.set({ summary, timestamp: Date.now(), medidaId, model: result.model, inputTokens: result.inputTokens, outputTokens: result.outputTokens });
+        res.json({ ...summary, cached: false, generated_at: new Date().toISOString(), model: modelLabel });
       } catch (error) {
         res.status(200).json({
           analise_tecnica: `Analise AI temporariamente indisponivel para ${medidaId}. Erro: ${(error as Error).message}`,
