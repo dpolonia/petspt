@@ -22,5 +22,13 @@ service cloud.firestore {
       allow read: if true;
       allow write: if false;
     }
+    match /powerbi_data/{document=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /sdm_data/{document=**} {
+      allow read: if true;
+      allow write: if false;
+    }
   }
 }

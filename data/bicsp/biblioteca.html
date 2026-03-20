@@ -1,0 +1,993 @@
+
+
+
+<!DOCTYPE HTML>
+<html dir="ltr" lang="pt-PT">
+	<head><meta name="GENERATOR" content="Microsoft SharePoint" /><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Expires" content="0" /><meta name="msapplication-TileImage" content="/_layouts/15/images/SharePointMetroAppTile.png" /><meta name="msapplication-TileColor" content="#0072C6" /><title>
+	
+	Biblioteca
+
+</title><link rel="shortcut icon" href="/_layouts/15/images/SPMS.BICSP.SharePoint/faviconAllSizes.ico" type="image/vnd.microsoft.icon" id="favicon" /><link rel="stylesheet" type="text/css" href="/Style%20Library/pt-PT/Themable/Core%20Styles/pagelayouts15.css"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/15/2070/styles/Themable/corev15.css?rev=JqAnupO9GEqi6Xh%2B2o6MZw%3D%3DTAG0"/>
+<link rel="stylesheet" type="text/css" href="/_layouts/15/2070/styles/SuiteNav.css?rev=yd4RfI1hWLQa7sg06N3a%2Bw%3D%3DTAG0"/>
+<link id="CssRegistration1" rel="stylesheet" type="text/css" href="/_layouts/15/SPMS.BICSP.SharePoint/Styles/bootstrap.min.css"/>
+<link id="CssRegistration3" rel="stylesheet" type="text/css" href="/_layouts/15/SPMS.BICSP.SharePoint/Styles/font-awesome.min.css"/>
+<link id="CssRegistration2" rel="stylesheet" type="text/css" href="/_layouts/15/SPMS.BICSP.SharePoint/Styles/select2.min.css"/>
+<link id="CssRegistration6" rel="stylesheet" type="text/css" href="/_layouts/15/SPMS.BICSP.SharePoint/Styles/select2-bootstrap.css"/>
+<link id="CssRegistration7" rel="stylesheet" type="text/css" href="/_layouts/15/SPMS.BICSP.SharePoint/Styles/bootstrap-datepicker3.min.css"/>
+<link id="CssRegistration8" rel="stylesheet" type="text/css" href="/_layouts/15/SPMS.BICSP.SharePoint/Styles/toastr.min.css"/>
+<link id="CssRegistration4" rel="stylesheet" type="text/css" href="/_layouts/15/SPMS.BICSP.SharePoint/Styles/bicsp-main.css?REV=0184"/>
+<link id="CssRegistration5" rel="stylesheet" type="text/css" href="/_layouts/15/SPMS.BICSP.SharePoint/Styles/bicsp-corev15-override.css?REV=0184"/>
+<script type="text/javascript" src="/_layouts/15/2070/initstrings.js?rev=REdWprQNq%2BxUk8Xv1waH0A%3D%3DTAG0"></script>
+<script type="text/javascript" src="/_layouts/15/init.js?rev=Af%2Fszp0lRlyx6lbFEC51ig%3D%3DTAG0"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=HUszxoAGdcxWlg3vFsvhvWrQjXJUKrk3sYE0dbZXIqgXtHo_rfZna0jaDZdNCZAG0GlCpPr3aAPSC4VulXqJkHjHgORXSRz__JCi7p7xmaU2JYK4aBHl8X8mNEs6uX0XVnMxq6dST7F6WzqkWraoZir-MlpTHPLePATQvQa2kWfuNkYNauK7avo1xYvMZRQd0&amp;t=ffffffffc820c398"></script>
+<script type="text/javascript" src="/_layouts/15/blank.js?rev=NO3yEueEuiXygYcXRDv%2FCQ%3D%3DTAG0"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=UawOR7LnMmjTT3hQLmEOKMGD4A4o3leJH-mb6ScVMzFTQ2ZmH3QiFxzToB3ze1pcL5d4zSOvnd0pExc30LRC9tDn3ksbkszPK6QUi-_21S1NC4DDJ1Rhi4klt94c_FzP_nHwyzUaUVFXBXj9t2t0f3KMTmEiTez1O0eUdKGLfX0_cI_uYqAbz7WY51nSzJpe0&amp;t=ffffffffc820c398"></script>
+<script type="text/javascript" src="/_layouts/15/suitenav.js?rev=kBlyEocZNUdwP5JkJ8qBKw%3D%3DTAG0"></script>
+<script type="text/javascript">RegisterSod("require.js", "\u002f_layouts\u002f15\u002frequire.js?rev=\u00252BRRfOnYW0VaAgSoCgcIN8Q\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("strings.js", "\u002f_layouts\u002f15\u002f2070\u002fstrings.js?rev=V\u00252BF13q78n7XRl\u00252B8j1S1KFQ\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002f15\u002f2070\u002fsp.res.js?rev=lC0\u00252Bbegok\u00252FwVXsQn3yV60A\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "\u002f_layouts\u002f15\u002fsp.runtime.js?rev=gduiIjfMLiWK\u00252BJoyS1nElA\u00253D\u00253DTAG0");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "\u002f_layouts\u002f15\u002fsp.js?rev=eg2\u00252FVeTtPSbAyhQAQsj6LA\u00253D\u00253DTAG0");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.init.js", "\u002f_layouts\u002f15\u002fsp.init.js?rev=I7phZNjuQpQEyXaZsNAupw\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002f15\u002fsp.ui.dialog.js?rev=oL\u00252BI3ThuuqPuKDrBy8V5GA\u00253D\u00253DTAG0");RegisterSodDep("sp.ui.dialog.js", "sp.init.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f15\u002fcore.js?rev=40DoZ0L9TrUdgEEBm8fwQg\u00253D\u00253DTAG0");RegisterSodDep("core.js", "strings.js");</script>
+<script type="text/javascript">RegisterSod("menu.js", "\u002f_layouts\u002f15\u002fmenu.js?rev=Bl75sfZOKfj40R9Jmuc0OQ\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("mQuery.js", "\u002f_layouts\u002f15\u002fmquery.js?rev=rVf\u00252BAvAqepFodnlRJhekRw\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("callout.js", "\u002f_layouts\u002f15\u002fcallout.js?rev=GMmG4ZVaN4RiwzapEiZzPQ\u00253D\u00253DTAG0");RegisterSodDep("callout.js", "strings.js");RegisterSodDep("callout.js", "mQuery.js");RegisterSodDep("callout.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "\u002f_layouts\u002f15\u002fsp.core.js?rev=zPwEouMsBydTuxwyTS1\u00252FxQ\u00253D\u00253DTAG0");RegisterSodDep("sp.core.js", "strings.js");RegisterSodDep("sp.core.js", "sp.init.js");RegisterSodDep("sp.core.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sharedhovercard.strings.js", "\u002f_layouts\u002f15\u002f2070\u002fsharedhovercard.strings.js?rev=vcOKS1qGoeCL9Mr6zBKz7Q\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sharedhovercard.js", "\u002f_layouts\u002f15\u002fsharedhovercard.js?rev=uB89up9szoXj8bAMKPkPSg\u00253D\u00253DTAG0");RegisterSodDep("sharedhovercard.js", "sharedhovercard.strings.js");</script>
+<script type="text/javascript">RegisterSod("clienttemplates.js", "\u002f_layouts\u002f15\u002fclienttemplates.js?rev=6KmNzCx5KfIqVejLGKaRyg\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sharing.js", "\u002f_layouts\u002f15\u002fsharing.js?rev=8\u00252B6EJuVEnCH5QuFd4GWUsg\u00253D\u00253DTAG0");RegisterSodDep("sharing.js", "strings.js");RegisterSodDep("sharing.js", "mQuery.js");RegisterSodDep("sharing.js", "clienttemplates.js");RegisterSodDep("sharing.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("suitelinks.js", "\u002f_layouts\u002f15\u002fsuitelinks.js?rev=bK2ApSRcGdTUOGgcBbyvnQ\u00253D\u00253DTAG0");RegisterSodDep("suitelinks.js", "strings.js");RegisterSodDep("suitelinks.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("clientrenderer.js", "\u002f_layouts\u002f15\u002fclientrenderer.js?rev=MsPEQQAcotSgJdoucJ4LeA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("srch.resources.resx", "\u002f_layouts\u002f15\u002f2070\u002fsrch.resources.js?rev=qB9LmMvZOjQ90Dv6LVy\u00252BsQ\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("search.clientcontrols.js", "\u002f_layouts\u002f15\u002fsearch.clientcontrols.js?rev=PlIH2VsdUhIBLzSKwU9PJQ\u00253D\u00253DTAG0");RegisterSodDep("search.clientcontrols.js", "sp.init.js");RegisterSodDep("search.clientcontrols.js", "clientrenderer.js");RegisterSodDep("search.clientcontrols.js", "srch.resources.resx");</script>
+<script type="text/javascript">RegisterSod("sp.search.js", "\u002f_layouts\u002f15\u002fsp.search.js?rev=HAx1PXh3dmISREk3Xv5ClQ\u00253D\u00253DTAG0");RegisterSodDep("sp.search.js", "sp.init.js");RegisterSodDep("sp.search.js", "sp.runtime.js");</script>
+<script type="text/javascript">RegisterSod("ajaxtoolkit.js", "\u002f_layouts\u002f15\u002fajaxtoolkit.js?rev=\u00252BDzO7cfhX98rSzcWpYT6Pw\u00253D\u00253DTAG0");RegisterSodDep("ajaxtoolkit.js", "search.clientcontrols.js");</script>
+<script type="text/javascript">RegisterSod("userprofile", "\u002f_layouts\u002f15\u002fsp.userprofiles.js?rev=cx6U8sP\u00252ByP0OFLjk6ekyIg\u00253D\u00253DTAG0");RegisterSodDep("userprofile", "sp.runtime.js");</script>
+<script type="text/javascript">RegisterSod("followingcommon.js", "\u002f_layouts\u002f15\u002ffollowingcommon.js?rev=XYJafBtdjmVTBtj2Ng9GxA\u00253D\u00253DTAG0");RegisterSodDep("followingcommon.js", "strings.js");RegisterSodDep("followingcommon.js", "sp.js");RegisterSodDep("followingcommon.js", "userprofile");RegisterSodDep("followingcommon.js", "core.js");RegisterSodDep("followingcommon.js", "mQuery.js");</script>
+<script type="text/javascript">RegisterSod("profilebrowserscriptres.resx", "\u002f_layouts\u002f15\u002f2070\u002fprofilebrowserscriptres.js?rev=bE0YFjKElfT\u00252BJ9Bo72plIA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.ui.mysitecommon.js", "\u002f_layouts\u002f15\u002fsp.ui.mysitecommon.js?rev=xBVAvKaIh7NMobb8GQ9nnA\u00253D\u00253DTAG0");RegisterSodDep("sp.ui.mysitecommon.js", "sp.init.js");RegisterSodDep("sp.ui.mysitecommon.js", "sp.runtime.js");RegisterSodDep("sp.ui.mysitecommon.js", "userprofile");RegisterSodDep("sp.ui.mysitecommon.js", "profilebrowserscriptres.resx");</script>
+<script type="text/javascript">RegisterSod("browserScript", "\u002f_layouts\u002f15\u002fnon_ie.js?rev=kNqjd3XcUGvAaC2D1fB1Vw\u00253D\u00253DTAG0");RegisterSodDep("browserScript", "strings.js");</script>
+<script type="text/javascript">RegisterSod("inplview", "\u002f_layouts\u002f15\u002finplview.js?rev=K3VpVvON4oo7TVl2hUrrYg\u00253D\u00253DTAG0");RegisterSodDep("inplview", "strings.js");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "clienttemplates.js");RegisterSodDep("inplview", "sp.js");</script>
+<script type="text/javascript">RegisterSod("theming.js", "\u002f_layouts\u002f15\u002ftheming.js?rev=AQsQZgsKbypSwgIb\u00252BD\u00252FmYA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("cui.js", "\u002f_layouts\u002f15\u002fcui.js?rev=qjvcOEJly1M8vOv8rAVGig\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("ribbon", "\u002f_layouts\u002f15\u002fsp.ribbon.js?rev=O7J1LfdnMz1EvnrRk1wokg\u00253D\u00253DTAG0");RegisterSodDep("ribbon", "strings.js");RegisterSodDep("ribbon", "core.js");RegisterSodDep("ribbon", "sp.core.js");RegisterSodDep("ribbon", "sp.js");RegisterSodDep("ribbon", "cui.js");RegisterSodDep("ribbon", "sp.res.resx");RegisterSodDep("ribbon", "sp.runtime.js");RegisterSodDep("ribbon", "inplview");</script>
+<script type="text/javascript">RegisterSod("offline.js", "\u002f_layouts\u002f15\u002foffline.js?rev=KXlJnfaqzqVp9mVNzvRZ8w\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("WPAdderClass", "\u002f_layouts\u002f15\u002fwpadder.js?rev=s6yyutfmiNeZnQjT7Ed17g\u00253D\u00253DTAG0");</script>
+<link type="text/xml" rel="alternate" href="/pt/biblioteca/_vti_bin/spsdisco.aspx" />
+		    
+	
+	
+	
+
+		    <link rel="canonical" href="https://bicsp.min-saude.pt:443/pt/biblioteca/Paginas/default.aspx" />
+		    
+	    
+        <script type="text/javascript" src="/_layouts/15/sp.init.js"></script>
+        <script type="text/javascript" src="/_layouts/15/sp.ui.dialog.js"></script>
+        <script type="text/javascript" src="/_layouts/15/ScriptResx.ashx?name=sp.res&culture=en-us"></script>
+	    
+
+		<!-- ===== STARTER: Bootstrap CSS  =================================================================================================== -->
+		
+
+		<!-- ===== STARTER: Custom CSS  =================================================================================================== -->
+		
+		
+
+		<script type="text/javascript">
+            if (typeof jQuery == 'undefined') { document.write('<script type="text/javascript" src="/_layouts/15/SPMS.BICSP.SharePoint/Scripts/jquery-3.2.1.min.js"><' + '/script>'); }
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="/_layouts/15/SPMS.BICSP.SharePoint/Scripts/html5shiv.min.js"></script>
+		  <script src="/_layouts/15/SPMS.BICSP.SharePoint/Scripts/respond.min.js"></script>
+		<![endif]-->
+		<script type="text/javascript">
+            if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1)) {
+                document.write("<script type='text/javascript' src='/_layouts/15/SPMS.BICSP.SharePoint/Scripts/bluebird.min.js'><" + "/script>");
+            }
+            document.write("<script type='text/javascript' src='/_layouts/15/SPMS.BICSP.SharePoint/Scripts/bootstrap.min.js'><" + "/script>");
+            document.write("<script type='text/javascript' src='/_layouts/15/SPMS.BICSP.SharePoint/Scripts/knockout-3.4.2.js'><" + "/script>");
+            document.write("<script type='text/javascript' src='/_layouts/15/SPMS.BICSP.SharePoint/Scripts/knockout.mapping.js'><" + "/script>");
+            document.write("<script type='text/javascript' src='/_layouts/15/SPMS.BICSP.SharePoint/Scripts/moment.min.js'><" + "/script>");
+            document.write("<script type='text/javascript' src='/_layouts/15/SPMS.BICSP.SharePoint/Scripts/moment-with-locales.min.js'><" + "/script>");
+            document.write("<script type='text/javascript' src='/_layouts/15/SPMS.BICSP.SharePoint/Scripts/bootstrap-datepicker.min.js'><" + "/script>");
+            document.write("<script type='text/javascript' src='/_layouts/15/SPMS.BICSP.SharePoint/Scripts/select2.min.js'><" + "/script>");
+            document.write("<script type='text/javascript' src='/_layouts/15/SPMS.BICSP.SharePoint/Scripts/powerbi.min.js'><" + "/script>");
+            document.write("<script type='text/javascript' src='/_layouts/15/SPMS.BICSP.SharePoint/Scripts/toastr.min.js'><" + "/script>");
+            document.write("<script type='text/javascript' src='/_layouts/15/SPMS.BICSP.SharePoint/Scripts/bicsp-main.js?REV=0184'><" + "/script>");
+		</script>
+	<style type="text/css">
+	.s4-skipribbonshortcut { display:none; }
+
+</style></head>
+	<body>
+		<!-- ===== STARTER: SP IDs / Prefetch SP images / SP Form  =========================================================================== -->
+		
+		<div id="imgPrefetch" style="display:none">
+<img src="/_layouts/15/images/SPMS.BICSP.SharePoint/faviconAllSizes.ico?rev=40" />
+<img src="/_layouts/15/images/spcommon.png?rev=40" />
+</div>
+
+		<form method="post" action="./default.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="_wpcmWpid" id="_wpcmWpid" value="" />
+<input type="hidden" name="wpcmVal" id="wpcmVal" value="" />
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="0xD40931D69D3C67368B88FB5E251A58A3FC65B4DD24530571AD672E03FB6DB27CF695C8C9450317856BC46D0C610E55BFA4AC4B5E5B33EA0E2A627DC89B733F9F,20 Mar 2026 12:36:36 -0000" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="_wpSelected" id="_wpSelected" value="" />
+<input type="hidden" name="_wzSelected" id="_wzSelected" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false" />
+<input type="hidden" name="_maintainWorkspaceScrollPosition" id="_maintainWorkspaceScrollPosition" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMjcxMDk2MTMzD2QWAmYPZBYCAgEPZBYEAgEPZBYEAgYPZBYCZg9kFgICAQ8WAh4TUHJldmlvdXNDb250cm9sTW9kZQspiAFNaWNyb3NvZnQuU2hhcmVQb2ludC5XZWJDb250cm9scy5TUENvbnRyb2xNb2RlLCBNaWNyb3NvZnQuU2hhcmVQb2ludCwgVmVyc2lvbj0xNi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj03MWU5YmNlMTExZTk0MjljAWQCEQ9kFgQCAQ9kFgICBQ8WAh8ACysEAWQCAw9kFgJmD2QWAmYPPCsABgBkAgcPZBYIAgcPZBYCAgMPFgIeB1Zpc2libGVoFgJmD2QWBAIDD2QWBgIBDxYCHwFoZAIDDxYCHwFoZAIFDxYCHwFoZAIEDw8WAh4JQWNjZXNzS2V5BQEvZGQCCQ8WAh4LXyFJdGVtQ291bnQCARYCAgEPZBYEAgEPZBYCZg8VAhgvcHQvUGFnaW5hcy9kZWZhdWx0LmFzcHgHSW7DrWNpb2QCAw8WAh8DAgQWCGYPZBYEAgEPFgQeBWNsYXNzBRtkcm9wZG93biBsYXN0LW5vZGUgbmF2LW5vZGUfAWgWBGYPFQIeL3B0L2JpdWZzL1BhZ2luYXMvZGVmYXVsdC5hc3B4BUJJLVVGZAIBDxYCHwNmZAIDD2QWAmYPFQIeL3B0L2JpdWZzL1BhZ2luYXMvZGVmYXVsdC5hc3B4BUJJLVVGZAIBD2QWBAIBDxYCHwQFEWRyb3Bkb3duIG5hdi1ub2RlFgRmDxUCABJDb250cmF0dWFsaXphw6fDo29kAgEPFgIfAwIGFgwCAQ9kFgJmDxUDATAYL3B0L2NvbnRyYXR1YWxpemFjYW8vaWRlA0lERWQCAg9kFgJmDxUDATEtL3B0L2NvbnRyYXR1YWxpemFjYW8vaWRnL1BhZ2luYXMvZGVmYXVsdC5hc3B4BklERyBVRmQCAw9kFgJmDxUDATIcL3B0L2NvbnRyYXR1YWxpemFjYW8vaWRnYWNlcwhJREcgQUNFU2QCBA9kFgJmDxUDATM2L3B0L2NvbnRyYXR1YWxpemFjYW8vcGxhbm9zZGVhY2FvL1BhZ2luYXMvZGVmYXVsdC5hc3B4E1BsYW5vcyBkZSBBw6fDo28gVUZkAgUPZBYCZg8VAwE0QS9wdC9jb250cmF0dWFsaXphY2FvL3BsYW5vc2RlZGVzZW52b2x2aW1lbnRvL1BhZ2luYXMvZGVmYXVsdC5hc3B4GVBsYW5vcyBkZSBEZXNlbXBlbmhvIEFDRVNkAgYPZBYCZg8VAwE1PS9wdC9jb250cmF0dWFsaXphY2FvL3JlbGF0b3Jpb3NhdGl2aWRhZGUvUGFnaW5hcy9kZWZhdWx0LmFzcHgYUmVsYXTDs3Jpb3MgZGUgQXRpdmlkYWRlZAIDDxYCHwFoFgJmDxUCABJDb250cmF0dWFsaXphw6fDo29kAgIPZBYEAgEPFgQfBAURZHJvcGRvd24gbmF2LW5vZGUfAWgWBGYPFQIlL3B0L2ludmVzdGlnYWNhby9QYWdpbmFzL2RlZmF1bHQuYXNweA5JbnZlc3RpZ2HDp8Ojb2QCAQ8WAh8DZmQCAw9kFgJmDxUCJS9wdC9pbnZlc3RpZ2FjYW8vUGFnaW5hcy9kZWZhdWx0LmFzcHgOSW52ZXN0aWdhw6fDo29kAgMPZBYEAgEPFgIfBAURZHJvcGRvd24gbmF2LW5vZGUWBGYPFQIACkJpYmxpb3RlY2FkAgEPFgIfAwIBFgICAQ9kFgJmDxUDATAjL3B0L2JpYmxpb3RlY2EvUGFnaW5hcy9kZWZhdWx0LmFzcHgITmFjaW9uYWxkAgMPFgIfAWgWAmYPFQIACkJpYmxpb3RlY2FkAg8PZBYCAgMPZBYCAgEPZBYEAgMPZBYCZg8PFgQeBF8hU0ICAh4IQ3NzQ2xhc3MFF21zLXByb21vdGVkQWN0aW9uQnV0dG9uZGQCBQ8PFgYfBgUXbXMtcHJvbW90ZWRBY3Rpb25CdXR0b24fBQICHwFoZGQCFw9kFgICAg9kFgICAQ9kFgJmD2QWAgIDDxYCHwALKwQBZGR6V8sjvO5s4195I8tJty/RHd4qPv7330jjqzaG59owNQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=GZO7wijs8RkL2jPH-fWh9Ol47ilClNkuNLM3HvgkZFTvBnePsCSXPxOgZ_CsxHbOz_45m7GhNrSxQYQ-73i_cO7SC5fAmmD_yB_aFYRTSJU1&amp;t=638568640745067788" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+
+var g_correlationId = 'c3d601a2-83b5-2033-2373-c969d3eaa9ef';
+var g_wsaQoSEnabled = false;
+var g_wsaQoSDataPoints = [];
+var g_wsaRUMEnabled = false;
+var g_wsaLCID = 2070;
+var g_wsaListTemplateId = 850;
+var g_wsaSiteTemplateId = 'CMSPUBLISHING#0';
+var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002fpt\u002fbiblioteca", webAbsoluteUrl: "https:\u002f\u002fbicsp.min-saude.pt\u002fpt\u002fbiblioteca", siteAbsoluteUrl: "https:\u002f\u002fbicsp.min-saude.pt", serverRequestPath: "\u002fpt\u002fbiblioteca\u002fPaginas\u002fdefault.aspx", layoutsUrl: "_layouts\u002f15", webTitle: "Biblioteca", webTemplate: "39", tenantAppVersion: "0", isAppWeb: false, webLogoUrl: "\u002fSiteCollectionImages\u002flogo_bicsp.png", webLanguage: 2070, currentLanguage: 2070, currentUICultureName: "pt-PT", currentCultureName: "pt-PT", clientServerTimeDelta: new Date("2026-03-20T12:36:36.8945240Z") - new Date(), updateFormDigestPageLoaded: new Date("2026-03-20T12:36:36.8945240Z"), siteClientTag: "7$$16.0.4600.1001", crossDomainPhotosEnabled:false, webUIVersion:15, webPermMasks:{High:16,Low:196673},pageListId:"{197ed517-0768-4b80-ae66-4381c08b7d62}",pageItemId:1, pagePersonalizationScope:1, alertsEnabled:false, customMarkupInCalculatedFieldDisabled: true, siteServerRelativeUrl: "\u002f", allowSilverlightPrompt:'True', isSiteAdmin: false};function CallServer_12904914(arg, context) {WebForm_DoCallback('ctl00$ctl20',arg,SP.UI.MyLinksRibbon.MyLinksRibbonPageComponent.ribbonActionCallback,context,null,false); }function _myLinksRibbonLoad2()
+{
+    var fnd = function () {
+        try {
+            mylinks_init.MyLinksInit('CallServer_12904914'); 
+        } 
+        catch (Ex)
+        { }
+    };
+    RegisterSod('mylinks_init', '/_layouts/15/sp.ui.mylinksribbon.js?rev=0StMaEfxj2Emiye6tWPA%2BA%3D%3DTAG0');
+    LoadSodByKey('mylinks_init', fnd);
+}
+
+function _myLinksRibbonLoad1()
+{
+    ExecuteOrDelayUntilScriptLoaded(_myLinksRibbonLoad2, 'SP.Ribbon.js');
+}
+
+_spBodyOnLoadFunctionNames.push('_myLinksRibbonLoad1');
+document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};Flighting.ExpFeatures = [480215056,1880287568,1561350208,302071836,3212816,69473024,4194310,-2113396707,268502022,-872284160,1049232,-2147421952,65536,65536,2097472,917504,-2147474174,1372324107,67108882,0,0,-2147483648,2097152,0,0,32768,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32768]; (function()
+{
+    if(typeof(window.SP) == "undefined") window.SP = {};
+    if(typeof(window.SP.YammerSwitch) == "undefined") window.SP.YammerSwitch = {};
+
+    var ysObj = window.SP.YammerSwitch;
+    ysObj.IsEnabled = false;
+    ysObj.TargetYammerHostName = "www.yammer.com";
+} )(); 
+                var g_syncButtonUsePopup = true;
+                //]]>
+</script>
+
+<script src="/_layouts/15/blank.js?rev=NO3yEueEuiXygYcXRDv%2FCQ%3D%3DTAG0" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() {
+            SP.SOD.executeFunc('core.js', 'FollowingDocument', function() { FollowingDocument(); });
+        });
+    })();(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() {
+            SP.SOD.executeFunc('core.js', 'FollowingCallout', function() { FollowingCallout(); });
+        });
+    })();if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();function WebForm_OnSubmit() {
+UpdateFormDigest('\u002fpt\u002fbiblioteca', 1440000);
+                    var workspaceElem = GetCachedElement("s4-workspace");
+                    if (workspaceElem != null)
+                    {
+                        var scrollElem = GetCachedElement("_maintainWorkspaceScrollPosition");
+                        if (scrollElem != null)
+                        {
+                            scrollElem.value = workspaceElem.scrollTop;
+                        }
+                    };
+                if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;};
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EFE3AA32" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAIJT8inqjnHnhTGqjGN2LDDMTZk9qLGncDjImqxppn1Mx5PNWgedP6i62PfkotCfUV5Hhj/q3DwP/pCXGine5Ds" />
+</div>
+
+			<!-- ===== STARTER: SharePoint Reqs this for adding columns ===================================================== -->
+			<script type="text/javascript"> var submitHook = function () { return false; }; theForm._spOldSubmit = theForm.submit; theForm.submit = function () { if (!submitHook()) { this._spOldSubmit(); } }; </script>
+
+			<!-- ===== STARTER: Web Part Manager  ============================================================================================= -->
+			
+
+			<!-- ===== STARTER: ScriptManager ===================================================== -->
+			<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm', ['fctl00$WebPartAdderUpdatePanel',''], [], ['ctl00$WebPartAdder',''], 90, 'ctl00');
+//]]>
+</script>
+
+            
+			<!-- ===== STARTER: Ribbon Code Starts Here ===================================================== -->
+			<!--SuiteBar start-->
+			<div id="suiteBarDelta" class="ms-dialogHidden ms-fullWidth noindex">
+	
+				<div id="suiteMenuData" class="ms-hide">
+					
+
+
+					<span class="ms-siteactions-root" id="siteactiontd">
+						
+					</span>
+				</div>
+				<script type="text/javascript">// <![CDATA[ 
+
+
+					var g_navBarHelpDefaultKey = "HelpHome";
+				// ]]>
+</script>
+
+				<div id="suiteBarTop" class="ms-fullWidth ms-TopBarBackground-bgColor" style="height:50px; position:relative;">
+
+	</div><div class="wf-family-o365 o365wf" style="display:none">
+
+	</div>
+
+				<div class="container bicsp-header" role="banner">
+					<div class="row">
+                        <div class="col-md-8 col-sm-8 col-xs-10 bicsp-header-logo">
+                            <a class="bicsp-logoSNS" target="_blank" href="https://www.sns.gov.pt/" title="SNS - Serviço Nacional de Saúde"></a>
+                            <a class="bicsp-logoBICSP" target="_self" href="/" title="BI-CSP | Bilhete de Identidade dos Cuidados de Saúde Primários"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-2 text-center">
+							
+
+<div class="bicsp-header-login">
+    <a onclick="javascript:BICSP.Authenticate();" href="javascript:void(0);">
+        <span class="fa fa-user">&nbsp;</span>
+    </a>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('.bicsp-header-login').tooltip({
+            title: "Não está autenticado.",
+            placement: 'bottom',
+            html: true
+        });
+    })
+</script>
+                            
+						    <div class="bicsp-header-search hidden-xs">
+							    
+<div class="bicsp-smallsearchbox">
+    <div class="ms-webpart-chrome ms-webpart-chrome-fullWidth ">
+		<div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPartWPQ1" width="100%" class="ms-WPBody noindex " OnlyForMePart="true" allowDelete="false" style="" ><div componentid="ctl00_SmallSearchBox_SmallSearchInputBox1_csr" id="ctl00_SmallSearchBox_SmallSearchInputBox1_csr"><div id="SearchBox" name="Control"><div class="ms-srch-sb ms-srch-sb-border" id="ctl00_SmallSearchBox_SmallSearchInputBox1_csr_sboxdiv"><input type="text" value="Procurar..." maxlength="2048" accessKey="S" title="Procurar..." id="ctl00_SmallSearchBox_SmallSearchInputBox1_csr_sbox" autocomplete="off" autocorrect="off" onkeypress="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {if (Srch.U.isEnterKey(String.fromCharCode(event.keyCode))) {$find('ctl00_SmallSearchBox_SmallSearchInputBox1_csr').search($get('ctl00_SmallSearchBox_SmallSearchInputBox1_csr_sbox').value);return Srch.U.cancelEvent(event);}})" onkeydown="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_SmallSearchBox_SmallSearchInputBox1_csr');ctl.activateDefaultQuerySuggestionBehavior();})" onfocus="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_SmallSearchBox_SmallSearchInputBox1_csr');ctl.hidePrompt();ctl.setBorder(true);})" onblur="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_SmallSearchBox_SmallSearchInputBox1_csr'); if (ctl){ ctl.showPrompt(); ctl.setBorder(false);}})" class="ms-textSmall ms-srch-sb-prompt ms-helperText"/><a title="Procurar" role="button" class="ms-srch-sb-searchLink" id="ctl00_SmallSearchBox_SmallSearchInputBox1_csr_SearchLink" onclick="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {$find('ctl00_SmallSearchBox_SmallSearchInputBox1_csr').search($get('ctl00_SmallSearchBox_SmallSearchInputBox1_csr_sbox').value);})" href="javascript: {}" ><img src="/_layouts/15/images/searchresultui.png?rev=40" class="ms-srch-sb-searchImg" id="searchImg" alt="Procurar" /></a><div class="ms-qSuggest-container ms-shadow" id="AutoCompContainer"><div id="ctl00_SmallSearchBox_SmallSearchInputBox1_csr_AutoCompList"></div></div></div></div></div><noscript><div id="ctl00_SmallSearchBox_SmallSearchInputBox1_noscript">O seu browser parece não ter o JavaScript ativado. Ative o JavaScript e tente novamente.</div></noscript><div id="ctl00_SmallSearchBox_SmallSearchInputBox1">
+
+		</div><div class="ms-clear"></div></div>
+	</div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.bicsp-smallsearchbox input.ms-srch-sb-prompt').wrap('<span class="deleteicon" />').after($('<span/>').click(function () {
+            $(this).prev('input').val('').trigger('change').focus();
+        }));
+    });
+</script>
+
+						    </div>
+                        </div>
+					</div>
+				</div>
+			
+</div>
+			<!--SuiteBar end-->
+
+			<!-- Menu start -->			
+			<div class="bicsp-menu text-uppercase list-unstyled s4-notdlg">
+								<div class="">
+									<div class="">
+										<div class="header-container s4-notdlg noindex s4-noindex">
+											<nav class="navbar navbar-default s4-notdlg noindex s4-noindex">
+												<div class="container">
+													<!--Brand and toggle get grouperd for better mobile display -->
+													<div class ="navbar-header">
+														<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+															<span class="sr-only">Toggle navigation</span>
+															<span class="icon-bar"></span>
+															<span class="icon-bar"></span>
+															<span class="icon-bar"></span>
+														</button>
+														<a class="navbar-brand hide">BI-CSP</a>
+													</div>
+													<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+														
+																<ul class="nav navbar-nav navbar-left">
+															
+																<li id="ctl00_TopNavMenu_ctl01_li1" class="root-node">
+																	<a href="/pt/Paginas/default.aspx">
+																		Início
+																	</a>
+																</li>
+																
+																	 <!--if has children -->
+																		
+																		<!--if has zero children -->
+																		<li>
+																			
+																			<a href="/pt/biufs/Paginas/default.aspx">
+																				BI-UF
+																			</a>
+																		</li>
+																	
+																	 <!--if has children -->
+																		<li id="ctl00_TopNavMenu_ctl01_FirstLevelNodes_ctl01_li2" class="dropdown nav-node">
+
+																			
+
+																			<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+																				Contratualização
+																				<span class="caret"></span>
+																			</a>
+																			
+																					<ul class="dropdown-menu" role="menu">
+																				
+																					<li data-node-index="0" class="nav-node">
+																						<a href="/pt/contratualizacao/ide">
+																							IDE
+																						</a>
+																					</li>
+																				
+																					<li data-node-index="1" class="nav-node">
+																						<a href="/pt/contratualizacao/idg/Paginas/default.aspx">
+																							IDG UF
+																						</a>
+																					</li>
+																				
+																					<li data-node-index="2" class="nav-node">
+																						<a href="/pt/contratualizacao/idgaces">
+																							IDG ACES
+																						</a>
+																					</li>
+																				
+																					<li data-node-index="3" class="nav-node">
+																						<a href="/pt/contratualizacao/planosdeacao/Paginas/default.aspx">
+																							Planos de Ação UF
+																						</a>
+																					</li>
+																				
+																					<li data-node-index="4" class="nav-node">
+																						<a href="/pt/contratualizacao/planosdedesenvolvimento/Paginas/default.aspx">
+																							Planos de Desempenho ACES
+																						</a>
+																					</li>
+																				
+																					<li data-node-index="5" class="nav-node">
+																						<a href="/pt/contratualizacao/relatoriosatividade/Paginas/default.aspx">
+																							Relatórios de Atividade
+																						</a>
+																					</li>
+																				
+																					</ul>
+																				
+																		</li>
+																		<!--if has zero children -->
+																		
+																	
+																	 <!--if has children -->
+																		
+																		<!--if has zero children -->
+																		<li>
+																			
+																			<a href="/pt/investigacao/Paginas/default.aspx">
+																				Investigação
+																			</a>
+																		</li>
+																	
+																	 <!--if has children -->
+																		<li id="ctl00_TopNavMenu_ctl01_FirstLevelNodes_ctl03_li2" class="dropdown nav-node">
+
+																			
+
+																			<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+																				Biblioteca
+																				<span class="caret"></span>
+																			</a>
+																			
+																					<ul class="dropdown-menu" role="menu">
+																				
+																					<li data-node-index="0" class="nav-node">
+																						<a href="/pt/biblioteca/Paginas/default.aspx">
+																							Nacional
+																						</a>
+																					</li>
+																				
+																					</ul>
+																				
+																		</li>
+																		<!--if has zero children -->
+																		
+																	
+															
+																</ul>
+															
+													</div>
+												</div>
+											</nav>
+										</div>	
+									</div>
+								</div>
+								
+			</div>
+			<div id="DeltaTopNavigation" class="ms-displayInline ms-core-navigation" role="navigation">
+	
+				
+			
+</div>
+			<!-- Menu end -->
+
+
+			<!-- ===== STARTER: Styles override for anonymous users  ===========================================  -->
+			<span>
+				<style type="text/css">
+					#s4-ribbonrow, #suiteBarTop { display: none; }
+				</style>
+			</span>
+
+			<!--Ribbon start-->
+			<div id="s4-ribbonrow" class="s4-notdlg">
+				<div id="globalNavBox" class="noindex">
+					<div id="ribbonBox">
+						<div id="s4-ribboncont">
+							<div id="DeltaSPRibbon">
+	
+								
+
+								<div class='ms-cui-ribbonTopBars'><div class='ms-cui-topBar1'></div><div class='ms-cui-topBar2'><div id='RibbonContainer-TabRowLeft' class='ms-cui-TabRowLeft ms-core-defaultFont ms-dialogHidden'>
+									</div><div id='RibbonContainer-TabRowRight' class='ms-cui-TabRowRight s4-trc-container s4-notdlg ms-core-defaultFont'>
+										
+										<a onmouseover="this.firstChild.firstChild.style.left=&#39;-217px&#39;; this.firstChild.firstChild.style.top=&#39;-192px&#39;;" onmouseout="this.firstChild.firstChild.style.left=&#39;-218px&#39;; this.firstChild.firstChild.style.top=&#39;-48px&#39;;" onclick="SP.SOD.executeFunc(&#39;followingcommon.js&#39;, &#39;FollowSite&#39;, function() { FollowSite(); }); return false;" id="site_follow_button" title="Siga este site e regresse ao mesmo facilmente a partir da sua página de sites." class="ms-promotedActionButton" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$site_follow_button&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="display:inline-block;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-promotedActionButton-icon"><img src="/_layouts/15/images/spcommon.png?rev=40" alt="Seguir" style="position:absolute;left:-218px;top:-48px;" /></span><span class="ms-promotedActionButton-text">Seguir</span></a>
+										
+										
+										<span id="fullscreenmodebox" class="ms-qatbutton">
+											<span id="fullscreenmode">
+												<a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-125px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-143px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" id="ctl00_fullscreenmodeBtn" title="Concentrar-se no Conteúdo" onclick="SetFullScreenMode(true);PreventDefaultNavigation();return false;" href="../../../_catalogs/masterpage/BICSP/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/images/spcommon.png?rev=42" alt="Concentrar-se no Conteúdo" style="border:0;position:absolute;left:-143px;top:-178px;" /></span></span></a>
+											</span>
+											<span id="exitfullscreenmode" style="display: none;">
+												<a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-179px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-96px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-107px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" id="ctl00_exitfullscreenmodeBtn" title="Concentrar-se no Conteúdo" onclick="SetFullScreenMode(false);PreventDefaultNavigation();return false;" href="../../../_catalogs/masterpage/BICSP/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/images/spcommon.png?rev=42" alt="Concentrar-se no Conteúdo" style="border:0;position:absolute;left:-107px;top:-178px;" /></span></span></a>
+											</span>
+										</span>
+										
+										
+									</div></div></div>
+							
+</div>
+						</div>
+						<span id="DeltaSPNavigation">
+							
+								<span id="ctl00_SPNavigation_ctl00_publishingRibbon"></span>
+
+							
+						</span>
+					</div>
+					<div id="DeltaWebPartAdderUpdatePanelContainer" class="ms-core-webpartadder">
+	
+						<div id="WebPartAdderUpdatePanelContainer">
+							<div id="ctl00_WebPartAdderUpdatePanel">
+		
+									<span id="ctl00_WebPartAdder"></span>
+								
+	</div>
+						</div>
+					
+</div>
+				</div>
+			</div>
+			<!--Ribbon end-->
+
+			<!-- ===== STARTER: Ribbon Code Ends Here  ======================================================================================== -->
+
+			<!-- ===== STARTER: Main Scrolling Body Starts Here =============================================================================== -->
+			<div id="s4-workspace">
+				<div id="s4-bodyContainer">
+					<div aria-live="polite" aria-relevant="all" role="main">
+						<div id="notificationArea" class="ms-notif-box"></div>
+						<div id="DeltaPageStatusBar">
+	
+							<div id="pageStatusBar"></div>
+						
+</div>
+					</div>
+					<div class="bicsp-theme-wrapper">
+						<!-- ===== STARTER: This decides where the web part menu lives ===================================================== -->
+						<div class="bicsp-main" role="main">
+							<div id="DeltaPlaceHolderMain">
+	
+								<a id="mainContent" name="mainContent" tabindex="-1"></a>
+								
+	
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+
+<div id="ctl00_PlaceHolderMain_DocumentGallery_pnlDocumentGallery" class="bicsp-document-gallery">
+		
+    <div id="bicsp-ufcombo" class="row" data-bind="visible: EnableUserContextFilters() && UFContextWebIds().length > 1">
+        <div class="col-md-12">
+            <div class="container">
+                <div class="row options" data-bind="foreach: UFContextWebIds">
+                    <div class="col-md-3">
+                        <div class="labels"><span>&nbsp;</span></div>
+                        <label class="btn btn-default btn-external-bicsp" style="width: 100%; text-align: left;">
+                            <input type="checkbox" data-bind="checkedValue: $data, checked: $root.UFContextWebIdsSelected" />
+                            &nbsp;<span data-bind="text: Title" />
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container gallery-container">
+        <div class="row" data-bind="visible: DisplayPageTitle">
+            <div class="col-md-12">
+                
+
+<div id="bicsp-breadcrumb" class="s4-notdlg">
+    <span id="ctl00_PlaceHolderMain_DocumentGallery_Breadcrumb__map" class="bicsp-breadcrumbtrail"><span>
+            <span class="bicsp-breadcrumbtrail-separator"></span>
+        </span><span><a class="ms-sitemapdirectional" href="/pt/Paginas/default.aspx">In&#237;cio</a></span><span>
+            <span class="bicsp-breadcrumbtrail-separator"></span>
+        </span><span class="bicsp-breadcrumbtrail-current">Biblioteca</span></span>
+</div>
+
+            </div>
+        </div>
+        <div class="row" data-bind="visible: DisplayPageTitle">
+            <div class="col-md-12">
+                <div id="bicsp-pagetitle">
+                    <h1>
+                        Biblioteca
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-bind="visible: IsEditor" style="margin: 10px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        <button type="button" class="btn btn-default btn-external-bicsp" data-bind="click: UploadDocuments">Gerir</button><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+               <div class="row gallery-filters">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="text">&nbsp;</label>
+                            <div id="text" class="input-group stylish-input-group">
+                                <input type="text" class="form-control" data-bind="textInput: TextFilter" placeholder='Pesquisar' />
+                                <span class="input-group-addon">
+                                    <div class="buttondiv">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="categoria">Categorias</label>
+                            <select id="categoria" class="selectpicker show-tick form-control" title="Todas" data-bind='options: CategoryOptions, optionsCaption: "Todas", optionsText: "Value", selectedOptions: SelectedCategories' data-actions-box="true" data-selected-text-format="count" data-size="5" data-select-all-text="Todas" data-deselect-all-text="Nenhuma" data-container="body" data-dropup-auto="false"></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="subcategoria">Subcategorias</label>
+                            <select id="subcategoria" class="selectpicker show-tick form-control" title="Todas" data-bind='options: SubCategoryOptions, optionsCaption: "Todas", optionsText: "Value", selectedOptions: SelectedSubCategories, enable: $root.SubCategoriesEnabled' data-actions-box="true" data-selected-text-format="count" data-size="5" data-select-all-text="Todas" data-deselect-all-text="Nenhuma" data-container="body" data-dropup-auto="false"></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="dtCalendar">Data de publicação início</label>
+                            <div class="input-group stylish-input-group date" id='dtCalendarIni'>
+                                <input type="text" class="form-control" placeholder="Todos">
+                                <div class="input-group-addon">
+                                    <div class="buttondiv">
+                                        <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+					<div class="row">
+                        <div class="form-group">
+                            <label for="dtCalendar">Data de publicação fim</label>
+                            <div class="input-group stylish-input-group date" id='dtCalendarFim'>
+                                <input type="text" class="form-control" placeholder="Todos">
+                                <div class="input-group-addon">
+                                    <div class="buttondiv">
+                                        <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="row">
+                        <div class="form-group">
+                            <label for="Ordenar">Ordenar por</label>
+                            <select id="Ordenar" class="selectpicker show-tick form-control" title="Data de Criação mais antigo" data-bind='options: Order,  optionsText: "label", selectedOptions: SelectedOrder' data-actions-box="true" data-selected-text-format="count" data-size="5" data-select-all-text="Todas" data-deselect-all-text="Nenhuma" data-container="body" data-dropup-auto="false"></select>
+                        </div>
+                    </div>
+				</div>
+            </div>
+            <div class="col-md-9">
+               <div class="row gallery-grid" data-bind="foreach: DocumentsGrid">
+                    <div class="gallery-grid-item col-md-5ths col-xs-6">
+						<img alt="" data-bind="attr: { src: Image() + '?Width=200' }" />
+						<div data-bind="attr: { class: 'caption ' + Icon() }">
+							<span class="category" data-bind="attr: { title: Category() }, html: CategoryShort()"></span>
+							<i class="fa" data-bind="attr: { class: 'fa ' + $IconClass() }" aria-hidden="true"></i>
+						</div>
+						<div class="content">
+							<div class="description truncate">
+								<p data-bind="attr: { title: Title }, text: Title"></p>
+							</div>
+							<div class="author truncate2lines">
+								<span data-bind="attr: { title: Summary }, html: Summary"></span>
+								<br />
+							</div>
+							<br />
+							<div class="author truncate">
+								<span data-bind="attr: { title: Author }, text: Author"></span>
+							</div>
+							<div class="footer">
+								<div class="date">
+									<span data-bind="text: Date()"></span>
+								</div>
+								<div class="more text-right">
+									<a data-bind="attr: { href: URL }" target="_blank">Ler Mais <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+               </div>
+               <div class="row text-center" data-bind="visible: ResultsCount() <= 0">
+                    <span>Não foram encontrados documentos.</span>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-default btn-more" data-bind="click: LoadMoreDocuments, visible: ShowLoadMore">Ver Mais</button>
+                    <div class="loading-overlay" data-bind="visible: Loading"></div>
+                </div>
+            </div>
+		</div>
+    </div>
+
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $.fn.selectpicker.Constructor.DEFAULTS.display = 'static';
+
+        var parameters = {
+            Scope: "biblioteca",
+            EnableUserContextFilters: false,
+            DisplayPageTitle: true,
+            Webs: '[]'
+        };
+
+        SP.SOD.executeFunc('sp.js', 'DocumentGalleryViewModel', function () {
+            var model = new BICSP.DocumentGalleryViewModel("ctl00_PlaceHolderMain_DocumentGallery_pnlDocumentGallery", parameters);
+
+            if (parameters.Scope === 'biblioteca' || parameters.Scope === 'institucional') {
+                model.Init();
+            }
+            else {
+                $("a[href='#biblioteca']").click(function () {
+                    model.ResetDocumentsGrid();
+                    model.Init();
+                });
+            }
+        });
+    });
+</script>
+
+<div style='display:none' id='hidZone'><menu class="ms-hide">
+		<ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/15/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute(&#39;helpLink&#39;), MenuWebPart.getAttribute(&#39;helpMode&#39;))" text="Ajuda" type="option" style="display:none">
+
+		</ie:menuitem>
+	</menu></div>
+							
+</div>
+                            
+
+<button id="bicsp-btn-scrollTop" class="btn btn-default hidden-xs hidden-sm" data-bind="click: function () { BackToTop(); }, visible: IsVisible">&nbsp;</button>
+<script type="text/javascript">
+    $(new BICSP.ScrollToTopViewModel());
+</script>
+
+						</div>
+					</div>
+					<footer class="bicsp-footer ms-dialogHidden" role="contentinfo">
+						<div class="row bicsp-footer-links">
+							<div class="container">
+								<div class="col-md-3">
+									<ul class="list-unstyled center-block">
+										<li>
+											<h5 class="link-group-header">Outras Informações</h5>
+										</li>
+										<li>
+											<h5><a href="/pt/noticias">Notícias</a></h5>
+										</li>
+										<li>
+											<h5><a href="/pt/paginas/faqs.aspx">Perguntas Frequentes</a></h5>
+										</li>
+										<li>
+											<h5><a href="/pt/paginas/sitemap.aspx">Mapa do Site</a></h5>
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-5">
+									<ul class="list-unstyled center-block">
+										<li>
+											<h5 class="link-group-header">Contactos</h5>
+										</li>
+										<li><h5><a href="/pt/paginas/ajuda.aspx">Videos de ajuda ao BICSP</a></h5><li>
+										<li style="display:none">USF-AN</li>
+										<li style="display:none">Rua da Constituição 2105 | 2º piso, sala 9 4250-170 Porto</li>
+										<li>Email <a class='email' href="mailto:servicedesk@spms.min-saude.pt">servicedesk@spms.min-saude.pt</a></li>
+									</ul>
+								</div>
+								<div class="bicsp-footer-links-contactus col-md-4 ">
+									<div class="row">
+										<div class="bicsp-footer-links-contactus-logo col-sm-3">
+											&nbsp;
+										</div>
+										<div class="col-sm-9">
+											<ul class="list-unstyled center-block">
+												<li>
+													<h5 class="link-group-header">Fale connosco</h5>
+												</li>
+												<li>Contacte-nos, através do formulário online.</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row bicsp-footer-logos">
+							<div class="container">
+								<div class="col-md-6 logos">
+                                    <a href="http://www.presidencia.pt/" title="Página Oficial da Presidência da República Portuguesa" target="_blank">
+                                        <img src="/_layouts/15/images/SPMS.BICSP.SharePoint/logotipo_republicaportuguesa.svg" height="40px" /></a>
+                                    <a href="http://www.acss.min-saude.pt/" title="Administração Central do Sistema de Saúde, IP" target="_blank">
+                                        <img src="/_layouts/15/images/SPMS.BICSP.SharePoint/logotipo_ACSS.svg" height="40px" /></a>
+                                    <a href="https://www.usf-an.pt/" title="Unidades de Saúde Familiar - Associação Nacional" target="_blank">
+                                        <img src="/_layouts/15/images/SPMS.BICSP.SharePoint/logotipo_usf.svg" height="40px" /></a>
+								</div>
+								<div class="col-md-6 text-right">
+									<span class="developertext">Desenvolvido por: </span>
+                                    <a href="http://spms.min-saude.pt/" title="Serviços Partilhados do Ministério da Saúde - SPMS" target="_blank">
+									    <img src="/_layouts/15/images/SPMS.BICSP.SharePoint/logotipo_spms.svg" alt="Serviços Partilhados do Ministério da Saúde - SPMS" height="30px" />
+                                    </a>
+									</br>
+									<span class="copyright">© 2017 Todos os Direitos reservados ao Governo da República Portuguesa - Ministério da Saúde</span>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+			<!-- ===== STARTER: Main Scrolling Body Ends Here ================================================================================= -->
+
+			<!-- ===== STARTER: Needed for form stuff ========================================================================================= -->
+			
+				<script type="text/javascript">//<![CDATA[
+        var formDigestElement = document.getElementsByName('__REQUESTDIGEST')[0];
+        if (!((formDigestElement == null) || (formDigestElement.tagName.toLowerCase() != 'input') || (formDigestElement.type.toLowerCase() != 'hidden') ||
+            (formDigestElement.value == null) || (formDigestElement.value.length <= 0)))
+        {
+            formDigestElement.value = '0xD40931D69D3C67368B88FB5E251A58A3FC65B4DD24530571AD672E03FB6DB27CF695C8C9450317856BC46D0C610E55BFA4AC4B5E5B33EA0E2A627DC89B733F9F,20 Mar 2026 12:36:36 -0000';_spPageContextInfo.updateFormDigestPageLoaded = new Date();
+        }
+        //]]>
+        </script>
+			
+
+			<!-- ===== STARTER: Hidden Placeholders =========================================================================================== -->
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+<script type="text/javascript">
+//<![CDATA[
+
+var callBackFrameUrl='/WebResource.axd?d=hRERxL3_ZNobtlYINQlZQkjUpoD4XoGEzH5sr1dYVtxOYWyNGlzfnX0nGPukWHQwFHoJFzP4xlrg6HBWI4hFNerk7BWZ5vQRmaX24yzgA9Q1&t=638568640745067788';
+WebForm_InitCallback();var _spFormDigestRefreshInterval = 1440000;//]]>
+</script>
+<script type="text/javascript">  var appInsights=window.appInsights||function(a){    function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c    }({        instrumentationKey:"7cb89f40-57d7-4be4-9f0e-2b11d8a6a4af"    });      window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();if(_spPageContextInfo.userLoginName !== undefined){appInsights.setAuthenticatedUserContext(_spPageContextInfo.userLoginName);};</script>
+<script type="text/javascript">
+//<![CDATA[
+ IsSPSocialSwitchEnabled = function() { return true; };var _fV4UI = true;
+function _RegisterWebPartPageCUI()
+{
+    var initInfo = {editable: false,isEditMode: false,allowWebPartAdder: false,listId: "{197ed517-0768-4b80-ae66-4381c08b7d62}",itemId: 1,recycleBinEnabled: true,enableMinorVersioning: true,enableModeration: false,forceCheckout: true,rootFolderUrl: "\u002fpt\u002fbiblioteca\u002fPaginas",itemPermissions:{High:16,Low:196673}};
+    SP.Ribbon.WebPartComponent.registerWithPageManager(initInfo);
+    var wpcomp = SP.Ribbon.WebPartComponent.get_instance();
+    var hid;
+    hid = document.getElementById("_wpSelected");
+    if (hid != null)
+    {
+        var wpid = hid.value;
+        if (wpid.length > 0)
+        {
+            var zc = document.getElementById(wpid);
+            if (zc != null)
+                wpcomp.selectWebPart(zc, false);
+        }
+    }
+    hid = document.getElementById("_wzSelected");
+    if (hid != null)
+    {
+        var wzid = hid.value;
+        if (wzid.length > 0)
+        {
+            wpcomp.selectWebPartZone(null, wzid);
+        }
+    }
+};
+function __RegisterWebPartPageCUI() {
+ExecuteOrDelayUntilScriptLoaded(_RegisterWebPartPageCUI, "sp.ribbon.js");}
+_spBodyOnLoadFunctionNames.push("__RegisterWebPartPageCUI");var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';SuiteNavRendering.RenderSuiteNav({top:'suiteBarTop', version:2, dataEndpoint:'Microsoft.SharePoint.Portal.SuiteNavData.GetSuiteNavData', culture:'pt-PT', signInLink:'\u002fpt\u002fbiblioteca\u002f_layouts\u002f15\u002fAuthenticate.aspx?Source=\u00252Fpt\u00252Fbiblioteca\u00252FPaginas\u00252Fdefault\u00252Easpx', brandingText:'', brandingLogo:'', brandingLogoLink:'', brandingLogoTitle:''});
+g_spPreFetchKeys.push('sp.core.js');
+ExecuteOrDelayUntilScriptLoaded(
+function()
+{
+var initInfo = 
+{
+itemPermMasks: {High:16,Low:196673},
+listPermMasks: {High:16,Low:196673},
+listId: "197ed517-0768-4b80-ae66-4381c08b7d62",
+itemId: 1,
+workflowsAssociated: false,
+editable: false,
+doNotShowProperties: false,
+enableVersioning: true
+};
+SP.Ribbon.DocLibAspxPageComponent.registerWithPageManager(initInfo);
+},
+"sp.ribbon.js");
+var g_disableCheckoutInEditMode = false;
+var _spWebPermMasks = {High:16,Low:196673};
+            ExecuteOrDelayUntilScriptLoaded(
+                function() 
+                {                    
+                    Srch.ScriptApplicationManager.get_current().states = {"webUILanguageName":"pt-PT","webDefaultLanguageName":"pt-PT","contextUrl":"https://bicsp.min-saude.pt/pt/biblioteca","contextTitle":"Biblioteca","supportedLanguages":[{"id":1025,"label":"Árabe"},{"id":1093,"label":"Bangla"},{"id":1026,"label":"Búlgaro"},{"id":1027,"label":"Catalão"},{"id":2052,"label":"Chinês (Simplificado)"},{"id":1028,"label":"Chinês (Tradicional)"},{"id":1050,"label":"Croata"},{"id":1029,"label":"Checo"},{"id":1030,"label":"Dinamarquês"},{"id":1043,"label":"Neerlandês"},{"id":1033,"label":"Inglês"},{"id":1035,"label":"Finlandês"},{"id":1036,"label":"Francês"},{"id":1031,"label":"Alemão"},{"id":1032,"label":"Grego"},{"id":1095,"label":"Guzarate"},{"id":1037,"label":"Hebraico"},{"id":1081,"label":"Hindi"},{"id":1038,"label":"Húngaro"},{"id":1039,"label":"Islandês"},{"id":1057,"label":"Indonésio"},{"id":1040,"label":"Italiano"},{"id":1041,"label":"Japonês"},{"id":1099,"label":"Kannada"},{"id":1042,"label":"Coreano"},{"id":1062,"label":"Letão"},{"id":1063,"label":"Lituano"},{"id":1086,"label":"Malaio"},{"id":1100,"label":"Malayalam"},{"id":1102,"label":"Marati"},{"id":1044,"label":"Norueguês"},{"id":1045,"label":"Polaco"},{"id":1046,"label":"Português (Brasil)"},{"id":2070,"label":"Português (Portugal)"},{"id":1094,"label":"Punjabi"},{"id":1048,"label":"Romeno"},{"id":1049,"label":"Russo"},{"id":3098,"label":"Sérvio (Cirílico)"},{"id":2074,"label":"Sérvio (Latim)"},{"id":1051,"label":"Eslovaco"},{"id":1060,"label":"Esloveno"},{"id":3082,"label":"Espanhol (Espanha)"},{"id":2058,"label":"Espanhol (México)"},{"id":1053,"label":"Sueco"},{"id":1097,"label":"Tamil"},{"id":1098,"label":"Telugu"},{"id":1054,"label":"Tailandês"},{"id":1055,"label":"Turco"},{"id":1058,"label":"Ucraniano"},{"id":1056,"label":"Urdu"},{"id":1066,"label":"Vietnamita"}],"navigationNodes":[{"id":0,"name":"Este Site","url":"~site/_layouts/15/osssearchresults.aspx?u={contexturl}","promptString":"Pesquisar em este site"}],"webUILanguageDirectory":"pt-PT","showAdminDetails":false,"defaultPagesListName":"Paginas","isSPFSKU":false,"defaultQueryProperties":{"culture":2070,"uiLanguage":2070,"summaryLength":180,"desiredSnippetLength":90,"enableStemming":true,"enablePhonetic":false,"enableNicknames":false,"trimDuplicates":true,"bypassResultTypes":false,"enableInterleaving":true,"enableQueryRules":true,"processBestBets":true,"enableOrderingHitHighlightedProperty":false,"hitHighlightedMultivaluePropertyLimit":-1,"processPersonalFavorites":true}};
+                    Srch.U.trace(null, 'SerializeToClient', 'ScriptApplicationManager state initialized.');
+                }, 'Search.ClientControls.js');var g_clientIdDeltaPlaceHolderMain = "DeltaPlaceHolderMain";
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+
+                    ExecuteOrDelayUntilScriptLoaded(
+                        function() 
+                        {
+                            if ($isNull($find('ctl00_SmallSearchBox_SmallSearchInputBox1_csr')))
+                            {
+                                var sb = $create(Srch.SearchBox, {"delayLoadTemplateScripts":true,"messages":[],"queryGroupNames":["MasterPage"],"renderTemplateId":"~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchBox_Compact.js","resultsPageAddress":"/pt/pesquisa/Paginas/default.aspx","serverInitialRender":true,"showDataErrors":true,"states":{},"tryInplaceQuery":false}, null, null, $get("ctl00_SmallSearchBox_SmallSearchInputBox1_csr"));
+                                sb.activate('Procurar...', 'ctl00_SmallSearchBox_SmallSearchInputBox1_csr_sbox', 'ctl00_SmallSearchBox_SmallSearchInputBox1_csr_sboxdiv', 'ctl00_SmallSearchBox_SmallSearchInputBox1_csr_NavButton', 'ctl00_SmallSearchBox_SmallSearchInputBox1_csr_AutoCompList', 'ctl00_SmallSearchBox_SmallSearchInputBox1_csr_NavDropdownList', 'ctl00_SmallSearchBox_SmallSearchInputBox1_csr_SearchLink', 'ms-srch-sbprogress', 'ms-srch-sb-prompt ms-helperText');
+                            }
+                        }, 'Search.ClientControls.js');
+var g_commandUIHandlers = {"name":"CommandHandlers","attrs":{},"children":[]};
+//]]>
+</script>
+</form>
+		<!-- ===== STARTER: Adds extra stuff like another form for Survey management ====================================================== -->
+		
+		<script type="text/javascript">
+            $(function () {
+                var windowWidth = window.screen.width < window.outerWidth ?
+                    window.screen.width : window.outerWidth;
+                var mobileTable = windowWidth < 769;
+
+                if (!mobileTable) {
+                    $('ul.nav li.dropdown').hover(function () {
+                        $(this).addClass('open');
+                    }, function () {
+                        $(this).removeClass('open');
+                    });
+                }
+
+            })
+		</script>
+		<script type="text/javascript">
+            $(document).ready(function () {
+				setTimeout(function () {
+                    $("#O365_SubLink_ShellAboutMe").attr("href", "/pt/Paginas/AboutMe.aspx");
+				}, 3000);
+			});
+
+            
+        </script>
+	</body>
+</html><!-- Composto utilizando perfil de cache:Intranet (Site de Colaboração) em: 2026-03-20T12:36:36 -->

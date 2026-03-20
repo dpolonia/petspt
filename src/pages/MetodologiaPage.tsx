@@ -216,28 +216,43 @@ export default function MetodologiaPage() {
         </div>
       </div>
 
+      {/* SDM Transparency Regression */}
+      <div className="bg-red-50 rounded-lg border border-red-300 p-5 text-xs text-gray-600 mb-4">
+        <h4 className="font-semibold text-red-800 mb-2">Regressao de Transparencia: SDM</h4>
+        <p>O SDM (Sistema de Definicao de Metricas, sdm.min-saude.pt) fechou o acesso publico as definicoes de indicadores. As paginas <code>bi.aspx?id=NNN</code>, anteriormente publicas, agora requerem login institucional. <strong>209 indicadores foram preservados na nossa base de dados antes do fecho</strong>, incluindo 125 com nomes completos, formulas e metas de desempenho 2025-2026.</p>
+        <p className="mt-2">Indicadores-chave preservados: #002 (consultas medicas, meta 73.5-85%), #011 (gravidas 1o trimestre, meta 91-100%), #411 (utilizadores frequentes SU, meta 0-0.2/100), #435 (vacina gripe, meta 66-100%).</p>
+      </div>
+
       {/* BI-CSP Data Ecosystem */}
       <div className="bg-blue-50 rounded-lg border border-blue-200 p-5 text-xs text-gray-600 mb-4">
-        <h4 className="font-semibold text-blue-800 mb-2">Ecossistema de Dados: BI-CSP e SDM</h4>
-        <p>Para alem dos portais de dados abertos, existem plataformas institucionais com dados relevantes para o PETS que nao estao publicamente acessiveis:</p>
+        <h4 className="font-semibold text-blue-800 mb-2">Ecossistema de Dados: BI-CSP</h4>
+        <p>O BI-CSP (bicsp.min-saude.pt) contem dados cruciais para o PETS que foram parcialmente extraidos atraves de 4 niveis de tentativa:</p>
         <ul className="mt-2 space-y-1 list-disc list-inside">
-          <li><strong>BI-CSP</strong> (bicsp.min-saude.pt) — Business Intelligence dos Cuidados de Saude Primarios. Contem indicadores IDE/IDG ao nivel de USF/UCSP/ACES/ULS. Dados de utentes inscritos, consultas medicas CSP, prescricoes e rastreios. Requer autenticacao institucional.</li>
-          <li><strong>SDM</strong> (sdm.min-saude.pt) — Sistema de Definicao de Metricas. Definicoes publicas de ~500 indicadores de saude com formulas, metas e metodologia. Indicador #002 (taxa utilizacao consultas) e #411 (utilizadores frequentes SU) relevantes para PETS.</li>
-          <li><strong>SIARS</strong> — Sistema de Informacao dos CSP. Base de dados subjacente ao BI-CSP. Nao acessivel publicamente.</li>
+          <li><strong>Nivel 1 — SharePoint APIs:</strong> 16 listas descobertas, 20 configuracoes de relatorios Power BI, CONTROLLEDMONTH=202512 (dados ate Dez/2025).</li>
+          <li><strong>Nivel 2 — Paginas "publico":</strong> Matriz CSP e Diabetes usam Power BI organizacional (nao "Publish to Web") — API publica nao funciona.</li>
+          <li><strong>Nivel 3 — PDFs Operacionalizacao:</strong> 99 indicadores extraidos de 3 PDFs (contrat2024, op2021, op2022) com nomes, aplicabilidade (USF/UCC/ACES) e intervalos de metas.</li>
+          <li><strong>Nivel 4 — Playwright:</strong> Paginas carregam sem autenticacao. IDG ACES: 12 linhas de dados (39 ULS em 4 escaloes). 27 tabelas Power BI descobertas via intercecao de rede.</li>
         </ul>
-        <p className="mt-2"><strong>Impacto estimado:</strong> Se os agregados nacionais do BI-CSP fossem publicados como dados abertos, o grau medio de monitorabilidade do Eixo 4 subiria ~2.5 pontos (de ~4/10 para ~6.5/10).</p>
+        <p className="mt-2"><strong>Descoberta:</strong> As paginas BI-CSP sao publicamente acessiveis (sem redirect para login), mas os dados Power BI requerem sessao de browser autenticada via SharePoint. O Power BI usa <code>/explore/querydata</code> (autenticado) em vez de <code>/public/reports/querydata</code> (publico).</p>
       </div>
 
       {/* Power BI Extraction */}
       <div className="bg-green-50 rounded-lg border border-green-200 p-5 text-xs text-gray-600 mb-4">
-        <h4 className="font-semibold text-green-800 mb-2">Extracao de Dados Power BI (SNS Portal)</h4>
-        <p>Os dashboards Power BI do portal SNS (tipo "Publish to Web") foram interrogados programaticamente via API publica querydata, extraindo 2.164 pontos de dados de 43 series temporais cobrindo os 5 eixos do PETS (Jan 2023 - Jan 2026).</p>
-        <ul className="mt-2 space-y-1 list-disc list-inside">
-          <li>Eixo 1: Cirurgias onco/nao-onco, consultas hospitalares, listas de espera (SIGLIC/SICA)</li>
-          <li>Eixo 2: Partos, cesarianas, triagens SNS24 Gravida, ecografias pre-natais</li>
-          <li>Eixo 3: CAC (utentes atendidos, teleconsultas), encaminhamentos SU/CSP, vacinacao</li>
-          <li>Eixo 4: Utentes inscritos (com/sem MdF), consultas CSP (presenciais/nao), ULS/SCM</li>
-          <li>Eixo 5: Episodios psicologia/psiquiatria, TMRG psiquiatria</li>
+        <h4 className="font-semibold text-green-800 mb-2">Extracao de Dados Power BI (SNS Portal + BI-CSP)</h4>
+        <p>Os dashboards Power BI do portal SNS ("Publish to Web") foram interrogados via API querydata, extraindo <strong>2.164 pontos</strong> de 43 series (Jan 2023 - Jan 2026). Cadeia de prioridade dos dados:</p>
+        <ol className="mt-2 space-y-1 list-decimal list-inside">
+          <li><strong>Power BI SIGLIC/SICA</strong> (SNS Portal) — cirurgias, consultas, listas de espera</li>
+          <li><strong>BI-CSP IDG/IDE</strong> — desempenho por unidade funcional (parcialmente extraido)</li>
+          <li><strong>Transparencia SNS API</strong> — 12 datasets publicos com serie mensal</li>
+          <li><strong>SDM definicoes</strong> — 209 indicadores com formulas e metas</li>
+          <li><strong>Relatorios GT PETS</strong> — valores pontuais de Dez/2024 e Abr/2025</li>
+        </ol>
+        <ul className="mt-3 space-y-1 list-disc list-inside text-xs">
+          <li>Eixo 1: 198 pontos — cirurgias onco/nao-onco, consultas hospitalares, LIC fora TMRG (SIGLIC/SICA)</li>
+          <li>Eixo 2: 211 pontos — partos, cesarianas, triagens SNS24 Gravida, ecografias, encaminhamentos</li>
+          <li>Eixo 3: 1.609 pontos — CAC (utentes, teleconsultas, referenciados), encaminhamentos SU/CSP, vacinacao</li>
+          <li>Eixo 4: 112 pontos — utentes inscritos (com/sem MdF), consultas CSP (presenciais/nao), ULS/SCM</li>
+          <li>Eixo 5: 34 pontos — episodios psicologia/psiquiatria anuais e mensais, TMRG psiquiatria</li>
         </ul>
       </div>
 
