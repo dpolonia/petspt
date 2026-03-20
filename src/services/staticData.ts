@@ -5,6 +5,12 @@
 
 import { Estado } from '../types';
 
+export interface KPIData {
+  dataPoints: { periodo: string; valor: number }[];
+  unidade: string;
+  invertido?: boolean;
+}
+
 export interface MedidaEstado {
   id: string;
   eixo: number;
@@ -14,11 +20,12 @@ export interface MedidaEstado {
   prioridade: 'urgente' | 'prioritaria' | 'estruturante';
   descricaoProgresso: string;
   legislacao?: string;
+  kpiData?: KPIData;
 }
 
 export const MEDIDAS_ESTADO: MedidaEstado[] = [
   // ─── EIXO 1 ──────────────────────
-  { id: 'E1.A1', eixo: 1, nome: 'Regularização da lista de espera para cirurgia oncológica (OncoStop2024)', nomeCurto: 'OncoStop2024', estado: 'concluida', prioridade: 'urgente', descricaoProgresso: 'Programa alcançou zero doentes oncológicos fora do TMRG a 31/Ago/2024. A 31/Mar/2025: 180 doentes fora TMRG sem agendamento (vs. 1469 no período homólogo de 2024, redução de 87,7%).' },
+  { id: 'E1.A1', eixo: 1, nome: 'Regularização da lista de espera para cirurgia oncológica (OncoStop2024)', nomeCurto: 'OncoStop2024', estado: 'concluida', prioridade: 'urgente', descricaoProgresso: 'Programa alcançou zero doentes oncológicos fora do TMRG a 31/Ago/2024. A 31/Mar/2025: 180 doentes fora TMRG sem agendamento (vs. 1469 no período homólogo de 2024, redução de 87,7%).', kpiData: { dataPoints: [{ periodo: '2024-01', valor: 1469 }, { periodo: '2024-05', valor: 2645 }, { periodo: '2024-08', valor: 0 }, { periodo: '2024-11', valor: 168 }, { periodo: '2025-03', valor: 180 }], unidade: 'doentes oncologicos fora TMRG', invertido: true } },
   { id: 'E1.A2', eixo: 1, nome: 'Aproximação do SNS ao cidadão através da Linha SNS24', nomeCurto: 'SNS24 Cidadão', estado: 'concluida', prioridade: 'urgente', descricaoProgresso: 'Enviadas 16.156 SMS para doentes com TMRG ultrapassado em >200%. Mais de 700 doentes intervencionados após esta ação.' },
   { id: 'E1.B1', eixo: 1, nome: 'Programa cirúrgico para doentes não-oncológicos', nomeCurto: 'Cirurgia Não-Oncológica', estado: 'concluida', prioridade: 'prioritaria', descricaoProgresso: 'Q1 2025: 186.273 operados (+6,3% vs. 2024, +7,2% vs. 2023). Doentes fora TMRG: 17.149 em Mar/2025 (-12,4% vs. período homólogo).', legislacao: 'Portaria n.º 212/2024/1, de 18/Set; Portaria n.º 305/2024/1, de 27/Nov' },
   { id: 'E1.B2', eixo: 1, nome: 'Nova prioridade clínica para doentes oncológicos', nomeCurto: 'Prioridade Oncológica', estado: 'em_curso', prioridade: 'prioritaria', descricaoProgresso: 'Em curso — reestruturação regulamentar para inclusão em novo enquadramento legislativo.' },

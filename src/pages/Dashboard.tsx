@@ -71,7 +71,15 @@ export default function Dashboard() {
       continue;
     }
 
-    // Priority 3: No dataset mapping — use estado color
+    // Priority 3: kpiData from GT PETS reports (measures without API dataset)
+    if (m.kpiData?.dataPoints && m.kpiData.dataPoints.length >= 2) {
+      trendMap[m.id] = calculateMeasureTrend(m.kpiData.dataPoints, m.kpiData.invertido);
+      trendMap[m.id].dataSource = 'dados_fixos';
+      fonteMap[m.id] = `Relatorios GT PETS (${m.kpiData.unidade})`;
+      continue;
+    }
+
+    // Priority 4: No data at all — use estado color
     trendMap[m.id] = { ...DEFAULT_TREND, dataSource: 'sem_dados',
       cor: m.estado === 'concluida' ? 'verde' : m.estado === 'em_curso' ? 'amarelo' : m.estado === 'parcial' ? 'laranja' : m.estado === 'nao_implementada' ? 'vermelho' : 'cinzento',
       label: m.estado === 'concluida' ? 'Concluida' : m.estado === 'em_curso' ? 'Em curso' : m.estado === 'parcial' ? 'Parcial' : m.estado === 'nao_implementada' ? 'Nao implementada' : 'Sem dados',

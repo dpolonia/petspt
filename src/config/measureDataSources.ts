@@ -23,7 +23,7 @@ export interface MeasureDataMapping {
 
 export const MEASURE_DATA_MAPPINGS: MeasureDataMapping[] = [
   // ═══ EIXO 1 ═══
-  { medidaId: 'E1.A1', eixo: 1, primaryDataset: { portal: 'transparencia_sns', slug: 'inscritos-em-lic-dentro-do-tmrg-180-dias', campoValor: 'no_de_doentes_inscritos_sigic', campoPeriodo: 'tempo', campoInstituicao: 'instituicao', invertido: true, unidade: 'doentes em LIC' }, crossRefIds: ['CR_LIC_TMRG'], dataAvailability: 'api_mensal' },
+  { medidaId: 'E1.A1', eixo: 1, dataAvailability: 'dados_fixos' }, // OncoStop: oncological waiting list data only in GT PETS reports (no API breakdown by pathology)
   { medidaId: 'E1.A2', eixo: 1, primaryDataset: { portal: 'transparencia_sns', slug: 'atividade-operacional-do-sns-24', campoValor: 'valor', campoPeriodo: 'periodo', filtro: "indicador = 'Chamadas Atendidas'", invertido: false, unidade: 'chamadas' }, crossRefIds: ['CR_TAXA_RESP_SNS24'], dataAvailability: 'api_mensal' },
   { medidaId: 'E1.B1', eixo: 1, primaryDataset: { portal: 'transparencia_sns', slug: 'intervencoes-cirurgicas', campoValor: 'no_intervencoes_cirurgicas_programadas', campoPeriodo: 'tempo', campoInstituicao: 'instituicao', invertido: false, unidade: 'cirurgias' }, dataAvailability: 'api_mensal' },
   { medidaId: 'E1.B2', eixo: 1, primaryDataset: { portal: 'transparencia_sns', slug: 'inscritos-em-lic-dentro-do-tmrg-180-dias', campoValor: 'de_inscritos_em_lic_dentro_do_tmrg', campoPeriodo: 'tempo', campoInstituicao: 'instituicao', invertido: false, unidade: '% dentro TMRG' }, dataAvailability: 'api_mensal' },
