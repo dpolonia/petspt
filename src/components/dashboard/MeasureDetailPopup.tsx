@@ -54,7 +54,7 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
     try {
       const ctx = [
         `Medida PETS: ${medidaId} — ${nome}`,
-        `Eixo: ${trend.cor}`,
+        `Estado: ${trend.cor} | Semaforo: ${trend.label}`,
         `Baseline (Jan 2024): ${trend.baselineValue != null ? fmt(trend.baselineValue) : 'N/A'}`,
         `Referencia (Jun 2024): ${trend.referenceValue != null ? fmt(trend.referenceValue) : 'N/A'}`,
         `Valor actual (${trend.currentPeriodo}): ${trend.currentValue != null ? fmt(trend.currentValue) : 'N/A'}`,
@@ -62,10 +62,24 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
         `Meses desfavoraveis: ${trend.mesesDesfavoraveis}/12`,
         `Fonte: ${fonte}`,
         descricao || '',
+        '',
+        'Gera uma analise em DUAS seccoes:',
+        '1. ANALISE TECNICA: interpreta os dados estatisticos, tendencia, sazonalidade, desvios.',
+        '2. ANALISE DE POLITICA: recomendacoes para decisores, comparacao com metas PETS/QGR, contexto SNS.',
+        'Responde em portugues europeu, 4-6 frases por seccao. Formato: TECNICA: ... POLITICA: ...',
       ].join('\n');
-      const r = await fetch(`https://europe-west1-petspt-f019f.cloudfunctions.net/aiSummary?eixo=1&context=${encodeURIComponent(ctx)}`);
+      const url = `https://europe-west1-petspt-f019f.cloudfunctions.net/aiSummary?eixo=1&context=${encodeURIComponent(ctx)}&nocache=1&t=${Date.now()}`;
+      const r = await fetch(url);
       const d = await r.json();
-      setAiText(d.sumario || JSON.stringify(d));
+      const text = d.sumario || d.text || JSON.stringify(d);
+      // Try to split into two sections
+      const techMatch = text.match(/TECNICA:?\s*([\s\S]*?)(?:POLITICA:|$)/i);
+      const polMatch = text.match(/POLITICA:?\s*([\s\S]*)/i);
+      if (techMatch && polMatch) {
+        setAiText(`__TECH__${techMatch[1].trim()}__POL__${polMatch[1].trim()}`);
+      } else {
+        setAiText(text);
+      }
     } catch { setAiText('Erro ao gerar analise AI.'); }
     finally { setAiLoading(false); }
   };
@@ -166,13 +180,26 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
             </button>
           ) : (
             <div className="space-y-3">
-              <div className="bg-blue-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
-                <div className="text-blue-700 font-semibold text-xs mb-2">Analise Tecnica</div>
-                <p>{aiText}</p>
-              </div>
+              {aiText.includes('__TECH__') ? (
+                <>
+                  <div className="bg-blue-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
+                    <div className="text-blue-700 font-semibold text-xs mb-2">Analise Tecnica</div>
+                    <p>{aiText.split('__TECH__')[1]?.split('__POL__')[0]?.trim()}</p>
+                  </div>
+                  <div className="bg-green-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
+                    <div className="text-green-700 font-semibold text-xs mb-2">Analise de Politica</div>
+                    <p>{aiText.split('__POL__')[1]?.trim()}</p>
+                  </div>
+                </>
+              ) : (
+                <div className="bg-blue-50 rounded-lg p-4 text-sm text-gray-700 leading-relaxed">
+                  <div className="text-blue-700 font-semibold text-xs mb-2">Analise AI</div>
+                  <p>{aiText}</p>
+                </div>
+              )}
               <div className="flex items-center gap-3">
                 <button onClick={() => { setAiText(null); handleAI(); }} className="text-[10px] text-violet-500 hover:underline">Regenerar</button>
-                <span className="text-[9px] text-gray-400">Analise gerada por Claude Sonnet 4 | {new Date().toLocaleString('pt-PT')}</span>
+                <span className="text-[9px] text-gray-400">Gerado por Claude Sonnet 4 | {new Date().toLocaleString('pt-PT')}</span>
               </div>
             </div>
           )}
