@@ -1,0 +1,2998 @@
+ 
+www.ipp-jcs.org 
+© Institute of Public Policy Lisbon | Outubro de 2024 – Todos os direitos reservados 
+ 
+ 
+Plano de Emergência 
+para a Saúde 
+Editores 
+Aida Isabel Tavares, ISEG, UL, Professora Associada 
+atavares@iseg.ulisboa.pt 
+Eduardo Costa, IST, UL, Professor Auxiliar 
+eduardo.a.costa@tecnico.ulisboa.pt 
+ 
+Autores 
+Ana Margarida Canelas 
+Bárbara Sofia Ferreira 
+Fábio Batista Pereira 
+Filipa Oliveira Gonçalves 
+Filipa Isabel Costa 
+Francisco Silva Ribeiro 
+Inês Alegre Santos 
+Inês Sofia Rodrigues 
+João Parreira Coucelo Martins 
+Maria Alexandra Cabeleira 
+Maria Cortes Ferreira 
+Ricardo Pereira Dias 
+Sara Fonseca Lopes 
+Tiago António 
+ 
+ 
+ 
+Policy Briefs 
+A série de Policy Briefs do Institute of Public Policy pretende apoiar o debate público com trabalhos curtos, claros e acessíveis, onde se 
+analisam e explicam conceitos, desafios ou medidas concretas de políticas públicas de forma rigorosa. 
+Sobre o Institute of Public Policy 
+O Institute of Public Policy é um think tank independente, sob a forma de associação sem fins lucrativos, cuja missão é contribuir para a 
+melhoria da análise e do debate público das instituições e políticas públicas em Portugal e na Europa, através da criação e 
+disseminação de investigação. 
+
+ 
+2 
+Policy Brief 16  
+Indíce 
+ 
+Introdução ................................ ................................ ................................ ................................ ....... 6 
+Enquadramento académico ................................ ................................ ................................ ......... 6 
+Perspetiva do Plano de Emergência para a Saúde ................................ ................................ ..... 7 
+Conclusão ................................ ................................ ................................ ................................ ... 8 
+Agradecimentos ................................ ................................ ................................ .......................... 9 
+Eixo Estratégico 1 | Resposta a Tempo e Horas ................................ ................................ ........... 10 
+1. Contextualização do problema ................................ ................................ ..............................  10 
+2. Apresentação sumária das medidas ................................ ................................ ...................... 11 
+Medida A.1 | Regularização da lista de espera para cirurgia oncológica: OncoStop2024 ...... 11 
+Medida B.3 | Reforço do acesso à consulta especializada ................................ ..................... 12 
+Medida C.5 | Monitorização de acompanhamento à atividade adicional ................................  12 
+3. Aplicação dos conceitos económicos e análise crítica ................................ ........................... 13 
+Medida A.1 | Regularização da lista de espera para cirurgia oncológica: OncoStop2024 ...... 13 
+Medida B.3 | Reforço do acesso à consulta especializada ................................ ..................... 14 
+Medida C.5 | Monitorização de acompanhamento à atividade adicional ................................  14 
+4.  Rever ou reforçar as medidas propostas ................................ ................................ .............. 15 
+Medida A.1 | Regularização da lista de espera para cirurgia oncológica: OncoStop2024 ...... 15 
+Medida B.3 | Reforço do acesso à consulta especializada ................................ ..................... 16 
+Medida C.5 | Monitorização de acompanhamento à atividade adicional ................................  17 
+5. Considerações finais ................................ ................................ ................................ ............. 17 
+Referencias ................................ ................................ ................................ ...............................  19 
+Anexos ................................ ................................ ................................ ................................ ...... 19 
+Eixo estratégico 2 | Bebés e Mães em Segurança ................................ ................................ ........ 21 
+1. Contextualização do problema ................................ ................................ ..............................  21 
+2. Apresentação sumária das medidas ................................ ................................ ...................... 23 
+3. Aplicação dos conceitos económicos e análise crítica ................................ ........................... 24 
+A.1 | Criação de canal de atendimento direto para a grávida, alavancando na linha SNS 24 
+(SNS Grávida) ................................ ................................ ................................ ....................... 24 
+B.2 | Atualização dos rácios de pessoal e da composição das equipas nos locais de parto em 
+função de critérios técnico-científicos atendíveis ................................ ................................ ... 25 
+C.3 | Estabelecimento de novas estruturas organizacionais para blocos de parto/obstetrícia 26 
+4. Rever ou reforçar as medidas propostas ................................ ................................ ............... 27 
+Referencias ................................ ................................ ................................ ...............................  29 
+Eixo estratégico 3 | Cuidados Urgentes e Emergentes ................................ ................................ . 30 
+1. Contextualização do problema ................................ ................................ ..............................  30 
+2. Apresentação Sumária das Medidas ................................ ................................ ..................... 31 
+A.1 | Requalificação dos espaços dos Serviços de Urgência Geral/Psiquiátrica .................... 31 
+ 
+3 
+Policy Brief 16  
+A.2 | Criação de Centros de Atendimento Clínico (CAC) para situações agudas de menor 
+complexidade e urgência clínica ................................ ................................ ............................ 31 
+A.3 | Implementação da consulta do dia seguinte nos Cuidados de Saúde Primários para 
+situações agudas de menor complexidade e urgência ................................ ........................... 32 
+B.2 | Criação da Especialidade de Médica de Urgência ................................ ......................... 32 
+3. Aplicação dos conceitos económicos e análise crítica ................................ ........................... 32 
+A.1 | Requalificação dos espaços dos Serviços de Urgência Geral/Psiquiátrica .................... 32 
+A.2 | Criação de Centros de Atendimento Clínico para situações agudas de menor 
+complexidade e urgência clínica ................................ ................................ ............................ 33 
+A.3 | Implementação da consulta do dia seguinte nos Cuidados de Saúde Primários para 
+situações agudas de menor complexidade e urgência ................................ ........................... 34 
+B.2. | Criação da Especialidade de médica de Urgência ................................ ........................ 34 
+4. Rever ou reforçar as medidas propostas ................................ ................................ ............... 34 
+A.1 | Requalificação dos espaços dos Serviços de Urgência Geral/Psiquiátrica .................... 35 
+A.2 | Criação de Centros de Atendimento Clínico para situações agudas de menor 
+complexidade e urgência clínica ................................ ................................ ............................ 36 
+A.3 | Implementação da consulta do dia seguinte nos Cuidados de Saúde Primários para 
+situações agudas de menor complexidade e urgência ................................ ........................... 38 
+B.2 | Criação da Especialidade de Médica de Urgência ................................ ......................... 38 
+Referencias ................................ ................................ ................................ ...............................  40 
+Eixo Estratégico 4 | Saúde Próxima e Familiar ................................ ................................ ............. 41 
+1. Contextualização do problema ................................ ................................ ..............................  41 
+2. Apresentação sumária das medidas ................................ ................................ ...................... 42 
+Medida A.1 | Afetação de Médicos de Família aos utentes em espera com a capacidade atual 
+do setor público ................................ ................................ ................................ ..................... 42 
+Medida A.2 | Reforço da resposta pública dos Cuidados de Saúde Primários em parceria com 
+o setor social ................................ ................................ ................................ .......................... 42 
+Medida A.3 | Reforço da resposta pública em parceria com o setor privado (Parceria Público-
+Privada com Hospital de Cascais) ................................ ................................ ......................... 43 
+Medida A.4 | Criação de linha de atendimento para utentes que necessitem de acesso a 
+médico no dia ................................ ................................ ................................ ........................ 43 
+Medida B.1 | Implementação de USF-modelo C ................................ ................................ .... 43 
+Medida B.2 | Reforço da resposta pública com médicos aposentados ................................ ... 44 
+Medida B.3 | Revisão dos critérios de transição de USF-modelo A e UCSP e para USF-
+modelo B ................................ ................................ ................................ ...............................  44 
+Medida B.4 | Reforço da resposta pública em parceria com o setor privado (Associações de 
+Médicos e Cooperativas) ................................ ................................ ................................ ....... 44 
+Medida B.5 | Incentivo à adesão ao regime voluntário de carteira adicional de utentes ......... 45 
+Medida C.1 | Disponibilização de Meios Complementares de Diagnóstico e Terapêutica em 
+química seca e radiologia convencional ................................ ................................ ................. 45 
+Medida C.2 | Dinamização de rastreios oncológicos nos Cuidados de Saúde Primários ........ 45 
+Medida C.3 | Criação de Centros de Avaliação Médica e Psicológica ................................ .... 46 
+3. Aplicação dos conceitos económicos e análise crítica ................................ ........................... 46 
+ 
+4 
+Policy Brief 16  
+Medida A.3 | Reforço da resposta pública em parceria com o setor privado (Parceria Público-
+Privada com Hospital de Cascais) ................................ ................................ ......................... 46 
+Medida B.3 | Revisão dos critérios de transição de USF-modelo A e UCSP, para USF-modelo 
+B ................................ ................................ ................................ ................................ ............ 46 
+Medida C.1 | Disponibilização de Meios Complementares de Diagnóstico e Terapêutica em 
+química seca e radiologia convencional ................................ ................................ ................. 47 
+4. Rever ou reforçar as medidas propostas – comentário ................................ .......................... 48 
+Referencias ................................ ................................ ................................ ...............................  50 
+Anexos ................................ ................................ ................................ ................................ ...... 51 
+Eixo Estratégico 5 | Saúde Mental ................................ ................................ ................................  53 
+1. Contextualização do problema ................................ ................................ ..............................  53 
+2. Apresentação sumária das medidas ................................ ................................ ...................... 55 
+3. Aplicação dos conceitos económicos e análise crítica ................................ ........................... 56 
+O Mercado da Saúde Mental: Relação Oferta - Procura ................................ ........................ 57 
+Avaliação Económica do Impacto das Medidas ................................ ................................ ..... 57 
+Modelos de Financiamento – Relação de Agência nos Cuidados de Saúde Mental .............. 58 
+4. Revisão ou Reforço das medidas propostas................................ ................................ .......... 60 
+Intervenção em Grupos Profissionais – Critérios e Custo de Oportunidade ........................... 60 
+Monitorização de Resultados e Tomada de Decisões sobre Projetos-Piloto .......................... 61 
+Definição de Estratégias para o Estigma e Iliteracia como Barreiras ao Acesso .................... 62 
+Abordar o Papel dos Cuidadores Informais para o Sucesso do Plano ................................ ... 62 
+Comentário Final ................................ ................................ ................................ ....................... 64 
+Referencias ................................ ................................ ................................ ...............................  67 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5 
+Policy Brief 16  
+Sumário Executivo 
+ 
+O Plano de Emergência da Saúde  foi apresentado e m maio de 2024 , pelo Ministério da 
+Saúde. Este plano é um instrumento de política de saúde que visa enfrentar desafios 
+urgentes e prioritários no acesso aos cuidados de saúde em Portugal. Estruturado em 
+cinco eixos estratégicos, o plano propõe um conjunto abrangente de medidas que 
+respondem às necessidades críticas atuais do sistema de saúde.  Cada eixo estratégico 
+foi objeto de análise por um grupo de profissionais de saúde  que resultaram na 
+elaboração de Policy Briefs  que resumem as principais recomendações e direções de 
+ação. Estes documentos apresentam também uma análise crítica às medidas 
+implementadas e propõe m possíveis melhorias  na sua implementação. Os cinco eixos 
+estratégicos e correspondentes Policy Briefs são os seguintes: 
+ 
+Eixo Estratégico 1 | Resposta a Tempo e Horas ............................................................... 10 
+Eixo estratégico 2 | Bebés e Mães em Segurança ............................................................ 21 
+Eixo estratégico 3 | Cuidados Urgentes e Emergentes ...................................................... 30 
+Eixo Estratégico 4 | Saúde Próxima e Familiar .................................................................. 41 
+Eixo Estratégico 5 | Saúde Mental ..................................................................................... 53 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+6 
+Policy Brief 16  
+Introdução  
+Enquadramento académico  
+Este documento de trabalho designado “Plano de Emergência para a Saúde : 5 Policy 
+Briefs” foi realizado no âmbito da unidade curricular Economia e Política da Saúde (EPS) 
+da pós -graduação de Gestão das Instituições de Saúde (GIS), 3ª Edição, do ISEG 
+Executive Education, durante os meses de maio-julho de 2024. 
+Com base nos conhecimentos de Economia da Saúde discutidos, a turma da referida pós-
+graduação foi desafiada apresentar uma análise ao recém -publicado Plano de 
+Emergência para a Saúde (PES). Este plano foi apresentado pelo Ministério da Saúde, 
+sob a direção da Ministra da Saúde Ana Paula Martins, no seguimento do previsto no 
+Programa do XXIV Governo Constitucional.  
+O grupo que frequentou esta edição do GIS inclui 13 formandos, dos quais 9 são 
+mulheres; a média de idade ronda os 34 anos, num intervalo de idades dos 23 aos 49; 
+com exceção de um formando residente em Setúbal, os restantes residem em Lisboa ou 
+arredores. Este grupo conta com 6 médicos, 3 farmacêuticos , uma enfermeira, um 
+fisioterapeuta e um assistente técnico; relativamente aos médicos, a dispersão de anos de 
+experiência é grande, desde profissionais a terminar o internato a profissionais com 15 
+anos de experiência. 
+O Plano  de Emergência para a Saúde (PES) foi apresentado em maio de 2024 num 
+contexto social, económico, político e histórico particular. Este plano inclui 5 eixos 
+estratégicos que serviram de base para criar 5 equipas na turma, cada uma alocada a um 
+dos eixos estratégicos: 1 Resposta a Tempo e Horas; 2 Bebés e Mães em Segurança; 3 
+Cuidados Urgentes e Emergentes; 4 Saúde Próxima e Familiar; e 5 Saúde Mental. 
+A cada equipa foi pedido que escrevesse um Policy Brief estruturado com as seguintes 
+secções: 
+Secção 1: Contextualização do problema 
+Nesta secção o problema específico do SNS de ficar claramente identificado.  
+Com base nesta secção, o decisor político deve ter a informação necessária para 
+discutir a situação atual do problema e a sua evolução histórica. 
+Secção 2: Apresentação sumária das medidas 
+Nesta secção são apresentadas brevemente as medidas previstas no Plano de 
+Emergência da Saúde e enquadradas no problema previamente contextualizado, 
+clarificando o problema que pretendem resolver. 
+Secção 3: Aplicação dos conceitos económicos e análise crítica 
+Esta secção visa analisar o problema identificado na secção anterior segundo a 
+perspetiva da teoria económica e fazer uma análise crítica das medidas propostas 
+com base nesses princípios económicos identificados (análise crítica fundamentada 
+na teoria económica). 
+Secção 4: Rever ou reforçar as medidas propostas 
+Esta secção visa abrir a possibilidade de revisão das medidas propostas no PES ou 
+de reforçar a sua justificação; ou ainda para propor outras medidas não 
+contempladas no PES. Esta secção pode ainda conter informação sobre as 
+ 
+7 
+Policy Brief 16  
+barreiras à implementação das medidas, efeitos colaterais não previstos, e 
+benefícios societais previsíveis. 
+Os resultados foram meritórios, tendo em consideração o curto espaço de tempo em que 
+foram desenvolvidos. Destaca-se também o empenho e interesse destes profissionais em 
+adquirir novos conhecimentos e em conjugar a sua experiência profissional com os temas 
+discutidos em aula. Foi notável a capacidade de aprendizagem de conceitos abstratos e 
+difíceis de Economia da Saúde e da sua aplicação num contexto complexo como o do 
+sistema de saúde português. 
+Perspetiva do Plano de Emergência para a Saúde 
+O Plano de Emergência para a Saúde publicado e iniciado em maio de 2024 assenta em 
+três pilares estratégicos: promoção justa do capital humano, apoio ao doente e 
+investimento em recursos humanos, científicos e tecnológicos. Este plano foi considerado 
+pelo Ministério da Saúde (MS) como uma peça conjuntural no âmbito de uma mudança 
+estrutural da saúde em Portugal. O documento publicado pelo MS não explicita o método 
+adotado na identificação e seleção dos cinco eixos estratégicos, nem fundamenta a 
+escolha dos indicadores de monitorização listados para cada um dos eixos estratégicos, 
+deixando assim antever uma decisão top-down (que contribuiu para a intrínseca 
+motivação dos alunos da unidade curricular EPS  e vontade de expressar a sua 
+perspetiva). 
+A monitorização do PES pode ser acompanhada no site do SNS: 
+https://www.sns.gov.pt/plano-de-emergencia-e-transformacao-na-saude/ 
+sendo aqui possível verificar quais as medidas por iniciar, as que estão em curso e as 
+concluídas.   
+O lançamento do PES veio trazer um vasto conjunto de medidas estratégicas, muitas das 
+quais correspondem a medidas sugeridas anteriormente, e trouxe um debate sobre o SNS 
+mais esclarecido e produtivo.  
+Dos possíveis contributos do PES, podemos relevar os dois que mais se destacaram nas 
+discussões da unidade curricular de EPS: a imprescindível política de recursos humanos 
+para o SNS assente num só adjetivo “atratividade” e a urgente necessidade de garantia 
+de cobertura universal dos cuidados de saúde prestados pelo SNS: 
+i) A concentração de um conjunto alargado de medidas num só plano permitiu antever 
+que estas só fazem sentido e só alcançarão o sucesso se houver profissionais de saúde 
+motivados e interessados em ingressar em carreiras atrativas do SNS. Desta forma, o 
+PES veio alavancar a discussão de quais os instrumentos necessários para uma política 
+de recursos humanos em saúde bem-sucedida; 
+ii) A função última do sistema de saúde e do SNS é garantir uma cobertura universal de 
+cuidados com qualidade e sem o risco financeiro de despesas catastróficas em saúde dos 
+cidadãos. Os últimos anos em Portugal a tendência observada onera a população no 
+acesso aos cuidados e penaliza -os com crescentes necessidades de cuidados de saúde 
+não satisfeitas. A apresentação do PES veio aclarar publicamente este problema 
+crescente do acesso aos cuidados de saúde e da responsabilidade que o sistema de 
+saúde, e o SNS, têm em garantir a todos esse acesso. 
+Apesar dos contributos do PES para a melhoria do funcionamento do SNS e do sistema 
+de saúde português, este plano não é incólume a dificuldades e críticas. Tendo em 
+ 
+8 
+Policy Brief 16  
+consideração os resultados das análises dos alunos discutidos no âmbito da unidade 
+curricular de EPS, destacam -se duas dificuldades relativas aos indicadores de 
+monitorização, aos custos/despesas associados às medidas bem como a sua eficiência e 
+eficácia, a seguir descritas: 
+i) os indicadores de monitorização servem para medir o grau de cumprimento de um 
+critério face a uma referência adotada, sendo um instrumento que visa medir e melhorar 
+ações futuras. Os indicadores apresentados para cada medida são, nalguns casos, 
+dúbios na medida em que apresentam duas componentes de avaliação (por ex ., taxa de 
+execução e de cumprimento de prazos), subjetivos (ex., qual o instrumento de medição do 
+indicador satisfação do utente?), incompletos (por ex ., qual a referência ou o padrão de 
+comparação adotado para servir de base comparativa ou gold standard), ou de natureza 
+diversa (indicadores de procura, indicadores de estrutura, de processo e de resultados1). 
+Por outro lado, do ponto de vista económico, a implementação de indicadores de 
+monitorização pode resultar num excessivo foco de cumprimento destes indicadores e no 
+esquecimento de outros indicadores igualmente relevantes, mas que não foram 
+contemplados.  
+ii) as medidas apresentadas em cada um dos eixos carece de uma estimação do valor 
+monetário associado à sua implementação; nalguns casos poderá haver uma contribuição 
+do PRR mas noutros será o orçamento a financiar. Neste caso, há claramente 
+preocupações de estabilidade orçamental de médio/longo prazo que não pode ser 
+comprometida no âmbito do pacto de estabilidade. 
+Associada à ausência de quantificação monetária do custo destas medidas do PES, há 
+uma outra incógnita relevante consubstanciada na eficiência destas despesas. O 
+orçamento para a saúde tem sido crescente nos últimos anos, mas os resultados do SNS 
+não têm acompanhado esse aumento de forma proporcional, o que levanta a questão da 
+capacidade de executar e atingir objetivos por parte da administração pública quando 
+realiza despesa em saúde, ou por outras palavras, será que será eficiente a despesa 
+realizada em saúde no âmbito do PES? 
+Conclusão 
+Este trabalho realizado em ambiente académico foi um exercício de diálogo entre 
+diferentes profissionais de saúde e académicos, onde se procurou concretizar uma 
+abordagem bottom-up na análise de algumas medidas do PES. 
+Os Policy Briefs  não têm qualquer pretensão académica, profissional ou política, são 
+unicamente a expressão e visão de profissionais de saúde que diariamente experienciam 
+o sistema de saúde e o SNS português face ao conteúdo do PES adotado pelo Ministério 
+da Saúde.  
+Com este trabalho visamos tornar pública esta visão e mostrar o interesse e empenho dos 
+nossos alunos em tornarem -se melhores profissionais e em contribuir para um melhor 
+acesso e prestação de cuidados de saúde aos portugueses pelo SNS. 
+ 
+ 
+1Indicadores de Estrutura – indicadores sobre a existência no serviço de uma estrutura adequada a prestar 
+o atendimento ao qual se propõe; Indicadores de Processo – indicadores relacionados com o 
+desenvolvimento do processo assistencial por comparação com um padrão pré -estabelecido. Indicadores 
+de resultado – são indicadores que medem o resultado final da atividade assistencial.  
+ 
+9 
+Policy Brief 16  
+ 
+Agradecimentos 
+Gostaríamos de agradecer a todos os que se empenharam nesta empreitada, em 
+particular aos nossos alunos. Agradecemos o apoio do ISEG Executive Education. 
+Agradecemos também ao Professor Paulo Trigo Pereira e ao IPP – Institute of Public 
+Policy Thomas Jefferson -Correia da Serra – Lisbon pela disponibilidade e apoio na 
+publicação destes Policy Briefs. 
+ 
+Aida Isabel Tavares e Eduardo Costa 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+10 
+Policy Brief 16  
+Eixo Estratégico 1 | Resposta a Tempo e Horas  
+ 
+Filipa Campos Costa 
+Inês Alegre 
+Maria Alexandra Cabeleira 
+ 
+Sumário 
+Eixo Estratégico 1 | Resposta a Tempo e Horas ............................................................... 10 
+1. Contextualização do problema ................................................................................... 10 
+2. Apresentação sumária das medidas .......................................................................... 11 
+3. Aplicação dos conceitos económicos e análise crítica ............................................... 13 
+4.  Rever ou reforçar as medidas propostas ................................................................... 15 
+5. Considerações finais .................................................................................................. 17 
+Referências .................................................................................................................... 19 
+Anexos ........................................................................................................................... 19 
+ 
+1. Contextualização do problema 
+A Lista de Inscritos para Cirurgia (LIC) e a Lista de Espera para Consulta (LEC) são 
+mecanismos com o objetivo de gerir o acesso dos doentes a estes cuidados de saúde, 
+com base numa identificação eficiente das necessidades do Serviço Nacional de Saúde 
+(SNS) e alocação de recursos, quer sejam públicos, sociais ou privados. No entanto, a 
+elevada quantidade de doentes inscritos nestas listas, bem como o incumprimento 
+frequente dos Tempos Máximos de Resposta Garantida (TMRG), conforme apresentado 
+na tabela 1 em anexo  dos dados estatísticos fornecidos pela ACSS [1] , são uma 
+preocupação de índole vária. Segundo o Relatório do Tribunal de Contas de 2022 [2] , o 
+aumento do número de consultas médicas hospitalares de 3,9% e de cirurgias de 7,7% 
+não foi suficiente para evitar o aumento do número de doentes em LEC de 46% e em LIC 
+de 13%, em relação a 2022 (tabela 2 em anexo). De acordo com os dados 
+disponibilizados em abril de 2024, encontravam -se inscritos na LIC 266624 doentes, dos 
+quais 74463 (cerca de 28%) já tinham ultrapassado o TMRG. No que concerne às LEC, 
+estavam pedidas 891022 consultas, dos quais 454528 (aproximadamente 51%) já tinham 
+excedido o TMRG. 
+Reconhecendo a necessidade de uma intervenção imediata, foi elaborado um plano 
+estratégico composto por medidas urgentes e prioritárias com o intuito de proporcionar 
+uma resposta rápida aos doentes e medidas estruturais que previnam o agravamento 
+destes indicadores no futuro e possam melhorar o funcionamento estrutural do SNS. Com 
+este propósito, procedeu -se a uma análise detalhada das LIC e LEC, priorizando as 
+necessidades de maior urgência de resolução, considerando tanto o volume de doentes 
+em cada uma destas listas, como o respetivo tempo acima do tempo máximo de resposta 
+ 
+11 
+Policy Brief 16  
+preconizado. Igualmente se reconhece que é necessário melhorar o planeamento dos 
+recursos do SNS e reforçar os mecanismos de controle e avaliação de desempenho, 
+promovendo uma gestão eficaz e a responsabilização de todos os envolvidos. 
+2. Apresentação sumária das medidas 
+Das medidas propostas neste eixo, vamos sumariar as três medidas que consideramos 
+mais relevantes: uma medida considerada urgente – A.1 Regularização da lista de espera 
+para cirurgia oncológica: OncoStop2024; uma medida prioritária – B.3 Reforço do acesso 
+à consulta especializada; e uma medida estruturante – C.5 Monitorização de 
+acompanhamento à atividade adicional. 
+Medida A.1 | Regularização da lista de espera para cirurgia oncológica: OncoStop2024 
+A resposta rápida à cirurgia oncológica é de vital importância, considerando a potencial 
+natureza agressiva deste conjunto de patologias. A cirurgia oncológica deve ser realizada 
+sempre que possível de forma célere, uma vez que os atrasos podem resultar na 
+progressão da doença, complicando e/ou diminuindo o sucesso do tratamento.  
+Segundo a LIC de abril de 2024, cerca de 9374 doentes classificados com patologia 
+oncológica e com necessidade de cirurgia já tinham ultrapassado o TMRG. As 
+especialidades com maior falta de resposta são a Dermatologia, a Urologia e a Cirurgia 
+Geral, sendo a região de Lisboa e Vale do Tejo (LVT) a região que apresentava o maior 
+número de doentes em lista de espera. 
+A medida A.1 visa a maximização da capacidade cirúrgica do SNS e, caso a capacidade 
+deste seja esgotada, a contratualização de cirurgias nos setores social e privado, com o 
+objetivo de tratar todos os doentes oncológicos na LIC que tenham alcançado o TMRG, 
+no prazo de três meses, ou seja, otimizar a capacidade instalada em todo o sistema de 
+saúde. 
+Para isto, foi definido um cronograma de atividades que inclui:  
+− Identificação do número de doentes oncológicos inscritos em LIC acima do TMRG, 
+− Identificação da capacidade instalada do setor público, 
+− Identificação da capacidade instalada do setor social e privado,  
+− Definição do modelo de contratualização do setor público, social e privado, 
+− Definição do modelo operacional e 
+− Publicação de resultados.   
+A par deste cronograma, foi selecionada uma lista de indicadores de monitorização de 
+desempenho por forma a controlar e responsabilizar a execução destas medidas, como 
+por ex. a percentagem de complicações pós -operatórias inferior a 10% e a satisfação do 
+doente.    
+ 
+12 
+Policy Brief 16  
+Medida B.3 | Reforço do acesso à consulta especializada 
+As Listas de Espera para Consulta representam o número de doentes que aguardam por 
+uma consulta médica de especialidade hospitalar, com base na prioridade clínica dos 
+doentes e no Tempo Máximo de Resposta Garantido (TMRG). A gestão eficiente destas 
+listas é essencial para garantir que todos os doentes recebam o atendimento necessário 
+de forma oportuna e eficaz. Em abril de 2024, existiam 891022 doentes na LEC, dos quais 
+454528 (aproximadamente 51%) já ultrapassaram o TMRG. As especialidades mais 
+carenciadas a nível nacional são a Oftalmologia, que contabiliza 93728 doentes, seguida 
+da Ortopedia (57203) e Dermatologia (38730). A região de Lisboa e Vale do Tejo (LVT) e 
+a região Norte contabilizam o maior número de consultas por realizar e o Alentejo e a 
+Região LVT são as zonas com o maior tempo médio para consulta. 
+Plano prevê a i dentificação das necessidades, uma análise das LECs de cada hospital, o 
+aumento da percentagem de primeiras consultas a tempo e horas nas agendas, o 
+redireccionamento de doentes entre especialidades, uma reavaliação de doentes de 
+prioridade normal, e uma majoração do valor da consulta a tempo e horas acima do 
+TMRG, ou seja, em plano de fundo o propósito último será o de definir um modelo de 
+incentivo aos profissionais de saúde até 31 de dezembro 2024. Por fim, prevê -se a 
+contratualização com o sector social e privado. 
+A par deste cronograma de implementação da medida foi definida uma lista de 
+indicadores de monitorização que inclui aferição do aumento da percentagem de 
+primeiras consultas vs. consultas subsequentes de 25% para 33% e do controlo da 
+contratualização com o sector social e privado. 
+Medida C.5 | Monitorização de acompanhamento à atividade adicional 
+De forma a assegurar que os tempos máximos de resposta são cumpridos, será criada 
+uma nova regulamentação que visa monitorizar, fiscalizar e penalizar as instituições de 
+saúde que não atendam aos objetivos e compromissos propostos, por forma a garantir 
+que os tempos máximos de resposta são cumpridos, e que a prestação de serviços de 
+saúde é feita de uma forma eficaz, eficiente e de qualidade. 
+Os principais atributos deste regulamento passam por: 
+− Monitorização contínua: Será identificada uma entidade responsável por 
+monitorizar o cumprimento dos tempos máximos de resposta garantida em todas as 
+instituições de saúde, que avaliará regularmente os indicadores de desempenho, 
+− Supervisão e fiscalização rigorosa: As instituições de saúde serão submetidas a 
+auditorias regulares para verificar o cumprimento dos prazos e caso sejam identificadas 
+falhas, serão aplicadas sanções, 
+− Priorização da Patologia Oncológica: Reconhecendo a importância da patologia 
+oncológica e da sua urgência, de acordo com a prioridade clínica respetiva, será dada 
+prioridade a estes doentes de forma que sejam atendidos o mais rápido possível.  
+ 
+13 
+Policy Brief 16  
+3. Aplicação dos conceitos económicos e análise crítica 
+Nesta secção iremos tentar discutir os princípios económicos que servem de base às 
+medidas propostas, assim como eventuais repercussões e sua análise crítica. As medidas 
+deste eixo estratégico são apresentadas de forma vaga, nomeadamente não são 
+apresentados os custos previstos associados à implementação de cada uma delas, como 
+serão operacionalizadas, como serão processados os incentivos (monetários ou não 
+monetários), ou quais as bases da contratualização com o setor social ou privado [3].  
+Medida A.1 | Regularização da lista de espera para cirurgia oncológica: OncoStop2024 
+Esta medida tenta resolver um desequilíbrio entre a oferta e a procura de cuidados de 
+saúde no contexto em que se verifica uma elevada percentagem de pessoas que reporta 
+necessidades de cuidados de saúde não satisfeitas  [4]. Sendo o SNS um sistema 
+financiando pelo orçamento de Estado, não há preços para moderar o mercado. 
+Consequentemente, o tempo de espera funciona como moderador da oferta e procura, ou 
+seja, como um mecanismo de racionamento dos cuidados de saúde no mercado  [5,6]. 
+Assim, a análise do mercado e da forma como a procura e oferta se comportam face a 
+diferentes estímulos vai depender, não da elasticidade -preço, mas da elasticidade-tempo. 
+Por exemplo, uma oferta muito sensível às variações do tempo de espera, ou seja, muito 
+elástica, então um pequeno aumento da procura não vai ter efeitos significativos no tempo 
+de espera do mercado. Para complementar esta análise microeconómica, é ainda 
+necessário acrescentar que a oferta normalmente está limitada por uma determinada 
+capacidade, o que leva a que num determinado ponto ela passará a ser perfeitamente 
+rígida. 
+A elevada necessidade de cirurgias oncológicas, reflete uma procura muito pouco 
+elástica, e a capacidade insuficiente do SNS criam uma escassez de serviços de saúde. 
+Ao aumentar a oferta (através da capacidade adicional e do envolvimento do setor social 
+e privado), a medida pretende equilibrar o mercado e reduzir o tempo de espera. De modo 
+a evitar o insucesso da medida (à semelhança do que aconteceu com o programa dos 
+vales-cirúrgicos que teve uma taxa de adesão na ordem dos 4%), é importante que a 
+oferta seja ajustada e considere as necessidades dos utentes. É habitual a recusa por 
+parte dos doentes serem submetidos a cirurgia por um médico que não conhecem ou 
+numa instituição diferente daquela onde são seguidos, como se tem verificado com os 
+vales-cirúrgicos [7]. 
+A priorização de pacientes oncológicos pode ser vista como uma tentativa de melhorar a 
+eficiência distributiva dos recursos de saúde, direcionando -os para onde são mais 
+urgentemente necessários. Em contrapartida, a priorização da doença oncológica poderá 
+levar a uma  diminuição da capacidade de resposta às restantes patologias não 
+consideradas prioritárias, o tradicional trade-off de alocação de recursos escassos. A 
+implementação desta medida condiciona ainda a decisão dos hospitais sobre a prioridade 
+clínica dos casos (como definir ‘prioridade’ e quais os critérios?).  Além disso, o foco sobre 
+os doentes em lista de espera com TMRG excedidos irá diminuir os recursos para tratar 
+os novos doentes oncológicos que entrem em lista de espera (eventualmente até com 
+necessidades mais urgentes). 
+A análise de custo -benefício desta medida deve considerar o impacto a longo prazo de 
+tratar pacientes oncológicos de forma oportuna. A medida pode incorrer em custos 
+ 
+14 
+Policy Brief 16  
+elevados ao envolver o setor privado, mas os benefícios de salvar vidas e melhorar os 
+resultados de saúde justificam esses custos. Por último, ao reduzir as listas de espera, 
+esta medida gera efeitos externos (ou externalidades) positivos, como a redução do 
+sofrimento dos doentes e a melhoria da qualidade de vida, com efeitos económicos 
+positivos indiretos. 
+Medida B.3 | Reforço do acesso à consulta especializada 
+A aplicação dos princípios da teoria das filas do ramo científico da investigação 
+operacional pode ser uma alternativa para a otimização a gestão das listas de espera, 
+minimizando o tempo de espera e aumentando a satisfação dos pacientes. Neste 
+contexto analisar as taxas de entrada de doentes e a taxa de atendimento dos médicos 
+especialistas pode ajudar a identificar os pontos de constrangimento e a otimizar a 
+alocação de recursos, por ex., aumentar a capacidade de atendimento (contratando mais 
+especialistas) ou redistribuir os pacientes poderá reduzir o tempo de espera. Implementar 
+sistemas/critérios de priorização para consultas especializadas  [8] assegura que os casos 
+mais urgentes sejam atendidos primeiro, aumentando a eficiência do sistema e 
+compatibilizando os tempos de espera com as necessidades dos doentes. Assim, utilizar 
+modelos de teoria das filas para simular diferentes cenários e prever o impacto de 
+mudanças na gestão das filas pode ajudar na tomada de decisões baseadas na 
+evidência. 
+Ao otimizar a gestão das consultas especializadas, o SNS pode aumentar a eficiência 
+produtiva, utilizando melhor os recursos existentes e reduzindo os desperdícios, como 
+consultas duplicadas ou desnecessárias. Ao garantir o acesso equitativo às consultas 
+especializadas, pela abordagem integrada a nível nacional do problema, pode reduzir -se 
+as desigualdades sociais e de saúde, promovendo uma distribuição mais justa dos 
+recursos de saúde. 
+Medida C.5 | Monitorização de acompanhamento à atividade adicional 
+A monitorização da atividade adicional visa em última instância fiscalizar e penalizar as 
+unidades de saúde que não cumprem com os compromissos assumidos. Desta maneira, 
+procura-se alinhar os incentivos  dos profissionais de saúde e das unidades hospitalares, 
+de forma que o trabalho adicional seja realizado de maneira eficaz e eficiente. Esta 
+medida pode ser enquadrada no âmbito da teoria da agência e dos problemas de 
+agência. Neste contexto os interesses dos diferentes stakeholders (profissionais de 
+saúde, gestores hospitalares, unidades hospitalares, sistema de saúde) podem não estar 
+perfeitamente alinhados e a existência de informação assimétrica dificulta que os 
+objetivos sejam atingidos. A monitorização ajuda a alinhar esses interesses recorrendo a 
+incentivos e penalizações. Implementar sistemas de monitorização para atividades 
+adicionais pode reduzir a assimetria de informação, fornecendo aos gestores de saúde e 
+outras chefias hierárquicas uma visão clara das ações dos agentes (profissionais de 
+saúde). O alinhamento de incentivos permite estruturá -los de forma que os interesses dos 
+profissionais de saúde estejam alinhados com os objetivos do SNS. Por exemplo, 
+recompensar atividades que contribuem diretamente para a redução das listas de espera. 
+Aumentar a transparência e a responsabilidade  pode melhorar a eficiência e a eficácia 
+dos serviços de saúde, assegurando que os recursos são utilizados da melhor forma 
+possível. Estabelecer contratos claros e mecanismos de responsabilização, e a 
+ 
+15 
+Policy Brief 16  
+monitorização das atividades adicionais, contribui para alinhar os incentivos dos 
+profissionais de saúde, garantindo que o trabalho adicional seja realizado de maneira 
+eficaz e eficiente. Além disso, a monitorização da atividade pode identificar oportunidades 
+para economias de escala, onde a expansão de certas atividades pode reduzir o custo 
+médio de prestação de serviços de saúde. 
+4.  Rever ou reforçar as medidas propostas  
+Da análise global do eixo 1, merecem o nosso destaque os seguintes aspetos: 
+O documento foca -se no tratamento dos doentes acima do TMRG. Ora, sendo este 
+TMRG uma determinação meramente política e estanque, que pode não traduzir a real 
+prioridade clínica (como definir ‘prioridade'?), este documento, parece-nos, ter um objetivo 
+mais de natureza organizacional e do que clínica. O foco não devem ser apenas os 
+doentes acima do TMRG, mas sim todos os doentes oncológicos. 
+Embora este plano estratégico inclua medidas estruturantes de efeito de médio longo -
+prazo, é claro que a preferência do MS é uma resposta de curto -prazo e imediata, 
+focando-se em resolver o problema agudo das listas de espera. A origem do problema do 
+Sistema de Saúde Português é descurada em todo o documento, não sendo feita 
+qualquer referência àquilo que consideramos ser efetivamente importante e 
+transformador. É necessário analisar e aprofundar o entendimento sobre qual a origem 
+das listas de espera no SNS, será uma real escassez de recursos ou apenas uma má 
+gestão destes?  
+Se não se trabalhar de forma re/estruturante na eficiência dos recursos existentes, como 
+a utilização dos blocos operatórios e das equipas de cirurgia, iremos estar sempre a 
+gastar recursos em medidas remediadoras.  
+O conjunto destas medidas visa, primariamente, aumentar a produção e prestação de 
+serviços pelo SNS ( mais cirurgias oncológicas, mais consultas de especialidade) sem 
+aumentar os recursos, o que pode resultar numa perda de qualidade do serviço prestado. 
+A evidencia empírica  [9] mostra que o aumento da produção, utilizando os mesmos 
+recursos, tem efeitos negativos sobre a qualidade dos serviços de saúde  
+Salientamos por último, e recorrendo à Lei de Goodhart  [10], que este conjunto de 
+medidas pode ter um efeito perverso:  quando o regulador coloca o foco numa medida (no 
+caso o tempo de espera), esta medida deixa de ser fiável porque se torna uma meta e os 
+agentes tentarão falseá -la. No nosso caso, como os hospitais sabem que estão a ser 
+monitorizados, poderão encontrar estratégias para tentar não ser penalizados, sem 
+cumprir o verdadeiro objetivo de tratar os doentes (o problema da relação de agência). A 
+título de exemplo, aquando da realização de uma proposta cirurgia se o doente não for 
+rotulado de “oncológico”, os períodos de espera para cirurgia são automaticamente 
+alargados, evitando que os hospitais sofram pressão ou penalização por terem listas de 
+espera de doentes oncológicos acima dos tempos previstos.  
+Medida A.1 | Regularização da lista de espera para cirurgia oncológica: OncoStop2024 
+As possíveis barreiras à implementação desta medida que consideramos mais 
+substâncias e prováveis são as seguintes: 
+ 
+16 
+Policy Brief 16  
+− A coordenação entre diferentes hospitais públicos, sociais e privados pode 
+enfrentar desafios logísticos, tais como a transferência de pacientes e respetiva 
+informação e a interoperabilidade dos sistemas de tecnologia de informação . A 
+informação do hospital de origem nem sempre está disponível no SPMS, além de que no 
+âmbito da transferência da informação não está definido, quem determina a informação é 
+transmitida e nem a quem se destina.  
+− Os profissionais de saúde podem dar resposta a um aumento, mesmo que 
+temporário, da carga de trabalho, mesmo com incentivos financeiros; no entanto, o risco 
+de burnout é prevalente, mesmo quando o incremento de trabalho passa a ser definitivo. 
+É premente a avaliação da necessidade de profissionais no SNS que são necessários 
+para dar uma resposta correspondente à procura refletida nas listas de espera. 
+− O aumento da carga de trabalho não recaí apenas nos profissionais diretamente 
+envolvidos nas cirurgias, mas também para outras áreas envolvidas indiretamente no 
+tratamento destes doentes que não conseguem habitualmente dar resposta e são 
+excluídas dos incentivos. Ou seja, aquando da realização de uma cirurgia oncológica 
+existem múltiplos profissionais envolvidos para os quais não está preconizado qualquer 
+incentivo, como por exemplo, os anatomo-patologista, os intensivistas, os radiologistas, os 
+administrativos, os enfermeiros dos serviços de internamento. 
+− A imprecisão dos dados do SNS e a sua constante atualização é outra das 
+dificuldades permanentes do sistema. Por exemplo, o número de doentes inscritos em LIC 
+que servem por base à execução deste plano estratégico foi, entretanto, revisto e está 
+desatualizado. A aplicação de medidas ou a criação de um plano estratégico sem ter 
+dados atualizados de forma estrita torna todo o plano não fundamentado e a pertinência 
+das medidas questionável. A obtenção de dados corretos deveria ter sido feita a priori 
+para compreender a real dimensão do problema e aplicar medidas ajustadas. 
+Consideramos possíveis efeitos colaterais e externalidades: 
+− O foco em cirurgias oncológicas e consultas especializadas pode desviar recursos 
+de outras áreas igualmente críticas, causando desequilíbrios no sistema de saúde. 
+Múltiplos doentes em listas de espera não oncológica apresentam também patologias 
+graves e com necessidade de intervenção urgente precoce. Na mesma linha de 
+pensamento todos os doentes oncológicos entretanto inscritos em lista de espera também 
+ficarão à espera, enquanto os hospitais colocam o seu foco e esforço no combate às listas 
+de espera referentes a Abril 2024. 
+− A pressão para reduzir as listas de espera rapidamente pode levar a uma redução 
+da qualidade dos cuidados prestados, como já foi referido. Além disso, assumir uma taxa 
+máxima de complicações de cirurgia de 10%, podem dar incentivos perversos aos 
+hospitais para aplicar os recursos nas cirurgias mais simples (potencialmente com menor 
+probabilidade de complicações) que podem não ser as mais prioritárias. 
+Medida B.3 | Reforço do acesso à consulta especializada 
+Consideramos possíveis barreiras à implementação desta medida a escassez de recursos 
+humanos, que é, aliás, um problema transversal a todo o PES. Por outro lado, a 
+ 
+17 
+Policy Brief 16  
+infraestrutura existente pode não suportar o aumento do número de consultas, 
+necessitando de investimento em instalações e equipamentos. A falta de espaço físico 
+(gabinetes de consulta) nas instituições hospitalares é efetiva e habitual. 
+Os possíveis efeitos colaterais e externos incluem a dificuldade de definir incentivos que 
+funcionam de forma correta.  O incentivo à realização de primeiras consultas é por si só 
+um desincentivo à realização de consultas subsequentes, igualmente importantes para os 
+doentes. A maioria dos doentes seguidos em consultas no SNS são seguidos por 
+necessidade. Ao fiscalizar e penalizar instituições de saúde por violação dos tempos de 
+resposta, promove-se um acompanhamento mais curto do doente podendo ser prejudicial 
+para o mesmo. Incentivar as altas de forma a dar espaço para primeiras consultas pode 
+afetar a qualidade dos serviços prestados.  
+Por fim, a nossa proposta de três medidas complementares:  
+− Ampliação do uso da telemedicina para consultas de acompanhamento e 
+gestão de doenças crónicas, o que pode aliviar a pressão sobre as consultas 
+especializadas presenciais. 
+− Implementação de programas robustos de prevenção e educação em saúde para 
+reduzir a incidência de doenças crónicas e oncológicas a longo prazo. 
+− Aferição da indicação efetiva para consultas de especialidade hospitalar. Na prática 
+clínica, são muitas vezes identificadas referenciações de doentes pelos Cuidados de 
+Saúde Primários por motivos “pouco válidos”, o que cria uma sobrecarga nas consultas, 
+com consequente diminuição da capacidade de resposta global. Esta falsa necessidade 
+de referenciação para consultas de especialidade hospitalar prende -se também em 
+alguns casos com a pressão sobre a prescrição realizada pelos médicos dos Cuidados de 
+Saúde Primários, nomeadamente pelas limitações na requisição de exames 
+complementares de diagnóstico.  
+Medida C.5 | Monitorização de acompanhamento à atividade adicional 
+As possíveis barreiras à implementação desta medida que pensamos que podem ser 
+levantadas são as seguintes:  
+A implementação um sistema eficaz de monitorização pode ser tecnicamente desafiador e 
+caro, especialmente se envolver a integração de múltiplos sistemas de informação de 
+saúde.A colheita e monitorização de dados adicionais individuais levantam preocupações 
+sobre a privacidade e segurança dos dados dos utentes. 
+Os profissionais de saúde podem ver a monitorização como uma intrusão, afetando a sua 
+aceitação e adesão à medida. É o dever deontológico dos médicos que limita a perversão 
+dos incentivos propostos.  
+5. Considerações finais 
+Reduzir as listas de espera para cirurgias oncológicas e consultas especializadas melhora 
+significativamente os resultados de saúde, reduzindo a mortalidade e a morbilidade. Além 
+disso, a implementação das medidas propostas pode reduzir desigualdades no acesso 
+ 
+18 
+Policy Brief 16  
+aos cuidados de saúde, beneficiando especialmente as populações vulneráveis. 
+Acreditamos que a eficiência e a capacidade de resposta do SNS podem ser aprimoradas 
+e que a redução dos tempos de espera e a melhoria da qualidade dos cuidados podem 
+aumentar a satisfação dos utentes e a confiança no SNS.  
+Reforçamos a necessidade de estabelecer um sistema contínuo de monitorização e de 
+avaliação de todo o sistema para ajustar as estratégias conforme necessário e garantir a 
+eficácia das medidas implementadas.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+19 
+Policy Brief 16  
+Referências 
+1. Administração Central do Sistema de Saúde (ACSS). (2024).  Administração Central do 
+Sistema de Saúde, IP . https://www.acss.min-saude.pt/ 
+2. Tribunal de Contas. (2022).  Auditoria ao acesso a cuidados de saúde oncológicos no 
+SNS 2017-2020  (Relatório 11/2022, 2ª secção). 
+3. Siciliani, L., Borowitz, M., & Moran, V. (2013).  Waiting time policies in the health sector: 
+What works?  OECD Health Policy Studies. OECD Publishing. 
+https://doi.org/10.1787/9789264179080-en 
+4. Eurostat. (2024).  Unmet health care needs statistics. 
+https://ec.europa.eu/eurostat/statistics-
+explained/index.php?title=Unmet_health_care_needs_statistics 
+5. Lindsay, C. M., & Feigenbaum, B. (1984). Rationing by waiting lists.  American 
+Economic Review, 74 (3), 404–417. 
+6. Martin, S., & Smith, P. C. (1999). Rationing by waiting lists: An empirical investigation.  
+Journal of Public Economics, 71 , 141–164. 
+7. Cruz, S., Quintal, C., & Antunes, P. (2022). Risk factors associated with the refusal of 
+surgery vouchers: The case of Central Portugal.  Acta Medica Portuguesa, 35 (3), 201–
+208. 
+8. CHE Policy Forum. (n.d.).  Living with long waiting times: Approaches to prioritising 
+[Video]. YouTube. https://www.youtube.com/watch?v=X-AxY54-P2Y 
+9. Grieco, P., & McDevitt, R. C. (2017). Productivity and quality in health care: Evidence 
+from the dialysis industry.  Review of Economic Studies, 84 (3), 1071–1105. 
+10. Chrystal, K. A., & Mizen, P. D. (2001).  Goodhart's law: Its origins, meaning and 
+implications for monetary policy . 
+https://cyberlibris.typepad.com/blog/files/Goodharts_Law.pdf 
+ 
+Anexos 
+Tabela 1 – Circuito dos doentes no SNS e tempos máximos de resposta garantidos. 
+ 
+Fonte: Tribunal de Contas (2022) [2]. 
+ 
+ 
+Tabela 2 – Acesso programado a consultas hospitalares e a cirurgias  
+(valores em milhares, salvo indicação em contrário) 
+
+ 
+20 
+Policy Brief 16  
+ 
+Fonte: ACSS(2024) [1]. 
+ 
+ 
+ 
+ 
+  
+
+ 
+21 
+Policy Brief 16  
+Eixo estratégico 2 | Bebés e Mães em Segurança 
+ 
+Bárbara Ferreira 
+Filipa Gonçalves 
+Margarida Canelas 
+ 
+Sumário 
+Eixo estratégico 2 | Bebés e Mães em Segurança ............................................................ 21 
+1. Contextualização do problema ................................................................................... 21 
+2. Apresentação sumária das medidas .......................................................................... 23 
+3. Aplicação dos conceitos económicos e análise crítica ............................................... 24 
+4. Rever ou reforçar as medidas propostas .................................................................... 27 
+Referências .................................................................................................................... 29 
+ 
+1. Contextualização do problema 
+A segurança materna na saúde é de extrema importância para garantir a saúde e bem -
+estar das mães durante a gravidez, parto e pós -parto. Ao promover a segurança materna, 
+é possível reduzir complicações obstétricas e neonatais, mortalidade materna e garantir 
+um ambiente seguro para a mãe e bebé. Desta forma, a segurança materna está 
+diretamente relacionada com a prevenção de doenças e cuidados pós -parto, contribuindo 
+para uma recuperação mais tranquila e saudável da mãe, bem como com a prevenção de 
+comorbilidades neonatais. 
+Entre os principais desafios e riscos relacionados com a segurança materna na saúde, 
+destacam-se a falta de acesso a cuidados pré-natais adequados, o atraso na identificação 
+de complicações durante a gravidez e o parto, e ainda a falta de suporte pós -parto para 
+as mães. Assim, as disparidades no acesso aos serviços de saúde (obstetrícia, 
+planeamento familiar e saúde materno -infantil) e a falta de informação adequada sobre a 
+importância da segurança materna também representam desafios significativos. 
+As políticas e estratégias recomendadas para garantir a segurança de bebés e mães na 
+saúde incluem a implementação de programas de vigilância pré -natal abrangentes, 
+acesso equitativo a cuidados de saúde de qualidade, incentivo ao parto humanizado e 
+investimento em profissionais de saúde capacitados. Além disso, a promoção da 
+amamentação e a consciencialização sobre os direitos reprodutivos das mulheres são 
+fundamentais para a segurança materna e infantil. 
+As principais mensagens do presente documento enfatizam a importância da segurança 
+materna e do bebé na saúde, destacando os principais desafios e riscos enfrentados. 
+Adicionalmente, ressalta a necessidade de políticas eficazes, intervenções integradas e 
+boas práticas para garantir a segurança e o bem -estar das mães e bebés. É essencial 
+ 
+22 
+Policy Brief 16  
+reforçar a importância da capacitação de profissionais, do continuum da educação para 
+grávidas e do acesso equitativo a serviços de qualidade como elementos fundamentais 
+para a promoção da segurança materno-infantil. 
+Atualmente, no panorama nacional podemos encontrar 41 maternidades; 28 maternidades 
+em funcionamento ininterrupto; 2 maternidades em funcionamento por referenciação; 8 
+maternidades encerradas; e ainda 5 maternidades do setor privado. 
+Porque encerram as maternidades? 
+Porque as equipas de urgência de Ginecologia -Obstetrícia e Bloco de Partos têm um 
+requisito mínimo exigido de clínicos especialistas presentes para poderem funcionar. O 
+número mínimo de clínicos, quer médicos especialistas em Ginecologia -Obstetrícia e 
+enfermeiros especialistas em Saúde Materna e Obstétrica é definido de acordo com o 
+volume de produção, ou seja, o número de partos/ano de cada instituição. O atendimento 
+urgente tem encerrado quando não se verifica o cumprimento daquele requisito traduzido 
+no número mínimo de profissionais clínicos. Este encerramento ou condicionamento dos 
+serviços de Urgência por falta de médicos é um problema transversal ao país e não é um 
+fenómeno novo, ocorrendo, sobretudo, nos períodos de férias. 
+Os hospitais que encerrem as urgências de Ginecologia e Obstetrícia devem comunicar a 
+decisão ao Instituto Nacional de Emergência Médica, pelo que os doentes urgentes 
+transportados por ambulância devem ser encaminhados para outras unidades de saúde, 
+de acordo com as diretrizes do Centro de Orientação de Doentes Urgentes (CODU). No 
+entanto, nem sempre esta informação chega ao público, resultando numa extrema 
+dificuldade aos utentes que se desloquem por meios próprios à urgência e esta não está a 
+funcionar. 
+Em junho de 2022 foi implementado um “plano de contingência” previsto como solução de 
+curto prazo, para responder à falta de profissionais nos serviços de urgência de 
+ginecologia e obstetrícia. Contudo, em 2024 a problemática mantém -se e o Ministério da 
+Saúde necessitou de elaborar um Plano de Emergência da Saúde (PES), publicado em 
+maio de 2024, que incluí um eixo dedicado à esta problemática. 
+A desigualdade no acesso à saúde constitui uma injustiça social e civilizacional que 
+importa ser combatida. Desta forma, o PES visa a implementação de medidas urgentes e 
+prioritárias que garantam o acesso a cuidados de saúde ajustados às necessidades 
+efetivas da população. Por isso, ambiciona -se que as medidas desenvolvidas se 
+apresentem como soluções que permitam rentabilizar e otimizar a resposta do SNS. 
+O eixo e do PES está relacionado com a Saúde Materno-Infantil e tem como objetivo geral 
+assegurar o acesso das utentes grávidas aos cuidados de saúde, garantindo a segurança 
+clínica no contexto da saúde materno-infantil, com vista a: 
+− Otimizar a capacidade da rede de maternidades e o acesso da grávida aos 
+cuidados de saúde; 
+− Reforçar os mecanismos de comunicação entre a grávida e o SNS; 
+− Potenciar as valências dos profissionais de saúde envolvidos no acompanhamento 
+da grávida e no parto. 
+ 
+23 
+Policy Brief 16  
+Pretende-se, assim, garantir que todas as grávidas tenham acesso a cuidados de saúde 
+materno-infantil em tempo útil, com a máxima segurança e qualidade, proporcionando 
+assim um ambiente seguro e acolhedor para o nascimento de novas vidas. 
+2. Apresentação sumária das medidas 
+As medidas apresentadas no PES organizam-se em três níveis de prioridade: 
+− Medidas urgentes – resultados até 3 meses 
+− Medidas prioritárias – resultados até ao final de 2024 
+− Medidas estruturantes - resultados nos próximos 2 anos. 
+Na tabela 1 apresenta -se a síntese das medidas por prioridade, objetivo e problema que 
+visam resolver. 
+Tabela 1: Descrição das medidas 
+Medidas Objetivo Problema a resolver 
+Urgente 
+Criação de canal de atendimento direto 
+para a grávida, alavancando na linha 
+SNS 24 (SNS Grávida) 
+Privilegiar/facilitar 
+comunicação 
+Organizar circuitos 
+Acesso limitado aos serviços 
+de Urgência Obstétrica, em 
+virtude do encerramento 
+permanente ou pontual de 
+alguns serviços 
+Atribuição de incentivos financeiros 
+para aumentar a capacidade de 
+realização de partos 
+Rentabilizar capacidade 
+instalada das 
+maternidades 
+Limitação de vagas, tendo 
+em conta o aumento do 
+volume de produção Reforço de convenções com o setor 
+social e privado 
+Prioritária 
+Criação de um regime de Atendimento 
+Referenciado de Ginecologia de 
+Urgência 
+Alocar adequadamente os 
+recursos humanos 
+Acesso limitado aos serviços 
+de Urgência Obstétrica, em 
+virtude do encerramento 
+permanente ou pontual de 
+alguns serviços 
+Atualização dos rácios de pessoal e da 
+composição das equipas nos locais de 
+parto em função de critérios técnico-
+científicos atendíveis 
+Otimizar recursos e 
+rentabilizar a capacidade 
+de intervenção (valências 
+técnico-científicas) 
+Adequação de recursos 
+humanos, tendo em conta a 
+valência 
+Revisão da tabela de preços 
+convencionados para Meios 
+Complementares de Diagnóstico e 
+Terapêutica (ecografias pré-natais) 
+Promover o rastreio pré -
+natal adequado 
+Acesso a vigilância pré -natal 
+de acordo com as normas da 
+DGS para a adequada 
+vigilância de saúde materna 
+Generalização do Atendimento 
+Pediátrico Referenciado 
+Alargar o acesso a 
+cuidados agudos e 
+urgentes no contexto das 
+ULS 
+Acesso limitado aos serviços 
+de Urgência Pediátrica, em 
+virtude do encerramento 
+permanente ou pontual de 
+alguns serviços 
+Estruturante 
+ 
+24 
+Policy Brief 16  
+Separação das especialidades de 
+Ginecologia e Obstetrícia 
+Alocar adequadamente os 
+recursos humanos 
+Adequação de recursos 
+humanos, tendo em conta a 
+valência 
+Reforço do acompanhamento da 
+grávida por Especialistas em 
+Enfermagem de Saúde Materna e 
+Obstetrícia 
+Potenciar o papel dos 
+Enfermeiros Especialistas 
+em Saúde Materna e 
+Obstetrícia (EESMO) 
+Dificuldade de acesso a 
+consultas de vigilância de 
+saúde materna, em gravidez 
+de baixo risco 
+Estabelecimento de novas estruturas 
+organizacionais para blocos de parto / 
+obstetrícia 
+Promover a diferenciação, 
+autonomia e capacidade 
+dos Blocos de Partos 
+Limitação de vagas, tendo 
+em conta o aumento do 
+volume de produção 
+ 
+3. Aplicação dos conceitos económicos e análise crítica 
+A população tem necessidades ilimitadas que não podem ser satisfeitas na sua totalidade 
+porque os recursos são escassos, como descreve um dos pressupostos de base da 
+ciência económica. Desta forma, torna -se necessário realizar escolhas sustentadas e 
+fundamentadas, obrigando a trade-offs difíceis de alocação de recursos. No setor da 
+saúde, este aspeto é particularmente relevante, o que poderá justificar a aplicação de 
+teorias económicas aos proble mas associados à saúde para que se possa procurar 
+decisões eficientes e otimizar os recursos disponíveis [1]. 
+Em suma, a análise económica em saúde é uma ferramenta crucial para avaliar a 
+eficiência e o impacto económico das intervenções nesta área  [2]. Esta análise visa 
+identificar e mensurar os custos e benefícios das diferentes opções de tratamento, 
+prevenção e promoção da saúde  [3], fornecendo informações essenciais para a tomada 
+de decisão em políticas públicas e gestão de recursos.  A análise económica em saúde 
+contribui também para a alocação eficiente de recursos, promovendo a equidade no 
+acesso aos serviços e a melhoria da qualidade e segurança do sistema de saúde. 
+A.1 | Criação de canal de atendimento direto para a grávida, alavancando na linha SNS 
+24 (SNS Grávida) 
+Uma das medidas descritas como urgente e já implementada, com avaliação de 
+resultados demonstrada, foi a criação da Linha SNS Grávida. Esta medida materializa um 
+instrumento de melhoria da correspondência entre a oferta e a procura. Num balanço feito 
+no primeiro mês de funcionamento desta linha de saúde, podemos destacar alguns 
+números: 
+-Das 277 mil chamadas atendidas pelo SNS24, 8260 foram de utentes grávidas (3%); 
+-Mais de 870 grávidas (cerca de 11% das utentes triadas) evitaram deslocação a um SU, 
+sendo que 470 destas utentes tinham intenção prévia a esta triagem, de se dirigir a um 
+serviço de urgência; 
+-17% das utentes foram encaminhadas para uma unidade de Cuidados de Saúde 
+Primários; 
+-5866 utente foram encaminhadas para um SU (cerca de 70% das chamadas recebidas). 
+ 
+25 
+Policy Brief 16  
+Considerando estas informações quantitativas, podemos concluir que foi possível uma 
+melhor alocação dos recursos do SNS, visto que foram evitadas mais de 870 deslocações 
+ao serviço de urgência pela triagem realizada na nova linha SNS Grávida, para além de 
+uma mitigação da incerteza habitualmente associada ao mercado da saúde e dos 
+cuidados de saúde.  
+De acordo com o relatório da Evolução do Desempenho do SNS em 2023 do Conselho de 
+Finança Públicas [4] , poder -se-á concluir que a atividade hospitalar do SNS aumentou, 
+mas de forma insuficiente para satisfazer a procura. Nos episódios de urgência, o 
+cumprimento dos tempos de triagem apenas aconteceu em 60% dos casos (61% em 
+2022); foi também verificado que a despesa do SNS aumentou 6,8% relativamente a 
+2022, com acréscimo de 761,8M€ relativos a despesas correntes. Considerando que dois 
+terços da despesa corrente são as despesas de compras e despesas com pessoal, ao 
+reduzirmos a afluência ao serviço de urgência, serão reduzidas estas duas componentes 
+significativas de despesa no SNS.  
+B.2 | Atualização dos rácios de pessoal e da composição das equipas nos locais de parto 
+em função de critérios técnico-científicos atendíveis 
+No que respeita à medida prioritária sobre a atualização dos rácios de pessoal e da 
+composição das equipas nos locais de parto em função de critérios técnico -científicos 
+atendíveis, o objetivo será otimizar as valências das equipas multidisciplinares nos locais 
+de parto, de forma a garantir a disponibilidade das mesmas e rentabilizar a sua 
+capacidade diária de acordo com a procura e recursos disponíveis.   
+Nos locais de parto, a equipa multidisciplinar permite assegurar os cuidados de saúde no 
+processo de trabalho de parto. As competências do Es pecialistas de Enfermagem 
+Materna e Obstétrica (EESMO), como parte integrante dessas equipas está bem definida 
+e, de acordo com a Orientação nº2/2023 de 10/05/2023, atualizada a 26/03/2024 pela 
+DGS (2023) [5] , o internamento hospitalar de uma grávida em trabalho de parto 
+considerado de baixo risco pode ser realizado por um profissional EESMO. Quando a 
+grávida observada não cumpre os critérios de trabalho de parto de baixo risco, terá de ser 
+observada por um Médico especialista em Ginecologia/Obstetrícia. 
+A criação de equipas multidisciplinares é analisada pela ciência económica recorrendo a 
+funções de produção com diferentes inputs, ou seja, com diferentes profissionais que 
+geram diferentes skill-mix [1,6]. A constituição destas equipas pode ser versátil e flexível 
+uma vez que é possível obter o mesmo nível de output, os partos, com diferentes skill-
+mix. O desafio económico é a determinação das equipas ótimas que permitem minimizar 
+os custos e maximizar os outputs numa determinada unidade de saúde. 
+Na evolução do desempenho do SNS em 2023  [4], na atividade hospitalar, o número de 
+consultas médicas hospitalares aumentou face a 2022 (em 3.9%), o que não foi suficiente 
+para evitar o aumento considerável do número de utentes em lista de espera para a 
+primeira consulta em 2023 (em 46% face ao ano anterior). No que diz respeito à atividade 
+dos Blocos de Partos, Portugal registou 85764 nascimentos em 2023, mais 2328 do que 
+no ano anterior. 
+Desta forma, e a título de exemplo, das 10 maternidades localizadas na zona de Lisboa e 
+Vale do Tejo, apenas 3 têm em vigor o protocolo de internamento de grávidas de baixo 
+ 
+26 
+Policy Brief 16  
+risco que apresentam rotura espontânea da bolsa ou que se encontrem em fase ativa de 
+trabalho de parto. A implementação deste protocolo nas restantes maternidades permitirá 
+uma gestão mais eficaz dos recursos nos serviços de urgência obstétrica, uma vez que o 
+processo de internamento se torna mais célere e as equipas médicas poder -se-ão 
+dedicara situações de maior urgência/emergência, ou que careçam de maior 
+diferenciação clínica. Ou seja, esta realocação de recursos baseada num protocolo clínico 
+permite que com os mesmos recursos disponíveis seja possível atingir um nível de 
+produção mais elevado, representando uma melhoria de eficiência do sistema. 
+A presente medida converge com a medida de reforço do acompanhamento da grávida 
+por Especialistas em Enfermagem de Saúde Materna e Obstetrícia uma vez que, à 
+semelhança do que acontece no serviço de urgência, os profissionais EESMO 
+apresentam diferenciação clínica que os capacita para a realização da vigilância pré -natal 
+de grávida de baixo risco. Esta condição faz com que seja possível garantir a vigilância de 
+um maior número de grávidas, garantindo os timings designados a cada um dos 
+trimestres da gravidez. 
+C.3 | Estabelecimento de novas estruturas organizacionais para blocos de 
+parto/obstetrícia 
+A evolução histórica das estruturas organizacionais em blocos de partos é marcada por 
+mudanças significativas ao longo do tempo, refletindo avanços na tecnologia, na prática 
+clínica e nas expectativas das grávidas. Desde modelos tradicionais até estruturas mais 
+modernas, houve uma busca constante por melhorias na eficiência, segurança e 
+qualidade do cuidado obstétrico. Compreender essa evolução é essencial para 
+contextualizar as discussões atuais sobre inovações em unidades de bloco de partos. 
+As tendências atuais em estruturas organizacionais para unidades de bloco de partos 
+estão voltadas para a promoção de práticas centradas na mulher, respeitando sua 
+autonomia, preferências e cultura. Além disso, a integração de equipas multidisciplinares, 
+a utilização de abordagens baseadas em evidências e a implementação de tecnologias 
+para otimizar o cuidado obstétrico representam algumas das necessidades emergentes 
+nesse contexto, visando melhores resultados para mães e recém-nascidos. 
+O avanço tecnológico tem desempenhado um papel crucial na melhoria dos serviços 
+prestados nos blocos de partos, permitindo o desenvolvimento de estruturas 
+organizacionais mais eficientes e seguras. A implementação de tecnologias inovadoras 
+tem proporcionado aprimoramentos significativos no cuidado à grávida e ao recém -
+nascido, impactando positivamente a qualidade dos serviços prestados. 
+Do ponto de vista económico, o benefício em qualidade de vida e de saúde a médio/longo 
+prazo superam os custos (o rácio benefício -custo é superior à unidade)  [3], uma vez que 
+se verificará melhoria na eficiência operacional, mitigação de riscos, maior satisfação dos 
+profissionais e utentes, e melhorias da qualidade no cuidado prestado. Além disso, a 
+implementação de práticas baseadas em evidência e a integração de tecnologias podem 
+impactar positivamente nos outcomes clínicos. 
+ 
+27 
+Policy Brief 16  
+4. Rever ou reforçar as medidas propostas 
+Nesta secção pretende -se esboçar comentários e discussão adicionais a algumas 
+medidas acima apresentadas. Na tabela 2 foi sumariada a análise crítica ou de 
+justificação associada a cada uma das medidas selecionadas sobretudo ao nível da 
+aplicabilidade, efetividade e robustez. 
+Tabela 2: Análise crítica de algumas medidas  
+Medidas Análise crítica 
+Urgente 
+A.2 Atribuição de incentivos 
+financeiros para aumentar a 
+capacidade de realização de 
+partos 
+Esta medida, ainda que necessária e viável, relaciona -se mais com a valorização e 
+retenção de talentos no SNS, do que com a rentabilização da capacidade instalada 
+para a realização de partos. A escolha de uma maternidade pela grávida é 
+influenciada por inúmeros fatores, sendo que os incentivos aos profissionais podem 
+não ter impacto nessa escolha. 
+A.3 Reforço de convenções 
+com o setor social e privado 
+Medida já implementada desde 2020. A implementação desta medida será sempre 
+influenciada pelo volume de produção do setor privado, devendo ser tida em linha 
+de conta a qualidade e segurança dos cuidados às grávidas. 
+Prioritária 
+B.1 Criação de um regime de 
+Atendimento Referenciado de 
+Ginecologia de Urgência 
+Medida que, a ser implementada, pode verificar-se bastante eficaz uma vez que, 
+atualmente, dos 43 serviços de urgência existentes, apenas 2 são exclusivos da 
+especialidade de Ginecologia. A criação de um regime de atendimento referenciado 
+de Ginecologia permitirá o alívio do volume de episódios de urgência, dado que 
+40% dos episódios de urgência atendidos por médicos especialistas em 
+Ginecologia/Obstetrícia dizem respeito a casos ginecológicos não urgentes. 
+B.3 Revisão da tabela de 
+preços convencionados para 
+Meios Complementares de 
+Diagnóstico e Terapêutica (em 
+particular, ecografias pré-
+natais) 
+A realização atempada das 3 ecografias previstas durante a vigilância da gravidez é 
+crucial. Atualmente, a capacidade instalada para realização de ecografias através 
+do SNS mostra -se limitada e pode não ter capacidade de resposta. A 
+implementação desta medida parece consistente, na medida em que permitirá 
+alargar o leque de recursos para realização das ecografias. 
+B.4 Generalização do 
+Atendimento Pediátrico 
+Referenciado 
+Esta medida, a par com outra medida acima analisada, poderá ter um impacto 
+positivo no volume de episódios de urgência pediátrica, canalizando os doentes 
+pediátricos pouco urgentes e não urgentes para outros pontos de atendimento. 
+Estruturante 
+C.1 Separação das 
+especialidades de Ginecologia 
+e Obstetrícia 
+Dentro da especialidade de Ginecologia/Obstetrícia, os clínicos subespecializam -se 
+em áreas específicas. Tendo em conta a escassez de recursos humanos e a sua 
+possibilidade de mobilidade (dentro de um raio de distância viável, para equilíbrio 
+da vida profissional e familiar), a gestão e alocação destes recursos pode ser 
+revista, garantindo as dotações mínimas de especialistas em obstetrícia nas 
+maternidades. 
+Esta medida dependerá das contingências e disponibilidade dos profissionais de 
+cada organização. Contudo, e agregando à medida dos incentivos financeiros, 
+poderá ser uma medida com efetividade para garantir a alocação correta e 
+necessária de recursos. 
+ 
+Em suma, considerando o custo -benefício da implementação da maioria destas medidas, 
+tendo em conta os custos diretos e indiretos, impacto social e impacto económico, 
+possivelmente revelará um rácio benefício -custo superior à unidade (trabalhos futuros de 
+avaliação económica poderão confirmar, ou não, a nossa proposta).  
+ 
+Proposta de medida adicional  
+Criação de “Casas de Parto”, à semelhança de outros países da Europa, que se trata de 
+estabelecimentos especializados em prestar assistência ao parto normal de baixo risco, 
+fora do ambiente hospitalar tradicional. Estes estabelecimentos configuram uma 
+ 
+28 
+Policy Brief 16  
+alternativa aos hospitais, oferecendo um ambiente mais acolhedor e menos medicalizado 
+para as mulheres que desejam um parto natural, com o mínimo de intervenção por parte 
+das equipas clínicas. 
+A história das casas de parto  [7] remonta a práticas tradicionais de assistência ao parto, 
+onde as mulheres eram atendidas por parteiras em ambientes acolhedores e familiares. 
+Essas práticas evoluíram ao longo do tempo, com a influência da medicina moderna e as 
+mudanças nas políticas de saúde. As casas de parto surgiram como uma alternativa ao 
+modelo hospitalar, buscando resgatar a humanização do parto e valorizar a autonomia da 
+mulher durante o processo de gestação e nascimento. 
+Estudos indicam que casas de parto estão associadas a taxas reduzidas de cesarianas, 
+episiotomias e uso de medicamentos para alívio da dor, promovendo uma recuperação 
+materna mais rápida. Além disso, o contato pele a pele imediato entre mãe e bebé e a 
+promoção do aleitamento materno exclusivo são práticas comuns que contribuem para a 
+saúde neonatal [8]. No entanto, é fundamental garantir que as casas de parto atendam os 
+requisitos de segurança e qualidade para assegurar um impacto positivo na saúde 
+materna e neonatal. 
+Devem, por isso, localizar -se num raio próximo ao hospital de referência e dispor de uma 
+ambulância com equipamento de suporte pediátrico, visando uma estrutura consistente 
+para transferência rápida ao hospital em caso de complicações. 
+A legislação e regulamentação das casas de parto variam amplamente entre os países, 
+influenciadas pela cultura, tradições e sistemas de saúde locais. Alguns países têm leis 
+específicas que regem a operação e prestação de serviços em casas de parto, enquanto 
+outros ainda estão em processo de desenvolvimento de políticas nesse sentido. É 
+importante considerar as diferenças legais e regulatórias ao avaliar e comparar as casas 
+de parto à escala internacional, para entender melhor os desafios e oportunidades 
+enfrentados em cada contexto. 
+Sendo assim, mediante contexto económico, as casas de parto evitam a utilização de 
+muitos recursos, evitando, portanto, o aumento da despesa do SNS, já que lidam com 
+partos de baixo risco e não se colocam questões de intervenções, da necessidade de 
+recorrer a medicação, e da necessidade de realização de exames específicos. Assim, as 
+casas de parto permitem um alívio sobre a pressão de recursos hospitalares, permitindo 
+que estes se foquem em casos mais urgentes e críticos, possível redução de custos com 
+infraestrutura, uma utilização eficiente de recursos e, como já identificado, uma provável 
+redução de complicações no pós-parto. 
+ 
+ 
+Siglas e abreviaturas 
+CODU – Centro de Orientação de Doentes Urgentes 
+PES - Plano de Emergência da Saúde 
+SNS – Serviço Nacional de Saúde 
+ 
+ 
+ 
+29 
+Policy Brief 16  
+Referências 
+1. Giraldes, M. R. (1997).  Economia da saúde da teoria à prática  (1ª ed.). Editorial 
+Estampa, Imprensa Universitária. 
+2. Campos, A. C. (1986).  Avaliação económica de programas de saúde  (Cadernos de 
+Saúde 10). Escola Nacional de Saúde Pública. 
+3. Alves, A. D. (1991). Análise custo-benefício do Novo H. D. Guimarães.  Gestão 
+Hospitalar, 20 , 24–32. 
+4. Conselho de Finanças Públicas (CFP). (2024).  Desempenho do Serviço Nacional de 
+Saúde em 2023  (Relatório 07/2024). Lisboa. 
+5. Direção Geral da Saúde (DGS). (2023).  Normas e circulares normativas . 
+https://www.dgs.pt/normas-orientacoes-e-informacoes/normas-e-circulares-
+normativas.aspx 
+6. Kernick, D., & Scott, A. (2002). Economic approaches to doctor/nurse skill mix: 
+Problems, pitfalls, and partial solutions.  The British Journal of General Practice: The 
+Journal of the Royal College of General Practitioners, 52 (474), 42–46. 
+7. Hoga, L. A. K. (2004). Casa de parto: Simbologia e princípios assistenciais.  Revista 
+Brasileira de Enfermagem, 57 (5), 537–540. 
+8. Graça, L. M. (2017).  Medicina materno-fetal (5ª ed.). Lidel. ISBN: 9789897522888. 
+  
+ 
+30 
+Policy Brief 16  
+Eixo estratégico 3 | Cuidados Urgentes e Emergentes 
+ 
+Fábio Pereira   
+João Coucelo   
+Ricardo Dias  
+ 
+Sumário 
+ 
+Eixo estratégico 3 | Cuidados Urgentes e Emergentes ...................................................... 30 
+1. Contextualização do problema ................................................................................... 30 
+2. Apresentação Sumária das Medidas .......................................................................... 31 
+3. Aplicação dos conceitos económicos e análise crítica ............................................... 32 
+4. Rever ou reforçar as medidas propostas .................................................................... 34 
+Referências .................................................................................................................... 39 
+ 
+1. Contextualização do problema 
+O plano emerg ência para saúde (PES), em particular para a área da Urgência e 
+Emergência, foi desenvolvido para responder à falência dos Serviços de Urgência (SU) 
+[1]. Este plano surge quando apesar de o número total de episódios de urgência geral, 
+pediátricos e psiquiátricos, não ter registado um aumento [2] e o número de horas 
+contratadas de prestação de serviços médicos ter aumentado [3]. Esta falência dos SU 
+poder-se-á traduzir de duas formas: na necessidade de encerrar SU em diferentes pontos 
+[4], e/ou no aumento dos tempos para observação após a triagem e nos tempos de 
+permanência dos doentes nos SU [5].  
+No contexto atual existe uma ideia geral de que os Cuidados de Saúde Primários (CSP) 
+deveriam dar uma maior resposta a pessoas com doença crónica, aguda não urgente e 
+pouco urgente. Contudo, a carência crescente de médicos especialistas em Medicina 
+Geral e Familiar (MGF) nos CSP tem resultado num aumento de pessoas sem médico de 
+família (1,7 milhões em 2023) [6] e numa crescente dificuldade dos CSP em dar resposta 
+à sua missão e desígnios base. Reconhece -se ainda a necessidade de investir nos 
+hospitais de dia das diferentes patologias crónicas e com um maior número de 
+agudizações (p.ex.: a insuficiência cardíaca, diabetes mellitus, doença pulmonar 
+obstrutiva crónica (DPOC) e oncológica). Porém, esta necessidade também tem 
+esbarrado na falta de médicos de diferentes especialidades no SNS. Assim, muitos destes 
+doentes acabam por recorrer aos SU para verem atendidos os seus problemas de saúde. 
+As estruturas Residenciais para Idosos (ERPI) são uma fonte significativa de casos para 
+os SU, quer seja por situações que não são resolvidas nas próprias, por falta de apoio 
+médico, quer seja pela organização destas, e por impedimentos legais para administração 
+de determinadas terapêuticas. 
+ 
+31 
+Policy Brief 16  
+No que se refere ao circuito do doente no SU, h á problemas desde as estruturas físicas 
+desadequadas à procura destes por este tipo de cuidados, até ao nível organizacional 
+interno e inter-hospitalar. Fatores de ordem política, direitos laborais, ordens profissionais 
+e a exigência/expectativa da população têm -se mostrado como obstáculos às alterações 
+pretendidas e desejáveis dos SU. No que concerne o funcionamento dos SU, entre 
+outros, existe um problema relativo à colaboração e alocação dos profissionais médicos. 
+O SU é o único serviço cujo funcionamento depende i) de médicos cedidos por períodos 
+até 18 horas/semana, oriundos de outros serviços e ii) de prestadores de serviços 
+externos, que por natureza estão pouco ou nada vinculados ao SU, sendo muitos destes 
+clínicos gerais (indiferenciados) ou internos em formação. Assim sendo, esta volatilidade 
+e heterogeneidade de profissionais nas equipas torna difícil o funcionamento eficaz e 
+sustentado dos SU. Não havendo médicos diferenciados em urgência, com vínculos 
+laborais estáveis e atrativos, dificilmente se conseguem criar SU capazes de responder às 
+exigências atuais e futuras.  
+Relativamente ao pó s-atendimento no SU, o congestionamento de doentes, reflete 
+enfermarias sem capacidade de resposta, além do problema dos internamentos 
+prolongados injustificados e dos casos sociais que se acumulam. O funcionamento das 
+diferentes enfermarias enfrenta obstáculos vários, sendo o denominador comum à maioria 
+destes, a falta de médicos especialistas que observem e orientem os casos, que tenham 
+disponibilidade e capacidade para dar resposta aos exames complementares de 
+diagnóstico (p.ex. de exames de imagem) e ainda de médicos disponíveis que tenham 
+tempos de bloco operatório para se realizarem cirurgias. No que aos casos sociais se 
+refere, o problema passa em boa parte pela incapacidade de as famílias darem apoio no 
+domicílio e à resposta insuficiente das diferentes redes de cuidados de convalescença 
+(curta, média e longa duração) e paliativos, das ERPI, da hospitalização domiciliária e das 
+Unidades de Cuidados na Comunidade (UCC).  
+As propostas do PES pretendem intervir em algumas das diferentes dificuldades 
+apontadas, que resultam em constrangimentos antes, durante e ap ós o SU contribuindo 
+para a excessiva afluência e utilização do SU pelas pessoas, dificultando o circuito do 
+doente, bem como o seu escoamento para fora do SU. 
+2. Apresentação Sumária das Medidas  
+A.1 | Requalificação dos espaços dos Serviços de Urgência Geral/Psiquiátrica 
+Remodelar e criar  espaços de atendimento, com foco nas urgê ncias psiquiátricas, para 
+melhorar a qualidade do atendimento. A i mplementação será faseada (publicação de 
+regulamento, financiamento, concurso, contratação e monitorização). 
+A.2 | Criação de Centros de Atendimento Clínico (CAC) para situações agudas de menor 
+complexidade e urgência clínica 
+Construir uma “coroa” de locais em redor de cada hospital, para atender doentes que a 
+triagem de Manchester (no SU, SNS 24 ou CODU) determine como não urgentes e pouco 
+urgentes. Os locais de atendimento podem ser CAC, CSP ou Consulta Externa. 
+Inicialmente em Lisboa e Porto depois, conforme os resultados, também noutras áreas.  
+ 
+32 
+Policy Brief 16  
+A.3 | Implementação da consulta do dia seguinte nos Cuidados de Saúde Primários para 
+situações agudas de menor complexidade e urgência 
+À imagem do que já se fará em 3 ULS na região norte, pretende -se ser possível agendar 
+consultas do dia seguinte para casos não urgentes em cuidados primários nos CSP (e em 
+caso de doentes acamados, para o próprio dia). 
+B.2 | Criação da Especialidade de Médica de Urgência 
+Formar médicos especialistas em Medicina de Urgência, à imagem do que acontece na 
+maioria dos países da união europeia. Processo que passa pela aprovação e criação da 
+especialidade (previstos até ao final de 2024) e que se criem as primeiras vagas para o 
+internato de formação específica em 2025.  
+3. Aplicação dos conceitos económicos e análise crítica 
+A implementação eficaz das medidas do eixo 3 do PES poderá beneficiar de uma análise 
+dos princípios econ ómicos subjacentes, a fim de garantir a sustentabilidade e a 
+efetividade do sistema a longo prazo. Este eixo 3 visa promover decisões mais 
+informadas e alinhadas com o Modelo de Grossman do ponto de vista do indivíduo, que 
+concebe a saúde como um bem de investimento a ser continuamente cultivado para 
+manter o seu capital de saúde. O acesso a cuidados hospitalares pelas pessoas 
+corresponde ao princípio da "procura por cuidados de saúde" exatamente como forma de 
+investimento e recuperação do capital de saúde, para recuperar perdas associadas a 
+acidentes e doenças em situações de urgência e emergência.  
+A procura dos SU pressiona os recursos físicos e humanos limitados do SNS, criando um 
+cenário de escassez que exige soluções inovadoras e eficientes. A Economia da Saúde 
+analisa esta problemática atrav és da escolha racional dos agentes, compreendendo os 
+fatores que influenciam a procura  por serviços de sa úde e assim, auxilia na forma como 
+vai alocar esses recursos para optimizar os resultados. 
+A aná lise custo-efetividade, utilizando ferramentas como o ICER (Incremental Cost -
+Effectiveness Ratio) e o indicador QALY (Quality -Adjusted Life Years) ou outros de 
+qualidade de saúde, serve para avaliar a relação entre os custos e os resultados em 
+saúde das medidas  propostas pelo eixo 3. Assim, vamos focar as medidas que se nos 
+afiguram como aquelas que serão ou tenderão a ser mais eficientes do ponto de vista do 
+custo por unidade de benefício em saúde, melhorando -se decisõ es estrat égicas na 
+alocação de recursos. Deste modo, analisam -se os benefícios em saúde que poderiam 
+ser alcançados caso os recursos fossem alocados de forma distinta. 
+ A.1 | Requalificação dos espaços dos Serviços de Urgência Geral/Psiquiátrica 
+Quanto à produção de cuidados de saúde de urgência geral/psiquiátrica a medida visa 
+aumentar a eficiência e capacidade de resposta dos SU. No entanto é omisso como será 
+abordada a outra componente necessária - os recursos humanos. O custo de 
+oportunidade (CO) dos 20 milhões de euros investidos representa recursos que não são 
+alocados na resolução de outras necessidades de saúde. O mercado de SU pode definir -
+se como um mercado que compreende o sector público, mas também o privado. Ora, esta 
+medida surge exactamente porque a oferta está aqu ém da procura. Contudo, embora 
+ 
+33 
+Policy Brief 16  
+existam SU em unidades privadas, o acesso a estas depende da condição económica dos 
+doentes, não sendo por isso universal. Por outro lado, a oferta nestas unidades tende a 
+ser mais limitada na abrangência do que aquela que é oferecida pelo SNS, sobretudo em 
+termos de complexidade clínica. Relativamente à s urg ências psiqui átricas, se 
+considerarmos a oferta pelo sector privado, seja em consult órios ou em hospitais 
+privados, podemos observar igualmente um sector com “falhas de mercado”, no sentido 
+em que é quase inexistente esta oferta, fazendo a intervenção do Estado fundamental. 
+Embora existam taxas moderadoras nos SU (o valor de €16 pela inscrição e at é um limite 
+máximo de €40 euros por episódio), segundo os estudos realizados [5 ,6], a elasticidade-
+preço da procura, quer para adultos, quer para crianças, é pr óxima de zero (procura 
+inelástica). Tomando o número de episódios de urgência como uma das formas de aferir a 
+procura dos SU e observando a sua evolução ao longo do tempo no Portal da 
+Transparência, observa-se que a procura se tem mantido mais ou menos estável desde 
+2013 (excepto nos anos da pandemia de COVID -19). Já no que diz respeito às  urgências 
+psiquiátricas, estas têm aumentado desde 2020 [7]. O objectivo da melhoria dos tempos 
+de resposta dos SU requer a compreensão do efeito resultante do aumento da quantidade 
+de prestação, da melhoria da organização e/ou da qualidade dos espaços sobre esse 
+tempo. Tal poderá ser aferido, por exemplo, através da variação nos tempos de espera 
+para observação dos doentes, após a triagem, resultante do acréscimo de um gabinete de 
+atendimento e adição de X horas de trabalho m édico por semana (ou seja, uma análise 
+marginal). 
+ 
+A.2 | Criação de Centros de Atendimento Clínico para situações agudas de menor 
+complexidade e urgência clínica 
+A produção de cuidados de saúde para situação agudas de menor complexidade e 
+urgência clínica preconiza a oferta de 24 a 36 gabinetes para uma procura de até 1000 
+doentes/dia em Lisboa e no Porto, estando omisso a quantidade de horas de trabalho de 
+gestores, médicos, enfermeiros, auxiliares de ação m édica e administrativos necessárias 
+para alcan çar o objetivo proposto. Não se encontrando estimado o custo deste 
+investimento, não é possível apreciar o custo -oportunidade que concorreria com investir 
+em programas de literacia em saúde e prevenção da doença para população, reforço da 
+resposta dos cuidados de saúde primários com equipas de médico e enfermeiro de família 
+suficientes e com condições para dar resposta cabal a doentes sem m édico de família, 
+criar condições base que permitam manter e atrair mais profissionais.  
+O mercado do SU compreende também os doentes não urgentes e pouco urgentes que 
+hoje recorrem aos serviços de urgência, CSP e outras consultas (nos públicos e priva-
+dos). Uma vez que se desconhece se o acesso terá algum valor associado e a adesão a 
+este, não é possível analisar a elasticidade da procura do SU e de outros serviços com 
+resposta às necessidades de cuidados idênticas. O fomento da substituibilidade entre di-
+ferentes serviços oferecidos poderia passar pela comparticipação e/ou acordos com uni-
+dades privadas (consultórios, clínicas, hospitais) para observarem esta tipologia de doen-
+te. 
+ 
+34 
+Policy Brief 16  
+A.3 | Implementação da consulta do dia seguinte nos Cuidados de Saúde Primários para 
+situações agudas de menor complexidade e urgência 
+Nesta medida A3, a produção de cuidados de saúde para situações agudas de menor 
+complexidade e urgência, visa fomentar o número de consultas agendadas a partir dos 
+diferentes pontos de contato com o SNS (SU, SNS 24 e CODU). O investimento 
+necessário não se encontra especificado no PES. Mas calcula-se que terá de passar tanto 
+pelo reforço de recursos materiais como humanos para atendimento de chamadas; inclui 
+também atualização dos programas de triagem e formação de profissionais, e ainda 
+investimento em recursos para atendimentos dos utentes referenciados. O custo desta 
+medida é de difícil estimação, não sendo por isso possível perceber o potencial impacto 
+no orçamento do Ministério da Saúde.    
+B.2. | Criação da Especialidade de médica de Urgência  
+A produção especialista  de urgencia médica depende de quantas unidades têm 
+idoneidade formativa e do número de orientadores (dados desconhecidos). Os recursos 
+utilizáveis são, por um lado, os m édicos que associam duas condições: ser -lhes atribuída 
+dupla-titulação (somar à especialidade que já têm, a especialidade de Medicina de 
+Urgência) e que se encontrem disponíveis para integrar um contigente de orientadores. 
+Por outro lado, os m édicos que queiram e estejam em condições de escolher uma vaga 
+para o programa de formação específica desta especialidade ou que pretendam cumprir 
+um ciclo de estudos correspondente (via alternativa para especialistas).  
+Outros recursos relevantes para esta medida são as estruturas como os SU e os serviços 
+onde os internos terão de cumprir os estágios da especialidade. O CO desta medida, uma 
+vez que também não se encontram dados concretos do investimento envolvido, poderá 
+ser estimado de forma muito incompleta, recorrendo a alguns dados informativos. De 
+acordo com o relat ório de Evolução do Desempenho do SNS, em 2023, elaborado pelo 
+Conselho das Finanç as P úblicas (CFP), é referido um gasto de 164,4M€ com serviç os 
+médicos externos, a somar ao gasto com horas suplementares de 185,2M€. Contudo, es-
+te gasto têm um impacto superior dado que ao especializar m édicos, irá diminuir despe-
+sas diversas tais como pedidos de meios complementares e de diagnóstico (MCD), pres-
+crição de terapêutica no SU e para o domicílio, em consultas externas e internamentos, 
+pode também diminuir as comorbilidades e complicaçõ es várias. O mercado inclui os SU 
+básicos, SU m édico-cirúrgicos e os centros de atendimento clínico (CAC), mas tamb ém 
+no pré-hospitalar nas Viatura Médica de Emergência e Reanimação  (VMER), Centros de 
+Orientação de Doentes Urgentes (CODU) do INEM e Serviço Helic óptero de Emergência 
+Médica (SHEM). Estes m édicos especialistas em Urgê ncia Médica não podem ser efeti-
+vamente substituídos, muito embora at é hoje estas funções sejam desenvolvidas  por clí-
+nicos gerais (m édicos sem especialidade), por internos em formaçã o específica e espe-
+cialistas de outras áreas. 
+4. Rever ou reforçar as medidas propostas 
+Efetuando uma reflexão crítica, há necessidade e oportunidade para contribuir e melhorar 
+o documento apresentado, al ém de incluir novas propostas, e assim no seu todo, seja 
+possível dar uma resposta mais eficiente e eficaz às necessidades da população. 
+ 
+35 
+Policy Brief 16  
+A.1 | Requalificação dos espaços dos Serviços de Urgência Geral/Psiquiátrica 
+No contexto atual em que a procura tem sido mais ou menos estável, a necessidade de 
+requalificar os SU pode ser em parte inerente ao desgaste destes, à evolução das formas 
+de organização e à qualidade da resposta pretendida. 
+Da análise global do PES, não deixa de ser paradoxal desenhar um PES com um foco na 
+limitação do acesso aos SU, no desenvolvimento de estratégias para criar “coroas” e 
+“alternativas” aos SU, e ao mesmo tempo, investir na requalificação das condições dos 
+SU gerais e psiquiátricos.  
+Relativamente à criação de novos espaços, nomeadamente para o atendimento de ur-
+gências psiquiátricas, há que ter em atenção a especificidade dos mesmos, quer no âmbi-
+to dos espaços e a segurança (dos utentes e prestadores de cuidados de saúde), quer na 
+articulação com outros serviços ou unidades de cuidados, com capacidade para interna-
+mento, quando necessário.  É também de relembrar que para que o espaço do SU seja 
+desenvolvido de forma adequada, é imprescindível o valioso capital humano. Apesar de 
+não haver escassez de m édicos psiquiatras por cada mil habitantes, existe uma falta de 
+condições laborais que não permitem fixar os m édicos ao SNS. Não tem sido e não será 
+uma estratégia viável, e menos ainda sustentável no tempo, acenar com incentivos mone-
+tários para aumentar a produção. A classe médica, e os psiquiatras em particular, sabem 
+que este tipo de estratégia serve alguns e não reflete as mudanças das condições base e 
+estruturais necessárias para garantir a estabilidade e atratividade. Atualmente, e a título 
+de exemplo, embora alguns os profissionais tenham optado pelo regime de dedicação 
+plena e cumpram as suas exigências, outros nos CSP, que optaram por aumentar as suas 
+listas de utentes, não viram atualizado os incentivos anunciados, de acordo com informa-
+ções dos sindicatos médicos e a Ordem dos Médicos. Além do mais, dada a natureza de 
+continuidade e acompanhamento dos cuidados psiquiátricos, a degradação dos serviços e 
+atendimento no SNS será difícil mobilizar os médicos psiquiatras de clínicas e hospitais 
+privados, onde têm estabelecidas as suas carteiras de doentes, para regressar a um SNS.  
+O SNS depende de quadros governamentais instáveis, frágeis no desenvolvimento de 
+estratégias de longo prazo, sem capacidade de decisão para melhorar efetivamente as 
+condições laborais de base dos profissionais médicos; por outro lado, o SNS sofre um 
+desgaste na sua atratividade por via dos ambientes de conflito entre os responsáveis polí-
+ticos, administrações, direções, chefias e colaboradores.  
+Assim, e de forma pragmática, as alternativas passam por duas possibilidades exclusivas:  
+i) ou mudar o paradigma a que se tem assistido nos últimos anos, evitando a fuga de 
+quadros qualificados do SNS, isto é, criar condições laborais de base melhores, com 
+transparência de processos e seu cumprimento, estratégias e regras definidas e 
+sustentadas no tempo por acordos plurianuais, com condições que sejam aliciantes 
+profissionalmente; então haverá nesse momento a oportunidade para investir na 
+requalificação dos espaços de atendimento para uma resposta adequada, 
+ii) ou em vez desse investimento (que além da requalificação e manutenção dos espaços, 
+inclui os encargos com ordenados, prémios, incentivos, análises e consumíveis diversos), 
+criar uma estratégia de outsourcing em que o Estado contratualiza com prestadores 
+privados de acordo com as suas capacidades negociais. 
+ 
+36 
+Policy Brief 16  
+Qualquer uma destas estrat égias pode ser utilizada como trunfo ou arma política; 
+qualquer das duas pode ser muito trabalhada e gerar acusações várias por parte dos 
+diferentes stakeholders, seja qual for o partido político que a leve a cabo. Contudo, mais 
+importante do que isso, é fazer uma análise pragmática da realidade: i) não há forma legal 
+de obrigar os médicos que se encontram a cumprir com a lei, com os seus deveres e 
+obrigações, a trabalhar mais horas (o que de si comprometeria sempre a qualidade dos 
+cuidados prestados), ou a abandonar o sector privado em favor do SNS; ii) considerando 
+as leis da oferta e da procura, a grande vantagem do Estado seria, como foi até há duas 
+décadas, a oferta de condições favoráveis para a prática de medicina: o investimento em 
+inovação, a oportunidade de progressão na carreira e ordenados que garantem um 
+adequado poder de compra à classe médica (que permitam uma qualidade de vida 
+compatíveis com a abnegação, responsabilidade, foco e dedicação continua necessárias 
+para garantir qualidade de cuidados e a segurança dos doentes), o ensino, a formação 
+contínua, investigação ; iii) quanto maior a degradação das condições no SNS, maior o 
+desapego e desinteresse dos profissionais de saúde, maior o crescimento o sector 
+privado e maior a emigração de profissionais de saúde.  
+ 
+A.2 | Criação de Centros de Atendimento Clínico para situações agudas de menor 
+complexidade e urgência clínica 
+A sobrecarga dos SU com casos não urgentes e pouco urgentes compromete a eficiência 
+e a segurança dos outros atendimentos urgentes e de emergência realizados no SU. Esta 
+medida representa a ideia do investimento na descentralização de cuidados de saúde 
+agudos. No passado existiram os Serviços de Atendimento Permanente (SAP), um maior 
+número de Serviços de Urgê ncia Básica (SUB) e também um maior número de horas de 
+consultas abertas nos CSP. E é exatamente por aqui que começamos este comentário: 
+estas respostas foram eliminadas não por opção ou outras melhores soluções, mas como 
+forma de ajustamento à falta de médicos no SNS. Assim, dada a carência crescente de 
+MGF nos CSP, interroga -se a viabilidade desta medida no espaço temporal proposto ou 
+até nos próximos 6 anos. Se não, veja -se: pode ser argumentado que uma vez que 
+haverá menos utentes nos SU, haverá também a possibilidade de deslocar os médicos 
+dos SU para os Centros de Atendimento Clínico (CAC). Contudo, a realidade é que os 
+médicos que estão nos SU, são poucos para observar atempadamente todos casos que 
+existem, os não urgentes, os urgentes de diferente ordem e os emergentes. Uma vez 
+atingido o objetivo de evitar a ida dos não urgentes e pouco urgentes aos SU, talvez os 
+atuais médicos do SU, consigam finalmente dar uma resposta adequada aos restantes 
+doentes urgentes e emergentes que recorram aos SU. Caso estes médicos sejam 
+deslocados para os CAC, continuará então a haver um défice de médicos para observar o 
+volume de doentes continuam a recorrer e a necessitar de atendimento nos SU. Desta 
+forma, i) uma vez que atualmente existe uma carência de especialistas de MGF nos CSP, 
+não se prevendo que se possa mobilizar estes profissionais para os CAC, e ii) 
+considerando que existe um crescente número de médicos reformados não compensado 
+com médicos recém -formados, então levanta -se um problema básico: podem não existir 
+médicos em número suficiente para responder aos 24 gabinetes nos CAC de Lisboa e do 
+Porto. 
+Se analisarmos a resposta pretendida para o conjunto dos CAC em Lisboa e no Porto (até 
+1000 doentes/dia), num cenário meramente matemático e hipotético, se forem 
+ 
+37 
+Policy Brief 16  
+implementados 36 gabinetes/médicos, a trabalhar 8 horas/dia, com uma média de 15 
+minutos de tempo total por doente, resulta que que cada médico orientaria 4 
+doentes/hora, o que equivale a cada médico dar resposta a 32 doentes em 8 horas, o que 
+equivale a que se observassem 1152 doentes/dia. Ajustando apenas o tempo máximo 
+efetivo que cada m édico trabalha, mantendo um cenário onde se conseguem ter 36 
+médicos a trabalhar 6,5 horas efetivas por dia (1 hora e duas pausas de 15 minutos 
+subtraídas de 8 horas), com uma m édia de 15 minutos de tempo total por doente, daria 
+que cada m édico orientaria 4 doentes/hora, o que equivale a cada m édico dê resposta a 
+19,5 doentes em 6,5 horas, o que equivale a 936 doentes/dia. 
+Se ao anterior ajustarmos o tempo necessário para a prática de medicina de qualidade e 
+em segurança, onde se respeitem os diferentes componentes de uma consulta m édica 
+deste tipo, onde será necessário colher uma hist ória clínica focada, uma anamnése 
+dirigida, observar qualitativa e quantitativamente (parâmetros vitais por exemplo) o 
+doente, com necessidade de uma eventual leitura e interpretação de MCDT que o doente 
+traz, ou que seja necessário fazer no CAC, e uma orientação clínica, seja para o domicílio 
+com provável prescrição eletrónica e esclarecimento do doente e a sua concordância com 
+o plano, seja se necessária orientação para um SU, com necessário contacto com o SU e 
+posterior pedido de transporte, é, no final, desonesto pensar -se que a m édia de 15 
+minutos por doente será possível no mundo real. Assim, se ajustássemos este tempo 
+para meramente 20 minutos/doente (que para tratar de tudo continua a ser pouco para 
+esta tipologia de doente), então se existissem 36 m édicos a trabalhar 6,5 horas/dia, a 
+resposta dos CAC seria de 702 doentes/dia. Temos de lembrar a vertente da realidade 
+desta tipologia de doentes. Estamos a falar de pessoas com necessidade de ver orientada 
+uma série de assuntos, falar de mais do que uma queixa, ver esclarecidas dúvidas e 
+teorias de várias ordens que criaram e que finalmente conseguem consultar um médico. 
+Entre a empatia pela situação, queixas clínicas, sobre sistema e os serviços e tudo o já 
+referido, é muito difícil para quem conhece a realidade no terreno acreditar que estas 
+contas estejam sequer perto de refletir o número real de doentes que seriam possíveis 
+observar, assim conseguissem o já muito pouco provável melhor cenário relativo ao 
+número de médicos a prestar serviço.  
+Esta medida apresenta, contudo, outro problema numa fase anterior da chegada dos do-
+entes ao CAC: o encaminhamento dos doentes ao SU e ao CAC depende da tipologia de 
+triagem. Ora, o sistema de triagem realizada pelo INEM CODU e pelo SNS24 não é o 
+mesmo que é utilizado pelos SU, que é o sistema de triagem de Manchester.  
+Aliás, cada serviço adotou um sistema de triagem de acordo com as suas missões de ba-
+se. Por outro lado, nos casos do sistema do INEM e da linha SNS24, as triagens são rea-
+lizadas por profissionais com um declive de diferenciação académica substancial. No 
+INEM a triagem é realizada por técnicos formados pelo próprio INEM, com diversos níveis 
+de escolaridade (desde terem apenas o ensino obrigatório até profissionais com cursos 
+superiores) e de diversas áreas base do conhecimento, ao passo que triagem na linha 
+SNS24 é realizada por enfermeiros. Sendo comum que o encaminhamento nestes dois 
+pontos de contato com SNS requer um atendimento telef ónico, é de prever uma procura 
+maior destes serviços após a implementação desta medida. Atualmente, quer no CODU 
+do INEM, quer na SNS24,  há atualmente múltiplos constrangimentos no atendimento, 
+com incapacidade de resposta dentro dos tempos preconizados como máximos. Não exis-
+tindo melhoria das condições remuneratórias e laborais, não será possível atrair e manter 
+profissionais dispostos a estas funções exigentes de responsabilidade e dificuldade.    
+ 
+38 
+Policy Brief 16  
+Por fim, no que respeita ao transporte de doentes a partir dos SU, o PES refere que o 
+encaminhamento para os CAC poderá “ser agilizado pelo hospital ou atrav és de 
+parceiros”. Contudo, também é bem conhecida a enorme dificuldade que os hospitais têm 
+em articular os parceiros fornecedores de transporte (empresas privadas de transporte de 
+doentes não urgentes, Bombeiros V oluntários e pela Cruz Vermelha). Tamb ém são 
+reconhecidas as carências de meios na emergê ncia médica pré-hospitalar, pelo que não 
+se pode contar com a mobilização destes meios para este prop ósito. Prevendo -se que 
+esta medida incremente o nú mero de transporte de doentes, é de prever também uma 
+grande dificuldade na concretização destes transportes e um agravamento dos tempos de 
+espera para realizar estes serviços.  
+ 
+A.3 | Implementação da consulta do dia seguinte nos Cuidados de Saúde Primários para 
+situações agudas de menor complexidade e urgência 
+Partindo do mesmo princípio apresentado no documento, “o respeito pela missão dos 
+SU”, esta medida conflitua com  o respeito pela autonomia do m édico de MGF na gestão 
+da sua agenda. Este aparente desconhecimento da dinâmica e da realidade dos CSP, em 
+particular, dos constrangimentos atuais e da gestão e funcionamento da agenda do 
+médico de MGF e da enfermagem de família.  
+A MGF tem por missão promover a saúde a nível da prevençã o primordial, prim ária e 
+secundária, o acompanhamento do utente desde a primeira semana de vida at é à última, 
+passando por monitorizar o bom desenvolvimento da criança e adolescente, promover a 
+vacinação, acompanhar a saúde do adulto, promover o diagn óstico precoce de doenças, 
+garantir o acesso e cumprimento de terapêuticas, permitir uma idade s énior de qualidade, 
+articular os cuidados domiciliários e os paliativos na comunidade, contribuir para a cultura, 
+condições sociais, físicas, psicológicas e existenciais dos utentes para que tenham as 
+melhores condições para atingir um bem estar global, ao mesmo tempo que se identifica, 
+conhece e desenvolvem estratégias para apoiar utentes vulneráveis e em risco . Na 
+ausência de capacidade para cumprir estas missões cabalmente, foram criados cinco 
+programas de saú de priorit ários. Sendo que mesmo estes programas têm ficado por 
+responder dada a insuficiente resposta nos CSP. Ainda assim a MGF, uma trave-mestre 
+do SNS e da saúde da população, é precisamente a especialidade a quem que se 
+atribuem as tarefas que não cabem noutros pontos de prestação do SNS.  
+B.2 | Criação da Especialidade de Médica de Urgência 
+A criação da especialidade de médica de urgência é há  muito vista como uma das 
+componentes necessárias para resolver a problemática crónica da falta de resposta dos 
+SU. A introdução de especialistas em medicina de urgência irá permitir que a resposta do 
+ponto de vista clínico seja, não só melhor, mais segura e de maior qualidade, mas 
+também com melhor orientação à entrada e à saída, e por isso mais fluída dentro do SU. 
+Além disso, a existência destes profissionais irá permitir que um número crescente de 
+médicos assuma um compromisso e adquira um conhecimento da área da urgê ncia que 
+permita a sua dedicação a esta área e a criação de equipas próprias dos SU.  Contudo, é 
+uma medida sem efeitos significativos imediatos, os seus efeitos far -se-ão sentir a m édio 
+ 
+39 
+Policy Brief 16  
+(5 anos) e longo prazo. A diferenciação e espectro de ação dos especialistas precisa de 
+ser balizado e articulado atualmente com as diferentes especialidades existentes. 
+No geral, no que diz respeito a esta especialidade, não há medidas que tenham qualquer 
+impacto sustentado, restruturante, refundador, que não passe por melhorar as condições 
+profissionais dos médicos. O aumento das vagas de estudantes de medicina não garante 
+que haja profissionais interessados em prosseguir esta especialidade que requer 
+elevados níveis de responsabilidade, de exigência e de stress laborais e que requer uma 
+atualização de conhecimentos constantes. Esta especialidade não é, de facto, compatível 
+com as atuais condições profissionais oferecidas no SNS. Continuar a estimular um 
+complexo relativo ao salário de um médico no SNS, só irá continuar a afastar os médicos 
+na direção do sector privado, a enfraquecer a resposta possível aos utentes e a 
+capacidade de formação no SNS. É urgente reverter a perda de poder de compra que se 
+tem constatado na classe médica nos últimos 10 anos, e desenvolver adicionalmente 
+programas de incentivos e prémios, quando possível. Com estas estratégias de 
+nivelamento por baixo, está-se a dificultar esse acesso aos cuidados de saúde por falta de 
+profissionais no SNS. Sem resposta no SNS, dependendo da prestação dos privados, a 
+população fica mais suscetível à lei de oferta e da procura em mercados imperfeitos e 
+com isso a preços elevados.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+40 
+Policy Brief 16  
+Referências 
+1. Entidade Reguladora da Saúde (ERS). (2009).  Estudo sobre os conceitos de “serviço 
+de urgência” e “serviço de atendimento permanente” em estabelecimentos prestadores de 
+cuidados de saúde não público . 
+https://www.ers.pt/uploads/writer_file/document/68/estudo_sobre_urgencias-
+sap_privadas.pdf 
+2. Serviço Nacional de Saúde (SNS). (2019).  Relatório Grupo Trabalho - Serviços 
+Urgência . https://www.sns.gov.pt/wp-content/uploads/2019/11/RELATORIO-GT-
+Urg%C3%AAncias.pdf 
+3. Diário da República, 1.ª série, n.º 71. (2014). Portaria n.º 82/2014 de 10 de abril, Artigo 
+1.º. 
+4.  Manchester Triage System . (2024). https://www.triagenet.net/classroom/ 
+5. Soares, S. (2013).  Aumento das taxas moderadoras nas urgências hospitalares: Que 
+impacto sobre a procura?  (Tese de Mestrado). Escola Nacional de Saúde Pública. 
+http://hdl.handle.net/10362/11372 
+6. Quintal, C., Tavares, H. M., & Lourenço, O. (2016). Impacto das taxas moderadoras 
+sobre a utilização de cuidados de saúde pediátricos: Estudo aplicado a crianças em idade 
+escolar na cidade de Coimbra.  Revista Portuguesa de Saúde Pública, 34 , 154–162. 
+7. Monitorização do SNS. (2024).  Urgências psiquiátricas . 
+https://www.sns.gov.pt/monitorizacao-do-sns/ 
+8. Conselho de Finanças Públicas (CFP). (2024).  Desempenho do Serviço Nacional de 
+Saúde em 2023  (Relatório 07/2024). Lisboa. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+41 
+Policy Brief 16  
+Eixo Estratégico 4 | Saúde Próxima e Familiar 
+ 
+Francisco José Silva Ribeiro 
+Inês Sofia Morgado Rodrigues 
+Sara Fonseca Lopes 
+ 
+Sumário 
+Eixo Estratégico 4 | Saúde Próxima e Familiar .................................................................. 41 
+Sumário .......................................................................................................................... 41 
+1. Contextualização do problema ................................................................................... 41 
+2. Apresentação sumária das medidas .......................................................................... 42 
+3. Aplicação dos conceitos económicos e análise crítica ............................................... 46 
+4. Rever ou reforçar as medidas propostas – comentário .............................................. 48 
+Referências .................................................................................................................... 50 
+Anexos ........................................................................................................................... 51 
+ 
+ 
+1. Contextualização do problema 
+Papel dos cuidados de saúde primários no SNS 
+A criação do Serviço Nacional de Saúde (SNS) em 1979 representou uma transformação 
+significativa na organização dos cuidados de saúde em Portugal. Em 1982, foi 
+estabelecida a carreira médica de Clínica Geral. No ano seguinte, foram criados os 
+Centros de Saúde de segunda geração, introduzindo o Médico de Família como um 
+elemento inovador. Contudo, somente em 1990 foi instituída a especialidade de Medicina 
+Geral e Familiar (MGF) [1]. 
+Os médicos de MGF são perspetivados na literatura  económica como gatekeepers do 
+SNS. Este controlo de acesso aos cuidados hospitalares e de especialidade geralmente 
+envolve um sistema sequencial de assistência prestada de diferentes médicos, que os 
+utentes devem consultar. Ao nível do SNS, a referenciação para consulta de 
+especialidade, implica a avaliação prévia por parte do médico de MGF, como forma de 
+certificar a necessidade de uma consulta com um especialista. Ao limitar -se um acesso 
+direto às restantes especialidades, permite -se uma organização menos dispendiosa da 
+prestação de cuidados de saúde, ao reduzir-se os efeitos do risco moral pela redução das 
+consultas desnecessárias, e reservando estas para utentes que carecem de cuidados 
+diferenciados [2]. 
+ 
+ 
+42 
+Policy Brief 16  
+Problemática atual 
+Segundo dados do relatório “Evolução do Desempenho do Serviço Nacional de Saúde em 
+2023”, do CFP  [3], nos últimos 5 anos, verificou -se um crescimento anual de 20% no 
+número de utentes sem médico de família atribuído. Existiam assim, no final de 2023, 
+cerca de 1,7 milhões de portugueses sem médico de MGF, perfazendo 16% do total de 
+inscritos no SNS, sendo as regiões de Lisboa e Vale do Tejo (LVT), Algarve e Leiria as 
+mais preocupantes [4]. 
+Esta problemática surge principalmente pelo aumento das necessidades de cuidados de 
+saúde por parte da população, resultantes de um incremento da esperança de vida e, 
+consequentemente, a uma maior prevalência da doença crónica. Esta situação reflete um 
+desequilíbrio económico em que a procura é maior do que a oferta de cuidados de saúde. 
+Decorre daqui, primeiramente, que os menores níveis de prevenção e de gestão de 
+doenças crónicas possam resultar em desfechos desfavoráveis que acarretam custos 
+acrescidos para o SNS. E em segundo lugar, não existindo resposta suficiente ao nível do 
+setor público, estimula -se o recurso a cuidados de saúde no sector privado, acentuando 
+as desigualdades sociais na população. 
+2. Apresentação sumária das medidas 
+Medidas urgentes 
+Medida A.1 | Afetação de Médicos de Família aos utentes em espera com a capacidade 
+atual do setor público 
+O objetivo desta primeira medida visa melhorar a distribuição de Médicos de Família, 
+atualizando as listas de pacientes das ULS e considerando a necessidade e uso dos 
+cuidados de saúde primários. Para além disso objetiva, facilitar a atribuição imediata de 
+Médicos de Família para a população em espera, priorizando os mais necessitados com 
+base em critérios de estratificação de risco. Para tal, proceder -se-á à identificação de 
+portugueses no exterior que não têm consultas há mais de 5 anos e atribuir os seus 
+médicos de família a residentes em Portugal que utilizam os centros de saúde. Isso 
+permitirá atribuir Médicos de Família a aproximadamente 130.561 utentes e desativar o 
+registo de 49.796 não residentes e 80.767 residentes estrangeiros sem consulta recente. 
+Medida A.2 | Reforço da resposta pública dos Cuidados de Saúde Primários em parceria 
+com o setor social 
+Esta medida tem como objetivos aumentar a oferta de cuidados de saúde primários 
+públicos para garantir acesso equitativo e regular aos serviços de saúde essenciais.  Para 
+tal, pretende-se endereçar a crítica falta de Médicos de Família em Portugal mobilizando o 
+setor social, incluindo a União das Misericórdias Portuguesas (UMP) e a Cruz Vermelha 
+Portuguesa, para alocar médicos assistentes. Para tornar este regime mais apelativo 
+pretende-se que o modelo de financiamento seja baseado em preço por utente, com u m 
+volume máximo de utentes por instituição, distribuídos conforme a proximidade, 
+permitindo às instituições do setor social prescrevam medicamentos, MCDT, e façam 
+referenciações hospitalares. Adicionalmente pretende -se estratificar os utentes por risco 
+após a atribuição inicial, priorizando grávidas, menores de 12 anos, adultos com mais de 
+55 anos e portadores de doenças crónicas. De forma prática, objetiva -se atribuir médicos 
+ 
+43 
+Policy Brief 16  
+assistentes a 350 mil utentes (300 mil pela Misericórdias e 50 mil pela Cruz Vermelha), 
+focando em áreas carentes como Lisboa e Vale do Tejo, Alentejo e Algarve, para 
+melhorar a cobertura e promover a equidade no acesso aos serviços de saúde. 
+Medida A.3 | Reforço da resposta pública em parceria com o setor privado (Parceria 
+Público-Privada com Hospital de Cascais) 
+A terceira medida emergente visa criar capacidade adicional de cuidados de saúde 
+primários para beneficiar diretamente os utentes das ULS de Lisboa Ocidental e 
+Amadora-Sintra, áreas com grande escassez de Médicos de Família (mais de 110000 
+utentes) [5] (7). A ideia piloto começaria com a PPP de Cascais que serviria para ampliar a 
+oferta de serviços de saúde, reforçando a Parceria Público -Privada (PPP). O Hospital de 
+Cascais possui capacidade instalada suficiente para atender 75.000 desses utentes e 
+garantir todos os meios complementares de diagnóstico e terapêutica necessários, 
+proporcionando uma resposta mais eficaz e eficiente aos desafios do sistema de saúde. 
+De acordo com o referido pela Ministra da Saúde no dia 31 de maio de 2024, pretende -se 
+criar a Unidade Local de Saúde Sintra/Cascais, EPE (ULS, EPE) com um hospital público 
+em gestão com parceria público -privada (PPP). Portanto, seria uma primeira PPP a 
+envolver os cuidados de saúde primários abrangendo os atuais utentes sem médico de 
+família, atualmente nas ULS Amadora -Sintra (residentes em Sintra Ocidental) e ULS 
+Lisboa Ocidental (residentes em Cascais). Sendo o objetivo do plano abranger cerca de 
+88000 utentes até ao final de 2024. 
+Medida A.4 | Criação de linha de atendimento para utentes que necessitem de acesso a 
+médico no dia 
+A 4ª e última medida emergente deste Plano de Emergência no eixo de Saúde Familiar 
+mais próxima, pretende estabelecer um canal de comunicação direto para utentes que 
+precisam de acesso a um Médico de Família ou médico assistente no mesmo dia. 
+Facilitando a atribuição de médicos assistentes aos utentes elegíveis por meio de uma via 
+de contacto dedicada. Na primeira fase, a linha fará chamadas ativas ( outbound) para 
+atribuir médicos assistentes a utentes sem Médico de Família. Posteriormente, utentes 
+poderão contatar proactivamente a linha para solicitar um médico assistente. Esta  
+abordagem bidirecional garante que todos os utentes sejam considerados para a 
+atribuição de médicos assistentes, otimizando o processo. A linha permitirá também que 
+entidades de Cuidados de Saúde Primários solicitem consultas imediatas para utentes 
+sem Médico de Família através do setor social e privado. 
+Medidas prioritárias 
+Medida B.1 | Implementação de USF-modelo C 
+Com o intuito de potenciar a capacidade do SNS na prestação de CSP, equaciona -se a 
+criação e implementação de um modelo complementar de organização (USF -modelo C), 
+principalmente nas regiões com menor cobertura de MGF (Lisboa, Algarve e Leiria). 
+Ressalva-se, contudo, a importância da manutenção do reforço da estrutura atual, com 
+expansão de USF modelo B. As USF -modelo C são entidades que estabelecem um 
+contrato-programa com as ARS e que detêm autonomia organizacional e financeira. 
+ 
+44 
+Policy Brief 16  
+Decorrente da responsabilização acrescida das equipas de saúde, este modelo incentiva 
+a contínua melhoria da qualidade dos serviços prestados e satisfação dos utentes. 
+Deste modo, propõe -se o início de funções ainda no ano vigente de 4 agrupamentos de 
+USF-modelo C, cada um constituído por 5 USF. Incidindo cada agrupamento sobre uma 
+base populacional de 45 mil utentes, perfaz -se uma capacidade total de 180 mil utentes 
+(90 mil em LVT) 
+Durante 2025 prevê -se a criação de 4 novos agrupamentos na região de Lisboa. Estes 
+concursos permitiriam cobrir uma cobertura populacional de 360.000 utentes (23% da 
+totalidade de utentes atualmente sem MGF). 
+Medida B.2 | Reforço da resposta pública com médicos aposentados 
+A presente medida visa colmatar lacunas temporárias da capacidade dos CSP, por meio 
+de um reforço na contratação de médicos aposentados, segundo o regime excecional 
+estabelecido pelo Decreto-Lei nº89/2010. Este recrutamento deve cumprir o estipulado no 
+artigo 24º da Lei do Orçamento de Estado para 2024, bem como os contingentes 
+definidos. Deste modo, propõe -se um aumento da remuneração base, correspondente à 
+categoria, de 75% para 100%, à qual acresce 50% dos incentivos indexados ao IDE, caso 
+desempenhem funções numa USF-modelo B. Pretende-se que este regime transitório não 
+comprometa a renovação dos quadros.  
+Medida B.3 | Revisão dos critérios de transição de USF-modelo A e UCSP e para USF-
+modelo B 
+Reconhecendo-se a USF modelo B como detendo uma maior autonomia de gestão e 
+padrões de qualidade superiores, pretende -se promover a transição de UCSP e USF -
+modelo A para USF modelo B. Para tal, esta medida propõe -se a reduzir o Índice de 
+Desempenho Global (IDG) necessário à ocorrência desta transição de 60% para 50%, 
+aliado ao ajuste dos critérios de acesso a USF-modelo B, consoante a realidade verificada 
+nas regiões de baixa densidade.   
+Medida B.4 | Reforço da resposta pública em parceria com o setor privado (Associações 
+de Médicos e Cooperativas) 
+Com vista ao fortalecimento da capacidade de prestação de CSP, a nível do SNS, 
+garantindo uma cobertura de cuidados mais abrangente e eficiente, equaciona -se a 
+colaboração entre os setores público e privado na área da saúde. Por meio da ACSS, 
+procurar-se-ia o estabelecimento de convenções para contratação, por parte das ULS, de 
+serviços privados. Estas convenções nacionais devem definir regras e diretrizes claras, 
+assegurando a transparência e equidade na definição de preços, bem como qualidade 
+dos cuidados. 
+Deparando-se com limitação da capacidade disponível, seria responsabilidade da ULS a 
+ativação destas convenções, via lançamento de concursos públicos. As cooperativas e 
+associações de médicos responsabilizar -se-iam consequentemente pelo tratamento de 
+parte dos doentes dessas ULS, com base nos acordos previamente estabelecidos. 
+ 
+45 
+Policy Brief 16  
+Medida B.5 | Incentivo à adesão ao regime voluntário de carteira adicional de utentes 
+A medida apresentada tem como intuito acomodar novos utentes aos CSP do SNS, 
+estabelecendo um regime voluntário que possibilite o incremento da carteira de utentes 
+por médico. O regime facultativo apresentado corresponde a uma medida transitória, com 
+duração de 5 anos, que estipula um valor máximo de 200 utentes a serem adicionados 
+voluntariamente às respetivas listas. Procura-se assim, um incremento da capacidade de 
+resposta às necessidades da população. Ressalva -se a importância de uma auscultação 
+prévia dos sindicatos e associações da MGF. 
+Medidas estruturantes 
+Medida C.1 | Disponibilização de Meios Complementares de Diagnóstico e Terapêutica 
+em química seca e radiologia convencional 
+Tem como alvo a população geral, tendo como principais objetivos fomentar o diagnóstico 
+antecipada e tratamento de patologias detetáveis através de meios complementares de 
+diagnóstico (MCDT) de química seca e radiologia convencional, dotar os CSP de MSCT 
+adequados e democratizar o acesso a MCDT e reduzir a necessidade de 
+encaminhamento para centros especializados.  
+A química seca permite uma rapidez na obtenção de resultados sem risco elevado de 
+contaminação. Permite a realização de uma ampla gama de testes bioquímicos, 
+facilitando o diagnóstico e o acompanhamento de condições crónicas (exemplo: diabetes 
+e dislipidemias). Esta deverá ser implementada em diversos centros. 
+O raio-x nos CSP permite um diagnóstico imediato em diversas situações, como é o caso 
+de fraturas ósseas e patologia pulmonar, através da telemedicina. A possibilidade de 
+realizar as radiografias no próprio local é benéfico em zonas remotas ou com recursos 
+limitados (sem acesso a tecnologias avançadas). Este deverá ser implementado de forma 
+progressiva ao abrigo do PRR. 
+Medida C.2 | Dinamização de rastreios oncológicos nos Cuidados de Saúde Primários 
+Tem como alvo a população geral, tendo como principais objetivos promover a prevenção 
+de doenças oncológicas, facilitar o acesso dos utentes ao rastreio de doenças 
+oncológicas e alargar o papel dos CSP na prevenção das doenças oncológicas. 
+Atualmente, os planos nacionais de rastreio oncológico, sob coordenação da DE -SNS, 
+dependem da operacionalização pelas ULS. A expansão destes rastreios para os CSP 
+representa uma melhoria da saúde pública. Além de evitar despesas em produção 
+oncológica nos hospitais, é mais acessível aos utentes. 
+Considerando que o cancro colorretal é a segunda maior causa de morte em Portugal, 
+torna-se essencial expandir os rastreios na área da Gastroenterologia. É também 
+essencial a revisão da convenção para a realização de colonoscopias, incentivando a 
+prática de rastreios regulares e possibilitando a intervenção precoce.  
+ 
+46 
+Policy Brief 16  
+Medida C.3 | Criação de Centros de Avaliação Médica e Psicológica 
+Tem como alvo a população geral que necessite de Atestado de Robustez Física e 
+Psíquica para fins diversos e os Médicos de Medicina Geral e Familiar dedicados a 
+atividades assistenciais. Esta medida apresenta como principais objetivos libertar os CSP 
+da emissão de documentos para fins Fiscais e Sociais e garantir a resposta centralizada e 
+otimizada, ao nível das ULS, para emissão dos atestados.  
+A criação de Centros de Avaliação Médica e Psicológica (CAMP) funcionarão como 
+unidades autónomas e contarão com profissionais especializados nas áreas de medicina 
+e psicologia. Assim, os médicos dos CSP poderão focar -se no atendimento clínico dos 
+utentes, libertando-se de funções administrativas. 
+3. Aplicação dos conceitos económicos e análise crítica 
+Medidas urgentes 
+Medida A.3 | Reforço da resposta pública em parceria com o setor privado (Parceria 
+Público-Privada com Hospital de Cascais) 
+No final do 3.º trimestre de 2023, os encargos líquidos acumulados com as parcerias do 
+setor da saúde ascenderam a 95,3M€, o que corresponde a uma execução abaixo do 
+valor orçamentado em 15% ( -16,8M€). Adicionalmente, e comparativamente com o 
+período homólogo de 2022, os encargos acumulados do 3.º trimestre de 2023 tiveram 
+uma redução de 24% (-29,9M€). 
+O Relatório Síntese do Tribunal de Contas de 2021  [6] concluiu que as 4 parcerias 
+público-privadas hospitalares existentes no período 2008-10 geraram poupanças ao erário 
+público, apesar da produção contratada ter sido inferior à produção realizada, que foi 
+marginalmente remunerada ou não remunerada. A PPP do Hospital de Cascais, a única 
+atualmente vigente, representa uma mais-valia para o SNS pois permite um melhor 
+acesso aos utentes desta região, sendo o seu custo -benefício favorável. Aliás, um estudo 
+da Entidade Reguladora da Saúde de 2016  [7] concluiu que os hospitais PPP podem 
+registar alguns indicadores melhores do que os hospitais EPE do SNS, dadas as suas 
+características estruturais e de gestão, apesar de também apresentarem algumas 
+desvantagens comparativas não despicientes. 
+Assim, de uma perspetiva económica as PPP são um modelo de financiamento baseado 
+numa contratualização entre o Estado e uma entidade privada que assegura níveis de 
+prestação e qualidade, que permite uma partilha de risco e garante uma separação entre 
+o agente pagador e o agente prestador, que pode ser uma alternativa bem-sucedida na 
+resposta às necessidades de saúde da população. 
+ Medidas prioritárias 
+Medida B.3 | Revisão dos critérios de transição de USF-modelo A e UCSP, para USF-
+modelo B 
+Os últimos anos foram pautados por uma profunda reforma dos CSP com a criação das 
+USF (Decreto-Lei nº298/2007). Estas unidades apresentam flexibilidade organizacional e 
+ 
+47 
+Policy Brief 16  
+de gestão, regendo -se por metas de qualidade e resultados em saúde, estabelecidos a 
+priori na carta de compromisso contratualizada com a respetiva ARS. Em termos de 
+remuneração, esta ocorre segundo um sistema retributivo misto composto pela 
+remuneração base, suplementos e incentivos baseados no desempenho profissional, o 
+designado P4P ( payment for performance  [2]) (Decreto -Lei nº24101/2007). Existe, 
+portanto, um pagamento prospetivo de acordo com a atividade desenvolvida, que pode 
+resultar numa maior cobertura da população pelos CSP. 
+Em abril de 2024, foi publicado pela ERS um estudo que analisa de forma comparativa a 
+qualidade e eficiência entre os dois modelos de USF em vigor (A e B) e as UCSP, com 
+dados referentes ao período compreendido entre 2019 e 2022  [8]. No que concerne à 
+despesa média com medicamentos prescritos por utente utilizador, as USF -modelo B 
+apresentaram, nos 4 anos, comparativamente às UCSP e USF -modelo A, despesas 
+inferiores de forma transversal a todas as regiões de saúde. (Tabela 1 em anexo) O 
+mesmo se constata na análise da despesa média com MCDT prescritos por utente 
+utilizador, apresentando a menor despesa média relativa. (Tabela 2 em anexo).  Em 
+termos de eficiência, uma maior percentagem de USF -modelo B reportou valores acima 
+da média (83,4%), comparativamente com as USF -modelo A (44,5%) e UCSP (21,1%). 
+Deste modo, depreende-se que as USF-modelo B surgem como unidades mais eficientes. 
+E embora se possa argumentar que as USF -modelo B apresentaram uma despesa total 
+salarial acrescida com pessoal médico, de enfermagem e administrativo, a verdade é que 
+este valor é inferior aos ganhos gerados pela menor despesa em MCDT e medicamentos, 
+bem como pelo facto de gerarem mais ganhos em saúde que se traduz em menor gasto 
+com urgências e internamentos evitáveis, reduzindo a respetiva despesa pública [9]. 
+Apesar dos resultados vantajosos das USF -modelo B, a contratualização dos cuidados 
+nestas unidades de saúde assenta num conjunto alargado de indicadores que devem ser 
+revistos periodicamente de forma ajustar -se à demografia e sua evolução (ou seja, 
+considerando a diferenciação dos fatores de risco da população). A contratualização 
+interna nas USF-B, de acordo com os princípios económicos dos incentivos monetários e 
+da teoria da agência, pode degenerar numa medicina baseada em indicadores, em vez de 
+uma medicina centrada no doente [10].  
+A extinção das ARS e a criação do modelo de Unidades de Local de Saúde veio alterar o 
+processo de contratualização interna dos CSP e gerar incerteza quanto ao processo de 
+transição. Apesar da incerteza ser uma característica habitual no mercado da saúde, do 
+ponto de vista organizacional cria ineficiências e resultados desfavoráveis, como foi o 
+caso da rutura da disponibilidade de vacinas em abril de 2024.  
+Medidas estruturantes 
+Medida C.1 | Disponibilização de Meios Complementares de Diagnóstico e Terapêutica 
+em química seca e radiologia convencional 
+Os exames de radiologia constituem a terceira maior despesa convencionada com o SNS. 
+Sabe-se que existem 133 concelhos (47,8%) em Portugal Continental sem nenhum 
+estabelecimento com a valência de radiologia. Nos concelhos onde existem 
+estabelecimentos com esta valência, a média é de 4,5 estabelecimentos [11].  
+ 
+48 
+Policy Brief 16  
+No que respeita aos locais de oferta, em julho de 2022, estavam registados no Sistema de 
+Registos dos Estabelecimentos Regulados (SRER) da Entidade Reguladora da Saúde 
+(ERS) 649 estabelecimentos na área da radiologia, dos quais 550 são estabelecimentos 
+não públicos. Dos estabelecimentos não públicos, 398 (72%) têm convenção com o SNS. 
+Estes 398 prestadores agrupam-se em 144 operadores, sendo que 42 deles representam 
+cerca de 80% da totalidade de requisições aceites no ano de 2021[11]. 
+Os encargos com o setor convencionado de radiologia apresentaram uma taxa de 
+crescimento anual de 4,5% entre 2016 e 2021, sendo que foram gastos 123 milhões de 
+euros, em 2022, em exames radiológicos. Entre 2019 e 2020, os encargos por 1000 
+habitantes no setor convencionado diminuíram cerca de 25%, contudo, entre 2020 e 2021 
+aumentaram em 60%. Assim, e dado que os anos da diminuição de 25% se encontram 
+associados ao acontecimento de uma pandemia mundial, prevê -se que continuarão a 
+aumentar no futuro [11].  
+Em suma, a medida de disponibilização destes MCDT nos CSP poderá, além de melhorar 
+o acesso em regiões mais distantes, aliviar as despesas do SNS em convenções, apesar 
+desta não estar quantificada em termos de valores monetários. 
+4. Rever ou reforçar as medidas propostas – comentário 
+Não obstante as medidas apresentadas neste eixo estratégico visarem incrementar a 
+capacidade de resposta aos utentes atualmente sem médico de MGF, não se pode obviar 
+a problemática principal de base que é a escassez de médicos em formação específica 
+desta especialidade. Este facto não resulta do estabelecimento de um número reduzido 
+de vagas de MGF no concurso de ingresso ao Internato Médico, mas antes da não 
+ocupação destas vagas desde 2020. No ano transato de 2023, das 617 vagas abertas a 
+concurso, 262 (42%) não foram ocupadas.  
+Paralelamente, é estimado que no decurso deste ano, 556 médicos de MGF se reformem, 
+segundo dados do sistema de informação de recursos humanos da SPMS (RHV). Este 
+valor supera em 95 o número de recém -especialistas, traduzindo um saldo negativo de 
+profissionais ativos, que tenderá a agravar -se no futuro. Acresce ainda que apenas cerca 
+de 70% dos médicos recém -formados acabam por ingressar nos concursos abertos a 
+nível do SNS.  
+Deste modo, pode depreender -se da necessidade procurar uma solução a montante do 
+problema, em particular, o da atratividade de médicos pelo SNS. Ou seja, tornar a prática 
+de MGF no sector público mais atrativa, com vista a incrementar a taxa de inscritos nos 
+concursos e a consequente retenção destes no SNS. Uma possível via de solução 
+passaria pela generalização de USF -modelo B, com uma remuneração baseada em 
+objetivos, ou pela implementação de modelos que conferem maior autonomia 
+organizacional e financeira, diferenciação do modelo retributivo e de incentivos aos 
+profissionais de saúde (como é o caso das USF-modelo C) Essencialmente, conseguir-se-
+ia tornar a prática de MGF no setor público mais atrativa e assim incrementar o número de 
+vagas preenchidas nos concursos de ingresso ao internato médico nesta especialidade. 
+De forma emergente pensamos que a valorização dos profissionais através de incentivos, 
+horário flexível, autonomia das USF para organização poderia ajudar a fixar médicos 
+recém-especialistas em regiões como Lisboa e Vale do Tejo, onde nalguns casos o custo 
+ 
+49 
+Policy Brief 16  
+de vida, principalmente habitação, é muito elevado e não atrativo. Uma outra medida de 
+aplicação imediata seria a criação de USF’s digitais com médicos de vários pontos do 
+país que respondem à necessidade dos mais novos que optem pela telemedicina. 
+Durante a pandemia do COVID -19 ficou clara a vantagem de utilização da telemedicina, 
+quer para os utentes, quer para os profissionais. Ainda que não seja uma prática 
+adequada a todos os atos clínicos, garantidamente permite ganhos de tempo, financeiros 
+e saúde que não deve ser descurada, sobretudo nas áreas com elevada carência na 
+cobertura de cuidados de saúde. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+50 
+Policy Brief 16  
+Referências 
+1. Leão, I. T. (2019). Medicina geral e familiar: A especialidade do passado, do presente e 
+do futuro. MGFamiliar. https://www.mgfamiliar.net/blog/medicina-geral-e-familiar 
+2. Bhattacharya, J., Hyde, T., & Tu, P. (2014).  Health economics . Palgrave Macmillan. 
+3. Conselho de Finanças Públicas (CFP). (2024).  Desempenho do Serviço Nacional de 
+Saúde em 2023  (Relatório 07/2024). Lisboa. 
+4. Unidade Técnica de Apoio Orçamental. (2024).  Relatório de execução financeira PPP: 
+Janeiro-Junho 2023 . https://www.ers.pt/media/3452/ers_-_estudo_ppp.pdf 
+5. Serviço Nacional de Saúde (SNS) & BI dos Cuidados de Saúde Primários. (2024).  
+Unidade Local de Saúde de Lisboa Ocidental, E.P.E.  https://bicsp.min-
+saude.pt/pt/biufs/3/832/Pages/default.aspx 
+6. Tribunal de Contas. (2021).  Relatório síntese: Parcerias público-privadas hospitalares 
+no SNS . Tribunal de Contas. https://www.tcontas.pt/pt-
+pt/ProdutosTC/Relatorios/relatorios-oac/Documents/2021/relatorio-oac005-2021.pdf 
+7. Entidade Reguladora da Saúde (ERS). (2016).  Estudo de avaliação das parcerias 
+público-privadas na saúde . ERS. https://www.ers.pt/media/3452/ers_-_estudo_ppp.pdf 
+8. Entidade Reguladora da Saúde (ERS). (2024).  Cuidados de saúde primários - 
+Qualidade e eficiência nas UCSP e USF . ERS. https://www.ers.pt/pt/atividade/regulacao-
+economica/selecionar/estudos/lista-de-estudos/estudo-cuidados-de-saude-primarios-
+qualidade-e-eficiencia-nas-ucsp-e-usf/ 
+9. Pereira, A., et al. (2018).  Avaliação de custos-consequências das USF B e UCSP 
+2015: Unidades Funcionais dos CSP como centros de resultados . Coordenação Nacional 
+para a Reforma do SNS – Área dos Cuidados de Saúde Primários. SNS. 
+https://www.sns.gov.pt/wp-content/uploads/2018/02/CNCSP-
+Avalia%C3%A7%C3%A3o_USF-1.pdf 
+10. Melo, M., & Sousa, J. C. D. (2011). Os indicadores de desempenho contratualizados 
+com as USF: Um ponto da situação no actual momento da reforma.  Revista Portuguesa 
+de Medicina Geral e Familiar, 27 (1), 28–34. https://doi.org/10.32385/rpmgf.v27i1.10818 
+11. Entidade Reguladora da Saúde (ERS). (2022).  Setor convencionado de radiologia: 
+Informação de monitorização . https://www.ers.pt/media/ft4hdn5b/im-radiologia-2022-
+071223.pdf 
+  
+ 
+51 
+Policy Brief 16  
+ 
+Anexos 
+Tabela 1 | Despesa média (em EUR) com medicamentos prescritos, comparticipados pelo 
+SNS, por utente utilizador, 2019-2022. 
+ 
+ 
+Fonte: ERS(2024) [8]. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+52 
+Policy Brief 16  
+Tabela 2 |  Despesa média (em EUR) com MCDT prescritos, por utente utilizador, com 
+base no preço, 2019-2022. 
+ 
+Fonte: ERS (2024) [8]. 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+ 
+53 
+Policy Brief 16  
+Eixo Estratégico 5 | Saúde Mental  
+Maria Cortes Ferreira 
+Tiago António 
+ 
+Sumário 
+Eixo Estratégico 5 | Saúde Mental ..................................................................................... 53 
+1. Contextualização do problema ................................................................................... 53 
+2. Apresentação sumária das medidas .......................................................................... 55 
+3. Aplicação dos conceitos económicos e análise crítica ............................................... 56 
+4. Revisão ou Reforço das medidas propostas .............................................................. 60 
+Comentário Final ............................................................................................................ 64 
+Referências .................................................................................................................... 67 
+ 
+1. Contextualização do problema 
+Portugal é o país da UE com maior carga de problemas de saúde mental, com níveis de 
+ansiedade e depressão entre os mais elevados [1]. No ano 2019, mais de 2,25 milhões de 
+pessoas sofriam de uma perturbação de saúde mental, o que representava 22% da 
+população, um valor superior à média de 16,7% da UE  [2]; as perturbações de ansiedade 
+foram as mais frequentes, afetando cerca de 9% da população, seguidas das 
+perturbações depressivas (6%) e das perturbações associadas ao consumo de álcool e 
+de drogas (4%). A taxa de suicídio em Portugal (8,9 por 100.000 em 2021), ainda que 
+inferior à média dos países da EU, representa um problema de saúde pública significativo, 
+nomeadamente pelo aumento da taxa de Anos de Vida Potencialmente Perdidos (AVPP) 
+no sexo feminino (aumento de 6,6 %)  [3]. O impacto dos problemas de saúde mental é 
+socialmente desigual. As pessoas  com baixos rendimentos têm maior prevalência de 
+doença mental [1]. Por sua vez, a Sociedade Portuguesa de Psiquiatria e Saúde Mental 
+considera valores ainda mais elevados, com mais de três milhões de portugueses com 
+doenças mentais, 17% com ansiedade e 8% com depressão . Em 2023, 34,3% da 
+população portuguesa com mais de 16 anos tinha sintomas de ansiedade generalizada, 
+dos quais 11,1% apresentavam níveis de ansiedade graves  [4]. A determinação da 
+população afetada por perturbações de saúde mental apresenta limitações 
+metodológicas, que resultam numa subestimativa da verdadeira carga da doença .  Não 
+obstante essas limitações, a evidência aponta para um impacto de problemas de saúde 
+mental muito significativo em Portugal. A nível do medicamento verifica -se um consumo 
+de psicofármacos em Portugal elevado, face a outros países da UE, que aumentou nos 
+últimos anos: entre 2017 e 2022 cresceu 45% [1].  
+Estas patologias impactam a qualidade de vida das populações e a economia, 
+nomeadamente pelo absentismo laboral, presentismo e turnover de colaboradores. Em 
+2019, as perturbações de saúde mental resultaram na perda de quase 310 000 anos de 
+ 
+54 
+Policy Brief 16  
+vida produtiva  [1]. Segundo a OCDE, em 2015, os custos totais associados aos 
+problemas de saúde mental em Portugal foram estimados em cerca de 3,7% do PIB, 
+sendo mais de 40% desses custos atribuídos à redução da participação e da 
+produtividade no mercado de trabalho [1, 5]. 
+Segundo um estudo da Ordem dos Psicólogos Portugueses realizado com empresas não 
+financeiras (não inclui a Administração Pública), os problemas relacionados com stress e 
+saúde mental dos trabalhadores, nomeadamente absentismo, presentismo  e quebras de 
+produtividade, custam às empresas portuguesas até 5,3 mil milhões de euros por ano, 
+uma subida face aos 3,2 mil milhões estimados no ano de 2022 [5]. Este trabalho, que 
+analisa apenas os custos indiretos da saúde mental, estima que em Portugal os 
+profissionais faltem, devido ao stress e a problemas de saúde psicológica, até 8 dias por 
+ano, e que o presentismo chegue até 15,8 dias. No total, a perda de produtividade pode 
+custar às empresas portuguesas até 1,4% do seu volume de negócios. Os distúrbios do 
+foro mental e comportamental apresentam um impacto na qualidade de vida da 
+população, contribuindo para 8,9% dos anos de vida ajustados por incapacidade (DALY) e 
+17,7% dos anos de vida com incapacidade (YLD), destacando -se como uma das doenças 
+não transmissíveis com maior impacto nestes indicadores [6]. 
+De acordo com a Ordem dos Psicólogos Portugueses , existem cerca 530 psicólogos 
+afectos aos Cuidados de Saúde Primários e apenas 250 nos Centros de Saúde, número 
+inferior a 1 por concelho, a nível nacional, e representando um rácio de 2,5 psicólogos/as 
+para cada 100.000 utentes [7]. Para além dos psicólogos, também os assistentes sociais, 
+técnicos de saúde ocupacional, bem com psiquiatras e pedopsiquiatras são um recurso 
+escasso no Serviço Nacional de Saúde (SNS) para responder às necessidades de 
+cuidados. Neste sentido, considera -se a Resolução nº158/2021 da Assembleia da 
+República sobre o rácio internacionalmente recomendado de psicólogos em contextos de 
+saúde (1/5.000 habitantes) e sua distribuição territorial, havendo claramente um 
+desequilíbrio entre oferta e procura. 
+A epidemiologia da doença mental e o reconhecimento da relevância da saúde mental na 
+prosperidade dos países e na Sociedade tem feito desta área uma prioridade política ao 
+longo dos anos. A nova Lei de Bases da Saúde (Lei n.º 95/2019, de 4 de setembro) 
+dedicou a Base 13 à Saúde Mental, sendo, entre outras, obrigação do Estado promover “a 
+melhoria da saúde mental das pessoas e da sociedade em geral, designadamente através 
+da promoção do bem -estar mental, da prevenção e identificação atempada das doenças 
+mentais e dos riscos a elas associado”. Em 2021, com a publicação do Decreto -Lei 
+113/2021 foi estabelecida uma nova organização dos cuidados de saúde mental no 
+âmbito do SNS, tendo sido criada a Coordenação Nacional para as Políticas de Saúde 
+Mental e as Coordenações Regionais de Saúde Mental, responsáveis pela 
+implementação coordenada de toda a reforma. Em 2022, a publicação do novo estatuto 
+do SNS  (Decreto-lei nº 52/2022 de 4 de agosto) atribui à Direção Executiva do SNS a 
+competência de gerir a área da Saúde Mental (artº 1, alínea b). Por sua vez, o Decreto-Lei 
+n.º 102/2023, de 7 de novembro, que define o novo modelo de organização e de 
+prestação de cuidados de saúde através da criação das Unidades Locais de Saúde 
+(ULS). Este novo modelo visa melhorar o acesso da população aos cuidados de saúde, 
+assegurando uma maior coerência a nível da coordenação clínica e de saúde pública. 
+O Plano de Recuperação e Resiliência (PRR) (Mecanismo de Recuperação e Resiliência 
+no Regulamento (UE) 2021/241, de 12 de fevereiro) tem como objetivo mitigar os 
+ 
+55 
+Policy Brief 16  
+impactos da pandemia nas economias europeias. Na área da saúde mental o 
+investimento definido foi de cerca de 88 milhões de euros, que representa cerca de 5% do 
+investimento do PRR previsto para o Serviço Nacional de Saúde. 
+No contexto atual de grande reformulação do SNS e na sucessão de mudança 
+governativa, nomeadamente com a tomada de posse do XXIV Governo Constitucional, foi 
+elaborado o Plano de Emergência e Transformação na Saúde (doravante designado por 
+Plano), que visa a implementação de medidas urgentes, prioritárias e estruturantes que 
+garantam o acesso a cuidados de saúde ajustados às necessidades da população, 
+rentabilizando e maximizando a resposta do SNS. O Plano integra 54 medidas que estão 
+estruturadas em 5 Eixos Estratégicos de atuação, sendo o Eixo 5 – Saúde Mental (9 
+medidas) o foco desta análise. Tratando -se de um Plano de Emergência é esperado que 
+permita dar resposta ao estado atual do Sistema Nacional de Saúde, nomeadamente 
+atendendo às “áreas” de crise (por exemplo, dificuldades de acesso a cuidados de saúde) 
+através de medidas urgentes e emergentes que deem respostas céleres que minimizem a 
+degradação da realidade, e, por outro lado, permitam ao Sistema de Saúde evoluir no 
+sentido de desenvolver uma nova estrutura que se adapte às necessidades presentes e 
+futuras. 
+2. Apresentação sumária das medidas 
+No Eixo sobre Saúde Mental, o Plano assume como prioridade estratégica «Garantir o 
+acesso a serviços habilitados a promover a saúde mental, prestando cuidados de 
+qualidade, facilitando a reintegração e a recuperação das pessoas com doença mental». 
+As medidas previstas neste plano são apresentadas sob a forma de (1) respostas 
+urgentes (que requerem implementação imediata, com objetivo de obter resultados 
+tangíveis num período máximo de 3 meses), (2) prioritárias (de elevada importância, para 
+assegurar o atingimento dos objetivos de médio prazo, para produzir resultados até ao 
+final de 2024) e, ainda, (3) medidas estruturantes (que correspondem ao pensamento 
+estratégico e planeamento organizacional, fundamentais para a sustentabilidade e 
+crescimento estrutural e transformação efetiva e profunda do futuro SNS). 
+Este Plano define como resultados esperados para a área da Saúde Mental (1) a 
+contratação de psicólogos nos cuidados de saúde primários, (2) o desenvolvimento de 
+programas de intervenção em ansiedade e depressão por equipas comunitárias de Saúde 
+Mental e (3) a generalização dos Centros de Resposta Integrada de Saúde Mental. São 
+definidas neste plano as seguintes medidas para a área da Saúde Mental: 
+ 
+Medidas Prioridade Estado 
+A.1 | Contratação de psicólogos para os Cuidados de Saúde Primários Urgente Por iniciar 
+A.2 | Criação de programa estruturado de Saúde Mental para as forças de 
+segurança (PSP e GNR) Urgente Por iniciar 
+A.3 | Desinstitucionalização de situações crónicas em saúde mental Urgente Em curso 
+B.1 | Criação de Equipas Comunitárias de Saúde Mental para adultos, infância e 
+adolescência Prioritário Em curso 
+ 
+56 
+Policy Brief 16  
+B.2 | Disponibilização de programas estruturados de intervenção na ansiedade e 
+depressão nos Cuidados de Saúde Primários Prioritário Em curso 
+B.3 | Garantia da capacidade de internamento para situações agudas nos Serviços 
+Locais de Saúde Mental Prioritário Em curso 
+B.4 | Criação de serviços de saúde mental regionais para internamento de 
+doentes de elevada complexidade Prioritário Em curso 
+C.1 | Construção dos serviços forenses no Hospital Sobral Cid e no Hospital Júlio 
+de Matos Estruturante Em curso 
+C.2 | 
+Generalização dos Centros de Responsabilidade Integrados em todos os 
+Serviços Locais de Saúde Mental Estruturante Em curso 
+Nota: O Estado das medidas refere-se a Julho de 2024. 
+Adicionalmente, a medida A.1 do Eixo 3 «Requalificação dos espaços dos Serviços de 
+Urgência – Geral/Psiquiátrica» também é identificada como relevante, no contexto do Eixo 
+estratégico da saúde mental. 
+Finalmente, como programa transversal de contingência, o Plano define a criação de um 
+programa de valorização dos profissionais de saúde, que preconiza o investimento para a 
+promoção de ambientes de trabalho saudáveis e satisfatórios, pautados por mecanismos 
+de comunicação aberta e transparente, incluindo feedback, partilha regular de informação 
+e implementação de canais de comunicação eficazes; simultaneamente, os profissionais 
+de saúde devem ter acesso aos recursos necessários para realizar o seu trabalho de 
+forma eficaz incluindo equipamentos adequados e apoio administrativo. Estas medidas 
+têm o potencial para, de forma integrada com outras que compõem este programa 
+transversal, melhorar a qualidade de saúde mental dos profissionais de saúde, um grupo 
+profissional com fatores de risco específicos para a doença mental. 
+Algumas das medidas do Eixo 5 são financiadas pelo PRR, cerca de 88 milhões de euros, 
+considerando assim que posteriormente podem vir a ser, eventualmente integradas no 
+Orçamento de Estado ou, possivelmente, financiadas através de financiamentos 
+estruturais», como por exemplo o PT2030. Não se encontraram referências ao 
+financiamento das medidas deste Eixo no pós-2026. 
+3. Aplicação dos conceitos económicos e análise crítica 
+Numa avaliação empírica do impacto económico deste plano, pode esperar -se ganhos 
+muito relevantes assumindo a sua implementação plena. Segundo o Relatório 
+“Prosperidade e Sustentabilidade das Organizações” de 2023 [7], o reforço da promoção 
+da saúde mental nas empresas pode reduzir a diminuição da produtividade em, pelo 
+menos, 30% e, consequentemente resultar numa poupança de cerca de 1,6 mil milhões 
+de euros por ano para as organizações, e consequentemente, para a economia.  
+Neste contexto, o custo de oportunidade do plano pode considerar-se relativamente baixo, 
+face às consequências evitadas, resultantes da sua não -implementação e aos benefícios 
+a médio e longo prazo, tanto diretos como indiretos, quer no sector da saúde, quer nos 
+sectores de atividade onde os cidadãos se integram, aumentando a produtividade e 
+reduzindo o absentismo e presentismo. Investir nesta área, e em particular nas medidas 
+identificadas, contribui diretamente para a redução da carga destas doenças na 
+população, contribuindo para a melhoria de resultados, não só em termos de esperança 
+ 
+57 
+Policy Brief 16  
+média de vida como em termos de qualidade de vida. Em termos sociais, a intervenção 
+em saúde mental, nomeadamente as intervenções comunitárias, podem também 
+contribuir para uma redução de consumos abusivos, por exemplo de álcool, drogas. 
+A teoria da Economia da Saúde pode dar contributos úteis para a definição de políticas 
+que produzam ganhos em saúde e garantam a sustentabilidade do sistema, justificando -
+se assim uma análise crítica das medidas inscritas no Plano nesta perspetiva, 
+nomeadamente das incluídos no Eixo Estratégico 5 – Saúde Mental. 
+ 
+O Mercado da Saúde Mental: Relação Oferta - Procura 
+Atendendo à realidade portuguesa parecem existir disponíveis no mercado (e alguns em 
+situações de desemprego) psicólogos, assistentes sociais e terapeutas ocupacionais 
+capazes de integrar os serviços, nomeadamente os cuidados de saúde primários, 
+conforme proposto neste plano, de forma a criar uma oferta de cuidados que se aproxime 
+das necessidades e da procura existente na comunidade. 
+Esta oferta de serviços em quantidade adequada será fundamental para tornar os 
+cuidados de saúde mental a nível dos cuidados de saúde primários efetivamente 
+acessíveis, na medida em que correspondem a novos cuidados, que se pretende divulgar 
+na comunidade, generalizando o seu acesso e inclusivamente “induzir” a sua procura, de 
+forma a promover a adesão aos mesmos e a combater o estigma e o preconceito, 
+permitindo que consigam efetivamente contribuir para os ganhos em saúde esperados, 
+prevenindo a morbilidade e a mortalidade por doença mental, por outras patologias e 
+reduzindo os impactos económicos associados à doença mental a curto, médio e longo 
+prazo. 
+O aumento da oferta de cuidados de saúde mental é essencial para dar resposta à 
+elevada procura, sendo também importante identificar e abordar a existência de barreiras 
+ao acesso, nomeadamente financeiras, geográficas (resultantes de uma eventual 
+insuficiente cobertura nacional) e barreiras relacionadas com a iliteracia e o estigma 
+associados à doença mental. 
+Sendo a cobertura de cuidados de saúde mental ainda reduzida pelos seguros de saúde 
+privados, e sendo a cobertura de seguros de saúde privados desigual na população, 
+resultando potencialmente em baixa utilização dos mesmos pela população alvo, torna -se 
+importante que este plano seja acompanhado de medidas adicionais que promovam a 
+literacia, o conhecimento destes recursos e a adesão por parte daqueles a quem se 
+dirigem. 
+Avaliação Económica do Impacto das Medidas 
+Muitas das medidas descritas no Plano são suportadas por evidência, de fácil 
+implementação e populares junto da comunidade. Localmente, têm -se desenvolvido 
+vários estudos com vista à compreensão do impacto e dos benefícios de medidas desta 
+natureza: a OPP, por exemplo, tem desenvolvido análises que demonstram quais as 
+intervenções terapêuticas mais efetivas e com maior impacto na saúde das populações. 
+Constituem exemplos de avaliações económica de algumas destas medidas: 
+ 
+58 
+Policy Brief 16  
+ 
+Medidas Referência Conclusões 
+A.1 | 
+B.1 | 
+Green 2014 
+[8] 
+Os cuidados colaborativos (incluindo psicólogos nos cuidados primários) permitem 
+ganhos de saúde a custos relativamente baixos, e são custo-efetivos vs. cuidados 
+convencionais, face a uma disponibilidade a pagar de £20,000/QALY. 
+A.3 | Knapp 
+2011 [9] 
+Modelos comunitários não foram mais dispendiosos que modelos com base na 
+institucionalização, mesmo após ajuste para as necessidades dos doentes e qualidade 
+dos cuidados. Novos modelos comunitários poderão ser mais onerosos, ainda que 
+custo-efetivos, dada a potencial melhoria de resultados. 
+B.2 | Chisholm 
+2016 [10] 
+O tratamento da depressão e da ansiedade, em modelos que envolveram os cuidados 
+de saúde primários, apresentou uma relação benefício-custo que variou entre 3,3:1 e 
+5,7:1, em países de diferentes níveis de rendimento.  
+ 
+Assim, existe evidência científica sugestiva do custo -efetividade de algumas destas 
+medidas. No entanto, a interpretação desta evidência deve ser feita considerando as 
+diferenças contextuais face à realidade nacional e às especificidades dos modelos 
+avaliados face aos implementados localmente, sendo importantes avaliações adaptadas 
+ao contexto nacional. Adicionalmente, é fundamental que estas medidas sejam definidas 
+e implementadas como parte de um plano abrangente e integrado, que inclua a dimensão 
+individual, organizacional e de saúde pública nacional, na medida em que os impactos 
+económicos de cada medida são potencialmente transformados pela natureza estruturada 
+em que é apresentada no Plano . Por este motivo, é fundamental que a implementação 
+deste plano se acompanhe de um programa de monitorização de resultados e avaliação 
+de ganhos em saúde e económicos, que permita a caracterização destes resultados, do 
+impacto das medidas e do interesse e capacidade do seu alargamento a nível nacional. 
+Para isso, será importante o envolvimento das várias entidades implicadas e com 
+conhecimento nesta área, não só apenas como foi feita na estruturação do Plano, mas 
+também ao longo da implementação e monitorização destas medidas. 
+Modelos de Financiamento – Relação de Agência nos Cuidados de Saúde Mental 
+O papel de agente que os profissionais de saúde desempenham perante o doente, que se 
+traduz na tomada de decisões em seu nome, por deter mais conhecimento e informação 
+sobre a sua saúde, resulta em potenciais conflitos durante a prestação de cuidados, na 
+medida em que os profissionais também são sensíveis aos incentivos que recebem 
+(vencimento, reputação, tempo disponível, etc); por outro lado, os doentes são limitados 
+na sua capacidade de monitorizar adequadamente o esforço dos profissionais de saúde 
+de atuar no seu melhor benefício, agravando -se no caso da doença mental como 
+resultado do estigma e insegurança associados . Face a esta relação, os vários modelos 
+de pagamento dos profissionais de saúde a definir, na área da saúde mental, apresentam 
+potenciais vantagens e inconvenientes: enquanto o modelo de vencimento fixo previne a 
+seleção de doentes, induz um risco de menor qualidade dos cuidados pela desmotivação 
+do profissional, os modelos de fee for service podem incentivar a prestação de cuidados, 
+mas resultar num excesso de consumo; por sua vez os modelos de capitação podem 
+resultar numa alocação eficaz de recursos, mas também numa seleção, com base no 
+risco dos doentes; finalmente, modelos de pay-for-performance, que podem 
+complementar os modelos anteriormente descritos, incentivam cuidados de qualidade 
+mas podem promover uma prática excessivamente centrada nos indicadores definidos e 
+uma seleção dos doentes mais favorável à sua obtenção [11].  
+ 
+59 
+Policy Brief 16  
+Assim, torna-se fundamental definir modelos inovadores de incentivos dos profissionais e 
+de financiamento das instituições de saúde que promovam a qualidade, a eficácia, a 
+justiça e a equidade. 
+O financiamento dos cuidados de saúde mental tem sido cronicamente insuficiente, 
+apresentando uma tendência estável face ao crescimento dos problemas e graves 
+assimetrias regionais na afetação de recursos. Em termos gerais do contexto do SNS 
+pode inferir-se que apesar do aumento de profissionais e do número de horas contratadas 
+não se verifica uma melhoria substancial no desempenho assistencial ou numa redução 
+assinalável das necessidades da população [12]. Assim, e no atual contexto de 
+emergência para a saúde, é necessário redefinir não só modelos de organização e 
+funcionamento dos serviços, mas também modelos de financiamento às instituições e de 
+remuneração aos profissionais de saúde no sentido promover o desenho e a qualidade 
+dos serviços. 
+A reorganização do SNS, assente em ULS, prevê um novo modelo de financiamento 
+baseado na estratificação do risco, em que cada ULS é financiada de acordo com o perfil 
+de risco da sua população. Este novo modelo de financiamento pretende respeitar as 
+necessidades de saúde dos utentes de cada ULS, fomentando a integração de cuidados, 
+as intervenções preventivas, antecipatórias e mais adequadas ao bem -estar de cada um 
+e, simultaneamente, robustecendo a capacidade de identificar precocemente situações de 
+risco e necessidade de articulação com outros serviços de saúde e respostas sociais 
+adequadas. Será, porém, importante que estes modelos de financiamento das ULS 
+previnam e mitiguem o risco de seleção de doentes de menor risco (cream skimming). 
+Adicionalmente, a possibilidade da existência de Centros de Responsabilidade Integrados 
+(CRI) de saúde mental a nível das ULS (Decreto-Lei nº118/2023), conforme previsto na 
+medida C.2 do Plano,  poderá proporcionar uma resposta à necessidade de definição de 
+modelos de incentivos mais modernos para as equipas de saúde multidisciplinares que 
+neles operam, contribuindo para o aumento da produtividade, motivação e realização dos 
+profissionais que os integram.  Os CRI são estruturas de gestão intermédia com 
+autonomia funcional e técnica assente num compromisso assistencial e económico e 
+financeiro entre os profissionais e as instituições. A existência de CRI de saúde mental 
+permite um novo modelo de remuneração assente na definição de um salário base, um 
+suplemento pelas horas extra e uma componente variável de incentivos associada ao 
+desempenho (Portaria n.º 176/2022, de 7 de julho, que aprova as Tabelas de Preços das 
+Instituições e Serviços Integrados no SNS e Portaria n.º 73/2024, de 29 de fevereiro, 
+regulamenta o índice de desempenho da equipa e a atribuição dos incentivos 
+institucionais). Este novo modelo tem a mais -valia de dar resposta aos profissionais de 
+saúde mental que há muito criticavam o facto do modelo de contratualização e de 
+pagamento das intervenções em saúde mental se manter inalterado, excessivamente 
+centrado nos profissionais médicos, não prevendo a valorização da atividade de outros 
+profissionais, e orientado quase exclusivamente para o pagamento de episódios das 
+linhas de produção hospitalar, sem refletir as atividades de base comunitária  [13]. 
+Contudo, é necessário que a remuneração destes modelos não esteja apenas ligada à 
+produção mas ao valor efetivamente gerado pelas intervenções realizadas. A área da 
+saúde mental traduz -se em dificuldades adicionais tendo em consideração o desafio na 
+definição de indicadores de resultados e o horizonte temporal no qual os mesmos são 
+analisados. 
+ 
+60 
+Policy Brief 16  
+4. Revisão ou Reforço das medidas propostas 
+Em complemento a esta análise crítica das medidas inscritas no Eixo Estratégico da 
+Saúde Mental do Plano na perspetiva da Economia da Saúde, outras considerações 
+podem ser feitas, com vista à construção de um plano com um maior impacto em termos 
+de ganhos em saúde. 
+ 
+Intervenção em Grupos Profissionais – Critérios e Custo de Oportunidade 
+O trabalho com propósito é protetor da saúde mental, contribuindo para o sentido de 
+realização e confiança individual, e para a recuperação e inclusão de pessoas que vivem 
+com distúrbios psicossociais. No entanto, condições de trabalho nocivas e inadequadas, 
+ambientes de trabalho perigosos, relações de trabalho débeis e o desemprego, agravado 
+pela exposição prolongada a estes fatores, podem contribuir significativamente para a 
+degradação da saúde mental ou o agravamento de condições mentais preexistentes  [14]. 
+Os espaços de trabalho seguros, saudáveis e inclusivos potenciam a saúde física e 
+mental, e contribuem para a redução do absentismo, melhoram o desempenho 
+profissional e a produtividade, aumentam a motivação e minimizam o conflito entre os 
+colaboradores [14]. 
+Assim, é justificada a orientação inscrita no Plano a nível da promoção, prevenção e 
+intervenção na saúde mental de grupos profissionais vulneráveis como as forças de 
+segurança; no entanto, não são claros os critérios e fundamentos que levam à seleção 
+desta classe em detrimento de outras em risco, como os professores ou os profissionais 
+de saúde. Estando a melhoria do ambiente de trabalho das instituições de saúde 
+identificada como relevante para o sucesso deste plano, fará sentido considerar o seu 
+impacto para a melhoria dos resultados em matéria de saúde mental também. 
+De uma perspetiva do benefício para as instituições de saúde enquanto empregadoras, 
+por exemplo, a formação em competências de trabalho em equipa, dirigida aos 
+colaboradores com responsabilidades de prestação de cuidados clínicos, demonstrou 
+resultados positivos no funcionamento das equipas, mas também melhoria do 
+desempenho técnico, aumento da eficiência e redução da ocorrência de erros clínicos. 
+Alguns estudos sugerem a existência de benefícios clínicos associados a esta intervenção 
+[15]. Muitos profissio nais de saúde planeiam abandonar o seu local de trabalho, a 
+organização ou mesmo o setor da saúde por completo [16]. Dados os desafios crescentes 
+nas atividades de recrutamento, retenção e reativação dos profissionais de saúde, os 
+serviços de saúde enfrentam riscos de disrupção da sua atividade, com adiamento de 
+tratamentos eletivos, camas hospitalares desocupadas e os centros de cuidados primários 
+e os serviços de urgência a operar perto, ou para além, da capacidade máxima. Estes 
+constrangimentos interfere m com a prestação de cuidados, mas em última análise 
+desafiam os sistemas e a cobertura universal de saúde, transformando -se num problema 
+de saúde pública  [17]. O burnout em profissionais de saúde pode ter impactos adversos 
+na qualidade dos cuidados prestados ao doente e na sua segurança, estando relacionado 
+com práticas sub -ótimas nos cuidados ao doente e aumento do risco de erro médico e 
+processos por má prática  [18]. A rotatividade de profissionais apresenta também 
+implicações financeiras para as instituições de saúde. Os custos da substituição de 
+profissionais de saúde são elevados, variando em função da especialidade, localização e 
+ 
+61 
+Policy Brief 16  
+duração do não -preenchimento da vaga; nos Estados Unidos, esta estimativa podia 
+ascender a 1 milhão USD por profissional substituído  [19]. Os profissionais com burnout e 
+elevado volume de trabalho podem também gerar excesso da referenciação  e da 
+utilização de recursos, despesas associadas ao erro médico e processos por má prática, 
+absentismo e baixa produtividade, resultando numa estimativa conservadora da 
+rotatividade associada ao burnout superior a 5000 – 10000 USD por profissional, por ano  
+[19]. 
+Face ao apresentado recomenda -se ao decisor político a clarificação dos critérios 
+subjacentes à seleção deste grupo de intervenção, bem como a definição de um painel de 
+indicadores de processo e de resultados que permitam, de modo transparente, avaliar a 
+implementação desta medida. 
+Monitorização de Resultados e Tomada de Decisões sobre Projetos-Piloto 
+Merecedor de atenção deve ser também o fato de alguns dos projetos a implementar e 
+mencionados no Plano terem um carácter de projetos -piloto (duração de 10 meses, no 
+caso da medida da criação dos Centros de Resposta Integrada, por exemplo), com 
+potencial para apresentar um impacto significativo junto dos doentes e das suas famílias e 
+alterar o atual paradigma de intervenção, ainda muito focada nos hospitais, e fomentar 
+também as respostas de proximidade em ambiente comunitário, conforme recomendam 
+as boas práticas. Nesse sentido, será importante identificar indicadores adequados e 
+definir metodologias e critérios para avaliar os resultados e a eficiência dos processos; no 
+entanto, para a saúde mental poderá ser difícil recorrer a indicadores de curto prazo que 
+suportem esta avaliação e a tomada de decisão, dado o carácter de longo prazo da sua 
+promoção, prevenção e intervenção.  
+Sendo compreensível, dado o contexto epidemiológico e a escassez de profissionais, o 
+sentido de urgência e de oportunidade subjacentes à definição de um Eixo Estratégico 
+dirigido à Saúde Mental no âmbito do Plano, dificilmente se conseguirá uma avaliação de 
+resultados clínicos e melhoria de indicadores, a nível individual ou populacional, que 
+efetivamente sustente um processo de tomada de decisão com celeridade e confiança. 
+Adicionalmente, e face ao exposto a respeito dos mecanismos de financiamento e de 
+incentivo às instituições e aos profissionais de saúde implicados neste eixo, a 
+identificação de indicadores de resultados fiáveis e consensuais será fundamental para os 
+eventuais modelos a implementar.   
+O Plano em apreço visa ser um Plano de emergência, ou seja, dar resposta a uma 
+situação de crise que ameaça o funcionamento normal do SNS e a saúde das 
+populações. Neste sentido, os seus objetivos centram -se na contenção/redução dos 
+danos e num retorno a um rápido equilíbrio. Apesar deste plano cumprir os princípios 
+teóricos de um plano de emergência (horizonte temporal definido; procedimentos e ações 
+específicas com interlocutores e responsabilidades bem definidas) pode problematizar -se 
+sobre a inclusão do  Eixo de Saúde Mental no Plano, especificamente sobre a aplicação 
+de medidas que estavam desenhadas previamente  [7,20]. Os resultados esperados a 
+alcançar na área da saúde mental (por exemplo, com a contratação de Psicólogos nos 
+Cuidados de Saúde Primários; Programas de intervenção em ansiedade e depressão por 
+Equipas Comunitárias de Saúde Mental; generalização de CRI de Saúde Mental), sendo 
+essenciais para melhorar o cenário epidemiológico da doença mental, apresentam um 
+ 
+62 
+Policy Brief 16  
+sentido de emergência diferente dos restantes eixos que se focam em medidas 
+operacionais para resolver e alterar insuficiências e ineficiências da realidade atual. 
+Recomenda-se ao decisor político a revisão do Plano Nacional de Saúde Mental 2007 -
+2016, extensão a 2020, para estabelecer objetivos de longo prazo para esta área, 
+promover a resiliência dos serviços de saúde mental e garantir a continuidade dos 
+cuidados iniciados. Esta definição de objetivos é essencial para a tomada de decisão; no 
+caso particular dos projetos pilotos, o planeamento para o futuro deve assentar no 
+acompanhamento e definição de análises de impacto económico e de critérios de 
+qualidade que orientarão a decisão sobre o alargamento a todo o país e a continuidade da 
+implementação de medidas estruturantes. Por exemplo, a criação de 40 Equipas 
+Comunitárias de Saúde Mental para adultos, infância e adolescência (meta i.3.04 que se 
+relaciona com Medida B.1) está em curso, mas condicionada à publicação dos despachos 
+que autorizam o recrutamento de recursos humanos. 
+Definição de Estratégias para o Estigma e Iliteracia como Barreiras ao Acesso 
+Sendo o estigma e a iliteracia em saúde mental barreiras ao acesso aos cuidados de 
+saúde mental, torna-se imperativo considerar as suas implicações, inclusivamente a curto 
+e médio prazo, bem como a definição de medidas no plano imediato, urgente e 
+estruturante, nomeadamente ações de formação para profissionais e cidadãos que 
+promovam a educação para a saúde e a qualidade dos cuidados clínicos prestados. As 
+pessoas que vivem com distúrbios mentais são objeto de estigma e discriminação 
+enraizados, resultantes do estereótipo gerado sobre a doença mental. Genericamente, 
+assume-se que as pessoas que vivem com distúrbios mentais são preguiçosas, fracas, 
+pouco inteligentes ou de relacionamento difícil, e que os distúrbios mentais são fraquezas 
+de carácter, punições por comportamento imoral, forças sobrenaturais ou resultado do 
+uso de substâncias ilícitas. A comunicação social pode contribuir para a perpetuação 
+destas conceções erradas ao retratar as pessoas com distúrbios mentais como perigosas, 
+irresponsáveis ou incapazes  [21]. Consequentemente, as pessoas frequentemente 
+decidem não procurar apoio, evitando a discriminação associada ao acesso aos cuidados 
+de saúde mental [21]. 
+Neste sentido recomenda-se ao decisor político o incentivo de atividades de Literacia em 
+Saúde Mental no sentido de divulgar estes serviços e de promover uma adesão aos 
+mesmo, tendo em vista também a intervenção e o diagnóstico precoce destas patologias. 
+Abordar o Papel dos Cuidadores Informais para o Sucesso do Plano 
+A Lei n.º 35/2023, de 21 de Julho, (Lei de Saúde Mental) dispõe sobre a definição, os 
+fundamentos e os objetivos da política de saúde mental, consagra os direitos e deveres 
+das pessoas com necessidade de cuidados de saúde mental, regula as restrições dos 
+seus direitos e estabelece as garantias de proteção da liberdade e da autonomia destas 
+pessoas. Esta Lei reflete o quadro valorativo à luz do qual devem ser entendidas todas as 
+abordagens terapêuticas neste domínio, baseadas na dignidade da pessoa humana. No 
+contexto da desinstitucionalização prevista nas medidas inscritas no Plano, torna -se 
+fundamental identificar os interlocutores institucionais (Ministério da Saúde, Ministério do 
+Trabalho e Segurança Social (MTSS); Ministério da Administração Interna (MAI)) e dos 
+utentes (cuidadores informais) implicados que serão determinantes para o seu sucesso e 
+maximização do impacto e ganhos económicos, sociais e em saúde.  
+ 
+63 
+Policy Brief 16  
+Para que as medidas de desinstitucionalização tenham sucesso e sejam efetivas, é 
+necessário uma resposta individualizada que passe, idealmente, pela reinserção em meio 
+familiar (com o acompanhamento dos serviços locais de saúde mental), pela instalação 
+em estruturas residenciais, pela colocação em instituições de saúde ou em unidades da 
+rede de cuidados continuados integrados de saúde mental, ou ainda, para quem não 
+disponha de residência nem de apoio familiar, por uma resposta habitacional através da 
+Segurança Social familiar (com o acompanhamento dos serviços locais de saúde 
+mental). No caso das pessoas que necessitem de manter acompanhamento de saúde 
+mental, este deverá ser sempre assegurado pelos serviços locais de saúde mental da 
+área da residência. Destaca -se que o MAI, através da Direção -Geral de Reinserção e 
+Serviços Prisionais (DGRSP), apenas intervirá enquanto entidade responsável pela 
+execução de medidas de internamento, em casos de inimputabilidade, determinadas 
+pelos tribunais. O acompanhamento das pessoas com perturbação mental competirá às 
+áreas da Segurança Social (na medida em que as pessoas necessitem de integração em 
+resposta social) e da Saúde (sendo, neste caso, assegurado o acompanhamento por 
+parte dos serviços regionais e locais de saúde mental da área da futura residência). 
+A Lei n.º 100/2019 de 6 de setembro aprova o Estatuto do Cuidador Informal e estabelece 
+um conjunto de requisitos de atribuição que se relacionam quer com as condições do 
+cidadão candidato a Cuidador Informal quer com as características dos utentes que 
+necessitam destes cuidados. Da leitura dos documentos disponíveis no site da Segurança 
+Social pode inferir -se que o processo se destina mais a situações de psicopatologia 
+pesada (por exemplo, esquizofrenias) e não às situações epidemiológicas mais 
+prevalentes em Portugal (por exemplo, ansiedade e depressão). Neste sentido, e sabendo 
+que um Plano de Emergência visa dar resposta a situações concretas de crise e 
+desorganização, será pertinente que o legislador estude e implemente medidas de 
+suporte aos cuidadores e familiares de cidadãos com doença mental e perturbação 
+psicológica grave e prolongada no tempo, que não confira estatuto de dependência e que 
+possa ser reversível (por exemplo, estatuto de cuidador informal por 6 meses para apoiar 
+um familiar em burnout). Para além destas medidas, o Plano carece de medidas dirigidas 
+ao envolvimento dos cuidadores das pessoas com doença mental, no sentido da sua 
+capacitação, apoio psicológico e social e envolvimento na tomada de decisão, 
+considerados fundamentais para o sucesso terapêutico [22]. Por  outro lado, seria 
+pertinente avaliar conjuntamente com a Ministério do Trabalho e Segurança Social o 
+acesso às diferentes tipologias de resposta na RNCCI no âmbito da Saúde Mental. O 
+presente Plano não explora os problemas de acesso, nem a distribuição geográfica 
+destas respostas. Ora, considerando, por exemplo: 
+i) o papel das equipas de saúde familiar da RNCCI de Saúde Mental a nível da 
+prevenção de internamentos hospitalares e admissões em unidades residenciais; 
+ii) a sinalização e encaminhamento de situações de descompensação para os 
+Serviços Locais de Saúde Mental e apoiar a participação das famílias e outros cuidadores 
+na prestação de cuidados no domicílio; 
+verifica-se que a cooperação interinstitucional com a Segurança Social é relevante pois as 
+intervenções e os acompanhamentos são multidisciplinares e as unidades de 
+internamento na RNCCI de Saúde Mental são geridas e financiadas pela Segurança 
+Social. Neste sentido, considera -se que a implementação adequada de algumas destas 
+medidas requer um envolvimento ativo da área governativa da Segurança Social, 
+ 
+64 
+Policy Brief 16  
+devendo o impacto das mesmas em matéria de onerosidade recair sobre ambas as 
+tutelas. A Medida A.3 (Desinstitucionalização de situações crónicas em saúde mental) 
+será implementada, segundo informação de 2021 [23], com base em Estabelecimento de 
+Protocolo e ou Acordo de Cooperação, com (i) Serviços públicos e pessoas coletivas de 
+direito público, de direito privado e do setor social, preferencialmente da sua área 
+geográfica de intervenção, e (ii) b) Associações representativas de utentes e ou familiares 
+de pessoas com doença mental. Neste sentido, re comenda-se ao decisor que sejam 
+estudados mecanismos que permitam às famílias acolher os seus familiares mitigando, 
+por um lado o impacto económico para a família (por exemplo, se alguém tiver que 
+abdicar do seu emprego ou trabalhar em part-time) e por outro que sejam desenvolvidas 
+intervenções específicas que permitam minimizar o burnout e o risco de exclusão destes 
+cuidadores.  
+Comentário Final 
+A análise do Eixo 5 do Plano de Emergência e Transformação na Saúde, especificamente 
+das suas 9 medidas, permite concluir que pelo menos 8 destas medidas não são 
+verdadeiramente novas, estando já de alguma forma previstas no Plano Nacional de 
+Saúde Mental e no Plano de Recuperação e Resiliência. Conforme explicado no site da 
+“Recuperar Portugal”  o investimento na área da Saúde Mental, em sede PPR, está 
+estreitamente ligado ao Plano Nacional de Saúde Mental. 
+Neste sentido, o Plano de Emergência tem a grande mais -valia de implementar medidas 
+há muito solicitadas por utentes e profissionais do setor, mas que estavam pendentes de 
+“apoio” político que permitisse a disponibilização das verbas necessárias à sua 
+implementação. Em termos globais de política de saúde, será importante identificar os 
+fatores na base da demora desta deliberação e implementação, de forma a poder atuar 
+junto dos mesmos e executar efetivamente as medidas propostas e utilizar os 
+mecanismos de financiamento aplicáveis. A título de exemplo, a modificação do modelo 
+de gestão e organização dos serviços de saúde mental, bem como das bases em que 
+assentam o pagamento dos serviços de saúde mental e o respetivo financiamento, pela 
+constituição de Centros de Responsabilidade Integrada, dotados de orçamento próprio, já 
+constava como recomendação no Relatório de Avaliação do Plano Nacional de Saúde 
+Mental 2007 -2016, de julho de 2017, pela Comissão Técnica de Acompanhamento da 
+Reforma de Saúde Mental  [20]. Não obstante, a sua implementação continua a figurar no 
+Plano.  O recente Relatório 1/2024 da Comissão Nacional de Acompanhamento (CNA) do 
+PRR considerou preocupante o estado da execução das medidas previstas.  
+Considera-se, pois, que a inclusão destas medidas num dos Eixos do Plano de 
+Emergência poderá ser determinante para a melhorar a execução financeira e física dos 
+investimentos. Por outro lado, a CNA  recomenda ao Governo e à Administração Central 
+do Sistema de Saúde (ACSS) a “… antecipação das questões relacionadas com 
+financiamento plurianual, relativas a recursos humanos. Nesta questão, deve ser tomada 
+especial atenção às necessidades, de modo que não se corram os riscos de existência de 
+estruturas físicas e/ou equipamentos, sem os devidos recursos humanos que permitam a 
+sua operação, inviabilizando a prestação desses cuidados de saúde às populações.”  
+Conforme apresentado no documento, algumas medidas do Plano já estavam previstas 
+em documentos estratégicos anteriores, e a sua inclusão prevê uma dependência das 
+verbas do PRR que vigora até 2026 e uma posterior transferência destes valores para o 
+ 
+65 
+Policy Brief 16  
+Orçamento de Estado, sendo imperioso refletir sobre a valor do Orçamento de Estado de 
+Saúde no Pós-PRR e a sua sustentabilidade a médio e longo prazo. Por exemplo, o PRR 
+refere vários projetos relacionados com a criação das equipas comunitárias de saúde 
+mental, em linha com a medida B.1 | Criação de Equipas Comunitárias de Saúde Mental 
+para adultos, infância e adolescência, num valor agregado superior a €2,3 milhões. Ainda 
+que parte desta verba se destine ao desenvolvimento da estrutura e aquisição e 
+equipamentos, é inevitável antecipar que parte significativa corresponda a recursos 
+humanos, os quais continuarão a figurar como despesa corrente de saúde nos anos 
+subsequentes aos quais acresce os custos de manutenção destas estruturas. Ainda que a 
+taxa de esforço desta rúbrica possa ser de pequena dimensão face ao valor total do 
+Orçamento de Estado para a Saúde (superior a €15 mil milhões em 2024), o conjunto de 
+todas as medidas do Eixo 5 do Plano certamente pesará na despesa de saúde corrente 
+do país. Destaca -se que 2 das 3 medidas urgentes (Medida A.1 | Contratação de 
+psicólogos para os Cuidados de Saúde Primários e Medida A.2. | Criação de programa 
+estruturado de Saúde Mental para as forças de segurança (PSP e GNR)), com um peso 
+significativo nos custos do Plano, ainda se encontram por iniciar, enquanto as restantes 
+estão em curso. 
+O planeamento e os estudos económico -financeiros associados a estas medidas são, de 
+facto, essenciais sob pena de se estarem a realizar investimentos que não são 
+sustentáveis no futuro, seja por falta de recursos humanos seja por falta de financiamento 
+para os manter em funcionamento, defraudando assim as expectativas da opinião pública 
+e não aumentando a prestação de cuidados de qualidade nestas áreas. 
+Não parece aceitável na realidade atual, com existência várias ferramentas tecnológicas 
+de business analytics and intelligence , não existirem (ou não estarem divulgadas) o 
+verdadeiro impacto destas medidas. Por outro lado, é essencial uma monitorização 
+permanente das medidas de modo que seja assegurado que os orçamentos previstos em 
+sede de PRR ou de Plano são cumpridos sem desvios. 
+Para além da sustentabilidade financeira devem ser implementados sistemas robustos de 
+monitorização sistemática da avaliação de resultados, da eficácia, do custo -efetividade e 
+do impacto das políticas, práticas e medidas implementadas neste Plano. Tais resultados 
+devem ser do conhecimento público, tendo em vista a transparência e uma cultura de 
+apresentação de resultados. Conforme menciona a CNA no seu relatório, a “dúvida sobre 
+a realização, ou não, dos investimentos, é o pior serviço que pode ser prestado às 
+populações, que ficam sem informação fidedigna sobre o que existe ou virá a existir, para 
+seu apoio e dos seus familiares”. 
+A boa execução do PRR é essencial para modernizar o país, representando uma 
+oportunidade para implementar as reformas estruturais necessárias, como é o caso da 
+Saúde Mental. Conforme se mencionou acima pelo conjunto de reformas, de 
+contratações, requalificação e expansão de infraestruturas deve ser equacionado o seu 
+peso no orçamento de estado e avaliadas as possibilidades de manutenção e 
+continuidade no pós-PRR, garantindo a sustentabilidade das intervenções agora iniciadas. 
+O Plano de Emergência e Transformação na Saúde, nomeadamente as medidas inscritas 
+no Eixo Estratégico 5 da Saúde Mental, apresentam o potencial de contribuir para 
+melhoria de resultados nesta área. Ainda assim, a evidência sobre a efetividade destas 
+medidas e a sua sustentabilidade é escassa, e as implicações sobre o impacto da sua 
+ 
+66 
+Policy Brief 16  
+transposição para o Orçamento de Estado são incertas. Os mecanismos de monitorização 
+e avaliação serão essenciais para suportar a tomada das melhores decisões, bem como 
+uma comunicação clara e uma adequada e regular apresentação de resultados que 
+permita um verdadeiro exercício de transparência e democracia na Sociedade. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+67 
+Policy Brief 16  
+ 
+Referências 
+ 
+1. OCDE. (2024).  State of Health in the EU - Portugal: Country Health Profile 2023 . 
+2. The burden of mental disorders, substance use disorders and self -harm among young 
+people in Europe, 1990 –2019: Findings from the Global Burden of Disease Study 2019. 
+(2022).  Lancet Regional Health Europe, 1 , 100341. 
+3. Direção-Geral da Saúde (DGS). (2022).  Plano Nacional de Saúde 2021 –2030 - Saúde 
+Sustentável: de tod@s para tod@s . 
+4. Instituto Nacional de Estatística (INE). (2024).  Estatísticas da saúde 2022 . 
+5. Ordem dos Psicólogos Portugueses (OPP). (2023).  Prosperidade e sustentabilidade 
+das organizações: Relatório do custo do stress e dos problemas de saúde psicológica no 
+trabalho, em Portugal . 
+6. de Almeida Simões, J., et al. (2017). Portugal: Health system review.  Health Systems 
+in Transition, 19 (2), 1–184. 
+7. Ordem dos Psicólogos Portugueses (OPP). (2022).  Parecer OPP - Rácio dos 
+psicólogos e psicólogas . 
+8. Green, C., et al. (2014). Cost -effectiveness of collaborative care for depression in UK 
+primary care: Economic evaluation of a randomised controlled trial (CADET).  PLoS One, 
+9 (8), e104225. 
+9. Knapp, M., et al. (2011). The economic consequences of deinstitutionalisation of mental 
+health services: Lessons from a systematic review of European experience.  Health & 
+Social Care in the Community, 19 (2), 113–125. 
+10. Chisholm, D., et al. (2016). Scaling -up treatment of depression and anxiety: A global 
+return on investment analysis.  The Lancet Psychiatry, 3 (5), 415–424. 
+11. Perelman, J., et al. (2018). Reforming the Portuguese mental health system: An 
+incentive-based approach.  International Journal of Mental Health Systems, 12 (25). 
+12. Conselho das Finanças Públicas (CFP). (2024).  Evolução do desempenho do Serviço 
+Nacional de Saúde em 2023 . 
+13. Xavier, M., et al. (2024).  A Reforma da Saúde Mental em Portugal: Três anos de 
+transformação . Coordenação Nacional das Políticas de Saúde Mental, Ministério da 
+Saúde. 
+14. Organização Mundial da Saúde (OMS). (2022).  WHO guidelines on mental health at 
+work . Geneva: World Health Organization. 
+15. McCulloch, P., et al. (2011). Interventions to improve teamwork and communications 
+among healthcare staff.  British Journal of Surgery, 98 (5), 469–479. 
+16. International Council of Nurses. (2023).  The global nursing shortage and nurse 
+retention . 
+17. Kuhlmann, E., et al. (2023). The mental health needs of healthcare workers: When 
+evidence does not guide policy. A comparative assessment of selected European 
+countries.  International Journal of Health Planning and Management, 39 , 614–636. 
+18. Søvold, L. E., et al. (2021). Prioritizing the mental health and well -being of healthcare 
+workers: An urgent global public health priority.  Frontiers in Public Health, 9 , 679397. 
+19. West, C. P., et al. (2018). Physician burnout: Contributors, consequences and 
+solutions.  Journal of Internal Medicine, 283 (6), 516–529. 
+20. Comissão Técnica de Acompanhamento da Reforma da Saúde Mental. (2017).  
+Relatório da avaliação do Plano Nacional de Saúde Mental 2007 -2016 e propostas 
+prioritárias para a extensão a 2020. Ministério da Saúde. 
+21. World Health Organization. (2022).  World mental health report: Transforming mental 
+health for all  (Licence: CC BY-NC-SA 3.0 IGO). Geneva. 
+ 
+68 
+Policy Brief 16  
+22. Cleary, M., et al. (2006). Carer participation in mental health service delivery.  
+International Journal of Mental Health Nursing, 15 (3), 189–194. 
+23. Xavier, M., et al. (2021).  Programa de desinstitucionalização em saúde mental. 
+Coordenação Nacional das Políticas de Saúde Mental. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+www.ipp-jcs.org 
+© Institute of Public Policy Lisbon | Outubro de 2024 – Todos os direitos reservados 
+IPP POLICY BRIEF 16 
+Plano de Emergência para a Saúde  
+ 
+ISSN: 2183-9352 
+Outubro de 2024 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Institute of Public Policy Lisbon – Rua Miguel Lupi 20, 1249-078 Lisboa PORTUGAL 
+www.ipp-jcs.org – email: admin@ipp-jcs.org – tel.: +351 213 925 986 – NIF: 510654320 
+ 
+ 
+As opiniões aqui expressas vinculam somente os autores e não refletem necessariamente as posições do Institute of Public Poli cy, da Universidade de Lisboa, 
+ou qualquer outra instituição a que quer os autores, quer o IPP estejam associados. Nem o Institute of Public Policy nem qual quer representante seu é 
+responsável pelo uso por terceiros da informação aqui contida. Este texto não pode ser reproduzido, distribuído ou publicado sem autorização prévia e 
+explícita dos seus autores. Quaisquer citações são autorizadas desde que a fonte original seja adequadamente reconhecida.  
+ 
+ 

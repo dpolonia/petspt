@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { MEASURE_METHODOLOGIES, METHODOLOGY_STATS } from '../config/measureMethodology';
 import { MONITORABILITY_SCALE, getLevel } from '../config/monitorabilityScale';
+import { GAP_ANALYSIS, GAP_STATS } from '../config/gapAnalysis';
 
 export default function MetodologiaPage() {
   const [searchParams] = useSearchParams();
@@ -155,6 +156,61 @@ export default function MetodologiaPage() {
             <div key={l.grau} className="flex items-start gap-2 text-xs">
               <div className="w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-white text-[9px] font-bold" style={{ backgroundColor: l.cor }}>{l.grau}</div>
               <div><span className="font-medium">{l.label}</span></div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Gap Analysis */}
+      <div className="bg-white rounded-lg border border-gray-200 p-5 mb-8">
+        <h3 className="text-sm font-semibold text-gray-700 mb-4">Gap Analysis: Actual vs. Potencial</h3>
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-4">
+          <div className="text-center">
+            <div className="text-2xl font-bold text-red-600">{GAP_STATS.grauMedioActual}</div>
+            <div className="text-xs text-gray-500">Grau medio actual</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-green-600">{GAP_STATS.grauMedioPotencial}</div>
+            <div className="text-xs text-gray-500">Grau medio potencial</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-orange-600">{GAP_STATS.gapMedio}</div>
+            <div className="text-xs text-gray-500">Gap medio</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-red-700">{GAP_STATS.criticas}</div>
+            <div className="text-xs text-gray-500">Recomendacoes criticas</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-amber-600">{GAP_STATS.altas}</div>
+            <div className="text-xs text-gray-500">Prioridade alta</div>
+          </div>
+        </div>
+
+        <h4 className="text-xs font-semibold text-gray-600 mb-2">Recomendacoes por entidade responsavel</h4>
+        <div className="flex flex-wrap gap-3 mb-4">
+          {GAP_STATS.porEntidade.map(([ent, count]) => (
+            <div key={ent} className="flex items-center gap-1.5 text-xs bg-gray-50 px-3 py-1 rounded-full">
+              <span className="font-semibold text-gray-700">{ent}</span>
+              <span className="text-gray-400">{count} recomendacoes</span>
+            </div>
+          ))}
+        </div>
+
+        <h4 className="text-xs font-semibold text-gray-600 mb-2">Recomendacoes prioritarias</h4>
+        <div className="space-y-1.5 max-h-64 overflow-y-auto">
+          {GAP_ANALYSIS.filter(g => g.prioridade === 'critica' || g.prioridade === 'alta').sort((a, b) => {
+            const p = { critica: 0, alta: 1, media: 2, baixa: 3 };
+            return p[a.prioridade] - p[b.prioridade] || b.gapScore - a.gapScore;
+          }).map(g => (
+            <div key={g.medidaId} className="flex items-center gap-3 text-xs p-2 rounded bg-gray-50">
+              <span className={`px-1.5 py-0.5 rounded text-[9px] font-semibold ${g.prioridade === 'critica' ? 'bg-red-100 text-red-700' : 'bg-amber-100 text-amber-700'}`}>
+                {g.prioridade}
+              </span>
+              <span className="font-mono text-gray-400 w-12">{g.medidaId}</span>
+              <span className="flex-1 text-gray-700">{g.recomendacao}</span>
+              <span className="text-gray-400">{g.entidade}</span>
+              <span className="font-mono text-orange-600">+{g.gapScore}</span>
             </div>
           ))}
         </div>
