@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { MeasureTrendResult } from '../../services/measureTrend';
 import { getGroundTruth } from '../../config/kpiGroundTruth';
 import { validateAgainstGroundTruth, summarizeValidation } from '../../services/dataQuality';
+import { getPBIMapping } from '../../config/measurePowerBIMapping';
+import { usePowerBIData, filterPBIFromBaseline } from '../../hooks/usePowerBIData';
 import { ResponsiveContainer, ComposedChart, Line, Area, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, ReferenceArea } from 'recharts';
 
 interface Props {
@@ -19,11 +21,22 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
   const [aiText, setAiText] = useState<string | null>(null);
   const [aiLoading, setAiLoading] = useState(false);
 
+  // Power BI data (priority source)
+  const pbiMapping = getPBIMapping(medidaId);
+  const eixo = pbiMapping?.eixo || parseInt(medidaId.charAt(1)) || 1;
+  const pbiData = usePowerBIData(eixo);
+  const primaryPBISeries = pbiMapping?.series.find(s => s.isPrimary);
+  const pbiSeriesData = primaryPBISeries && pbiData.loaded
+    ? filterPBIFromBaseline(pbiData.data[primaryPBISeries.seriesKey] || [])
+    : [];
+  const hasPBIData = pbiSeriesData.length > 0;
+
   if (!isOpen) return null;
   const fmt = (v: number) => v >= 1e6 ? `${(v / 1e6).toFixed(1)}M` : v >= 1e3 ? `${(v / 1e3).toFixed(0)}K` : v.toLocaleString('pt-PT');
 
-  // Compute statistics from time series
-  const ts = trend.timeSeries;
+  // Data priority: Power BI > Firestore/Transparencia SNS
+  // If Power BI data available, use it as primary; otherwise fall back to Firestore
+  const ts = hasPBIData ? pbiSeriesData : trend.timeSeries;
   const values = ts.map(d => d.valor);
   const n = values.length;
   const mean = n > 0 ? values.reduce((s, v) => s + v, 0) / n : 0;
@@ -234,8 +247,16 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
           )}
         </div>
 
-        {/* Footer with validation badge */}
+        {/* Footer with validation badge + data source */}
         <div className="p-4 border-t border-gray-100 bg-gray-50 rounded-b-xl">
+          {hasPBIData && primaryPBISeries && (
+            <div className="mb-2 flex items-center gap-2">
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-100 text-amber-800 border border-amber-300">
+                &#x2726; Dados {primaryPBISeries.source} (via Power BI)
+              </span>
+              <span className="text-[9px] text-gray-400">{pbiSeriesData.length} pontos | {pbiSeriesData[0]?.periodo} a {pbiSeriesData[pbiSeriesData.length - 1]?.periodo}</span>
+            </div>
+          )}
           <div className="grid grid-cols-2 gap-3 text-xs text-gray-500">
             <div><span className="font-semibold">Semaforo:</span> {trend.label}</div>
             <div><span className="font-semibold">Meses desfavoraveis:</span> {trend.mesesDesfavoraveis}/12</div>
