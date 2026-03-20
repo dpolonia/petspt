@@ -58,22 +58,23 @@ export default function Dashboard() {
       }
     }
 
-    // Priority 2: kpiData
-    if (m.kpiData?.dataPoints && m.kpiData.dataPoints.length >= 2) {
-      trendMap[m.id] = calculateMeasureTrend(m.kpiData.dataPoints, m.kpiData.invertido);
-      trendMap[m.id].dataSource = 'dados_fixos';
-      fonteMap[m.id] = mapping?.primaryDataset ? 'Dados fixos (fallback)' : 'Relatorios GT PETS';
+    // Priority 2: Firestore mapped but NO data — LOUD ERROR
+    if (mapping?.primaryDataset && fsLoaded) {
+      trendMap[m.id] = { ...DEFAULT_TREND, dataSource: 'sem_dados',
+        cor: 'vermelho',
+        label: `ERRO: Firestore vazio para ${mapping.primaryDataset.slug}`,
+      };
+      fonteMap[m.id] = `ERRO: dados Firestore nao disponiveis (${mapping.primaryDataset.slug})`;
       continue;
     }
 
-    // Priority 3: Grey
+    // Priority 3: No dataset mapping — use estado color
     trendMap[m.id] = { ...DEFAULT_TREND, dataSource: 'sem_dados',
       cor: m.estado === 'concluida' ? 'verde' : m.estado === 'em_curso' ? 'amarelo' : m.estado === 'parcial' ? 'laranja' : m.estado === 'nao_implementada' ? 'vermelho' : 'cinzento',
-      label: m.estado === 'concluida' ? 'Concluida' : m.estado === 'em_curso' ? 'Em curso' : m.estado === 'parcial' ? 'Parcial' : m.estado === 'nao_implementada' ? 'Nao implementada' : 'N/A',
-      currentValue: m.kpiData?.current?.valor ?? null, currentPeriodo: m.kpiData?.current?.periodo ?? null,
-      baselineValue: m.kpiData?.baseline?.valor ?? null, referenceValue: m.kpiData?.reference?.valor ?? null,
+      label: m.estado === 'concluida' ? 'Concluida' : m.estado === 'em_curso' ? 'Em curso' : m.estado === 'parcial' ? 'Parcial' : m.estado === 'nao_implementada' ? 'Nao implementada' : 'Sem dados',
+      currentValue: null, currentPeriodo: null, baselineValue: null, referenceValue: null,
     };
-    fonteMap[m.id] = 'Relatorios GT PETS';
+    fonteMap[m.id] = 'Sem dataset API';
   }
 
   const selected = selectedId ? MEDIDAS_ESTADO.find(m => m.id === selectedId) : null;
