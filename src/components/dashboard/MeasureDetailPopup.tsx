@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { MeasureTrendResult } from '../../services/measureTrend';
-import { ResponsiveContainer, ComposedChart, Line, Area, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, ReferenceArea } from 'recharts';
+import { getGroundTruth } from '../../config/kpiGroundTruth';
+import { validateAgainstGroundTruth, summarizeValidation } from '../../services/dataQuality';
+import { ResponsiveContainer, ComposedChart, Line, Area, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, ReferenceArea } from 'recharts';
 
 interface Props {
   isOpen: boolean;
@@ -34,17 +36,43 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
   const minPeriodo = ts.find(d => d.valor === minVal)?.periodo || '';
   const maxPeriodo = ts.find(d => d.valor === maxVal)?.periodo || '';
 
-  // Chart data with stddev band
-  const chartData = ts.map(d => ({
-    periodo: d.periodo,
-    valor: d.valor,
-    stdUpper: mean + stddev,
-    stdLower: Math.max(0, mean - stddev),
-  }));
+  // Ground truth validation
+  const gt = getGroundTruth(medidaId);
+  const validationResults = gt && ts.length > 0 ? validateAgainstGroundTruth(medidaId, ts, gt) : [];
+  const validation = gt ? summarizeValidation(validationResults.length > 0 ? validationResults : gt.dataPoints.map(d => ({ medidaId, periodo: d.periodo, groundTruth: d.valor, firestoreValue: null, match: 'missing' as const, deviation_pct: null })), ts.length > 0) : null;
 
-  // Period band boundaries — match data format
-  const firstP = ts.length > 0 ? ts[0].periodo : '2024-01';
-  const lastP = ts.length > 0 ? ts[ts.length - 1].periodo : '2025-12';
+  // Chart data with stddev band + ground truth dots
+  const chartData = ts.map(d => {
+    const gtPoint = gt?.dataPoints.find(g => g.periodo === d.periodo);
+    return {
+      periodo: d.periodo,
+      valor: d.valor,
+      stdUpper: mean + stddev,
+      stdLower: Math.max(0, mean - stddev),
+      groundTruth: gtPoint ? gtPoint.valor : null,
+    };
+  });
+  // Add GT points that don't exist in Firestore series
+  if (gt) {
+    for (const g of gt.dataPoints) {
+      if (!chartData.find(d => d.periodo === g.periodo)) {
+        chartData.push({ periodo: g.periodo, valor: 0, stdUpper: mean + stddev, stdLower: Math.max(0, mean - stddev), groundTruth: g.valor });
+      }
+    }
+    chartData.sort((a, b) => a.periodo.localeCompare(b.periodo));
+  }
+
+  // Period band boundaries
+  const firstP = chartData.length > 0 ? chartData[0].periodo : '2024-01';
+  const lastP = chartData.length > 0 ? chartData[chartData.length - 1].periodo : '2025-12';
+
+  const BADGE_STYLES: Record<string, { bg: string; text: string; icon: string }> = {
+    validado: { bg: 'bg-green-100', text: 'text-green-700', icon: '\u2713' },
+    aproximado: { bg: 'bg-yellow-100', text: 'text-yellow-700', icon: '\u2248' },
+    divergente: { bg: 'bg-red-100', text: 'text-red-700', icon: '\u2717' },
+    relatorio_gt: { bg: 'bg-blue-100', text: 'text-blue-700', icon: '\ud83d\udccb' },
+    nao_validado: { bg: 'bg-gray-100', text: 'text-gray-500', icon: '?' },
+  };
 
   // Stats context for AI
   const statsCtx = `Media: ${fmt(mean)}, Mediana: ${fmt(median)}, DP: ${fmt(stddev)}, CV: ${cv.toFixed(1)}%, Min: ${fmt(minVal)} (${minPeriodo}), Max: ${fmt(maxVal)} (${maxPeriodo}), Amplitude: ${fmt(maxVal - minVal)}, Slope: ${trend.tendenciaSlope?.toFixed(1) || 'N/A'}/mes, N: ${n} meses`;
@@ -145,6 +173,7 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
                 )}
                 {/* Data line */}
                 <Line dataKey="valor" name="Valor mensal" stroke="#2563eb" strokeWidth={2} dot={{ r: 2.5, fill: '#2563eb' }} connectNulls />
+                {gt && <Scatter dataKey="groundTruth" name="GT PETS (relatorio)" fill="#ef4444" shape="diamond" />}
               </ComposedChart>
             </ResponsiveContainer>
           </div>
@@ -205,12 +234,24 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
           )}
         </div>
 
-        {/* Footer */}
+        {/* Footer with validation badge */}
         <div className="p-4 border-t border-gray-100 bg-gray-50 rounded-b-xl">
           <div className="grid grid-cols-2 gap-3 text-xs text-gray-500">
             <div><span className="font-semibold">Semaforo:</span> {trend.label}</div>
             <div><span className="font-semibold">Meses desfavoraveis:</span> {trend.mesesDesfavoraveis}/12</div>
           </div>
+          {validation && (
+            <div className="mt-2 flex items-center gap-2">
+              <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold ${BADGE_STYLES[validation.badge].bg} ${BADGE_STYLES[validation.badge].text}`}>
+                {BADGE_STYLES[validation.badge].icon} {validation.badgeLabel}
+              </span>
+              {validation.totalPoints > 0 && (
+                <span className="text-[9px] text-gray-400">
+                  ({validation.exact} exacto, {validation.close} proximo, {validation.mismatch} divergente, {validation.missing} sem dados)
+                </span>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>
