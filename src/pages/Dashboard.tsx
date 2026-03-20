@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { MEDIDAS_ESTADO, getScorecard } from '../services/staticData';
-import { MAPPING_STATS } from '../config/measureDataSources';
+import { MEASURE_DATA_MAPPINGS, MAPPING_STATS } from '../config/measureDataSources';
 import { calculateMeasureTrend, DEFAULT_TREND, MeasureTrendResult } from '../services/measureTrend';
+import { useFirestoreData } from '../hooks/useFirestoreData';
 import MeasureCard from '../components/dashboard/MeasureCard';
 import MeasureDetailPopup from '../components/dashboard/MeasureDetailPopup';
 import { PERIODS } from '../config/periods';
@@ -22,6 +23,17 @@ const TREND_LEGEND = [
   { bg: 'bg-gray-100 border-gray-200', label: 'Nao avaliavel', desc: 'sem dados' },
 ];
 
+// Get the Firestore dataset slug for the selected measure (if any)
+function getDatasetSlug(medidaId: string | null): string | null {
+  if (!medidaId) return null;
+  const mapping = MEASURE_DATA_MAPPINGS.find(m => m.medidaId === medidaId);
+  return mapping?.primaryDataset?.slug || null;
+}
+
+function getMapping(medidaId: string) {
+  return MEASURE_DATA_MAPPINGS.find(m => m.medidaId === medidaId);
+}
+
 export default function Dashboard() {
   const scorecard = getScorecard();
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -30,7 +42,11 @@ export default function Dashboard() {
   const now = new Date().toISOString().split('T')[0];
   const currentPeriod = PERIODS.find(p => { const end = p.end === 'now' ? now : p.end; return now >= p.start && now <= end; });
 
-  // Build trend for each measure using kpiData if available
+  // Load Firestore data for the selected measure's dataset
+  const selectedSlug = getDatasetSlug(selectedId);
+  const { dados: firestoreData, source: firestoreSource } = useFirestoreData(selectedSlug);
+
+  // Build trend for each measure using kpiData
   const trendMap: Record<string, MeasureTrendResult> = {};
   for (const m of MEDIDAS_ESTADO) {
     if (m.kpiData?.dataPoints && m.kpiData.dataPoints.length >= 2) {
@@ -51,12 +67,31 @@ export default function Dashboard() {
     }
   }
 
+  // For the selected measure, build an enriched trend from Firestore if available
   const selected = selectedId ? MEDIDAS_ESTADO.find(m => m.id === selectedId) : null;
-  const selectedTrend = selectedId ? (trendMap[selectedId] || DEFAULT_TREND) : DEFAULT_TREND;
+  const mapping = selectedId ? getMapping(selectedId) : null;
+
+  let selectedTrend = selectedId ? (trendMap[selectedId] || DEFAULT_TREND) : DEFAULT_TREND;
+  let selectedFonte = 'Relatorios GT PETS';
+
+  if (selectedId && mapping?.primaryDataset && firestoreData.length > 0 && firestoreSource) {
+    // Extract time series from Firestore data using the mapped field
+    const field = mapping.primaryDataset.campoValor;
+    const timeSeries = firestoreData
+      .filter(d => d.periodo >= '2024-01')
+      .map(d => ({ periodo: d.periodo, valor: Number(d.indicadores[field]) || 0 }))
+      .filter(d => d.valor > 0)
+      .sort((a, b) => a.periodo.localeCompare(b.periodo));
+
+    if (timeSeries.length >= 2) {
+      selectedTrend = calculateMeasureTrend(timeSeries, mapping.primaryDataset.invertido);
+      selectedTrend.dataSource = firestoreSource === 'firestore' ? 'api_dinamica' : 'api_dinamica';
+      selectedFonte = `${firestoreSource === 'firestore' ? 'Firestore' : 'API'} (Transparencia SNS — ${mapping.primaryDataset.slug})`;
+    }
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      {/* Header */}
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-gray-900">Plano de Emergencia e Transformacao da Saude</h1>
         <p className="text-sm text-gray-500 mt-1">Monitorizacao em tempo real &middot; {today}</p>
@@ -67,7 +102,6 @@ export default function Dashboard() {
         )}
       </div>
 
-      {/* Scorecard */}
       <div className="bg-white rounded-lg border border-gray-200 p-5 mb-8">
         <h2 className="text-sm font-semibold text-gray-700 mb-3">Estado Global das {scorecard.total} Medidas</h2>
         <div className="flex gap-1 h-6 rounded-full overflow-hidden mb-3">
@@ -84,17 +118,15 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Data coverage */}
       <div className="bg-white rounded-lg border border-gray-200 p-4 mb-8">
         <div className="flex flex-wrap gap-6 text-xs text-gray-500">
-          <span>Fontes de dados: <strong className="text-gray-700">{MAPPING_STATS.uniqueDatasets} datasets</strong> de 4 portais</span>
-          <span>Medidas com API: <strong className="text-green-600">{MAPPING_STATS.withAPI}</strong></span>
+          <span>Fontes: <strong className="text-gray-700">{MAPPING_STATS.uniqueDatasets} datasets</strong> de 4 portais</span>
+          <span>Com API: <strong className="text-green-600">{MAPPING_STATS.withAPI}</strong></span>
           <span>Dados fixos: <strong className="text-yellow-600">{MAPPING_STATS.withStatic}</strong></span>
           <span>Sem dados: <strong className="text-gray-400">{MAPPING_STATS.withoutData}</strong></span>
         </div>
       </div>
 
-      {/* Eixo sections */}
       {[1, 2, 3, 4, 5].map(eixo => {
         const medidas = MEDIDAS_ESTADO.filter(m => m.eixo === eixo);
         const info = EIXO_NAMES[eixo];
@@ -123,7 +155,6 @@ export default function Dashboard() {
         );
       })}
 
-      {/* Trend legend */}
       <div className="mt-8 p-4 bg-white rounded-lg border border-gray-200">
         <h3 className="text-sm font-semibold text-gray-700 mb-2">Semaforo de Tendencia</h3>
         <div className="flex flex-wrap gap-4">
@@ -135,12 +166,8 @@ export default function Dashboard() {
             </div>
           ))}
         </div>
-        <div className="mt-2 text-[10px] text-gray-400">
-          Referencia: valor em 2024-06-30 (fim do periodo pre-PETS). Cor baseada no estado oficial do GT PETS.
-        </div>
       </div>
 
-      {/* Period legend */}
       <div className="mt-4 bg-white rounded-lg border border-gray-200 p-4">
         <h3 className="text-sm font-semibold text-gray-700 mb-2">Periodos de Referencia</h3>
         <div className="flex flex-wrap gap-4">
@@ -153,7 +180,6 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Detail popup */}
       {selected && (
         <MeasureDetailPopup
           isOpen={!!selectedId}
@@ -163,7 +189,7 @@ export default function Dashboard() {
           descricao={selected.descricaoProgresso}
           prioridade={selected.prioridade}
           trend={selectedTrend}
-          fonte={selectedTrend.dataSource === 'api_dinamica' ? 'Transparencia SNS' : 'Relatorios GT PETS'}
+          fonte={selectedFonte}
         />
       )}
     </div>
