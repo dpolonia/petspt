@@ -6,6 +6,7 @@ import { useMultiFirestore } from '../hooks/useMultiFirestore';
 import MeasureCard from '../components/dashboard/MeasureCard';
 import MeasureDetailPopup from '../components/dashboard/MeasureDetailPopup';
 import { PERIODS } from '../config/periods';
+import { decumulate, isCumulative } from '../services/dataTransform';
 
 const EIXO_NAMES: Record<number, { nome: string; cor: string; corLight: string }> = {
   1: { nome: 'Resposta a Tempo e Horas', cor: 'text-orange-600', corLight: 'bg-orange-100' },
@@ -49,7 +50,9 @@ export default function Dashboard() {
       const slug = mapping.primaryDataset.slug;
       const field = mapping.primaryDataset.campoValor;
       const ds = fsData[slug] || [];
-      const ts = ds.filter(d => d.periodo >= '2024-01').map(d => ({ periodo: d.periodo, valor: Number(d.indicadores[field]) || 0 })).filter(d => d.valor > 0).sort((a, b) => a.periodo.localeCompare(b.periodo));
+      let ts = ds.filter(d => d.periodo >= '2024-01').map(d => ({ periodo: d.periodo, valor: Number(d.indicadores[field]) || 0 })).filter(d => d.valor > 0).sort((a, b) => a.periodo.localeCompare(b.periodo));
+      // Auto-detect and convert cumulative YTD data to monthly
+      if (isCumulative(ts)) ts = decumulate(ts);
       if (ts.length >= 2) {
         trendMap[m.id] = calculateMeasureTrend(ts, mapping.primaryDataset.invertido);
         trendMap[m.id].dataSource = 'api_dinamica';

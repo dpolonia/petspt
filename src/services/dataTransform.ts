@@ -135,6 +135,56 @@ export function filterByDateRange(
   });
 }
 
+// ─── Decumulate (convert YTD cumulative to monthly) ──
+
+/**
+ * Converts cumulative year-to-date values to monthly values.
+ * Resets at January of each year.
+ * monthly[t] = cumulative[t] - cumulative[t-1] (same year)
+ * monthly[Jan] = cumulative[Jan] (first month of year)
+ */
+export function decumulate(
+  data: { periodo: string; valor: number }[],
+): { periodo: string; valor: number }[] {
+  const sorted = [...data].sort((a, b) => a.periodo.localeCompare(b.periodo));
+  return sorted.map((d, i) => {
+    const month = parseInt(d.periodo.split('-')[1]);
+    if (month === 1 || i === 0) {
+      // January or first data point: value is the monthly value
+      return { periodo: d.periodo, valor: d.valor };
+    }
+    const prev = sorted[i - 1];
+    const prevYear = prev.periodo.split('-')[0];
+    const currYear = d.periodo.split('-')[0];
+    if (prevYear !== currYear) {
+      // Year boundary: value is the monthly value (first of new year)
+      return { periodo: d.periodo, valor: d.valor };
+    }
+    // Same year: monthly = current cumulative - previous cumulative
+    return { periodo: d.periodo, valor: Math.max(0, d.valor - prev.valor) };
+  });
+}
+
+/**
+ * Detects if a time series is cumulative (monotonically increasing within years).
+ */
+export function isCumulative(data: { periodo: string; valor: number }[]): boolean {
+  if (data.length < 3) return false;
+  // Check if values within each year are monotonically increasing
+  let increasing = 0;
+  let total = 0;
+  for (let i = 1; i < data.length; i++) {
+    const prevYear = data[i - 1].periodo.split('-')[0];
+    const currYear = data[i].periodo.split('-')[0];
+    if (prevYear === currYear) {
+      total++;
+      if (data[i].valor >= data[i - 1].valor) increasing++;
+    }
+  }
+  // If >90% of within-year transitions are increasing, it's cumulative
+  return total > 0 && (increasing / total) > 0.9;
+}
+
 // ─── Chart view transforms ───────────────────────────
 
 export function filterFromBaseline<T extends { periodo: string }>(data: T[], baseline = '2024-01'): T[] {
