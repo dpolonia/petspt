@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { doc, getDoc } from 'firebase/firestore';
+import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import { db } from '../config/firebase';
 
 interface FirestoreDataPoint {
@@ -15,7 +15,7 @@ interface MultiFirestoreResult {
 
 /**
  * Loads multiple Firestore datasets at once.
- * Returns data keyed by dataset slug.
+ * Handles both inline dados[] and subcollection storage.
  */
 export function useMultiFirestore(slugs: string[]): MultiFirestoreResult {
   const [data, setData] = useState<Record<string, FirestoreDataPoint[]>>({});
@@ -32,6 +32,17 @@ export function useMultiFirestore(slugs: string[]): MultiFirestoreResult {
           const snap = await getDoc(doc(db, 'datasets', slug));
           if (snap.exists()) {
             const d = snap.data();
+
+            // If stored as subcollection (>900KB), read from periodos subcollection
+            if (d.storage === 'subcollection') {
+              const periodosSnap = await getDocs(collection(db, 'datasets', slug, 'periodos'));
+              const periodos = periodosSnap.docs
+                .map(pd => pd.data() as FirestoreDataPoint)
+                .sort((a, b) => a.periodo.localeCompare(b.periodo));
+              return [slug, periodos] as const;
+            }
+
+            // Otherwise read inline dados array
             return [slug, (d.dados || []) as FirestoreDataPoint[]] as const;
           }
         } catch { /* skip */ }
