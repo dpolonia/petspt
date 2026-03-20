@@ -31,7 +31,7 @@ async function fetchAll(slugs: string[]): Promise<Record<string, FirestoreDataPo
           }
           return [slug, (d.dados || []) as FirestoreDataPoint[]] as const;
         }
-      } catch { /* skip */ }
+      } catch (err) { console.error('[useMultiFirestore] FAILED:', slug, err); }
       return [slug, [] as FirestoreDataPoint[]] as const;
     })
   );
@@ -46,10 +46,16 @@ export function useMultiFirestore(slugs: string[]): MultiFirestoreResult {
   const load = useCallback(() => {
     if (_cache || _loading || slugs.length === 0) return;
     _loading = true;
+    console.log('[useMultiFirestore] Starting fetch for', slugs.length, 'datasets');
     fetchAll(slugs).then(result => {
       _cache = result;
       _loading = false;
-      forceUpdate(n => n + 1); // trigger re-render
+      const totalPeriods = Object.values(result).reduce((s, d) => s + d.length, 0);
+      console.log('[useMultiFirestore] Loaded', Object.keys(result).length, 'datasets,', totalPeriods, 'total periods');
+      forceUpdate(n => n + 1);
+    }).catch(err => {
+      console.error('[useMultiFirestore] FATAL:', err);
+      _loading = false;
     });
   }, [slugs, forceUpdate]);
 
