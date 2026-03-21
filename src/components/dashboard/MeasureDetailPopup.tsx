@@ -87,9 +87,6 @@ export default function MeasureDetailPopup({ isOpen, onClose, medidaId, nome, de
     nao_validado: { bg: 'bg-gray-100', text: 'text-gray-500', icon: '?' },
   };
 
-  // Stats context for AI
-  const statsCtx = `Media: ${fmt(mean)}, Mediana: ${fmt(median)}, DP: ${fmt(stddev)}, CV: ${cv.toFixed(1)}%, Min: ${fmt(minVal)} (${minPeriodo}), Max: ${fmt(maxVal)} (${maxPeriodo}), Amplitude: ${fmt(maxVal - minVal)}, Slope: ${trend.tendenciaSlope?.toFixed(1) || 'N/A'}/mes, N: ${n} meses`;
-
   const handleAI = async () => {
     setAiLoading(true);
     try {

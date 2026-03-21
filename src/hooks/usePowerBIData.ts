@@ -29,8 +29,8 @@ interface UsePowerBIDataResult {
 }
 
 const SESSION_KEY = 'pbi_data_';
-let _cache: Record<string, PowerBIEixoData> = {};
-let _loading: Record<string, boolean> = {};
+const _cache: Record<string, PowerBIEixoData> = {};
+const _loading: Record<string, boolean> = {};
 
 export function usePowerBIData(eixo: number): UsePowerBIDataResult {
   const [, forceUpdate] = useState(0);
