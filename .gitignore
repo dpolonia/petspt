@@ -1,8 +1,9 @@
 # Chaves e segredos
 .env
 .env.local
-.env.production
 .env.*.local
+# .env.production is committed — contains only Firebase web API key
+# (designed for client-side use, not a server secret)
 
 # Dependências
 node_modules/
